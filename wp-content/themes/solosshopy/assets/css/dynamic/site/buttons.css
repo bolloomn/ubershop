@@ -1,0 +1,94 @@
+/* #Button Appearance Styles */
+.btn,
+.btn-link,
+.link,
+a[href*="?media_dl="] {
+	font-weight: $body_font_weight;
+	font-size: @font_size($h5_font_size, multiple, ceil, 0.833)px;
+	font-family: @font_family( $h1_font_family );
+}
+.button,
+.btn {
+	font-family: @font_family( $h1_font_family );
+}
+
+.btn.btn-accent-1,
+.btn.btn-primary,
+.btn-downloader,
+a[href*="?media_dl="] {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+}
+.invert .btn.btn-accent-1,
+.invert .btn.btn-primary,
+.invert .btn-downloader,
+.invert  a[href*="?media_dl="] {
+	color: $invert_accent_color_1;
+	background-color: $invert_link_color;
+}
+
+.submit.btn.btn-accent-1:hover {
+	background-color: $regular_accent_color_4 !important;
+}
+.btn.btn-accent-1:hover,
+.btn.btn-primary:hover,
+.btn-downloader:hover,
+a[href*="?media_dl="]:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_2;
+}
+.invert .btn.btn-accent-1:hover,
+.invert .btn.btn-primary:hover,
+.invert .btn-downloader:hover,
+.invert  a[href*="?media_dl="]:hover {
+	color: $invert_accent_color_1;
+	background-color: $invert_accent_color_3;
+}
+
+.btn.btn-accent-1:active,
+.btn.btn-primary:active {
+	background-color: @darken($regular_accent_color_2, 10);
+}
+
+.btn.btn-accent-2 {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_2;
+}
+.btn.btn-accent-2:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+}
+.btn.btn-accent-2:active {
+	background-color: @darken($regular_accent_color_1, 10);
+}
+
+.btn.btn-accent-3 {
+	color: $regular_link_color;
+	background-color: $grey_color_3;
+}
+.btn.btn-accent-3:hover {
+	color: $invert_accent_color_1;
+	background-color: $regular_accent_color_1;
+}
+.btn.btn-accent-3:active {
+	background-color: @darken($regular_accent_color_1, 10);
+}
+
+.btn-downloader.btn-downloader-invert,
+a[href*="?media_dl="].btn-downloader-invert {
+	color: $regular_link_color;
+	background-color: $invert_accent_color_1;
+}
+.btn-downloader.btn-downloader-invert:hover,
+a[href*="?media_dl="].btn-downloader-invert:hover {
+	color: $invert_link_hover_color;
+	background-color: $regular_accent_color_1;
+}
+.post .entry-footer-bottom .post__button,
+.post .entry-footer-bottom .post__button:hover:before{
+	color: $regular_accent_color_2;
+}
+.post .entry-footer-bottom .post__button:hover,
+.post .entry-footer-bottom .post__button:before {
+	color: $regular_accent_color_1;
+}

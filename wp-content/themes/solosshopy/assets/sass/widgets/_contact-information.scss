@@ -1,0 +1,21 @@
+.contact-information-widget {
+	&__inner {
+		strong {
+			font-weight: 900;
+		}
+		li {
+			margin-left: 0;
+			line-height: 1.7;
+			@include font-size(0.875);
+			.icon {
+				@include font-size(1.125);
+				line-height: 1;
+				margin-right: 10px;
+			}
+			&.contact-information__item--icon {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}

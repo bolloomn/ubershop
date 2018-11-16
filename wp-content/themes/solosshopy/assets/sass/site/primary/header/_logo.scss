@@ -1,0 +1,37 @@
+.site-branding {
+	text-align: center;
+
+	@include media-breakpoint-up(sm) {
+		flex-direction: column;
+		text-align: left;
+		margin-bottom: 20px;
+		display: flex;
+		align-items: flex-start;
+	}
+}
+.site-logo {
+	margin: 0;
+	line-height: 1;
+
+	&__link {
+		text-decoration: none;
+		line-height: 1;
+	}
+	& + .site-description {
+		margin-top: 10px;
+		
+	}
+	&--image {
+		font-size: 1px;
+	}
+}
+.site-description {
+	font-size: .857rem;
+	line-height: 1;
+	text-align: center;
+
+	@include media-breakpoint-up(sm) {
+		text-align: left;
+		margin-bottom: 4px;
+	}
+}

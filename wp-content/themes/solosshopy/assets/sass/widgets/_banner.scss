@@ -1,0 +1,41 @@
+.widget-banner,
+.elementor-widget-wp-widget-solosshopy_widget_banner {
+	text-align: center;
+
+	.widget-title {
+		.sidebar & {
+			text-align: left;
+		}
+	}
+	&__img {
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__link {
+		display: inline-block;
+
+		.main-navigation & {
+			padding: 0 !important;
+		}
+		&:hover{
+			transform: scale(1.01);
+			box-shadow: $box__shadow_banner;
+		}
+	}
+}
+@media (max-width: 600px) {
+	.widget-banner,
+	.elementor-widget-wp-widget-solosshopy_widget_banner {
+		&__link {
+			.main-navigation & {
+				padding-top: 10px !important;
+				padding-bottom: 10px !important;
+				padding-left: 15px !important;
+			}
+			&:hover{
+				transform: scale(1) !important;
+				box-shadow: none !important;
+			}
+		}
+	}
+}

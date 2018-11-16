@@ -1,0 +1,45 @@
+.breadcrumbs {
+	position: relative;
+	padding: 0;
+	.row {
+		flex-direction: column-reverse;
+		justify-content: center;
+		align-items: flex-start;
+		position: relative;
+		z-index: 10;
+	}
+	&__title,
+	&__items {
+		padding-left: $grid-gutter-width/2;
+		padding-right: $grid-gutter-width/2;
+	}
+	&__title {
+		padding-bottom: 13px;
+	}
+
+	&__title {
+		.page-title {
+			margin: 0;
+			text-transform: none;
+		}
+	}
+
+	&__browse {
+		display: inline-block;
+		margin-right: .5em;
+	}
+	&__wrap {
+		margin: 5px 0;
+		display: inline-block;
+	}
+	&__item {
+		display: inline-block;
+
+		&-sep {
+			margin: 0 1.5px;
+		}
+		&-link {
+			text-decoration: none;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+.social-list a {
+	color: $regular_accent_color_2;
+}
+.top-panel .social-list a {
+	color: $invert_accent_color_5;
+}
+.top-panel .social-list a:hover {
+	color: $regular_accent_color_2;
+}
+.share-btns__link:hover,
+.social-list a:hover {
+	color: $regular_accent_color_1;
+}
+.invert .social-list a {
+	color: $invert_text_color;
+}
+.invert .share-btns__link:hover {
+	color: $invert_link_color;
+}
+.invert .social-list a:hover {
+	color: $invert_accent_color_1;
+}
+.top-panel__menu-list a {
+	color: $regular_accent_color_2;
+}
+.top-panel__menu-list a:hover {
+	color: $regular_accent_color_1;
+}
+.site-footer .footer-container .social-list .menu-item a:after {
+	background-color: $regular_accent_color_4;
+	color: $invert_text_color;
+}
+.site-footer .footer-container .social-list .menu-item a:hover,
+.site-footer .footer-container .social-list .menu-item a {
+	color: $invert_text_color;
+	
+}
+.site-footer .footer-container .social-list .menu-item a:hover:after {
+	background-color: $invert_accent_color_1;
+}

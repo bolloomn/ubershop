@@ -1,0 +1,1354 @@
+/**
+ * Table of Contents:
+ *
+ * 1.0 - Utils
+ * 2.0 - General
+ *   2.1 - Theme options heading
+ *   2.2 - Theme options tabs
+ * 3.0 - Form elements and layout
+ *   3.1 - Section
+ *   3.2 - Inputs and buttons
+ *   3.3 - Side metaboxes
+ *   3.4 - Custom select box
+ *   3.5 - Custom checkbox (iCheck plugin Polaris skin)
+ *   3.6 - Font Awesome Picker
+ *   3.7 - Dynamic input
+ * 4.0 - Notifications
+ * 5.0 - Import page
+ * 6.0 - RTL
+ * ----------------------------------------------------------------------------
+ */
+
+
+/**
+ * 1.0 Utils
+ * ----------------------------------------------------------------------------
+ */
+.pukka-clearfix:before,
+.pukka-clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.pukka-clearfix:after {
+    clear: both;
+}
+
+.pukka-clearfix{
+    *zoom: 1;
+}
+
+
+/**
+ * 2.0 General
+ * ----------------------------------------------------------------------------
+ */
+#pukka-wrap{
+    /*max-width: 1200px;*/
+    color: #727272;
+    margin-right: 20px;
+}
+
+#pukka-wrap a,
+.pukka-input a{
+    outline: none;
+    text-decoration: none;
+    color: #727272;
+}
+
+#pukka-wrap h1,
+#pukka-wrap h2{
+    font-weight: 400;
+}
+
+#pukka-wrap h1{
+    font-size: 46px;
+    line-height: 100%;
+    font-weight: lighter;
+    color: #133129;
+}
+
+#pukka-wrap h2{
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 24px;
+    margin-bottom: 45px;
+    color: #036717;
+    padding-left: 20px;
+}
+
+#pukka-wrap h3{
+    margin: 0 0 10px 0;
+}
+
+#pukka-wrap h4{
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    margin: 0 0 15px;
+}
+
+#pukka-wrap div{
+
+}
+
+#pukka-wrap .pukka-fields{
+    padding-top: 45px;
+    margin-left: 230px;
+    min-height: 400px;
+    margin-bottom: 30px;
+}
+
+.pukka-settings{
+    min-height: 800px;
+}
+
+/**
+ * 2.1 Theme options heading
+ * ----------------------------------------------------------------------------
+ */
+#pukka-wrap #pukka-heading{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    background-color: #fff;
+
+    /*-webkit-box-shadow: 0px 3px 3px 0px rgba(204,204,204,1);*/
+    /*-moz-box-shadow: 0px 3px 3px 0px rgba(204,204,204,1);*/
+    /*box-shadow: 0px 3px 3px 0px rgba(204,204,204,1);*/
+    border-bottom: 2px solid #e6e6e6;
+}
+
+
+
+/*#pukka-logo {*/
+/*height: 100px;*/
+/*line-height: 100px;*/
+/*position: absolute;*/
+/*text-align: center;*/
+/*vertical-align: middle;*/
+/*width: 200px;*/
+/*}*/
+
+/*#pukka-logo img {*/
+/*vertical-align: middle;*/
+/*}*/
+
+/*#pukka-wrap #pukka-heading h1,*/
+/*#pukka-wrap .page-description{*/
+/*float: none;*/
+/*display: table-cell;*/
+/*vertical-align: middle;*/
+/*height: 100px;*/
+/*}*/
+
+/*#pukka-wrap #pukka-heading h1{*/
+/*margin-top: 0;*/
+/*margin-bottom: 0;*/
+/*width: 350px;*/
+/*padding-left: 250px;*/
+/*}*/
+
+#pukka-logo{
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+#pukka-wrap #pukka-settings-title{
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    color: #8c8b8c;
+    font-size: 24px;
+}
+
+#pukka-wrap #pukka-heading .pukka-save-settings{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+/**
+ * 2.2 Theme options tabs
+ * ----------------------------------------------------------------------------
+ */
+#pukka-wrap .pukka-tabs{
+    position: relative;
+}
+
+#pukka-wrap .pukka-tabs > ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    margin: 0;
+    border-left: 1px solid #ccc;
+}
+
+#pukka-wrap .pukka-tabs > ul li{
+    margin-bottom: 0;
+    font-size: 14px;
+    border-bottom: 1px solid #1e1e1e;
+    /*border-bottom: 1px solid #ccc;*/
+    /*border-right: 1px solid #ccc;*/
+    /*background: #DFDFDF;*/
+    background-color: #333;
+    color: #b8b8b8;
+}
+
+#pukka-wrap .pukka-tabs > ul li:hover{
+    background-color: #1e1e1e;
+}
+
+#pukka-wrap .pukka-tabs > ul li:first-child{
+    border-top: 1px solid #1e1e1e;
+}
+
+#pukka-wrap .pukka-tabs > ul li.ui-tabs-active{
+    /*border-right: none;*/
+    background-color: #036717;
+
+    position: relative;
+}
+
+#pukka-wrap .pukka-tabs > ul li.ui-tabs-active:after{
+    right: 0;
+    border: 8px solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-right-color: #f1f1f1;
+    top: 50%;
+    margin-top: -8px;
+}
+
+#pukka-wrap .pukka-tabs > ul li:first-child.ui-tabs-active{
+    border-top: none;
+    padding-top: 1px;
+}
+
+#pukka-wrap .pukka-tabs > ul li:last-child.ui-tabs-active{
+    border-bottom: none;
+}
+
+#pukka-wrap .pukka-tabs > ul li.ui-tabs-active,
+#pukka-wrap .pukka-tabs > ul li.ui-tabs-active a{
+    /*color: #133129;*/
+    /*font-weight: bold;*/
+    color: #fff;
+}
+
+#pukka-wrap .pukka-tabs > ul li a{
+    display: block;
+    padding: 10px;
+    color: #8f8f8f;
+    text-decoration: none;
+    outline: none;
+}
+
+#pukka-wrap .pukka-tabs > ul li:focus{
+    outline: 0;
+}
+
+#pukka-wrap .pukka-tabs > ul li i:before{
+    padding-right: 5px;
+    font-size: 13px;
+}
+
+
+
+/* Dynamic input */
+.pukka-sortable > li > span{
+    display:inline-block;
+    width:90%;
+}
+
+
+.pukka-input-sortable-list li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pukka-input-sortable-list li:before{
+    font-family: "FontAwesome";
+    content: "\f047";
+    padding-right: 20px;
+}
+
+.pukka-input-sortable-list li:before:hover{
+    cursor: move;
+}
+
+
+
+/**
+ * Theme options blocks
+ * ----------------------------------------------------------------------------
+ */
+
+
+
+#pukka-wrap #pukka-settings .pukka-input-wrap{
+    padding-left: 20px;
+}
+
+#pukka-wrap #pukka-settings .pukka-input-description{
+    margin-right: 60px;
+    width: 280px;
+
+}
+
+#pukka-wrap #pukka-settings .pukka-input-description a,
+#pukka-wrap #pukka-settings .pukka-input-description a:hover,
+#pukka-wrap #pukka-settings .pukka-input-description a:visited{
+    color: #036717;
+}
+
+/**
+ * 3.0 Form elements and layout
+ * ----------------------------------------------------------------------------
+ */
+
+#pukka-wrap .pukka-input-wrap{
+    padding-bottom: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+    clear: left;
+}
+
+.pukka-input-description{
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+}
+
+#content-importer .pukka-input-description {
+    width: 95%;
+}
+
+.pukka-input{
+    float: left;
+    width: 50%;
+}
+
+.pukka-side-meta .pukka-input{
+    width: 100%;
+}
+
+.pukka-side-meta .pukka-input-description{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#content-importer .pukka-input {
+    width: 95%;
+}
+
+.pukka-settings .pukka-input-wrap,
+.pukka-settings .pukka-input-description,
+.pukka-settings .pukka-input{
+    min-width: 350px;
+}
+
+
+.pukka-select select {
+    padding: 0 30px 3px 3px;
+    width: 170px;
+    margin: 0;
+    /*-webkit-border-radius:4px;*/
+    /*-moz-border-radius:4px;*/
+    /*border-radius:4px;*/
+    /*
+    -webkit-box-shadow: 2px 2px 1px 1px #ccc, 0 -1px #fff inset;
+    -moz-box-shadow: 2px 2px 1px 1px #ccc, 0 -1px #fff inset;
+    box-shadow: 2px 2px 1px 1px #ccc, 0 -1px #fff inset;
+    */
+    background: transparent;
+    /*color:#888;*/
+    border:none;
+    outline:none;
+    display: inline-block;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    appearance:none;
+    cursor:pointer;
+    height: 27px;
+}
+
+.half-size .pukka-select select{
+    width: 85px;
+}
+
+.pukka-side-meta .pukka-select select{
+    width: 120px;
+}
+
+/* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .pukka-select select {padding-right:30px}
+}
+
+span.pukka-select{
+    display: inline-block;
+    position:relative;
+    height: 27px;
+    border: 1px solid #d7d7d7;
+}
+
+span.pukka-select:after {
+    /*content:'<>';*/
+    font-family: FontAwesome;
+    content: "\f0d9 \00a0 \f0da";
+    font-size: 11px;
+    color: #fff;
+
+    /*font:11px "Consolas", monospace;*/
+    /*color:#aaa;*/
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform:rotate(90deg);
+    right:8px; top:4px;
+    padding:0 0 2px;
+    /*border-bottom:1px solid #ddd;*/
+    position:absolute;
+    pointer-events:none;
+}
+span.pukka-select:before {
+    content:'';
+    right: 0;
+    top: 0;
+    width: 25px;
+    height: 27px;
+    background:#d7d7d7;
+    position: absolute;
+    pointer-events:none;
+    display: block;
+}
+.dm-input-tools input[type="checkbox"],
+.pukka-input input[type="checkbox"] {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+/* Pukka Dynamic Input */
+.pukka-input-no-description .pukka-input{
+    width: 95%;
+}
+
+.pukka-dynamic-extended-wrap{
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.pukka-dynamic-extended-wrap label{
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pukka-dynamic-extended-wrap input[type="text"],
+.pukka-dynamic-extended-wrap textarea{
+    width: 70%;
+}
+
+/* =User profile page fix
+----------------------------------------------- */
+.user-edit-php .pukka-input-wrap,
+.profile-php .pukka-input-wrap{
+    width: 50%;
+}
+
+
+/**
+ * 3.1 Section
+ * ----------------------------------------------------------------------------
+ */
+#pukka-wrap .pukka-section{
+    margin-bottom: 20px;
+
+    border-bottom: 1px solid #ccc;
+}
+
+
+
+#pukka-wrap .pukka-section-input-wrap{
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 230px;
+}
+
+#pukka-wrap .pukka-section-input-wrap.half-size {
+    width: 110px;
+}
+
+#pukka-wrap .pukka-section-input-wrap:first-of-type{
+    margin-left: 20px;
+}
+
+#pukka-wrap .pukka-section-input-wrap .pukka-input-description,
+#pukka-wrap .pukka-section-input-wrap .pukka-input{
+    width: auto;
+    min-width: 0;
+}
+
+#pukka-wrap .pukka-section-input-wrap h4{
+    font-size: 16px;
+}
+
+
+/* =Color picker fix
+----------------------------------------------- */
+#pukka-wrap .pukka-section-input-wrap .pukka-input{
+    height: 50px;
+}
+
+#pukka-wrap .pukka-section-input-wrap .wp-color-result,
+.widget-content .wp-color-result{
+    top: 4px; /* vertical align */
+}
+
+#pukka-wrap .pukka-section-input-wrap .wp-picker-holder{
+    top: 50px;
+}
+
+/**
+ * 3.2 Inputs and buttons
+ * ----------------------------------------------------------------------------
+ */
+.pukka-button,
+.pukka-button-primary{
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 3px;
+    outline: none;
+    font-weight: normal;
+    font-family: inherit;
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.pukka-button,
+.pukka-button:hover,
+.pukka-button:focus{
+    color: #797979;
+    height: 30px;
+    line-height: 30px;
+
+    border: 1px solid #a6a6a6;
+
+    background: #f5f5f5; /* Old browsers */
+    /*background: -moz-linear-gradient(top,  #f5f5f5 0%, #e5e5e5 100%);  FF3.6+*/
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f5f5f5), color-stop(100%,#e5e5e5));  Chrome,Safari4+*/
+    /*background: -webkit-linear-gradient(top,  #f5f5f5 0%,#e5e5e5 100%);  Chrome10+,Safari5.1+*/
+    /*background: -o-linear-gradient(top,  #f5f5f5 0%,#e5e5e5 100%);  Opera 11.10+*/
+    /*background: -ms-linear-gradient(top,  #f5f5f5 0%,#e5e5e5 100%);  IE10+*/
+    /*background: linear-gradient(to bottom,  #f5f5f5 0%,#e5e5e5 100%);  W3C*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f5f5', endColorstr='#e5e5e5',GradientType=0 );  IE6-9*/
+}
+
+.pukka-button-primary,
+.pukka-button-primary:hover,
+.pukka-button-primary:focus{
+    border: none;
+    color: #FFFFFF !important;
+    height: 32px;
+    line-height: 32px;
+
+    background: #036717; /* Old browsers */
+    /*background: -moz-linear-gradient(top,  #134029 0%, #133429 100%); *//* FF3.6+ */
+    /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#134029), color-stop(100%,#133429)); *//* Chrome,Safari4+ */
+    /*background: -webkit-linear-gradient(top,  #134029 0%,#133429 100%); *//* Chrome10+,Safari5.1+ */
+    /*background: -o-linear-gradient(top,  #134029 0%,#133429 100%); *//* Opera 11.10+ */
+    /*background: -ms-linear-gradient(top,  #134029 0%,#133429 100%); *//* IE10+ */
+    /*background: linear-gradient(to bottom,  #134029 0%,#133429 100%); *//* W3C */
+    /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#134029', endColorstr='#133429',GradientType=0 ); *//* IE6-9 */
+}
+
+#pukka-wrap .pukka-ajax-load {
+    display: none;
+    float: right;
+    margin: 8px 10px 0 0;
+}
+
+#pukka-wrap .pukka-ajax-reset{
+    float: left;
+    display: none;
+    margin: 8px 10px 0;
+}
+
+.pukka-input{
+    position: relative;
+}
+
+.pukka-input > input[type='text'],
+.pukka-input > textarea{
+    width: 100%;
+}
+
+.pukka-input textarea{
+    height: 130px;
+}
+
+.pukka-input input[readonly="readonly"],
+.pukka-input input[readonly="readonly"]:focus{
+    background: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.pukka-input .wp-picker-holder{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 999;
+}
+
+#pukka-wrap .pukka-img-wrap{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#pukka-wrap .pukka-file-placeholder{
+    height: 100px;
+    border: 1px solid #ccc;
+}
+
+#pukka-wrap #pukka-save-settings{
+    float: right;
+}
+
+#pukka-wrap #pukka-reset-settings {
+    float: left;
+    margin-left: 250px;
+}
+
+.pukka-input .pukka-upload-buttons{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.pukka-input .pukka-upload-buttons .pukka-remove-upload{
+    margin-top: 5px;
+    display: block;
+    text-align: right;
+}
+
+.pukka-hidden{
+    display: none;
+}
+
+
+/* Image radio */
+.pukka-input-radio label{
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.pukka-input-radio label > input{ /* HIDE RADIO */
+    visibility: hidden;
+    position: absolute;
+}
+
+.pukka-input-radio label > input + img{ /* IMAGE STYLES */
+    cursor:pointer;
+    max-width: 50px;
+    height: auto;
+}
+
+.pukka-input-radio label > input + img,
+.pukka-input-radio label > input + span{
+    border: 2px solid #a6a6a6;
+}
+
+.pukka-input-radio label > input:checked + img,
+.pukka-input-radio label > input:checked + span{ /* (RADIO CHECKED) IMAGE STYLES */
+    border: 2px solid #187c36;
+}
+
+/*.pukka-input-radio label.radio-empty > input{*/
+/*visibility: visible;*/
+/*margin-left: 10px;*/
+/*}*/
+
+.pukka-input-radio label.radio-empty span{
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1280px){
+    .pukka-settings .pukka-input-wrap,
+    .pukka-settings .pukka-input-description,
+    .pukka-settings .pukka-input{
+        min-width: 200px;
+    }
+
+
+    #pukka-wrap .pukka-section-input-wrap{
+        max-width: 180px;
+    }
+}
+
+
+
+/**
+ * 3.6 Font Awesome Picker
+ * ----------------------------------------------------------------------------
+ */
+li [class^="fa-"], .nav li [class^="fa-"], li [class*=" fa-"], .nav li [class*=" fa-"] {
+    display: inline-block;
+    width: 1.25em;
+    font-size: 17px;
+    text-align: center;
+}
+
+#pukka-fa-picker{
+    display: none;
+}
+
+#icons-dialog .modal-body {
+    max-height: 1000px;
+    padding-top: 20px;
+}
+
+#icons-dialog .tabbable .btn {
+    width: 80px;
+    margin-left: 5px;
+}
+
+#icons-dialog .tdIcon i {
+    font-size: 26px !important;
+    color: black;
+}
+
+#icons-dialog .tabbable td {
+    padding: 15px;
+}
+
+#icons-dialog .modal-footer{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* Tabs **/
+#icons-dialog #tab-titles{
+    height: 30px;
+    text-align: center;
+}
+
+#icons-dialog #tab-titles li{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#icons-dialog .tab-pane{
+    display:none
+}
+
+#icons-dialog .tab-pane.active{
+    display: block;
+}
+
+.pukka-icon-preview{
+    display: inline-block;
+    width: 100px;
+    font-size: 60px;
+    text-align: center;
+}
+
+/**
+ * 3.7 Dynamic input
+ * ----------------------------------------------------------------------------
+ */
+
+.pukka-input-dynamic > input[type="text"],
+.pukka-input-dynamic input[readonly="readonly"]{
+    width: 90%;
+}
+
+.pukka-input-dynamic .fa{
+    width: 5%;
+    text-align: center;
+    font-size: 18px;
+}
+
+/**
+ * 4.0 Notifications
+ * ----------------------------------------------------------------------------
+ */
+.pukka-notification {
+    color: #FFFFFF;
+    font-size: 18px;
+    right: 20px;
+    position: fixed;
+    top: 30%;
+    top: calc(30% - 80px);
+    max-width: 100%;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+}
+
+.pukka-notification.success {
+    background-color: #8bbb55;
+    border-color: #214926;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.pukka-notification.error {
+    background-color: #CB4B4A;
+    border-color: #6D1211;
+    border-radius: 5px;
+    margin: 0;
+    padding: 0;
+}
+
+.pukka-notification .message {
+    background-color: #DED8B8;
+    border-radius: 0 0 5px 5px;
+    margin-top: 40px;
+    min-height: 20px;
+    padding: 60px 10px 34px;
+    text-align: center;
+    width: 250px;
+}
+
+.pukka-notification .icon {
+    border-color: transparent;
+    border-radius: 35px;
+    height: 70px;
+    left: 100px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    width: 70px;
+}
+
+.pukka-notification .icon.success {
+    background: url('../images/save_ok.png') no-repeat scroll 0 0 transparent;
+}
+
+.pukka-notification .icon.error {
+    background: url('../images/save_error.png') no-repeat scroll 0 0 transparent;
+}
+
+.pukka-notification .signature {
+    font-size: 80%;
+    font-style: italic;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    text-align: right;
+    width: 100%;
+}
+
+.dynamic-meta-box-title,
+.featured-box-title {
+    background-color: #eaeaea;
+    color: #525252;
+    cursor: move;
+    font-size: 20px;
+    height: 34px;
+    line-height: 34px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+
+.mbox-left-corner {
+    background: url('../images/mbox_title_corner.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 22px;
+    left: 10px;
+    position: absolute;
+    top: 7px;
+    width: 22px;
+}
+
+.mbox-right-corner {
+    background: url('../images/mbox_title_corner.png') no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 22px;
+    right: 10px;
+    position: absolute;
+    top: 7px;
+    width: 22px;
+}
+
+
+/**
+ * 5.0 Import page
+ * ----------------------------------------------------------------------------
+ */
+#pukka-import-frame {
+    background-color: #E6FFD2;
+    border: 1px solid #5E9150;
+    font-family: Lato, sans-serif;
+    font-size: 18px;
+    min-height: 100px;
+    line-height: 22px;
+    margin: 40px 0;
+    padding: 50px;
+    word-wrap: break-word;
+    display: none;
+}
+
+#pukka-import-frame.error {
+    background-color: #FFCFCF;
+    border: 1px solid #8D3131;
+}
+
+#pukka-import-frame h2 {
+    font-size: 18px;
+}
+
+#importer-description {
+    display: table-cell;
+    float: none;
+    height: 100px;
+    vertical-align: middle;
+    width: 400px;
+}
+
+#pukka-wrap h2#importer-title {
+    margin-bottom: 0;
+}
+
+a#homepage-url {
+    color: #21759B;
+}
+
+.import-controls {
+    margin: 10px 0;
+    text-align: right;
+}
+
+.import-controls .waiting{
+    display: none;
+}
+
+
+/**
+ * 6.0 RTL
+ * ----------------------------------------------------------------------------
+ */
+
+.rtl #pukka-wrap .pukka-tabs > ul li i:before{
+    padding-right: 0;
+    padding-left: 5px;
+}
+
+.rtl #pukka-wrap #pukka-settings .pukka-input-description{
+    float: right;
+    margin-right: 0;
+    margin-left: 60px;
+}
+
+
+.rtl .pukka-input .pukka-upload-buttons{
+    right: auto;
+    left: 0;
+}
+
+
+
+/**
+ * 7.0 Post Gallery Meta Box
+ * ----------------------------------------------------------------------------
+ */
+#woocommerce-product-images .inside .add_product_images {
+    padding:0 12px 12px;
+}
+
+#woocommerce-product-images .inside #product_images_container {
+    padding:0 0 0 9px;
+}
+
+#woocommerce-product-images .inside #product_images_container ul li.add,#woocommerce-product-images .inside #product_images_container ul li.image,#woocommerce-product-images .inside #product_images_container ul li.wc-metabox-sortable-placeholder {
+    width:80px;
+    float:left;
+    cursor:move;
+    border:1px solid #d5d5d5;
+    background:#f7f7f7;
+    border-radius:2px;
+    position:relative;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    margin:9px 9px 0 0;
+}
+
+#woocommerce-product-images .inside #product_images_container ul li.add img,#woocommerce-product-images .inside #product_images_container ul li.image img,#woocommerce-product-images .inside #product_images_container ul li.wc-metabox-sortable-placeholder img {
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+#woocommerce-product-images .inside #product_images_container ul li.wc-metabox-sortable-placeholder {
+    border:3px dashed #ddd;
+    position:relative;
+}
+
+#woocommerce-product-images .inside #product_images_container ul li.wc-metabox-sortable-placeholder:after {
+    font-family:FontAwesome;
+    speak:none;
+    font-weight:400;
+    font-variant:normal;
+    text-transform:none;
+    -webkit-font-smoothing:antialiased;
+    text-indent:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    content:"\f03e";
+    font-size:2.618em;
+    line-height:72px;
+    color:#ddd;
+    margin:0;
+}
+
+#woocommerce-product-images .inside #product_images_container ul ul.actions {
+    position:absolute;
+    top:-8px;
+    right:-8px;
+    display:none;
+    padding:2px;
+}
+
+#pukka-post-image .inside #product_images_container ul ul.actions li {
+    float:right;
+    margin:0 0 0 2px;
+}
+
+#woocommerce-product-images .inside #product_images_container ul ul.actions li a {
+    width:1em;
+    height:0;
+    display:block;
+    overflow:hidden;
+    margin:0;
+}
+
+#woocommerce-product-images .inside #product_images_container ul ul.actions li a.view:before {
+    font-family:FontAwesome;
+    speak:none;
+    font-weight:400;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    text-indent:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    content:"";
+    background-color:#000;
+    color:#fff;
+    margin:0;
+}
+
+#woocommerce-product-images .inside #product_images_container ul ul.actions li a.delete:before {
+    font-family:FontAwesome;
+    speak:none;
+    font-weight:400;
+    font-variant:normal;
+    text-transform:none;
+    line-height:1;
+    -webkit-font-smoothing:antialiased;
+    text-indent:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    text-align:center;
+    content:"\f00d";
+    color:#fff;
+    background-color:#000;
+    border-radius:100%;
+    box-shadow:0 1px 2px rgba(0,0,0,.2);
+    margin:0;
+}
+
+#woocommerce-product-images .inside #product_images_container ul ul.actions li a.delete:hover:before {
+    background-color:#a00;
+}
+
+#woocommerce-product-images .inside #product_images_container ul ul.actions li a.tips{
+    cursor:pointer;
+}
+
+#woocommerce-product-images .inside,#woocommerce-product-images .inside #product_images_container ul{
+    margin:0;
+    padding:0;
+}
+
+
+#woocommerce-product-images .inside #product_images_container ul:after{
+    clear:both;
+}
+
+
+
+#woocommerce-product-images .inside #product_images_container ul li:hover ul.actions{
+    display:block;
+}
+
+
+#woocommerce-product-images .inside #product_images_container ul:after,
+#woocommerce-product-images .inside #product_images_container ul:before{
+    content:" ";
+    display:table;
+}
+
+#woocommerce-product-images .inside #product_images_container ul ul.actions li a.view,
+#woocommerce-product-images .inside #product_images_container ul ul.actions li a.delete {
+    display:block;
+    text-indent:-9999px;
+    position:relative;
+    height:1em;
+    width:1em;
+    font-size:1em;
+}
+
+
+/**
+ * 7.0 Pukka grid
+ * ----------------------------------------------------------------------------
+ */
+#pukka-wrap .box .featured-remove:before{
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+#pukk-wrap #featured{
+    counter-reset: grid-section;
+}
+
+#pukka-wrap .box{
+    background-color: #fff;
+    height: 140px;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+
+    counter-increment: grid-section;
+}
+
+#pukka-wrap div.featured-box-title {
+    margin-bottom: 0px;
+}
+
+.featured-box-content {
+    padding: 10px;
+    position: relative;
+}
+
+#pukka-wrap .box p{
+    margin: 0;
+}
+
+#pukka-wrap .box h5{
+    margin: 0;
+    font-size: 16px;
+}
+
+#pukka-wrap .box h5 span {
+    font-size: 90%;
+    font-style: italic;
+    font-weight: normal;
+}
+
+#pukka-wrap .box img{
+    float: left;
+    padding: 0 5px 5px 0;
+    width: 75px;
+    height: auto;
+}
+
+#pukka-wrap .box .ui-autocomplete-loading {
+    background-position: 98% center;
+    background-repeat: no-repeat;
+}
+
+#pukka-wrap .box textarea {
+    left: 10px;
+    max-height: 85px;
+    max-width: 95%;
+    max-width: calc(95% - 200px);
+    min-height: 85px;
+    position: absolute;
+    top: 10px;
+    width: 95%;
+    width: calc(95% - 200px);
+}
+
+#pukka-wrap .box .item-layout{
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 5px;
+}
+
+#pukka-wrap .box .item-size{
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 5px;
+}
+
+#pukka-wrap .box .featured-banner{
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 80px;
+
+}
+
+#featured-form {
+    max-width: 950px;
+    counter-reset: section;
+}
+
+.featured-controls {
+    margin-left: 25px;
+}
+
+.featured-box-controls {
+    background-color: #232323;
+    border-radius: 5px 0 0 5px;
+    color: #FFFFFF;
+    height: 60px;
+    left: -31px;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+}
+
+.box .featured-remove,
+.box .featured-pin {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
+
+.box .featured-remove {
+    background: url('../images/bt_dm_close.png') no-repeat scroll center center transparent;
+}
+
+.box .featured-pin {
+    background: url('../images/bt_dm_pin.png') no-repeat scroll center center transparent;
+}
+
+.box .featured-remove:hover,
+.box .featured-pin:hover,
+.box .featured-pin.pinned {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.box .featured-pin input[type=checkbox] {
+    display: none;
+}
+
+.featured-counter {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    color: #a6a6a6;
+}
+
+.featured-counter:before {
+    display: block;
+    position: relative;
+    text-align: center;
+    width: 30px;
+    /*counter-increment: section;*/
+    content: counter(grid-section) ".";
+}
+
+.featured-add-post-input {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    display: none;
+    z-index: 100;
+}
+
+
+/* BEGIN: Pukka Grid *****************/
+.column-pukka_grid_shortcode{ width: 40%; }
+
+input.shortcode-in-list-table {
+    width: 100%;
+    font-size: 90%;
+}
+
+
+
+
+/* RTL */
+
+.rtl .featured-box-controls{
+    left: auto;
+    right: -31px;
+
+    border-radius: 0 5px 5px 0;
+}
+
+.rtl #pukka-wrap .box img{
+    float: right;
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+
+.rtl #pukka-wrap .box .item-layout{
+    right: auto;
+    left: 5px;
+}
+
+.rtl #pukka-wrap .box .item-size{
+    right: auto;
+    left: 5px;
+}
+/* END: Pukka Grid *****************/

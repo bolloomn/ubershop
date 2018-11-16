@@ -1,0 +1,39 @@
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    background-image: url("../images/back.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login h1 a {
+    background-image: url(../images/logo_updated_white.png);
+    background-image: none, url(../images/logo_updated_white.png);
+    background-size: 150px;
+    height: 120px;
+}
+
+#backtoblog, #nav {
+    display: none;
+}
+
+#login {
+    padding: 0px;
+}
+
+.wp-core-ui .button-primary {
+    background-color: #4267b2;
+    border: none;
+    font-size: 15px;
+    box-shadow: none !important;
+
+}

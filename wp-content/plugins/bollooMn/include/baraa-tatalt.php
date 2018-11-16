@@ -28,7 +28,6 @@ global  $wpdb;
                     inner join trade_posts 
                     on trade_posts.id=info.product_id and trade_posts.post_type = 'product'
                     order by info.date desc
-                    limit
                     "
              );
 ?>
@@ -51,7 +50,7 @@ global  $wpdb;
         <tbody>
         <?php foreach ($rows as $row): ?>
             <tr>
-                <td><?=?></td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>

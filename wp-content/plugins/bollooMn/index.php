@@ -92,6 +92,7 @@ function baraa_footer(){
             format:'Y-m-d H:i',
             lang:'mn',
             mask:'9999-19-39 29:59',
+            minDate: '<?php echo date('Y-m-d 00:00', time()-60*60*24*30);?>',
             value: new Date(),
         });
     </script>
@@ -125,11 +126,15 @@ function update_prices($id, $date){
 
     if($rows){
         foreach ($rows as $row){
-            $data=[];
-            $amount=unit_price($id, $row->date)*$row->quantity;
+            $cost=unit_price($id, $row->date);
+            if($cost!=$row->cost){
+                $a=1;
+                if($row->quantity<0){ $a=-1;  }
+                $data=['cost'=>$cost, 'amount'=>$a*$cost*$row->quantity];
+                $wpdb->update('trade_product_info', $data, ['id'=> $row->id], ['%s', '%s'], ['%d']);
+            }
         }
     }
-
 }
 
 //remove_role( 'contributor' );

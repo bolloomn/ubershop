@@ -30,12 +30,13 @@ global  $wpdb;
 
         if($_POST['id']==0){
             $wpdb->insert('trade_product_info', $data, ['%s', '%s', '%s', '%s', '%s', '%s', '%s']);
+            update_prices($wpdb->insert_id,  $_POST['date']);
         } else {
             $wpdb->update('trade_product_info', $data, ['ID'=> $_POST['id']], ['%s', '%s', '%s', '%s', '%s', '%s', '%s'], ['%d']);
+            update_prices($_POST['id'],  $_POST['date']);
         }
 
     }
-
 
     //get products
     $query= "SELECT trade_posts.id, trade_posts.post_title
@@ -44,7 +45,6 @@ global  $wpdb;
              and post_status='publish'
              order by  trade_posts.post_title asc
              ";
-
     $products= $wpdb->get_results($query);
 
     /*tatalt*/
@@ -106,6 +106,8 @@ global  $wpdb;
                 <td><?php echo $row->quantity; ?></td>
                 <td><?php echo number_format($row->amount,2, '.', ''); ?> төг</td>
                 <td>
+
+                    <?php  if(time()-60*60*24*30<=strtotime($row->date)){?>
                     <a  class="btn btn-sm btn-secondary text-white"
                         data-toggle="modal"
                         data-target="#tataltModal"
@@ -120,6 +122,7 @@ global  $wpdb;
                        onclick="return confirm('Та устгахдаа итгэлтэй байна уу!')">
                         <i class="fa fa-trash"></i>
                     </a>
+                    <?php } ?>
                 </td>
             </tr>
         <?php endforeach; ?>

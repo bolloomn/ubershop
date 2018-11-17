@@ -40,16 +40,19 @@ add_action('admin_menu', 'register_menu_page');
 function _product_tatalt(){
     baraa_header();
    include 'include/baraa-tatalt.php';
+    baraa_footer();
 }
 
 function _product_uldegdel(){
     baraa_header();
     include 'include/uldegdel.php';
+    baraa_footer();
 }
 
 function _product_report(){
     baraa_header();
     include 'include/report.php';
+    baraa_footer();
 }
 
 function baraa_header(){
@@ -59,7 +62,7 @@ function baraa_header(){
     <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/select2-bootstrap.css" >
     <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/select2-bootstrap.css" >
     <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/font-awesome/css/font-awesome.min.css" >
-
+    <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/jquery.datetimepicker.css" rel="stylesheet">
     <script src="<?php echo plugin_dir_url( __FILE__ );?>js/jquery-2.1.1.js" ></script>
     <script src="<?php echo plugin_dir_url( __FILE__ );?>js/select2.full.min.js" ></script>
     <script src="<?php echo plugin_dir_url( __FILE__ );?>js/popper.min.js" ></script>
@@ -76,5 +79,58 @@ function baraa_header(){
     </script>
 <?php
 }
+?>
+<?php
+function baraa_footer(){
+    ?>
+    <script src="<?php echo plugin_dir_url( __FILE__ );?>js/php-date-formatter.min.js"></script>
+    <script src="<?php echo plugin_dir_url( __FILE__ );?>js/jquery.mousewheel.js"></script>
+    <script src="<?php echo plugin_dir_url( __FILE__ );?>js/jquery.datetimepicker.js"></script>
+    <script type="text/javascript">
+        $('#date').datetimepicker({
+            // formatTime:'H:i',
+            format:'Y-m-d H:i',
+            lang:'mn',
+            mask:'9999-19-39 29:59',
+            value: new Date(),
+        });
+    </script>
+<?php
+}
+
+
+function unit_price($id, $date){
+    global $wpdb;
+    $where="";
+    if(!is_null($date)):
+        $where=" AND date<'".$date."'";
+    endif;
+    return  $wpdb->get_var(
+        "SELECT ifnull(round(sum(quantity*cost)/sum(quantity),4), 0) as price
+                FROM trade_product_info
+                where product_id=".$id.$where
+    );
+}
+
+function update_prices($id, $date){
+    global $wpdb;
+    $query= "SELECT *
+             FROM trade_product_info
+             where product_id=".$id."
+             AND date>='".$date."'
+             AND type!=1
+             order by info.date asc
+            ";
+    $rows = $wpdb->get_results($query);
+
+    if($rows){
+        foreach ($rows as $row){
+            $data=[];
+            $amount=unit_price($id, $row->date)*$row->quantity;
+        }
+    }
+
+}
+
 //remove_role( 'contributor' );
 ?>

@@ -3,7 +3,7 @@ global  $wpdb;
 
     //config
     $limit=30;
-    $link=home_url();
+    $link=home_url('wp-admin/admin.php?page=product_tatalt&pages=');
     $pages=1;
     if(isset($_GET['pages'])){ if($_GET['pages']!=''){ $pages=$_GET['pages']; } }
 
@@ -12,7 +12,7 @@ global  $wpdb;
         if($_GET['del']!=''){
             $wpdb->delete( 'trade_product_info', [ 'id' => $_GET['del'] ] );
         }
-        wp_redirect($link.$pages);
+        die('<meta http-equiv="refresh" content="0;URL=\''.$link.$pages.'\'" /> ');
     }
 
     //actoin  insert update
@@ -31,7 +31,7 @@ global  $wpdb;
         if($_POST['id']==0){
             $wpdb->insert('trade_product_info', $data, ['%s', '%s', '%s', '%s', '%s', '%s', '%s']);
         } else {
-
+            $wpdb->update('trade_product_info', $data, ['ID'=> $_POST['id']], ['%s', '%s', '%s', '%s', '%s', '%s', '%s'], ['%d']);
         }
 
     }
@@ -73,7 +73,16 @@ global  $wpdb;
 ?>
 <div class="wrap">
     <h1 class="wp-heading-inline mb-lg-3">Бараа таталт
-        <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#tataltModal" data-id="0">Нэмэх</button>
+        <button type="button"
+                class="btn btn-success btn-sm"
+                data-toggle="modal"
+                data-target="#tataltModal"
+                data-id="0"
+                data-product=""
+                data-date=""
+                data-cost=""
+                data-quantity=""
+        >Нэмэх</button>
     </h1>
 
 
@@ -93,11 +102,19 @@ global  $wpdb;
             <tr>
                 <td><?php echo $row->date; ?></td>
                 <td><?php echo $row->name; ?></td>
-                <td><?php echo number_format($row->cost,2); ?> төг</td>
+                <td><?php echo number_format($row->cost,2, '.', ''); ?> төг</td>
                 <td><?php echo $row->quantity; ?></td>
-                <td><?php echo number_format($row->amount,2); ?> төг</td>
+                <td><?php echo number_format($row->amount,2, '.', ''); ?> төг</td>
                 <td>
-                    <a  class="btn btn-sm btn-secondary text-white"><i class="fa fa-pencil"></i></a>
+                    <a  class="btn btn-sm btn-secondary text-white"
+                        data-toggle="modal"
+                        data-target="#tataltModal"
+                        data-id="<?=$row->id;?>"
+                        data-product="<?=$row->product_id;?>"
+                        data-date="<?=date('Y-m-d H:i', strtotime($row->date));?>"
+                        data-cost="<?php echo number_format($row->cost,2, '.', ''); ?>"
+                        data-quantity="<?=$row->quantity;?>"
+                    ><i class="fa fa-pencil"></i></a>
                     <a class="btn btn-sm btn-secondary text-white"
                        href="<?php echo $link.$pages.'&del='.$row->id; ?>"
                        onclick="return confirm('Та устгахдаа итгэлтэй байна уу!')">
@@ -149,7 +166,7 @@ global  $wpdb;
                    <input type="hidden" id="id" name="id" value="0">
                    <div class="form-group">
                        <label for="date">Огноо</label>
-                       <input type="datetime-local" id="date" name="date" class="form-control" required >
+                       <input type="text" id="date" name="date" class="form-control" required >
                    </div>
                    <div class="form-group">
                        <label for="product">Бараа</label>
@@ -162,11 +179,11 @@ global  $wpdb;
                    </div>
                    <div class="form-group">
                        <label for="quantity">Тоо ширхэг</label>
-                       <input type="number" class="form-control"  name="quantity" id="quantity" required>
+                       <input type="number" class="form-control" min="0" name="quantity" id="quantity" required>
                    </div>
                    <div class="form-group">
                        <label for="cost">Нэгжийн үнэ (Байнга худалдан авдаг үнэ)</label>
-                       <input type="number" class="form-control" name="cost" id="cost" step="0.01" required  >
+                       <input type="number" class="form-control" min="0" name="cost" id="cost" step="0.01" required  >
                    </div>
                 </div>
                 <div class="modal-footer">
@@ -181,8 +198,13 @@ global  $wpdb;
     $(document).ready(function () {
         $('#tataltModal').on('show.bs.modal', function (event) {
             var button  = $(event.relatedTarget)
-            var id      = button.data('id')
+            var id = button.data('id')
+            var product = button.data('product')
+            var date = button.data('date')
+            var cost = button.data('cost')
+            var quantity = button.data('quantity')
             var modal   = $(this)
+
             if (id == 0) {
                 modal.find('.modal-header').html('Бараа таталт нэмэх')
                 modal.find('.modal-footer button.btn-primary').text('нэмэх')
@@ -192,8 +214,14 @@ global  $wpdb;
             }
             $('.select-img-form').removeClass('selected');
 
-            // modal.find(".modal-body #select2-product-container").text($('option:selected', '#product').text())
             modal.find('.modal-body #id').val(id)
+
+            modal.find('.modal-body #product').val(product)
+            modal.find('.modal-body input#date').val(date)
+            console.log(date);
+            modal.find('.modal-body #cost').val(cost)
+            modal.find('.modal-body #quantity').val(quantity)
+            modal.find(".modal-body #select2-product-container").text($('option:selected', '#product').text())
         })
     });
 </script>

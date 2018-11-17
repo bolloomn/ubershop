@@ -1,65 +1,42 @@
-<?php 
-get_header();
+<?php
+/**
+ * The template for displaying archive pages.
+ *
+ * @link https://codex.wordpress.org/Template_Hierarchy
+ *
+ * @package Solosshopy
+ */
 
-	// get posts column number
-	$posts_col_no = pukka_get_option('posts_col_no') != '' ? (int)pukka_get_option('posts_col_no') : 1;
+if ( have_posts() ) : ?>
 
-	$posts_col_no = apply_filters('pukka_category_column_no', $posts_col_no);
+	<header class="page-header">
+		<?php
+			the_archive_title( '<h1 class="page-title screen-reader-text">', '</h1>' );
+			the_archive_description( '<div class="taxonomy-description">', '</div>' );
+		?>
+	</header><!-- .page-header -->
 
-	$grid_enabled = $posts_col_no > 1 ? true : false;
-
-	// check if we have posts
-	if( have_posts() ) : ?>
-
-		<header class="archive-header clearfix">
-			<h1 class="archive-title">
-					<?php
-						if( is_day() ) :
-							printf( __('Daily Archives: %s', 'pukka'), get_the_date() );
-
-						elseif( is_month() ) :
-							printf( __( 'Monthly Archives: %s', 'pukka' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'pukka' ) ) );
-
-						elseif( is_year() ) :
-							printf( __( 'Yearly Archives: %s', 'pukka' ), get_the_date( _x( 'Y', 'yearly archives date format', 'pukka' ) ) );
-
-						else :
-							_e('Archives', 'pukka');
-
-						endif;
-					?>
-				</h1>
-		</header><!-- .archive-header -->
+	<div <?php solosshopy_posts_list_class(); ?>>
 
 	<?php
-		// open grid wrapper if grid is enabled
-		if( $grid_enabled ) : ?>
-			<div class="brick-wrap column-<?php echo $posts_col_no; ?>">
-		<?php
-		endif;
+	/* Start the Loop */
+	while ( have_posts() ) : the_post();
 
-		/* Start the Loop */ 
-		while ( have_posts() ) : the_post();
+		/*
+		 * Include the Post-Format-specific template for the content.
+		 * If you want to override this in a child theme, then include a file
+		 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+		 */
+		solosshopy_get_template_part( 'template-parts/post/content', get_post_format() );
 
-			if($grid_enabled){
-				get_template_part( 'content-grid', get_post_format() );
-			}
-			else{
-				get_template_part( 'content', get_post_format() );
-			}
+	endwhile; ?>
 
-		endwhile;
+	</div><!-- .posts-list -->
 
-		// close grid wrapper if grid is enabled
-		if( $grid_enabled ) : ?>
-			</div><!-- .brick-wrap -->
-		<?php endif;
+	<?php solosshopy_get_template_part( 'template-parts/content', 'pagination' );
 
-		// page navigation
-		pukka_paging_nav();
+else :
 
-	else : 
-		get_template_part( 'content', 'none' );
-	endif; // if ( have_posts() )
+	solosshopy_get_template_part( 'template-parts/content', 'none' );
 
-get_footer();
+endif; ?>

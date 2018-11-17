@@ -172,7 +172,7 @@ CREATE TABLE `trade_nextend2_image_storage` (
   `hash` varchar(32) NOT NULL,
   `image` text NOT NULL,
   `value` mediumtext NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -188,7 +188,7 @@ CREATE TABLE `trade_nextend2_section_storage` (
   `value` mediumtext NOT NULL,
   `system` int(11) NOT NULL DEFAULT '0',
   `editable` int(11) NOT NULL DEFAULT '1'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -201,7 +201,7 @@ CREATE TABLE `trade_nextend2_smartslider3_generators` (
   `group` varchar(254) NOT NULL,
   `type` varchar(254) NOT NULL,
   `params` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -218,7 +218,7 @@ CREATE TABLE `trade_nextend2_smartslider3_sliders` (
   `time` datetime NOT NULL,
   `thumbnail` varchar(255) NOT NULL,
   `ordering` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -230,7 +230,7 @@ CREATE TABLE `trade_nextend2_smartslider3_sliders_xref` (
   `group_id` int(11) NOT NULL,
   `slider_id` int(11) NOT NULL,
   `ordering` int(11) NOT NULL DEFAULT '0'
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -252,7 +252,7 @@ CREATE TABLE `trade_nextend2_smartslider3_slides` (
   `params` text NOT NULL,
   `ordering` int(11) NOT NULL,
   `generator_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -9363,7 +9363,7 @@ CREATE TABLE `trade_wsluserscontacts` (
   `email` varchar(255) NOT NULL,
   `profile_url` varchar(255) NOT NULL,
   `photo_url` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -9398,7 +9398,7 @@ CREATE TABLE `trade_wslusersprofiles` (
   `region` varchar(50) NOT NULL,
   `city` varchar(50) NOT NULL,
   `zip` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 --
 -- Indexes for dumped tables

@@ -335,9 +335,7 @@ if ( ! class_exists( 'Cherry_Data_Importer' ) ) {
 		 * @return void
 		 */
 		public function get_template( $template ) {
-
 			$file = locate_template( 'cherry-data-importer/' . $template );
-
 			if ( ! $file ) {
 				$file = $this->path( 'templates/' . $template );
 			}

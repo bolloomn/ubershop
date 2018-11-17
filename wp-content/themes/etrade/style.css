@@ -3416,7 +3416,6 @@ textarea.big-size {
         grid-template-columns: repeat(3, 1fr);
   }
   .comment-form > * {
-    -ms-grid-column: span 3;
         grid-column: span 3;
   }
 }

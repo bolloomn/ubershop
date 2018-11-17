@@ -41,5 +41,5 @@
             ?>
 		</div><!-- .header-container -->
 	</header><!-- #masthead -->
-
+    <?php echo do_shortcode('[smartslider3 slider=3]'); ?>
 	<div id="content" <?php solosshopy_content_class(); ?>>

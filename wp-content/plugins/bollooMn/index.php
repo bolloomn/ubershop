@@ -99,53 +99,38 @@ function baraa_footer(){
 }
 
 
-function last_average_price($item, $date){
+function unit_price($id, $date){
+    global $wpdb;
+    $where="";
     if(!is_null($date)):
-        $where=[" and item2_order.date<'".$date."' " ];
-    else:
-        $where=["", "", ""];
+        $where=" AND date<'".$date."'";
     endif;
-    return $this->db
-        ->query("
-                    select if(sum(amount)/sum(size) is null, 0, round(sum(amount)/sum(size),6)) as price
-                    from
-                    (
-                    select 
-                    if(sum(item2_order_detail.quantity*item2_order_detail.factor) is null, 0, sum(item2_order_detail.quantity*item2_order_detail.factor)) as size,
-                    if(sum(item2_order_detail.price*item2_order_detail.quantity) is null, 0, sum(item2_order_detail.price*item2_order_detail.quantity)) as amount
-                    FROM item2_order
-                    INNER JOIN item2_order_detail 
-                    ON item2_order.id=item2_order_detail.item_order_id
-                    AND item2_order.is_deleted=0
-                    INNER JOIN item2
-                    ON item2.id=item2_order_detail.item_id 
-                    AND item2_order_detail.unit_minor=item2.minor
-                    and item2.id=".$item."
-                    ".$where[0]."
-                    union all
-                    select 
-                    if(sum(item2_to_products.value*item2_to_products.quantity) is null, 0, sum(item2_to_products.value*item2_to_products.quantity))*(-1) as size, 
-                    if(sum(item2_to_products.quantity*item2_to_products.unit_cost) is null, 0, sum(item2_to_products.quantity*item2_to_products.unit_cost))*(-1) as amount
-                    from
-                    item2_to_products
-                    INNER JOIN item2
-                    ON item2.id=item2_to_products.item_id 
-                    AND item2_to_products.minor_id=item2.minor
-                    and item2.id=".$item."
-                    ".$where[1]."
-                    union all 
-                    select 
-                    if(sum(item2_outgo.value) is null, 0, sum(item2_outgo.value))*(-1) as size,
-                    if(sum(item2_outgo.amount) is null, 0, sum(item2_outgo.amount))*(-1) as amount
-                    from item2_outgo 
-                    inner join item2
-                    on item2.id=item2_outgo.item_id 
-                    and item2.minor=item2_outgo.minor_id
-                    and item2_outgo.outgo_type!=1
-                    and item2.id=".$item."
-                    ".$where[2]."
-                    ) item
-                    ")->row()->price;
+    return  $wpdb->get_var(
+        "SELECT ifnull(round(sum(quantity*cost)/sum(quantity),4), 0) as price
+                FROM trade_product_info
+                where product_id=".$id.$where
+    );
 }
+
+function update_prices($id, $date){
+    global $wpdb;
+    $query= "SELECT *
+             FROM trade_product_info
+             where product_id=".$id."
+             AND date>='".$date."'
+             AND type!=1
+             order by info.date asc
+            ";
+    $rows = $wpdb->get_results($query);
+
+    if($rows){
+        foreach ($rows as $row){
+            $data=[];
+            $amount=unit_price($id, $row->date)*$row->quantity;
+        }
+    }
+
+}
+
 //remove_role( 'contributor' );
 ?>

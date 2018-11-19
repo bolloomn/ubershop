@@ -8,14 +8,12 @@
  *
  * @package Solosshopy
  */
-
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 <?php wp_head(); ?>
 </head>
 
@@ -25,7 +23,6 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'solosshopy' ); ?></a>
 	<header id="masthead" <?php solosshopy_header_class(); ?> role="banner">
         <?php
-
             $header_layout_type = get_theme_mod( 'header_layout_type', solosshopy_theme()->customizer->get_default( 'header_layout_type' ) );
 
             solosshopy_ads_header();

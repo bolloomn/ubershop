@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UberShop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 09:21+0000\n"
-"PO-Revision-Date: 2018-11-20 09:28+0000\n"
+"PO-Revision-Date: 2018-11-20 09:55+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Mongolian\n"
 "Language: mn\n"
@@ -36,7 +36,7 @@ msgstr "&larr;  Хуучин сэтгэгдэл"
 
 #: functions.php:847
 msgid "(This page is a placeholder for front page)"
-msgstr ""
+msgstr "(Энэ хуудас нь нүүр хуудасны байршил юм)"
 
 #: functions.php:675 functions.php:682
 msgid ", "
@@ -44,7 +44,7 @@ msgstr ""
 
 #: pukka/widgets/latest-posts-widget/latest_posts_widget.php:106
 msgid "1 Comment"
-msgstr ""
+msgstr "1 Сэтгэгдэл"
 
 #: functions.php:607
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
@@ -54,7 +54,7 @@ msgstr "<span class=\"meta-nav\">&larr;</span> Хуучин нийтлэл"
 #, php-format
 msgid "<span class=\"txt-dk\">%d</span> item"
 msgid_plural "<span class=\"txt-dk\">%d</span> items"
-msgstr[0] ""
+msgstr[0] "<span class=\"txt-dk\">%d</span> item"
 msgstr[1] ""
 
 #: pukka/widgets/ad-widget/ad_widget.php:185
@@ -210,11 +210,11 @@ msgstr ""
 
 #: pukka/include/edit_custom_walker.php:226
 msgid "Cancel"
-msgstr ""
+msgstr "Цуцлах"
 
 #: functions.php:1064
 msgid "Cancel Reply"
-msgstr ""
+msgstr "Хариултыг цуцлах"
 
 #: woocommerce/woocommerce_configuration.php:188
 msgid "Cart total: "
@@ -296,7 +296,7 @@ msgstr[1] ""
 #: pukka/widgets/banner-widget/banner_widget.php:271
 #: pukka/widgets/cta-widget/cta_widget.php:249
 msgid "Content"
-msgstr ""
+msgstr "Контент"
 
 #: pukka/widgets/banner-widget/banner_widget.php:276
 #: pukka/widgets/cta-widget/cta_widget.php:254
@@ -917,7 +917,7 @@ msgstr ""
 
 #: functions.php:944
 msgid "My Account"
-msgstr ""
+msgstr "Миний бүртгэл"
 
 #: functions.php:1100
 msgid "Name"

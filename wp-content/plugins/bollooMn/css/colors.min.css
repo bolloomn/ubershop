@@ -413,3 +413,7 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:a
 #wp-content-editor-tools {
     background: none;
 }
+
+.table td {
+    vertical-align: middle !important;
+}

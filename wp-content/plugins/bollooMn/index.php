@@ -33,7 +33,7 @@ add_action('login_enqueue_scripts', 'my_admin_theme_style');
 function register_menu_page() {
     add_menu_page('Бараа', 'Бараа таталт', 'add_users', 'product_tatalt', '_product_tatalt', plugin_dir_url( __FILE__ ).'images/baraa.png', 3);
     add_menu_page('Бараа', 'Барааны үлдэгдэл', 'add_users', 'product_uldegdel', '_product_uldegdel', plugin_dir_url( __FILE__ ).'images/uldegdel.png', 4);
-    add_menu_page('Бараа', 'Барааны тайлан', 'add_users', 'product_report', '_product_report', plugin_dir_url( __FILE__ ).'images/report.png', 4);
+    add_menu_page('Бараа', 'Борлуулалтын тайлан', 'add_users', 'product_report', '_product_report', plugin_dir_url( __FILE__ ).'images/report.png', 4);
 }
 add_action('admin_menu', 'register_menu_page');
 
@@ -45,7 +45,11 @@ function _product_tatalt(){
 
 function _product_uldegdel(){
     baraa_header();
-    include 'include/uldegdel.php';
+    if(isset($_GET['pid'])) {
+        include "include/uldegdel_history.php";
+    } else {
+        include 'include/uldegdel.php';
+    }
     baraa_footer();
 }
 
@@ -87,13 +91,13 @@ function baraa_footer(){
     <script src="<?php echo plugin_dir_url( __FILE__ );?>js/jquery.mousewheel.js"></script>
     <script src="<?php echo plugin_dir_url( __FILE__ );?>js/jquery.datetimepicker.js"></script>
     <script type="text/javascript">
-        $('#date').datetimepicker({
+        $('.date').datetimepicker({
             // formatTime:'H:i',
             format:'Y-m-d H:i',
             lang:'mn',
             mask:'9999-19-39 29:59',
             minDate: '<?php echo date('Y-m-d 00:00', time()-60*60*24*30);?>',
-            value: new Date(),
+            // value: new Date(),
         });
     </script>
 <?php
@@ -111,6 +115,14 @@ function unit_price($id, $date){
                 FROM trade_product_info
                 where product_id=".$id.$where
     );
+}
+
+function itemtype($type){
+    if($type==0){ return "хорогдсон"; }
+    if($type==1){ return "татан авалт"; }
+    if($type==2){ return "зарлагдсан"; }
+    if($type==3){ return "буцаах бичилт"; }
+    return;
 }
 
 function update_prices($id, $date){

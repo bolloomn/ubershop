@@ -45,7 +45,7 @@
 					
  .author-links a:hover {
 					
- 	color: #0871A3;
+ 	color: #232f3e;
 					
  }
 					
@@ -125,7 +125,7 @@
 					
  .tagcloud a:hover {    
 					
- 	background-color: #0871A3;
+ 	background-color: #232f3e;
 					
 	color: #ffffff;
 					
@@ -135,7 +135,7 @@
 					
  a.button.checkout {
 					
- 	background-color: #0871A3 !important;
+ 	background-color: #232f3e !important;
 					
 	color: #ffffff;
 					
@@ -153,7 +153,7 @@
 					
  .sticky {
 					
- 	border-color: #0871A3;
+ 	border-color: #232f3e;
 					
  }
 					
@@ -161,7 +161,7 @@
 					
  blockquote, q {
 					
- 	border-left-color: #0871A3;
+ 	border-left-color: #232f3e;
 					
  }
 					
@@ -169,7 +169,7 @@
 					
  #shop-toggle {    
 					
- 	border-top-color: #0871A3;
+ 	border-top-color: #232f3e;
 					
  }
  
@@ -184,7 +184,7 @@
 					
  .txt-lt {
 					
- 	color: #76AFCC;
+ 	color: #2a3849;
 					
  }
 					
@@ -232,7 +232,7 @@
 					
  .tabs-title li.current h4 {
 					
- 	background-color: #76AFCC;
+ 	background-color: #2a3849;
 					
 	color: #ffffff;
 					
@@ -242,7 +242,7 @@
 					
  a.button.wc-forward {
 					
- 	background-color: #76AFCC !important;
+ 	background-color: #2a3849 !important;
 					
 	color: #ffffff;
 					
@@ -260,7 +260,7 @@
 					
  	.masonry .product-block:hover .price 	{
 					
- 		background-color: #76AFCC;
+ 		background-color: #2a3849;
 					
 		color: #ffffff;
 					
@@ -294,7 +294,7 @@
  /* Theme Fonts */
 
 .entry-title {
- font-size: 36px;
+ font-size: 30px;
  font-weight: 300;
  color: #666666;
 }

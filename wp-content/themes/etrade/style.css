@@ -128,7 +128,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     height: 100%;
-    letter-spacing: 0.5px;
+    /*letter-spacing: 0.5px;*/
     line-height: 1.5;
     overflow-x: hidden;
     overflow-y: auto;
@@ -144,7 +144,7 @@ body.mobile {
 h1, h2, h3, h4, h5, h6,
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
 }
 
@@ -250,7 +250,7 @@ input[type="submit"],
     background-color: #0871A3;
     cursor: pointer;
     border: none;
-    font-family: 'Oswald';
+    font-family: 'Roboto Condensed';
     font-weight: 100;
     font-size: 14px;
 
@@ -268,7 +268,7 @@ a.button:hover{
     background-color: #0871A3;
     cursor: pointer;
     border: none;
-    font-family: 'Oswald';
+    font-family: 'Roboto Condensed';
     font-weight: 100;
     font-size: 14px;
 
@@ -476,10 +476,16 @@ ul.products:after{
 #menu-top.full {
     width: 100%;
     position: relative;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
+    background: #232f3e !important;
 }
-
+#shop-menu {
+    background: #232f3e !important;
+}
+#menu-top.full a, #shop-menu a, #menu-top.full.basic, #shop-menu.basic {
+    color: #CCC !important;
+}
 #menu-top.responsive {
     background: rgba(51, 51, 51, 0.8) !important;
 
@@ -613,6 +619,8 @@ ul.products:after{
 .full #menu-primary #main-menu li {
     float: left;
     margin: 0 15px 15px;
+    /*margin: 0;*/
+
 }
 
 .full #menu-primary #main-menu  li.menu-item-has-children,
@@ -922,8 +930,8 @@ ul.products:after{
 
 .full #menu-secondary {
     background-color: #76AFCC;
-    min-height: 48px;
-    line-height: 48px;
+    min-height: 36px;
+    line-height: 36px;
     vertical-align: middle;
 }
 
@@ -1610,7 +1618,7 @@ a.button.checkout {
 /* =Featured post
 ----------------------------------------------- */
 .pukka-featured-post-widget .read-more{
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
@@ -1659,7 +1667,7 @@ a.button.checkout {
 .pukka-latest-posts-widget .latest-date {
     display: block;
     float: left;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     text-align: center;
     line-height: 1.2;
@@ -3471,7 +3479,7 @@ TODO: ancient code?
     min-height: 48px;
     vertical-align: middle;
     font-size: 18px;
-    font-family: Oswald;
+    font-family: Roboto Condensed;
     font-weight: lighter;
     text-transform: uppercase;
 
@@ -4051,7 +4059,7 @@ li.product .social-share-buttons {
 
 .archive-header h1,
 .woocommerce-breadcrumb {
-    font-family: 'Oswald';
+    font-family: 'Roboto Condensed';
     font-weight: lighter;
     text-transform: uppercase;
     font-size: 14px;
@@ -5194,7 +5202,7 @@ table.shop_table_wrap dd {
 .product-categories li,
 .widget_archive li,
 .widget_recent_entries li{
-    font-family: 'Oswald';
+    font-family: 'Roboto Condensed';
 }
 
 
@@ -5310,7 +5318,7 @@ table.shop_table_wrap dd {
 ----------------------------------------------- */
 .offer-wrap{
     padding: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: 300;
     margin: 0 auto 20px;
     text-align: center;
@@ -5442,8 +5450,8 @@ table.shop_table_wrap dd {
 
 
  .headings {
-    font-family: "Oswald";
-    font-weight: lighter;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
     line-height: 1.2;
  }
 
@@ -5485,7 +5493,7 @@ a.active:visited {
     background-color: #0871A3;
     color: #ffffff;
 
-    font-family: 'Oswald';
+    font-family: 'Roboto Condensed';
     text-transform: uppercase;
  }
 
@@ -6166,7 +6174,7 @@ a.buttons-lt:visited,
     width: 280px;
     max-width: 100%;
 
-    font-family: "Oswald";
+    font-family: 'Roboto Condensed', sans-serif;
     font-weight: lighter;
     line-height: 1.2;
     text-transform: uppercase;

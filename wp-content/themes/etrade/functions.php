@@ -226,7 +226,7 @@ function pukka_scripts(){
 
 	// Fonts
 	wp_enqueue_style('google-roboto-font', '//fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,latin-ext,cyrillic');
-	wp_enqueue_style('google=oswald-font', '//fonts.googleapis.com/css?family=Oswald:400,300,700&subset=latin,latin-ext,cyrillic');
+	wp_enqueue_style('google=oswald-font', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext');
 
 	// Needed for shop/blog 'grid'
 	wp_enqueue_script('jquery-masonry');

@@ -756,7 +756,7 @@ ul.products:after{
 }
 
 #menu-top.sticky.scrolled #menu-primary .menu-dropdown {
-    top: 70px !important;
+    top: 55px !important;
 }
 /* END: Sticky Menu */
 
@@ -796,9 +796,9 @@ ul.products:after{
 .full #menu-primary .menu-dropdown {
     background-color: #FFFFFF;
     border-style: solid;
-    border-width: 1px;
+    /*border-width: 1px;*/
     display: none;
-    margin-top: 10px;
+    margin-top: -2px;
     padding: 20px 30px 35px;
     position: absolute;
     z-index: 1000;
@@ -853,9 +853,13 @@ ul.products:after{
 
 .full #menu-primary #main-menu .menu-dropdown > ul li {
     background-image: none;
-    float: left;
+    float: none;
     margin: 15px 10px 0 0;
     line-height: 1.2;
+}
+
+.full #menu-primary #main-menu .menu-dropdown > ul li a {
+    color:#232323 !important;
 }
 
 .full #menu-primary .menu-column-links {
@@ -1900,7 +1904,7 @@ a.button.checkout {
  */
 
 #main {
-    margin: 30px 10px 10px;
+    margin: 15px 10px 10px;
     min-height: 800px;
 }
 
@@ -6252,3 +6256,11 @@ a.buttons-lt:visited,
     background-color: transparent;
 }
 /* END: Global */
+
+.tp-leftarrow.tparrows.hesperiden {
+  left: 15px !important;
+}
+.tp-rightarrow.tparrows.hesperiden {
+  right: 15px !important;
+    left: auto !important;
+}

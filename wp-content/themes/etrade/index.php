@@ -1,50 +1,41 @@
-<?php
-/**
- * The main template file.
- *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Solosshopy
- */
+<?php 
+get_header();
 
-if ( have_posts() ) :
+	// get posts column number
+	$posts_col_no = pukka_get_option('posts_col_no') != '' ? (int)pukka_get_option('posts_col_no') : 1;
+	$grid_enabled = $posts_col_no > 1 ? true : false;
 
-	if ( is_home() && ! is_front_page() ) : ?>
-		<header>
-			<?php printf( apply_filters( 'solosshopy_single_post_title_html', '<h1 class="page-title screen-reader-text">%s</h1>' ), single_post_title( null, false ) ); ?>
-		</header>
+	// check if we have posts
+	if( have_posts() ) :
 
-	<?php
-	endif; ?>
+		// open grid wrapper if grid is enabled
+		if( $grid_enabled ) : ?>
+			<div class="brick-wrap column-<?php echo $posts_col_no; ?>">
+		<?php
+		endif;
 
-	<div <?php solosshopy_posts_list_class(); ?>>
+		/* Start the Loop */ 
+		while ( have_posts() ) : the_post();
 
-	<?php solosshopy_ads_home_before_loop() ?>
+			if($grid_enabled){
+				get_template_part( 'content-grid', get_post_format() );
+			}
+			else{
+				get_template_part( 'content', get_post_format() );
+			}
 
-	<?php
-	/* Start the Loop */
-	while ( have_posts() ) : the_post();
+		endwhile;
 
-		/*
-		 * Include the Post-Format-specific template for the content.
-		 * If you want to override this in a child theme, then include a file
-		 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-		 */
-		solosshopy_get_template_part( 'template-parts/post/content', get_post_format() );
+		// close grid wrapper if grid is enabled
+		if( $grid_enabled ) : ?>
+			</div><!-- .brick-wrap -->
+		<?php endif;
 
-	endwhile; ?>
+		// page navigation
+		pukka_paging_nav();
 
-	</div><!-- .posts-list -->
+	else :
+		get_template_part( 'content', 'none' );
+	endif; // if ( have_posts() )
 
-	<?php solosshopy_get_template_part( 'template-parts/content', 'pagination' );
-
-else :
-
-	solosshopy_get_template_part( 'template-parts/content', 'none' );
-
-endif; ?>
+get_footer();

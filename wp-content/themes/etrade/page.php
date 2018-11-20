@@ -1,24 +1,48 @@
-<?php
-/**
- * The template for displaying all pages.
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package Solosshopy
- */
+<?php get_header(); ?>
 
-while ( have_posts() ) : the_post();
+			<?php if ( have_posts() ) : ?>
 
-	solosshopy_get_template_part( 'template-parts/page/content', 'page' );
 
-	// If comments are open or we have at least one comment, load up the comment template.
-	if ( comments_open() || get_comments_number() ) :
-		comments_template();
-	endif;
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-endwhile; // End of the loop.
+				<?php
+					// show breadcrumb
+					if( function_exists('woocommerce_breadcrumb')
+						&& "on" != get_post_meta($post->ID, PUKKA_POSTMETA_PREFIX . 'hide_page_title', true)
+					){
+						woocommerce_breadcrumb();
+					}
+
+				?>
+
+					<div id="content" class="clearfix">
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+						<?php if( has_post_thumbnail() ) : ?>
+							<div class="featured">
+							<?php the_post_thumbnail('thumb-single'); ?>
+							</div> <!-- .featured -->
+						<?php endif; ?>
+
+						<div class="content-wrap">
+							<?php if("on" != get_post_meta($post->ID, PUKKA_POSTMETA_PREFIX . 'hide_page_title', true)) { ?>
+							<h1 class="entry-title"><?php the_title(); ?></h1>
+							<?php } ?>
+							<div class="entry-content">
+								<?php the_content(); ?>
+								<?php wp_link_pages(); ?>
+							</div><!-- .entry-content -->
+
+							<?php pukka_after_content(); ?>
+
+						</div> <!-- .content-wrap -->
+					</article>
+
+					</div><!-- #content -->
+
+				<?php endwhile; ?>
+
+			<?php endif; ?>
+
+<?php get_footer(); ?>

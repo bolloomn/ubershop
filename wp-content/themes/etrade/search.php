@@ -1,39 +1,49 @@
-<?php
-/**
- * The template for displaying search results pages.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package Solosshopy
- */
+<?php 
+get_header();
 
-if ( have_posts() ) : ?>
+	// get posts column number
+	$posts_col_no = pukka_get_option('posts_col_no') != '' ? (int)pukka_get_option('posts_col_no') : 1;
 
-	<header class="page-header">
-		<h1 class="page-title screen-reader-text"><?php printf( esc_html__( 'Search Results for: %s', 'solosshopy' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-	</header><!-- .page-header -->
+	$posts_col_no = apply_filters('pukka_category_column_no', $posts_col_no);
 
-	<div <?php solosshopy_posts_list_class(); ?>>
+	$grid_enabled = $posts_col_no > 1 ? true : false;
+
+	// check if we have posts
+	if( have_posts() ) : ?>
+
+		<header class="archive-header clearfix">
+			<h1><?php printf( __( 'Search Results for: %s', 'pukka' ),  get_search_query() ); ?></h1>
+		</header><!-- .archive-header -->
 
 	<?php
-	/* Start the Loop */
-	while ( have_posts() ) : the_post();
+		// open grid wrapper if grid is enabled
+		if( $grid_enabled ) : ?>
+			<div class="brick-wrap column-<?php echo $posts_col_no; ?>">
+		<?php
+		endif;
 
-		/**
-		 * Run the loop for the search to output the results.
-		 * If you want to overload this in a child theme then include a file
-		 * called content-search.php and that will be used instead.
-		 */
-		solosshopy_get_template_part( 'template-parts/content', 'search' );
+		/* Start the Loop */ 
+		while ( have_posts() ) : the_post();
 
-	endwhile; ?>
+			if($grid_enabled){
+				get_template_part( 'content-grid', get_post_format() );
+			}
+			else{
+				get_template_part( 'content', get_post_format() );
+			}
 
-	</div><!-- .posts-list -->
+		endwhile;
 
-	<?php solosshopy_get_template_part( 'template-parts/content', 'pagination' );
+		// close grid wrapper if grid is enabled
+		if( $grid_enabled ) : ?>
+			</div><!-- .brick-wrap -->
+		<?php endif;
 
-else :
+		// page navigation
+		pukka_paging_nav();
 
-	solosshopy_get_template_part( 'template-parts/content', 'none' );
+	else : 
+		get_template_part( 'content', 'none' );
+	endif; // if ( have_posts() )
 
-endif; ?>
+get_footer();

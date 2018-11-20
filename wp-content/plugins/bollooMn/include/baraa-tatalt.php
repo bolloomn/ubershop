@@ -33,9 +33,9 @@ global  $wpdb;
         } else {
             $wpdb->update('trade_product_info', $data, ['ID'=> $_POST['id']], ['%s', '%s', '%s', '%s', '%s', '%s', '%s'], ['%d']);
         }
+        update_prices($_POST['product_id'],  $_POST['date']);
 
     }
-
 
     //get products
     $query= "SELECT trade_posts.id, trade_posts.post_title
@@ -44,7 +44,6 @@ global  $wpdb;
              and post_status='publish'
              order by  trade_posts.post_title asc
              ";
-
     $products= $wpdb->get_results($query);
 
     /*tatalt*/
@@ -52,7 +51,7 @@ global  $wpdb;
                 "SELECT CEIL(count(0)/".$limit.") 
                        FROM trade_product_info as info 
                        inner join trade_posts 
-                       on trade_posts.id=info.product_id and trade_posts.post_type = 'product'"
+                       on trade_posts.id=info.product_id and trade_posts.post_type = 'product' and trade_posts.post_status='publish' and info.type=1"
             );
 
     $previous=1;
@@ -64,7 +63,7 @@ global  $wpdb;
     $query= "SELECT info.*, trade_posts.post_title as name 
              FROM trade_product_info as info 
              inner join trade_posts 
-             on trade_posts.id=info.product_id and trade_posts.post_type = 'product'
+             on trade_posts.id=info.product_id and trade_posts.post_type = 'product' and trade_posts.post_status='publish' and info.type=1
              order by info.date desc
              limit ".($pages-1).", ".$limit;
 
@@ -86,7 +85,7 @@ global  $wpdb;
     </h1>
 
 
-    <table class="table table-bordered">
+    <table class="table table-hover table-bordered">
         <thead>
             <tr class="bg-secondary text-white">
                 <th width="200">Огноо</th>
@@ -94,7 +93,7 @@ global  $wpdb;
                 <th>Үнэ</th>
                 <th>Тоо</th>
                 <th>Нийт</th>
-                <th width="90"></th>
+                <th width="75"></th>
             </tr>
         </thead>
         <tbody>
@@ -106,6 +105,8 @@ global  $wpdb;
                 <td><?php echo $row->quantity; ?></td>
                 <td><?php echo number_format($row->amount,2, '.', ''); ?> төг</td>
                 <td>
+
+                    <?php  if(time()-60*60*24*30<=strtotime($row->date)){?>
                     <a  class="btn btn-sm btn-secondary text-white"
                         data-toggle="modal"
                         data-target="#tataltModal"
@@ -120,6 +121,7 @@ global  $wpdb;
                        onclick="return confirm('Та устгахдаа итгэлтэй байна уу!')">
                         <i class="fa fa-trash"></i>
                     </a>
+                    <?php } ?>
                 </td>
             </tr>
         <?php endforeach; ?>
@@ -166,7 +168,7 @@ global  $wpdb;
                    <input type="hidden" id="id" name="id" value="0">
                    <div class="form-group">
                        <label for="date">Огноо</label>
-                       <input type="text" id="date" name="date" class="form-control" required >
+                       <input type="text" id="date"  name="date" class=" date form-control" required >
                    </div>
                    <div class="form-group">
                        <label for="product">Бараа</label>

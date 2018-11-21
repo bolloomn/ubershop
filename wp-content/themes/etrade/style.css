@@ -131,10 +131,10 @@ body {
     /*letter-spacing: 0.5px;*/
     line-height: 1.5;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto;v
     width: 100%;
     color: #666666;
-    background-color: #fdeaf0;
+    background-color: #fff;
 }
 
 body.mobile {

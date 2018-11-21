@@ -1498,6 +1498,9 @@ function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
         case 'Share' :
             $translated_text = __( 'Хуваалцах', 'woocommerce' );
             break;
+        case 'Cart' :
+            $translated_text = __( 'Сагс', 'woocommerce' );
+            break;
     }
     return $translated_text;
 }

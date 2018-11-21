@@ -618,7 +618,7 @@ ul.products:after{
 
 .full #menu-primary #main-menu li {
     float: left;
-    margin: 0 10px 15px;
+    margin: 5px 10px;
     /*margin: 0;*/
 
 }
@@ -676,7 +676,7 @@ ul.products:after{
     cursor: pointer;
     height: 100%;
     margin: auto -10px;
-    width: 80px;
+    width: 50px;
     text-align: center;
     position: relative;
     font-size: 29px;
@@ -5450,7 +5450,8 @@ table.shop_table_wrap dd {
  }
 
  .txt-dk {
-    color: #0871A3;
+    color: #FFF !important;
+     font-weight: bold;
  }
 
 

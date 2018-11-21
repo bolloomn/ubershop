@@ -187,7 +187,7 @@ function get_cart_product_list(){
 
 	$out .= '<div class="cart-subtotal">' . __('Cart total: ', 'pukka') . $woocommerce->cart->get_cart_total() . '</div>';
 	$out .= '<div class="cart-buttons">';
-	$out .= '<a class="button view-cart wc-forward" href="' . wc_get_cart_url() . '">' . __('View Cart1', 'woocommerce') . '</a>';
+	$out .= '<a class="button view-cart wc-forward" href="' . wc_get_cart_url() . '">' . __('View Cart', 'woocommerce') . '</a>';
 	$out .= '<a class="button checkout wc-forward" href="' . wc_get_checkout_url() . '">' . __('Checkout', 'woocommerce') . '</a>';
 	$out .= '<script type="text/javascript">jQuery(document).trigger("basket-refresh");</script>';
 	$out .= '</div>';

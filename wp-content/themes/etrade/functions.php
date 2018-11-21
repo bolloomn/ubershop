@@ -1458,32 +1458,32 @@ function pukka_add_contact_methods($profile_fields) {
 add_filter('user_contactmethods', 'pukka_add_contact_methods');
 
 
-//remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
-//add_action('woocommerce_proceed_to_checkout', 'sm_woo_custom_checkout_button_text',20);
-//
-//function sm_woo_custom_checkout_button_text() {
-//    $checkout_url = WC()->cart->get_checkout_url();
-//    ?>
-<!--    <a href="--><?php //echo $checkout_url; ?><!--" class="checkout-button button alt wc-forward">--><?php // _e( 'Check On Out', 'woocommerce' ); ?><!--</a>-->
-<!--    --><?php
-//}
-//
-//
-///*Add to cart*/
-//add_filter( 'woocommerce_product_single_add_to_cart_text', 'sm_woo_custom_cart_button_text' );
-//add_filter( 'woocommerce_product_add_to_cart_text', 'sm_woo_custom_cart_button_text' );
-//
-//function sm_woo_custom_cart_button_text() {
-//    return __( 'Add to basket', 'woocommerce' );
-//}
-//
-///*View Cart*/
-//function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
-//    switch ( $translated_text ) {
-//        case 'View Cart' :
-//            $translated_text = __( 'Check On Out', 'woocommerce' );
-//            break;
-//    }
-//    return $translated_text;
-//}
-//add_filter( 'gettext', 'sm_text_view_cart_strings', 20, 3 );
+remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
+add_action('woocommerce_proceed_to_checkout', 'sm_woo_custom_checkout_button_text',20);
+
+function sm_woo_custom_checkout_button_text() {
+    $checkout_url = WC()->cart->get_checkout_url();
+    ?>
+    <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward"><?php  _e( 'Check On Out', 'woocommerce' ); ?></a>
+    <?php
+}
+
+
+/*Add to cart*/
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'sm_woo_custom_cart_button_text' );
+add_filter( 'woocommerce_product_add_to_cart_text', 'sm_woo_custom_cart_button_text' );
+
+function sm_woo_custom_cart_button_text() {
+    return __( 'Add to basket', 'woocommerce' );
+}
+
+/*View Cart*/
+function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
+    switch ( $translated_text ) {
+        case 'View Cart' :
+            $translated_text = __( 'Check On Out', 'woocommerce' );
+            break;
+    }
+    return $translated_text;
+}
+add_filter( 'gettext', 'sm_text_view_cart_strings', 20, 3 );

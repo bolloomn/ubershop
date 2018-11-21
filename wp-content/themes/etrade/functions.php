@@ -1516,6 +1516,15 @@ function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
         case 'Check on out' :
             $translated_text = __( 'Тооцоо хийх', 'woocommerce' );
             break;
+        case 'Categories' :
+            $translated_text = __( 'Ангилалууд', 'woocommerce' );
+            break;
+        case 'Categories' :
+            $translated_text = __( 'Ангилалууд', 'woocommerce' );
+            break;
+        case 'Sale!' :
+            $translated_text = __( 'Хямдрал!', 'woocommerce' );
+            break;
     }
     return $translated_text;
 }

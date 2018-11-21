@@ -1304,9 +1304,6 @@ ul.products:after{
     font-weight: normal;
 }
 
-#sidebar-left ul li li {
-    font-size: 85%;
-}
 
 .popup #sidebar-left .menu-dropdown li {
     font-size: 16px;
@@ -1375,7 +1372,8 @@ ul.products:after{
 
 .widget-title{
     text-transform: uppercase;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .widget h3,
@@ -1464,8 +1462,11 @@ ul.products:after{
 }
 
 .widget.widget_product_categories li {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border:none;
+    text-transform: none;
+    font-weight: normal;
 }
 
 

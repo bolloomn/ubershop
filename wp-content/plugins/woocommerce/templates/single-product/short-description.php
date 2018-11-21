@@ -30,38 +30,36 @@ if ( ! $short_description ) {
 
 $price= get_post_meta($post->ID, '_price', true);
 $discounts=get_post_meta($post->ID, 'phoen_woocommerce_discount_mode', true);
-$table='';
-foreach ($discounts as $discount){
-    $table .='<tr>';
-    if($discount["max_val"]==''){
-        $table .='<td>'.$discount["min_val"].'-c их</td>';
-    } else {
-        $table .='<td>'.$discount["min_val"].'-c '.$discount["max_val"].'</td>';
-    }
 
-    if($discount["type"]=='amount'){
-        $t_price=number_format($price-$discount["discount"], 2, '.', '');
-        $table .='<td>'.$t_price.' ₮</td>';
-    } else {
-        $t_price=number_format($price*(100-$discount["discount"])/100, 2, '.', '');
-        $table .='<td>'.$t_price.' ₮</td>';
-    }
-    $table .='</tr>';
+if(is_array($discounts)){
+    $table='<table class="Ptable">
+            <thead><tr><th>Хэмжээ</th><th>Үнэ</th></tr></thead>
+            <tbody>';
+            foreach ($discounts as $discount){
+                $table .='<tr>';
+                if($discount["max_val"]==''){
+                    $table .='<td>'.$discount["min_val"].'-c их</td>';
+                } else {
+                    $table .='<td>'.$discount["min_val"].'-c '.$discount["max_val"].'</td>';
+                }
+
+                if($discount["type"]=='amount'){
+                    $t_price=number_format($price-$discount["discount"], 2, '.', '');
+                    $table .='<td>'.$t_price.' ₮</td>';
+                } else {
+                    $t_price=number_format($price*(100-$discount["discount"])/100, 2, '.', '');
+                    $table .='<td>'.$t_price.' ₮</td>';
+                }
+                $table .='</tr>';
+            }
+    $table .='</tbody></table>';
 }
 
 ?>
 <div class="woocommerce-product-details__short-description">
 	<?php echo $short_description; ?>
 
-    <table class="Ptable">
-        <thead>
-            <tr>
-                <th>Хэмжээ</th>
-                <th>Үнэ</th>
-            </tr>
-        </thead>
-        <tbody>
-            <?php echo $table; ?>
-        </tbody>
-    </table>
+
+    <?php echo $table; ?>
+
 </div>

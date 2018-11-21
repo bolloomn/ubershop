@@ -131,10 +131,10 @@ body {
     /*letter-spacing: 0.5px;*/
     line-height: 1.5;
     overflow-x: hidden;
-    overflow-y: auto;v
+    overflow-y: auto;
     width: 100%;
     color: #666666;
-    background-color: #fff;
+    background-color: #f5f1ea;
 }
 
 body.mobile {
@@ -1992,6 +1992,7 @@ a.button.checkout {
 
 .products li {
     list-style: none outside none;
+    background: #f7f7f7;
 }
 
 .brick-wrap {
@@ -3825,7 +3826,7 @@ ul.products{
 .onsale {
     display: block;
     font-family: oswald;
-    font-size: 18px;
+    font-size: 14px;
     height: 30px;
     line-height: 30px;
     position: absolute;
@@ -3842,7 +3843,7 @@ ul.products{
 }
 
 .onsale.no-stock {
-    background-color: #C8C8C8;
+    background-color: #e65c5c;
     font-size: 12px;
 }
 
@@ -4154,8 +4155,6 @@ li.product .social-share-buttons {
 }
 
 .woo-single-product {
-    border-width: 1px;
-    border-style: solid;
     padding: 50px;
     position: relative;
 }
@@ -4275,7 +4274,7 @@ li.product .social-share-buttons {
 
 .woo-single-product .quantity .input-text,
 .product-quantity .quantity .input-text {
-    background-color: #76AFCC;
+    background-color: #f6c737;
     color: #ffffff !important; /* .basic fix */
 
     border: medium none;

@@ -7,6 +7,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 
 <?php wp_head(); ?>
+    <link rel="stylesheet" href="<?php echo home_url('wp-content/plugins/bollooMn/css/font-awesome/css/font-awesome.min.css'); ?>" >
 </head>
 
 <body <?php body_class(); ?>>

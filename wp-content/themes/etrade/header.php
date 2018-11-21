@@ -57,24 +57,15 @@ if('top' == pukka_get_option('main_menu_position')) :
 				<div class="secondary-menu-text"><?php echo pukka_get_option('secondary_menu_text'); ?></div>
 				<?php endif; ?>
 				<div class="secondary-container clearfix">
-				<?php 
-					$items_wrap = '<ul class="%2$s">%3$s';
+                    <ul class="menu stripe-menu">
+                        <li class="menu-item">
+                            <a href="#">Нэвтрэх</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Бүртгүүлэх</a>
+                        </li>
+                    </ul>
 
-					$soc_menu_pos = (array)pukka_get_option('social_icons_position');
-					if( in_array('top-menu', $soc_menu_pos) ){
-						$items_wrap .= '<li class="head-social"><div class="social-menu-wrap">' . pukka_social_menu(false) . '</div></li>';
-					}
-					$items_wrap .= '</ul>';
-				
-					wp_nav_menu(array(
-								'theme_location' => 'secondary',
-								'menu_class' => 'menu stripe-menu',
-								'container' => false,
-								'items_wrap' => $items_wrap,
-								'fallback_cb' => 'pukka_page_menu'
-								)
-							);
-				?>
 				</div>
 			</div>
 		</div><!-- #menu-secondary -->

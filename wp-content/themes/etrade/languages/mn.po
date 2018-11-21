@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UberShop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 09:21+0000\n"
-"PO-Revision-Date: 2018-11-21 01:34+0000\n"
+"PO-Revision-Date: 2018-11-21 10:15+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "Language: mn\n"
@@ -1219,7 +1219,7 @@ msgstr ""
 #: woocommerce/loop/sale-flash.php:15
 #: woocommerce/single-product/sale-flash.php:15
 msgid "Sale!"
-msgstr ""
+msgstr "Хямдрал!"
 
 #: pukka/widgets/banner-widget/banner_widget.php:303
 #: pukka/widgets/cta-widget/cta_widget.php:281
@@ -1233,8 +1233,7 @@ msgstr ""
 msgid "Save settings"
 msgstr ""
 
-#: search.php:15
-#: search.php:15
+#: search.php:15 search.php:15
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""

@@ -55,7 +55,7 @@ function pukka_woo_product_class( $classes, $class, $post_id ){
 add_action('woocommerce_before_shop_loop_item', 'pukka_woo_woocommerce_before_shop_loop_item_wrapper_open', 1);
 function pukka_woo_woocommerce_before_shop_loop_item_wrapper_open(){
 	?>
-	<div class="product-content basic">
+	<div class="product-content">
 
 	<?php
 }

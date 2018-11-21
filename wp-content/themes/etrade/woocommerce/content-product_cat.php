@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <li <?php wc_product_cat_class('product-block product-category', $category); ?>>
 
-	<div class="product-content basic">
+	<div class="product-content">
 	<?php do_action( 'woocommerce_before_subcategory', $category ); ?>
 
 	<a href="<?php echo get_term_link( $category->slug, 'product_cat' ); ?>">

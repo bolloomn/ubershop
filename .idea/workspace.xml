@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65d47ecd-7862-4be4-9f55-546a6c1b7dc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +29,7 @@
         <counts>
           <entry key="css" value="10" />
           <entry key="js" value="2" />
-          <entry key="php" value="36" />
+          <entry key="php" value="38" />
           <entry key="scss" value="3" />
         </counts>
       </usages-collector>
@@ -36,7 +37,7 @@
         <counts>
           <entry key="CSS" value="10" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="33" />
+          <entry key="PHP" value="35" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="3" />
         </counts>
@@ -44,14 +45,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="841" />
-          <entry key="php" value="3669" />
+          <entry key="php" value="3670" />
           <entry key="scss" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="841" />
-          <entry key="PHP" value="3621" />
+          <entry key="PHP" value="3622" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="SCSS" value="21" />
           <entry key="SQL" value="29" />
@@ -79,11 +80,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="527">
               <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="659">
+              <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+              <folding>
+                <element signature="e#81#88#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -146,7 +159,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pukka_shop_menu</find>
       <find>.basket</find>
       <find>woocommerce_header_add_to_cart_fragment</find>
       <find>get_cart_product_list</find>
@@ -173,9 +185,10 @@
       <find>woocommerce-breadcrumb&quot;</find>
       <find>pukka-login</find>
       <find>.widget-title</find>
-      <find>secondary-container clearfix</find>
       <find>header</find>
       <find>old-price</find>
+      <find>product-content basic</find>
+      <find>secondary-container clearfix</find>
     </findStrings>
     <replaceStrings>
       <replace>#4267b2</replace>
@@ -204,7 +217,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/single-product-reviews.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/dynamic-price-and-discounts-for-woocommerce/includes/phoeniixx_discount_productplugin.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/dynamic-price-and-discounts-for-woocommerce/phoen_discounts.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-start.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/short-description.php" />
@@ -212,6 +224,8 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" />
       </list>
     </option>
   </component>
@@ -322,12 +336,12 @@
       <workItem from="1542251121097" duration="16281000" />
       <workItem from="1542331260675" duration="1729000" />
       <workItem from="1542335088302" duration="546000" />
-      <workItem from="1542779761734" duration="12240000" />
+      <workItem from="1542779761734" duration="12416000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63690000" />
+    <option name="totallyTimeSpent" value="63866000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -504,16 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2406">
-          <caret line="168" column="76" selection-start-line="168" selection-start-column="76" selection-end-line="168" selection-end-column="76" />
-          <folding>
-            <element signature="e#81#88#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-start.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -592,10 +596,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
           <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding>
+            <element signature="e#81#88#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -618,7 +618,7 @@ ul.products:after{
 
 .full #menu-primary #main-menu li {
     float: left;
-    margin: 0 15px 15px;
+    margin: 0 10px 15px;
     /*margin: 0;*/
 
 }
@@ -4186,7 +4186,7 @@ li.product .social-share-buttons {
 .woo-single-product .price,
 .product-subtotal {
     color: #0871A3;
-    font-size: 32px;
+    /*font-size: 32px;*/
 }
 
 .woo-single-product .price ins {

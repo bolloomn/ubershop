@@ -6265,3 +6265,20 @@ a.buttons-lt:visited,
   right: 15px !important;
     left: auto !important;
 }
+
+.Ptable {
+    border-collapse: collapse;
+    margin-bottom: 15px;
+    width: 50%;
+}
+
+.Ptable th {
+    background: #232f3e;
+    color: #FFF;
+}
+
+.Ptable th,.Ptable  td {
+    text-align: left;
+    border-bottom: 1px solid #cccccc;
+    padding: 5px 10px;
+}

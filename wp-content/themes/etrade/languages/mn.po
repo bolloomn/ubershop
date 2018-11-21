@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UberShop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 09:21+0000\n"
-"PO-Revision-Date: 2018-11-21 01:09+0000\n"
+"PO-Revision-Date: 2018-11-21 01:34+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "Language: mn\n"
@@ -840,6 +840,8 @@ msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out?</a>"
 msgstr ""
+"Нэвтэрсэн хэрэглэгч <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Энэ "
+"бүртгэлийг салгах\">Системээс гарах?</a>"
 
 #: functions.php:944
 msgid "Login"
@@ -1009,7 +1011,7 @@ msgstr ""
 
 #: woocommerce/loop/sale-flash.php:19
 msgid "Out of Stock!"
-msgstr ""
+msgstr "Дууссан!"
 
 #: woocommerce/single-product/sale-flash.php:20
 msgid "Out of Stock! "
@@ -1231,6 +1233,7 @@ msgstr ""
 msgid "Save settings"
 msgstr ""
 
+#: search.php:15
 #: search.php:15
 #, php-format
 msgid "Search Results for: %s"

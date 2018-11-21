@@ -20,7 +20,7 @@ if( !has_post_thumbnail() && !pukka_has_post_media() ){
 			 <?php the_post_thumbnail('thumb-brick'); ?>
 			</a>
 		</div>
-<?php endif; //if( has_post_thumbnai() ) ?>
+<?php endif; //if( has_post_thumbnail() ) ?>
 
 	<div class="brick-meta-wrap">
 	<?php pukka_entry_meta(array('hide_tags'=>true)); ?>

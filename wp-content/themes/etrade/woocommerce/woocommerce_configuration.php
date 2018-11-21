@@ -241,7 +241,7 @@ function pukka_is_really_wc_page () {
 		return true;
 	}
 
-	$woocommerce_keys = array ( 
+	$woocommerce_keys = array (
 		"woocommerce_shop_page_id",
 		"woocommerce_terms_page_id",
 		"woocommerce_cart_page_id",

@@ -939,11 +939,11 @@ function pukka_shop_menu(){
 		$myaccount_page_id = get_option( 'woocommerce_myaccount_page_id' );
 		$myaccount_page_url = $myaccount_page_id != '' ? get_permalink( $myaccount_page_id ) : '';
 		?>
-		<li id="pukka-login">
-			<a href="<?php echo $myaccount_page_url; ?>">
-				<?php echo ( is_user_logged_in() ) ? __('My Account', 'pukka') : __('Login', 'pukka'); ?>
-			</a>
-		</li>
+<!--		<li id="pukka-login">-->
+<!--			<a href="--><?php //echo $myaccount_page_url; ?><!--">-->
+<!--				--><?php //echo ( is_user_logged_in() ) ? __('My Account', 'pukka') : __('Login', 'pukka'); ?>
+<!--			</a>-->
+<!--		</li>-->
 
 		<li class="pukka-cart"><a href="<?php echo get_permalink(wc_get_page_id( 'cart' )); ?>"><?php echo sprintf(_n('<span class="txt-dk">%d</span> item', '<span class="txt-dk">%d</span> items', $woocommerce->cart->cart_contents_count, 'pukka'), $woocommerce->cart->cart_contents_count);?></a></li>
 		<li class="pukka-cart-value txt-dk"><a href="<?php echo get_permalink(wc_get_page_id( 'cart' )); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></a></li>

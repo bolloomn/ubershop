@@ -1,0 +1,1699 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: UberShop\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-11-20 09:21+0000\n"
+"PO-Revision-Date: 2018-11-20 09:38+0000\n"
+"Last-Translator: etrade <bolloomn@gmail.com>\n"
+"Language-Team: Mongolian\n"
+"Language: mn\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-4.9.8"
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:104
+msgid " Comments"
+msgstr "Сэтгэгдэл"
+
+#. %s: title of menu item which is invalid
+#: pukka/include/edit_custom_walker.php:78
+#, php-format
+msgid "%s (Invalid)"
+msgstr "%s (Тохирохгүй)"
+
+#. %s: title of menu item in draft status
+#: pukka/include/edit_custom_walker.php:82
+#, php-format
+msgid "%s (Pending)"
+msgstr "%s (Хүлээж байна)"
+
+#: comments.php:36
+msgid "&larr; Older Comments"
+msgstr "&larr;  Хуучин сэтгэгдэл"
+
+#: functions.php:847
+msgid "(This page is a placeholder for front page)"
+msgstr "(Энэ хуудас нь нүүр хуудасны байршил юм)"
+
+#: functions.php:675 functions.php:682
+msgid ", "
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:106
+msgid "1 Comment"
+msgstr "1 Сэтгэгдэл"
+
+#: functions.php:607
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Хуучин нийтлэл"
+
+#: functions.php:948
+#, php-format
+msgid "<span class=\"txt-dk\">%d</span> item"
+msgid_plural "<span class=\"txt-dk\">%d</span> items"
+msgstr[0] "<span class=\"txt-dk\">%d</span> item"
+msgstr[1] ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:185
+msgid "Ad alignment:"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:171
+msgid "Ad code"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:23
+msgid "Ad widget"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:832
+msgid "Add cyrillic character set"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:245
+msgid "Add Facebook \"Like\" Button to Each Post/Page "
+msgstr ""
+
+#: pukka/util/init-theme-options.php:255
+msgid "Add Google+ Button to Each Post/Page"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:260
+msgid "Add LinkedIn Button to Each Post/Page"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:276
+msgid "Add links to your Social Networks"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:265
+msgid "Add Pinterest Button to Each Post/Page"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:860
+msgid ""
+"Add text that will be displayed in case error occurred during form "
+"submission."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:250
+msgid "Add Tweet Button to Each Post/Page"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:850
+msgid ""
+"Add your email address here. All emails from custom Forms (Page Builder) "
+"will be sent to this address."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:881
+msgid "Add your widget area."
+msgstr ""
+
+#: pukka/widgets/ads-50-widget/ads_50_widget.php:23
+msgid "Ads 8 x 50 widget"
+msgstr ""
+
+#: page-templates/template-portfolio.php:34
+msgid "All"
+msgstr "Бүгд"
+
+#: pukka/framework/php/pukka.theme.class.php:247
+msgid "All setting saved!"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:67
+msgid "Analytics code"
+msgstr ""
+
+#: content-none.php:8
+msgid ""
+"Apologies, but no results were found for the requested archive. Perhaps "
+"searching will help find a related post."
+msgstr ""
+
+#: functions.php:376 functions.php:386
+msgid "Appears in your shop area."
+msgstr ""
+
+#: functions.php:284 functions.php:294 functions.php:304
+msgid "Appears on homepage."
+msgstr ""
+
+#: functions.php:356 functions.php:366
+msgid "Appears on posts and pages in the footer."
+msgstr ""
+
+#: functions.php:315 functions.php:325 functions.php:336 functions.php:346
+msgid "Appears on posts and pages in the sidebar."
+msgstr ""
+
+#: woocommerce/woocommerce_configuration.php:283
+msgid "Apply Coupon"
+msgstr ""
+
+#: archive.php:27
+msgid "Archives"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:339
+msgid "Banner height:"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:176
+msgid "Banner size:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:334
+msgid "Banner top margin:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:23
+msgid "Banner widget"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:314
+#: pukka/widgets/cta-widget/cta_widget.php:292
+msgid "Button color:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:309
+#: pukka/widgets/cta-widget/cta_widget.php:287
+msgid "Button text color:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:319
+#: pukka/widgets/cta-widget/cta_widget.php:297
+msgid "Button text size:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:286
+#: pukka/widgets/cta-widget/cta_widget.php:264
+msgid "Button text:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:324
+#: pukka/widgets/cta-widget/cta_widget.php:302
+msgid "Button top margin:"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.cta.class.php:101
+msgid "Call To Action Button Text"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.cta.class.php:102
+msgid "Call To Action Link"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:226
+msgid "Cancel"
+msgstr "Цуцлах"
+
+#: functions.php:1064
+msgid "Cancel Reply"
+msgstr "Хариултыг цуцлах"
+
+#: woocommerce/woocommerce_configuration.php:188
+msgid "Cart total: "
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:190
+#: pukka/widgets/fa-widget/fa_widget.php:252
+#: pukka/widgets/fa-widget/fa_widget.php:267
+#: pukka/widgets/fa-widget/fa_widget.php:277
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:310
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:325
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:340
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:359
+#: pukka/widgets/image-widget/image_widget.php:177
+msgid "Center"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:78
+msgid ""
+"Check this if you experience problems with using HTML editor in page builder "
+"elements."
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:714
+msgid "Choose an icon"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:84
+msgid "Choose do you want your website to display boxed pages, or full width."
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:326
+msgid "Choose icon"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:179
+msgid ""
+"Choose menu behaviour. Note, this option applies only if \"top\" menu is "
+"selected"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:833
+msgid ""
+"Choose this option to enable cyrillic characters in you google fonts. (Note "
+"that not all google fonts support cyrillic character set)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:447 pukka/util/init-theme-options.php:500
+#: pukka/util/init-theme-options.php:553 pukka/util/init-theme-options.php:606
+#: pukka/util/init-theme-options.php:660 pukka/util/init-theme-options.php:714
+#: pukka/util/init-theme-options.php:767 pukka/util/init-theme-options.php:820
+msgid "Color"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:51
+msgid "Color of the text logo which is displayed if image logo is missing."
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:173
+msgid "Color Scheme"
+msgstr ""
+
+#: comments.php:42
+msgid "Comments are closed."
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:110
+msgid "Comments are off for this post."
+msgstr ""
+
+#: comments.php:15
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:271
+#: pukka/widgets/cta-widget/cta_widget.php:249
+msgid "Content"
+msgstr "Контент"
+
+#: pukka/widgets/banner-widget/banner_widget.php:276
+#: pukka/widgets/cta-widget/cta_widget.php:254
+msgid "Content color:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:909
+msgid "Content importer"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:281
+#: pukka/widgets/cta-widget/cta_widget.php:259
+msgid "Content size:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:291
+#: pukka/widgets/cta-widget/cta_widget.php:269
+msgid "Content top margin:"
+msgstr ""
+
+#: woocommerce/woocommerce_configuration.php:281
+msgid "Coupon"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:157
+msgid "CSS Classes (optional)"
+msgstr ""
+
+#: pukka/widgets/cta-widget/cta_widget.php:23
+msgid "CTA widget"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:390
+msgid "Custom CSS"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:838
+msgid "Custom Fonts"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:353
+msgid "Custom icons"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:395
+msgid "Custom JS"
+msgstr ""
+
+#: functions.php:404
+msgid "Custom widget area"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:880
+msgid "Custom widget areas"
+msgstr ""
+
+#: archive.php:18
+#, php-format
+msgid "Daily Archives: %s"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:83
+msgid "Default page width"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:125
+msgid "Desc. width"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:169
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:135
+msgid "Description"
+msgstr ""
+
+#: woocommerce/woocommerce_configuration.php:116
+msgid "Details"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:77
+msgid "Disable page builder HTML editor"
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:207
+msgid "Display post comments?"
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:202
+msgid "Display post date?"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.divider.class.php:97
+msgid "Divider Height"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:184
+msgid "Don't link"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:194
+msgid "Don't show"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:901 pukka/util/init-theme-options.php:902
+msgid "Don't use margins"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:344
+msgid "Dribbble account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:343
+msgid "Dribbble URL"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:121
+#: pukka/include/edit_custom_walker.php:123
+msgid "Edit Menu Item"
+msgstr ""
+
+#: functions.php:1105 pukka/util/init-theme-options.php:849
+msgid "Email"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:158
+msgid "Email address:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:239
+msgid "Enable Facebook Open Graph Tags"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:109
+msgid "Enable footer menu"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:187
+msgid ""
+"Enable left sidebar display. (Note: if you select \"Left\" for the Menu "
+"position, left sidebar will be shown regardless if this option is selected "
+"or not.)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:158
+msgid "Enable products share"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:203
+msgid "Enable right sidebar display. "
+msgstr ""
+
+#: pukka/util/init-theme-options.php:98
+msgid "Enable secondary menu"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:159
+msgid "Enable social media share buttons for products."
+msgstr ""
+
+#: pukka/pukka_functions.php:260 pukka/pukka_functions.php:278
+#: pukka/ubershop_functions.php:334 pukka/ubershop_functions.php:352
+msgid ""
+"Enter a value for this field. Shortcodes are allowed. This will be displayed "
+"at top of the category."
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.tabs.class.php:118
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.text.class.php:102
+msgid "Enter content here"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:116
+msgid "Enter footer menu text here."
+msgstr ""
+
+#: pukka/util/init-post-meta.php:24
+msgid ""
+"Enter here embed code from any other media service. Width should be set to "
+"615px. <br />(For YouTube put <b>?wmode=transparent</b> after youtube link, "
+"\n"
+"\t\t\t\t\te.g. http://www.youtube.com/watch?v=cZUiMixMMz<b>?"
+"wmode=transparent</b>)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:105
+msgid "Enter secondary menu text here."
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.cta.class.php:99
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.image.class.php:149
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:105
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.tabs.class.php:112
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.text.class.php:100
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.widget.area.class.php:138
+msgid "Enter title here"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:859
+msgid "Error notification"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:234
+msgid "Facebook App ID"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:289
+msgid "Facebook Fan Page URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:244
+msgid "Facebook like button"
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:23
+msgid "Facebook likebox widget."
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:163
+msgid "Facebook Page URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:288
+msgid "Facebook URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:62
+msgid "Favicon"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:15
+msgid "Featured post widget."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:339
+msgid "Flickr account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:338
+msgid "Flickr URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:411 pukka/util/init-theme-options.php:464
+#: pukka/util/init-theme-options.php:517 pukka/util/init-theme-options.php:570
+#: pukka/util/init-theme-options.php:624 pukka/util/init-theme-options.php:678
+#: pukka/util/init-theme-options.php:731 pukka/util/init-theme-options.php:784
+msgid "Font"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:23
+msgid "Font awesome widget."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:440 pukka/util/init-theme-options.php:493
+#: pukka/util/init-theme-options.php:546 pukka/util/init-theme-options.php:599
+#: pukka/util/init-theme-options.php:653 pukka/util/init-theme-options.php:707
+#: pukka/util/init-theme-options.php:760 pukka/util/init-theme-options.php:813
+msgid "Font Effect"
+msgstr ""
+
+#: functions.php:161
+msgid "Footer Menu"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:115
+msgid "Footer menu text"
+msgstr ""
+
+#: functions.php:354
+msgid "Footer Widget Area 1"
+msgstr ""
+
+#: functions.php:364
+msgid "Footer Widget Area 2"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:846
+msgid "Forms"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:37
+msgid "General settings"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:869
+msgid "Google Map API key"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:299
+msgid "Google+ account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:254
+msgid "Google+ button"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:298
+msgid "Google+ URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:513
+msgid "H1 font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:514 pukka/util/init-theme-options.php:675
+msgid "H1 font description (color and size not implemented)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:566
+msgid "H2 font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:567
+msgid "H2 font description (color and size not implemented)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:620
+msgid "H3 font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:621
+msgid "H3 font description (color and size not implemented)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:674
+msgid "H4 font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:727
+msgid "H5 font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:728
+msgid "H5 font description (color and size not implemented)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:780
+msgid "H6 font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:781
+msgid "H6 font description (color and size not implemented)"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:95
+msgid "Header and Footer"
+msgstr ""
+
+#: pukka/util/init-page-meta.php:15
+msgid "Hide page title"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:233
+msgid "Hide testimonial title"
+msgstr ""
+
+#: functions.php:26
+msgid "Home"
+msgstr ""
+
+#: functions.php:282
+msgid "Home Page Widget Area 1"
+msgstr ""
+
+#: functions.php:292
+msgid "Home Page Widget Area 2"
+msgstr ""
+
+#: functions.php:302
+msgid "Home Page Widget Area 3"
+msgstr ""
+
+#. URI of the theme
+msgid "http://demo.pukkathemes.com/ubershop/"
+msgstr ""
+
+#. Author URI of the theme
+msgid "http://pukkathemes.com"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:272
+msgid "Icon alignment:"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:303
+msgid "Icon color:"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:282
+msgid "Icon size:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:240
+msgid ""
+"If you are using some other Social plugin, then you may want to disable this."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:391
+msgid ""
+"If you have some CSS changes enter them here or use the custom .css file"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:396
+msgid ""
+"If you have some JS that you want to add, you can add it here. Do not "
+"surround your code with &lt;script&gt; tags, it will brake the code."
+msgstr ""
+
+#: pukka/widgets/ads-50-widget/ads_50_widget.php:164
+#, php-format
+msgid "Image %d URL:"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:335
+#: pukka/widgets/image-widget/image_widget.php:172
+msgid "Image alignment:"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:345
+msgid "Image size:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:855
+msgid ""
+"Insert text for your \"Thank You\" page here. For example: Thanks for "
+"getting in touch! We'll reach out to you within 24 hours either by phone or "
+"email!."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:46
+msgid ""
+"Insert text which will be displayed if image logo is missing. Default is "
+"Site Title."
+msgstr ""
+
+#: pukka/util/init-post-meta.php:33
+msgid "Insert the URL you wish to link to."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:235
+msgid ""
+"Insert your Facebook App ID. This means you now need to create a Facebook "
+"app to perform integration. <br /><br/ >Don't worry, creating an app is easy,"
+" you don't need to be a developer to create an app here. <br />Visit <a "
+"href=\"https://developers.facebook.com/apps/\">https://developers.facebook."
+"com/apps/</a> and click create new app."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:329
+msgid "Instagram account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:328
+msgid "Instagram URL"
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:23
+msgid "Latest posts widget"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:117
+msgid "Latitude"
+msgstr ""
+
+#: functions.php:1062
+msgid "Leave a Comment"
+msgstr ""
+
+#: functions.php:1063
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:131
+msgid "Leave blank for default"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:188
+#: pukka/widgets/fa-widget/fa_widget.php:250
+#: pukka/widgets/fa-widget/fa_widget.php:265
+#: pukka/widgets/fa-widget/fa_widget.php:275
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:308
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:323
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:338
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:357
+#: pukka/widgets/image-widget/image_widget.php:175
+msgid "Left"
+msgstr ""
+
+#: functions.php:313
+msgid "Left Sidebar Widget Area 1"
+msgstr ""
+
+#: functions.php:323
+msgid "Left Sidebar Widget Area 2"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:191
+msgid "Left sidebar width"
+msgstr ""
+
+#: pukka/util/init-post-meta.php:32
+msgid "Link"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:163
+msgid "Link Relationship (XFN)"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:301
+#: pukka/widgets/cta-widget/cta_widget.php:279
+#: pukka/widgets/fa-widget/fa_widget.php:313
+#: pukka/widgets/image-widget/image_widget.php:187
+msgid "Link target:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:296
+#: pukka/widgets/cta-widget/cta_widget.php:274
+#: pukka/widgets/fa-widget/fa_widget.php:308
+#: pukka/widgets/image-widget/image_widget.php:182
+msgid "Link:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:319
+msgid "LinkedIn account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:259
+msgid "LinkedIn button"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:318
+msgid "LinkedIn URL"
+msgstr ""
+
+#: woocommerce/widgets/widget-product_list.php:10
+msgid "List products."
+msgstr ""
+
+#: functions.php:1079
+#, php-format
+msgid ""
+"Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
+"this account\">Log out?</a>"
+msgstr ""
+
+#: functions.php:944
+msgid "Login"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:40
+msgid "Logo"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:57
+msgid "Logo for Mobile Menu"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:58
+msgid "Logo image for Mobile Menu. Maximum/Ideal height is 36px."
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:121
+msgid "Longitude"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:178
+msgid "Main menu type"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:109
+msgid "Map Height"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.divider.class.php:101
+msgid "Margin top/bottom"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:130
+msgid "Marker icon"
+msgstr ""
+
+#: pukka/util/init-post-meta.php:23
+msgid "Media embed code"
+msgstr ""
+
+#: pukka/util/init-post-meta.php:15
+msgid "Media URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:170
+msgid "Menu position"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:203
+msgid "Message"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:161
+msgid "Message:"
+msgstr ""
+
+#: archive.php:21
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: archive.php:21
+#, php-format
+msgid "Monthly Archives: %s"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:119
+msgid "Move down"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:106
+msgid "Move up"
+msgstr ""
+
+#: functions.php:944
+msgid "My Account"
+msgstr ""
+
+#: functions.php:1100
+msgid "Name"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:139
+msgid "Navigation Label"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:304
+#: pukka/widgets/cta-widget/cta_widget.php:282
+#: pukka/widgets/fa-widget/fa_widget.php:316
+#: pukka/widgets/image-widget/image_widget.php:190
+msgid "New tab"
+msgstr ""
+
+#: comments.php:37
+msgid "Newer Comments &rarr;"
+msgstr ""
+
+#: functions.php:611
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:102
+msgid "No Comments"
+msgstr ""
+
+#: functions.php:955
+msgid "No items in cart"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:187
+#: pukka/widgets/fa-widget/fa_widget.php:249
+#: pukka/widgets/fa-widget/fa_widget.php:264
+#: pukka/widgets/fa-widget/fa_widget.php:274
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:307
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:322
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:337
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:356
+#: pukka/widgets/image-widget/image_widget.php:174
+msgid "None"
+msgstr ""
+
+#: content-none.php:4
+msgid "Nothing Found"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:891
+msgid "Number of portfolio items per row"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:892
+msgid "Number of portfolio items per row for archive pages."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:126
+msgid "Number of posts per row"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:127
+msgid "Number of posts per row for category, tags, search and date archives."
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:196
+msgid "Number of posts to show:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:148
+msgid "Number of products per page"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:212
+msgid "Number of testimonials to show:"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:152
+msgid "Open link in a new window/tab"
+msgstr ""
+
+#. Name of the template
+msgid "Options Export"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:212
+#, php-format
+msgid "Original: %s"
+msgstr ""
+
+#: woocommerce/loop/sale-flash.php:19
+msgid "Out of Stock!"
+msgstr ""
+
+#: woocommerce/single-product/sale-flash.php:20
+msgid "Out of Stock! "
+msgstr ""
+
+#: pukka/util/init-page-meta.php:30
+msgid "Overwrite default sidebars"
+msgstr ""
+
+#: functions.php:206
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:360
+msgid "Parallax?"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:68
+msgid ""
+"Paste your tracking code here. <br />(Google Analytics, AWStats, Piwick, "
+"Statcounter, ...)."
+msgstr ""
+
+#: functions.php:646
+#, php-format
+msgid "Permalink to %s"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:324
+msgid "Pinterest account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:264
+msgid "Pinterest button"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:323
+msgid "Pinterest URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:45
+msgid "Plain text logo"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:50
+msgid "Plain text logo color"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:888
+msgid "Portfolio"
+msgstr ""
+
+#: functions.php:1065
+msgid "Post Comment"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:305
+msgid "Post title alignment:"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:298
+msgid "Post title:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:123
+msgid "Posts"
+msgstr ""
+
+#: functions.php:603
+msgid "Posts navigation"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:375
+msgid "Primary Color"
+msgstr ""
+
+#: functions.php:159
+msgid "Primary Menu"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:20
+msgid "Pukka - Ad widget"
+msgstr ""
+
+#: pukka/widgets/ads-50-widget/ads_50_widget.php:20
+msgid "Pukka - Ads widget 8 x 50"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:20
+msgid "Pukka - Banner widget"
+msgstr ""
+
+#: pukka/widgets/cta-widget/cta_widget.php:20
+msgid "Pukka - CTA widget"
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:20
+msgid "Pukka - Facebook widget"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:12
+msgid "Pukka - Featured Post Widget"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:20
+msgid "Pukka - Font Awesome Widget"
+msgstr ""
+
+#: pukka/widgets/image-widget/image_widget.php:20
+msgid "Pukka - Image Widget"
+msgstr ""
+
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:20
+msgid "Pukka - Latest posts widget"
+msgstr ""
+
+#: woocommerce/widgets/widget-product_list.php:12
+msgid "Pukka - Product List"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:20
+msgid "Pukka - Testimonials widget"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:912
+msgid "Pukka demo content importer"
+msgstr ""
+
+#. Author of the theme
+msgid "Pukka Themes"
+msgstr ""
+
+#: content.php:62 content.php:64 functions.php:791 functions.php:794
+msgid "Read more"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:354
+msgid "Read more button alignment:"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:178
+msgid "Read post"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:181
+msgid "Regular"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:225
+#: pukka/framework/php/html.helper.class.php:639
+#: pukka/framework/php/html.helper.class.php:715
+#: pukka/widgets/banner-widget/banner_widget.php:353
+#: pukka/widgets/cta-widget/cta_widget.php:321
+#: pukka/widgets/fa-widget/fa_widget.php:327
+#: pukka/widgets/image-widget/image_widget.php:205
+msgid "Remove"
+msgstr ""
+
+#: functions.php:1053
+#, php-format
+msgid "Required fields are marked %s"
+msgstr ""
+
+#: pukka/framework/php/pukka.theme.class.php:262
+msgid "Reset done!"
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:104
+msgid "Reset settings"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:189
+#: pukka/widgets/fa-widget/fa_widget.php:251
+#: pukka/widgets/fa-widget/fa_widget.php:266
+#: pukka/widgets/fa-widget/fa_widget.php:276
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:309
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:324
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:339
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:358
+#: pukka/widgets/image-widget/image_widget.php:176
+msgid "Right"
+msgstr ""
+
+#: functions.php:334
+msgid "Right Sidebar Widget Area 1"
+msgstr ""
+
+#: functions.php:344
+msgid "Right Sidebar Widget Area 2"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:207
+msgid "Right sidebar width"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:348
+msgid "RSS URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:349
+msgid "RSS URL."
+msgstr ""
+
+#: woocommerce/loop/sale-flash.php:15
+#: woocommerce/single-product/sale-flash.php:15
+msgid "Sale!"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:303
+#: pukka/widgets/cta-widget/cta_widget.php:281
+#: pukka/widgets/fa-widget/fa_widget.php:315
+#: pukka/widgets/image-widget/image_widget.php:189
+msgid "Same tab"
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:64
+#: pukka/framework/php/html.helper.class.php:107
+msgid "Save settings"
+msgstr ""
+
+#: search.php:15
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: header.php:86
+msgid "Search..."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:383
+msgid "Secondary Color"
+msgstr ""
+
+#: functions.php:160
+msgid "Secondary Menu"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:104
+msgid "Secondary menu text"
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:638
+#: pukka/widgets/banner-widget/banner_widget.php:352
+#: pukka/widgets/cta-widget/cta_widget.php:320
+#: pukka/widgets/image-widget/image_widget.php:204
+msgid "Select"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:245
+msgid "Select Category"
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:638
+#: pukka/widgets/banner-widget/banner_widget.php:352
+#: pukka/widgets/cta-widget/cta_widget.php:320
+#: pukka/widgets/image-widget/image_widget.php:204
+msgid "Select image"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:149
+msgid "Select number of products to display per page in shop."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:110
+msgid "Select this feature in order to enable footer menu."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:99
+msgid "Select this feature in order to enable secondary menu."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:137
+msgid "Select this feature in order to enable using page builder in posts."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:73
+msgid ""
+"Select this feature in order to hide author's name from specific pages and "
+"post categories. "
+msgstr ""
+
+#: pukka/util/init-page-meta.php:31
+msgid "Select this feature to enable custom sidebars on this page."
+msgstr ""
+
+#: pukka/util/init-page-meta.php:16
+msgid "Select this feature to hide page title."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:280
+msgid "Select where do you want to show your social icons"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:171
+msgid "Select where to show menu"
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:501
+msgid "Select.."
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:204
+msgid "Send"
+msgstr ""
+
+#: woocommerce/woocommerce_configuration.php:116
+msgid "Share"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:145
+msgid "Shop"
+msgstr ""
+
+#: functions.php:374
+msgid "Shop Left Widget Area"
+msgstr ""
+
+#: functions.php:384
+msgid "Shop Right Widget Area"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:223
+msgid "Show author"
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:192
+msgid "Show facebook header"
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:182
+msgid "Show faces"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:218
+msgid "Show image"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:186
+msgid "Show left sidebar"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:202
+msgid "Show right sidebar"
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:187
+msgid "Show stream"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:228
+msgid "Show website"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:167
+msgid "Sidebars and Menus"
+msgstr ""
+
+#: pukka/widgets/image-widget/image_widget.php:23
+msgid "Simple image widget."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:72
+msgid "Single author site"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:418 pukka/util/init-theme-options.php:471
+#: pukka/util/init-theme-options.php:524 pukka/util/init-theme-options.php:577
+#: pukka/util/init-theme-options.php:631 pukka/util/init-theme-options.php:685
+#: pukka/util/init-theme-options.php:738 pukka/util/init-theme-options.php:791
+msgid "Size"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:221
+msgid "Social"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:224
+msgid "Social buttons"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:279
+msgid "Social icons position"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:309
+msgid "Soundcloud account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:308
+msgid "Soundcloud URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:181
+msgid "Sticky"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:361
+msgid "Style"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:202
+msgid "Subject"
+msgstr ""
+
+#: pukka/widgets/ads-50-widget/ads_50_widget.php:168
+#, php-format
+msgid "Target %d URL:"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:243
+msgid "Testimonials category:"
+msgstr ""
+
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:23
+msgid "Testimonials widget"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:315
+msgid "Text (or post excerpt will be used instead):"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:262
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:320
+msgid "Text alignment:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:460
+msgid "Text font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:461
+msgid "Text font description (color and size not implemented)"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:257
+msgid "Text:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:854
+msgid "Thank you notification"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:171
+msgid ""
+"The description will be displayed in the menu if the current theme supports "
+"it."
+msgstr ""
+
+#: functions.php:430
+msgid "Theme Settings"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:913
+msgid ""
+"This is importer for theme demo content. Please only use it on fresh "
+"WordPress installs with empty database. Otherwise, results might be somewhat "
+"unexpected."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:192
+msgid "This setting changes the width of the left sidebar."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:208
+msgid "This setting changes the width of the right sidebar."
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:158
+msgid "Title"
+msgstr ""
+
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:330
+msgid "Title above image:"
+msgstr ""
+
+#: pukka/widgets/fa-widget/fa_widget.php:247
+msgid "Title alignment:"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:145
+msgid "Title Attribute"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:256
+#: pukka/widgets/cta-widget/cta_widget.php:234
+msgid "Title color:"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:407
+msgid "Title font"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:408
+msgid "Title font description (color and size not implemented)"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:261
+#: pukka/widgets/cta-widget/cta_widget.php:239
+msgid "Title size:"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:266
+#: pukka/widgets/cta-widget/cta_widget.php:244
+msgid "Title top margin:"
+msgstr ""
+
+#: pukka/widgets/ad-widget/ad_widget.php:166
+#: pukka/widgets/ads-50-widget/ads_50_widget.php:158
+#: pukka/widgets/banner-widget/banner_widget.php:251
+#: pukka/widgets/cta-widget/cta_widget.php:229
+#: pukka/widgets/fa-widget/fa_widget.php:242
+#: pukka/widgets/featured-post-widget/featured_post_widget.php:269
+#: pukka/widgets/image-widget/image_widget.php:167
+#: pukka/widgets/latest-posts-widget/latest_posts_widget.php:191
+#: pukka/widgets/testimonials-widget/testimonials_widget.php:207
+msgid "Title:"
+msgstr ""
+
+#: pukka/pukka_functions.php:258 pukka/pukka_functions.php:275
+#: pukka/ubershop_functions.php:332 pukka/ubershop_functions.php:349
+msgid "Top content"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:334
+msgid "Tumblr account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:333
+msgid "Tumblr URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:249
+msgid "Tweet button"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:294
+msgid "Twitter account URL."
+msgstr ""
+
+#: functions.php:1452 pukka/util/init-theme-options.php:293
+msgid "Twitter URL"
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:199
+msgid "Type"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:403
+msgid "Typography"
+msgstr ""
+
+#. Name of the theme
+msgid "UberShop"
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:638
+#: pukka/widgets/banner-widget/banner_widget.php:352
+#: pukka/widgets/cta-widget/cta_widget.php:320
+#: pukka/widgets/image-widget/image_widget.php:204
+msgid "Upload"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:63
+msgid ""
+"Upload your favicon image. Image pixel dimension must be in square aspect "
+"ratio (meaning height must be equal to the width). <br />Acceptable "
+"dimensions: mimumum 32x32px, maximum 64x64px."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:41
+msgid "Upload your logo. Ideal height should be 160px or more."
+msgstr ""
+
+#: pukka/include/edit_custom_walker.php:132
+msgid "URL"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:136
+msgid "Use page builder in posts"
+msgstr ""
+
+#: functions.php:668
+#, php-format
+msgid "View all posts by %s"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:313
+msgid "Vimeo URL"
+msgstr ""
+
+#: functions.php:1110
+msgid "Website"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:430 pukka/util/init-theme-options.php:483
+#: pukka/util/init-theme-options.php:536 pukka/util/init-theme-options.php:589
+#: pukka/util/init-theme-options.php:643 pukka/util/init-theme-options.php:697
+#: pukka/util/init-theme-options.php:750 pukka/util/init-theme-options.php:803
+msgid "Weight"
+msgstr ""
+
+#: pukka/framework/php/html.helper.class.php:747
+msgid "Widget area title"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:877
+msgid "Widget areas"
+msgstr ""
+
+#: pukka/widgets/banner-widget/banner_widget.php:329
+#: pukka/widgets/cta-widget/cta_widget.php:307
+msgid "Widget background color:"
+msgstr ""
+
+#: pukka/widgets/facebook-widget/facebook_widget.php:168
+msgid "Width"
+msgstr ""
+
+#: archive.php:24
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: archive.php:24
+#, php-format
+msgid "Yearly Archives: %s"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:354
+msgid ""
+"You can add your custom icons here, for example: <br /> &lt;a target=&quot;"
+"_blank&quot; href=&quot;YOUR_URL&quot;&gt;&lt;img src=&quot;ICON_URL&quot; "
+"width=&quot;15&quot; height=&quot;15&quot; /&gt;&lt;/a&gt;"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:870
+msgid ""
+"You can generate API key by following <a href=\"https://developers.google."
+"com/maps/documentation/javascript/get-api-key#key\" target=\"_blank\" "
+"rel=\"noopener\">this steps</a>."
+msgstr ""
+
+#: pukka/framework/php/pukka.theme.class.php:207
+#: pukka/framework/php/pukka.theme.class.php:268
+msgid "You do not have sufficient permissions to save these options."
+msgstr ""
+
+#: functions.php:994
+msgid "Your comment is awaiting approval"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:201
+msgid "Your Email"
+msgstr ""
+
+#: functions.php:1086
+msgid "Your email address will not be published."
+msgstr ""
+
+#: functions.php:1068
+msgid "Your text"
+msgstr ""
+
+#: pukka/util/init-theme-options.php:304 pukka/util/init-theme-options.php:314
+msgid "Youtube account URL."
+msgstr ""
+
+#: pukka/util/init-theme-options.php:303
+msgid "Youtube URL"
+msgstr ""
+
+#: pukka/util/init-post-meta.php:16
+msgid ""
+"Youtube, vimeo, dailymotion, soundcloud.. <br /> (complete list: http:"
+"//codex.wordpress.org/Embeds#Okay.2C_So_What_Sites_Can_I_Embed_From.3F)"
+msgstr ""
+
+#: pukka/modules/dynamic-meta/include/dm/dynamic.meta.map.class.php:113
+msgid "Zoom Level"
+msgstr ""
+
+#. Description of the theme
+msgid ""
+"ÜBERSHOP - Engaging &amp; Responsive Wordpress Theme. Update notification "
+"available on <a href=\"https://www.facebook.com/PukkaThemes\">Facebook</a>"
+msgstr ""

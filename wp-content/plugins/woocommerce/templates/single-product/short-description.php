@@ -28,18 +28,40 @@ if ( ! $short_description ) {
 	return;
 }
 
-
+$price= get_post_meta($post->ID, '_price', true);
 $discounts=get_post_meta($post->ID, 'phoen_woocommerce_discount_mode', true);
+$table='';
+foreach ($discounts as $discount){
+    $table .='<tr>';
+    if($discount["max_val"]==''){
+        $table .='<td>'.$discount["min_val"].'-c их</td>';
+    } else {
+        $table .='<td>'.$discount["min_val"].'-c '.$discount["max_val"].'</td>';
+    }
+
+    if($discount["type"]=='amount'){
+        $t_price=number_format($price-$discount["discount"], 2, '.', '');
+        $table .='<td>'.$t_price.' ₮</td>';
+    } else {
+        $t_price=number_format($price*(100-$discount["discount"])/100, 2, '.', '');
+        $table .='<td>'.$t_price.' ₮</td>';
+    }
+    $table .='</tr>';
+}
 
 ?>
 <div class="woocommerce-product-details__short-description">
-	<?php echo $short_description; // WPCS: XSS ok. ?>
+	<?php echo $short_description; ?>
 
-    <table class="table">
+    <table class="Ptable">
         <thead>
             <tr>
-                <td>Хэ</td>
+                <th>Хэмжээ</th>
+                <th>Үнэ</th>
             </tr>
         </thead>
+        <tbody>
+            <?php echo $table; ?>
+        </tbody>
     </table>
 </div>

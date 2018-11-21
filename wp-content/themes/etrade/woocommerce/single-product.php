@@ -12,9 +12,9 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 
 get_header( 'shop' ); ?>
-	
+
 	<div class="shop-heading clearfix">
-	<?php 
+	<?php
 		// Output the WooCommerce Breadcrumb
 		woocommerce_breadcrumb();
 	?>

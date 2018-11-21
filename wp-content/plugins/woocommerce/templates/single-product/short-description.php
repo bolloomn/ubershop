@@ -28,7 +28,18 @@ if ( ! $short_description ) {
 	return;
 }
 
+
+$discounts=get_post_meta($post->ID, 'phoen_woocommerce_discount_mode', true);
+
 ?>
 <div class="woocommerce-product-details__short-description">
 	<?php echo $short_description; // WPCS: XSS ok. ?>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <td>Хэ</td>
+            </tr>
+        </thead>
+    </table>
 </div>

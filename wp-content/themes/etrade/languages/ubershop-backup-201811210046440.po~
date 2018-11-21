@@ -1,11 +1,10 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: UberShop\n"
-"POT-Creation-Date: 2016-03-08 18:01+0100\n"
-"PO-Revision-Date: 2016-03-08 18:01+0100\n"
+"POT-Creation-Date: 2016-01-12 18:53+0100\n"
+"PO-Revision-Date: 2016-01-12 18:53+0100\n"
 "Last-Translator: \n"
 "Language-Team: Pukka Themes <office@pukkathemes.com>\n"
-"Language: nb_NO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -61,11 +60,11 @@ msgstr ""
 #: ../content.php:62 ../content.php:64 ../functions.php:791
 #: ../functions.php:794
 msgid "Read more"
-msgstr "Les mer"
+msgstr ""
 
 #: ../functions.php:23
 msgid "Home"
-msgstr "Hjem"
+msgstr ""
 
 #: ../functions.php:156
 msgid "Primary Menu"
@@ -82,7 +81,7 @@ msgstr ""
 #: ../functions.php:207
 #, php-format
 msgid "Page %s"
-msgstr "Side %s"
+msgstr ""
 
 #: ../functions.php:283
 msgid "Home Page Widget Area 1"
@@ -185,17 +184,17 @@ msgstr ""
 
 #: ../functions.php:943 ../woocommerce/checkout/thankyou.php:28
 msgid "My Account"
-msgstr "Min konto"
+msgstr "Миний бүртгэл"
 
 #: ../functions.php:943 ../woocommerce/global/form-login.php:33
 msgid "Login"
-msgstr "Logg inn"
+msgstr ""
 
 #: ../functions.php:954
 msgid "No items in cart"
-msgstr "Handlekurven din er tom"
+msgstr ""
 
-#: ../functions.php:993 ../woocommerce/single-product/review.php:40
+#: ../functions.php:993 ../woocommerce/single-product/review.php:34
 msgid "Your comment is awaiting approval"
 msgstr ""
 
@@ -239,20 +238,20 @@ msgstr ""
 
 #: ../functions.php:1085
 msgid "Your email address will not be published."
-msgstr "Din epostadresse blir ikke vist"
+msgstr ""
 
 #: ../functions.php:1099 ../woocommerce/single-product-reviews.php:67
 msgid "Name"
-msgstr "Navn"
+msgstr ""
 
 #: ../functions.php:1104 ../pukka/util/init-theme-options.php:843
 #: ../woocommerce/single-product-reviews.php:69
 msgid "Email"
-msgstr "Email"
+msgstr ""
 
 #: ../functions.php:1109
 msgid "Website"
-msgstr "Nettside"
+msgstr ""
 
 #: ../functions.php:1209 ../inc/class-tgm-plugin-activation.php:333
 msgid "Install Required Plugins"
@@ -291,12 +290,12 @@ msgstr ""
 
 #: ../header.php:97
 msgid "Type something, or press Esc to cancel..."
-msgstr "Søk her, eller trykk ESC for å annullere.."
+msgstr ""
 
 #: ../search.php:15
 #, php-format
 msgid "Search Results for: %s"
-msgstr "Søkeresultat for: %s"
+msgstr ""
 
 #: ../inc/class-tgm-plugin-activation.php:398
 msgid "Return to the dashboard"
@@ -411,6 +410,7 @@ msgid "Version"
 msgstr ""
 
 #: ../inc/class-tgm-plugin-activation.php:2448
+#: ../woocommerce/myaccount/my-orders.php:34
 msgid "Status"
 msgstr ""
 
@@ -498,7 +498,7 @@ msgstr ""
 
 #: ../page-templates/template-portfolio.php:34
 msgid "All"
-msgstr "Alt"
+msgstr ""
 
 #: ../pukka/pukka_functions.php:258 ../pukka/pukka_functions.php:275
 #: ../pukka/ubershop_functions.php:329 ../pukka/ubershop_functions.php:346
@@ -522,7 +522,7 @@ msgstr ""
 
 #: ../pukka/framework/php/html.helper.class.php:499
 msgid "Select.."
-msgstr "Velg.."
+msgstr ""
 
 #: ../pukka/framework/php/html.helper.class.php:636
 #: ../pukka/widgets/banner-widget/banner_widget.php:352
@@ -536,14 +536,14 @@ msgstr ""
 #: ../pukka/widgets/cta-widget/cta_widget.php:320
 #: ../pukka/widgets/image-widget/image_widget.php:204
 msgid "Select"
-msgstr "Velg"
+msgstr ""
 
 #: ../pukka/framework/php/html.helper.class.php:636
 #: ../pukka/widgets/banner-widget/banner_widget.php:352
 #: ../pukka/widgets/cta-widget/cta_widget.php:320
 #: ../pukka/widgets/image-widget/image_widget.php:204
 msgid "Upload"
-msgstr "Last opp"
+msgstr ""
 
 #: ../pukka/framework/php/html.helper.class.php:637
 #: ../pukka/framework/php/html.helper.class.php:713
@@ -785,15 +785,15 @@ msgstr ""
 
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:158
 msgid "Email address:"
-msgstr "Epostadresse:"
+msgstr ""
 
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:161
 msgid "Message:"
-msgstr "Melding"
+msgstr ""
 
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:201
 msgid "Your Email"
-msgstr "Din epostadresse"
+msgstr ""
 
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:202
 msgid "Subject"
@@ -801,11 +801,11 @@ msgstr ""
 
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:203
 msgid "Message"
-msgstr "Melding"
+msgstr ""
 
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.contact.class.php:204
 msgid "Send"
-msgstr "Send"
+msgstr ""
 
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.cta.class.php:99
 #: ../pukka/modules/dynamic-meta/include/dm/dynamic.meta.image.class.php:149
@@ -2004,28 +2004,27 @@ msgstr ""
 
 #: ../woocommerce/content-product.php:99
 msgid "Details"
-msgstr "Detaljer"
+msgstr ""
 
 #: ../woocommerce/content-product.php:99
 msgid "Share"
-msgstr "Del"
+msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:28
 msgid "Reviews"
-msgstr "Omtaler"
+msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:49
 msgid "There are no reviews yet."
-msgstr "Det er ingen omtaler ennå."
+msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:62
 msgid "Add a review"
-msgstr "Skriv en omtale"
+msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:62
-#, fuzzy, php-format
-msgid "Be the first to review &ldquo;%s&rdquo;"
-msgstr "Vær den første til å omtale"
+msgid "Be the first to review"
+msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:72
 msgid "Submit"
@@ -2061,62 +2060,94 @@ msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:88
 msgid "Your Review"
-msgstr "Din omtale"
+msgstr ""
 
 #: ../woocommerce/single-product-reviews.php:97
 msgid ""
 "Only logged in customers who have purchased this product may leave a review."
 msgstr ""
-"Kun innloggede kunder som har kjøpt dette produktet kan skrive inn en omtale."
 
 #: ../woocommerce/woocommerce_configuration.php:44
 msgid "item"
-msgstr "vare"
+msgstr ""
 
 #: ../woocommerce/woocommerce_configuration.php:44
 msgid "items"
-msgstr "varer"
-
-#: ../woocommerce/woocommerce_configuration.php:68
-#: ../woocommerce/cart/cart.php:81
-msgid "Remove this item"
-msgstr "Fjern denne vare"
-
-#: ../woocommerce/woocommerce_configuration.php:84
-msgid "View Cart"
-msgstr "Se handlekurv"
-
-#: ../woocommerce/woocommerce_configuration.php:85
-msgid "Checkout"
-msgstr "Til kassen"
-
-#: ../woocommerce/woocommerce_configuration.php:155
-msgid "Proceed to Checkout"
-msgstr "Fortsett til kassen"
-
-#: ../woocommerce/cart/cart-shipping.php:47
-msgid "Shipping costs will be calculated once you have provided your address."
 msgstr ""
 
-#: ../woocommerce/cart/cart-shipping.php:49
+#: ../woocommerce/woocommerce_configuration.php:65
+#: ../woocommerce/cart/cart.php:81
+msgid "Remove this item"
+msgstr ""
+
+#: ../woocommerce/woocommerce_configuration.php:79
+msgid "Cart total: "
+msgstr ""
+
+#: ../woocommerce/woocommerce_configuration.php:81
+#: ../woocommerce/cart/mini-cart.php:64
+msgid "View Cart"
+msgstr ""
+
+#: ../woocommerce/woocommerce_configuration.php:82
+#: ../woocommerce/cart/mini-cart.php:65
+msgid "Checkout"
+msgstr ""
+
+#: ../woocommerce/woocommerce_configuration.php:152
+msgid "Proceed to Checkout"
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:16
+#, php-format
+msgid "Shipping #%d"
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:18
+#: ../woocommerce/cart/cart-totals.php:44
+msgid "Shipping and Handling"
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:55
+msgid "Please use the shipping calculator to see available shipping methods."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:59
 msgid ""
-"There are no shipping methods available. Please double check your address, "
-"or contact us if you need any help."
+"Please continue to the checkout and enter your full address to see if there "
+"are any available shipping methods."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:63
+msgid "Please fill in your details to see available shipping methods."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:73
+#: ../woocommerce/cart/cart-shipping.php:81
+#, php-format
+msgid "Sorry, shipping is unavailable %s."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:73
+#: ../woocommerce/cart/cart-shipping.php:81
+msgid ""
+"If you require assistance or wish to make alternate arrangements please "
+"contact us."
+msgstr ""
+
+#: ../woocommerce/cart/cart-shipping.php:97
+msgid "Shipping"
 msgstr ""
 
 #: ../woocommerce/cart/cart-totals.php:22
 #: ../woocommerce/checkout/review-order.php:48
 msgid "Cart Subtotal"
-msgstr "Handlekurv delsum"
-
-#: ../woocommerce/cart/cart-totals.php:44
-msgid "Shipping and Handling"
 msgstr ""
 
 #: ../woocommerce/cart/cart-totals.php:76
 #: ../woocommerce/checkout/review-order.php:102
 msgid "Order Total"
-msgstr "Total"
+msgstr ""
 
 #: ../woocommerce/cart/cart-totals.php:88
 #, php-format
@@ -2130,22 +2161,24 @@ msgid ""
 "based on your billing and shipping information."
 msgstr ""
 
-#: ../woocommerce/cart/cart.php:29 ../woocommerce/order/order-details.php:25
+#: ../woocommerce/cart/cart.php:29 ../woocommerce/checkout/form-pay.php:19
+#: ../woocommerce/order/order-details.php:23
 msgid "Product"
-msgstr "Produkt"
+msgstr ""
 
 #: ../woocommerce/cart/cart.php:30
 #: ../woocommerce/widgets/widget-product_list.php:43
 msgid "Price"
-msgstr "Pris"
+msgstr ""
 
 #: ../woocommerce/cart/cart.php:31
 msgid "Quantity"
-msgstr "Antall"
+msgstr ""
 
-#: ../woocommerce/cart/cart.php:32 ../woocommerce/order/order-details.php:26
+#: ../woocommerce/cart/cart.php:32 ../woocommerce/myaccount/my-orders.php:35
+#: ../woocommerce/order/order-details.php:24
 msgid "Total"
-msgstr "Total"
+msgstr ""
 
 #: ../woocommerce/cart/cart.php:70
 msgid "Available on backorder"
@@ -2153,50 +2186,57 @@ msgstr ""
 
 #: ../woocommerce/cart/cart.php:116
 msgid "Update Cart"
-msgstr "Oppdater handlekurv"
+msgstr ""
 
 #: ../woocommerce/cart/cart.php:134
 msgid "Coupon"
-msgstr "Kupong"
+msgstr ""
 
 #: ../woocommerce/cart/cart.php:134
 msgid "Coupon code"
-msgstr "Kupongkode"
+msgstr ""
 
 #: ../woocommerce/cart/cart.php:134
 msgid "Apply Coupon"
-msgstr "Bruk rabattkupong"
+msgstr ""
 
-#: ../woocommerce/cart/cart.php:141
+#: ../woocommerce/cart/mini-cart.php:51
+msgid "No products in the cart."
+msgstr ""
+
+#: ../woocommerce/cart/mini-cart.php:59
+msgid "Subtotal"
+msgstr ""
+
 #: ../woocommerce/cart/shipping-calculator.php:22
 msgid "Calculate Shipping"
-msgstr "Beregn fraktkostnad"
+msgstr ""
 
 #: ../woocommerce/cart/shipping-calculator.php:28
 msgid "Select a country&hellip;"
-msgstr "Velg land&hellip;"
+msgstr ""
 
 #: ../woocommerce/cart/shipping-calculator.php:45
 #: ../woocommerce/cart/shipping-calculator.php:51
 #: ../woocommerce/cart/shipping-calculator.php:63
 msgid "State / county"
-msgstr "Stat / Land"
+msgstr ""
 
 #: ../woocommerce/cart/shipping-calculator.php:52
 msgid "Select a state&hellip;"
-msgstr "Velg stat&hellip;"
+msgstr ""
 
 #: ../woocommerce/cart/shipping-calculator.php:72
 msgid "City"
-msgstr "By"
+msgstr ""
 
 #: ../woocommerce/cart/shipping-calculator.php:80
 msgid "Postcode / Zip"
-msgstr "Postnummer"
+msgstr ""
 
 #: ../woocommerce/cart/shipping-calculator.php:85
 msgid "Update Totals"
-msgstr "Oppdater totaler"
+msgstr ""
 
 #: ../woocommerce/checkout/form-billing.php:15
 msgid "Billing &amp; Shipping"
@@ -2223,7 +2263,30 @@ msgstr ""
 
 #: ../woocommerce/checkout/form-checkout.php:50
 msgid "Your order"
-msgstr "Din ordre"
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:20
+msgid "Qty"
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:21
+msgid "Totals"
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:54
+msgid "Payment"
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:80
+msgid ""
+"Sorry, it seems that there are no available payment methods for your "
+"location. Please contact us if you require assistance or wish to make "
+"alternate arrangements."
+msgstr ""
+
+#: ../woocommerce/checkout/form-pay.php:90
+msgid "Pay for order"
+msgstr ""
 
 #: ../woocommerce/checkout/review-order.php:152
 msgid "Please fill in your details above to see available payment methods."
@@ -2250,7 +2313,7 @@ msgstr ""
 
 #: ../woocommerce/checkout/review-order.php:170
 msgid "Place order"
-msgstr "Send ordre"
+msgstr ""
 
 #: ../woocommerce/checkout/review-order.php:179
 msgid "I have read and accept the"
@@ -2275,8 +2338,9 @@ msgid "Please attempt your purchase again."
 msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:26
+#: ../woocommerce/myaccount/my-orders.php:68
 msgid "Pay"
-msgstr "Betal"
+msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:34
 #: ../woocommerce/checkout/thankyou.php:65
@@ -2285,19 +2349,19 @@ msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:38
 msgid "Order:"
-msgstr "Ordre:"
+msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:42
 msgid "Date:"
-msgstr "Dato:"
+msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:46
 msgid "Total:"
-msgstr "Total:"
+msgstr ""
 
 #: ../woocommerce/checkout/thankyou.php:51
 msgid "Payment method:"
-msgstr "Betalingsmetode:"
+msgstr ""
 
 #: ../woocommerce/global/breadcrumb.php:72
 msgid "Products tagged &ldquo;"
@@ -2343,26 +2407,26 @@ msgstr ""
 
 #: ../woocommerce/loop/result-count.php:28
 msgid "Showing the single result"
-msgstr "Viser resultat"
+msgstr ""
 
 #: ../woocommerce/loop/result-count.php:30
 #, php-format
 msgid "Showing all %d results"
-msgstr "Viser alle %d resultater"
+msgstr ""
 
 #: ../woocommerce/loop/sale-flash.php:15
 #: ../woocommerce/single-product/sale-flash.php:15
 msgid "Sale!"
-msgstr "Salg!"
+msgstr ""
 
 #: ../woocommerce/loop/sale-flash.php:19
 msgid "Out of Stock!"
-msgstr "Solgt!"
+msgstr ""
 
 #: ../woocommerce/myaccount/form-change-password.php:20
 #: ../woocommerce/myaccount/form-lost-password.php:31
 msgid "New password"
-msgstr "Nytt passord"
+msgstr ""
 
 #: ../woocommerce/myaccount/form-change-password.php:24
 #: ../woocommerce/myaccount/form-lost-password.php:35
@@ -2372,37 +2436,34 @@ msgstr ""
 #: ../woocommerce/myaccount/form-change-password.php:29
 #: ../woocommerce/myaccount/form-lost-password.php:46
 msgid "Save"
-msgstr "Lagre"
+msgstr ""
 
 #: ../woocommerce/myaccount/form-edit-address.php:14
 msgid "Shipping Address"
-msgstr "Leveringsadresse"
+msgstr ""
 
 #: ../woocommerce/myaccount/form-edit-address.php:38
 msgid "Save Address"
-msgstr "Lagre adresse"
+msgstr ""
 
 #: ../woocommerce/myaccount/form-lost-password.php:22
 msgid ""
 "Lost your password? Please enter your username or email address. You will "
 "receive a link to create a new password via email."
 msgstr ""
-"Mistet passordet ditt? Skriv inn ditt brukernavn eller e-postadresse. Du vil "
-"motta en lenke for å opprette et nytt passord via e-post."
 
 #: ../woocommerce/myaccount/form-lost-password.php:28
 msgid "Enter a new password below."
-msgstr "Skriv inn et nytt passord nedenfor."
+msgstr ""
 
 #: ../woocommerce/myaccount/form-lost-password.php:46
 msgid "Reset Password"
-msgstr "Tilbakestill passord"
+msgstr ""
 
 #: ../woocommerce/myaccount/my-account.php:19
 #, php-format
 msgid "Hello <strong>%1$s</strong> (not %1$s? <a href=\"%2$s\">Sign out</a>)."
 msgstr ""
-"Hei <strong>%1$s</strong> (er du ikke %1$s? <a href=“%2$s”>Logg ut</a>)."
 
 #: ../woocommerce/myaccount/my-account.php:24
 #, php-format
@@ -2414,7 +2475,28 @@ msgstr ""
 
 #: ../woocommerce/myaccount/my-downloads.php:18
 msgid "Available downloads"
-msgstr "Tilgjengelige nedlastinger"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-orders.php:26
+msgid "Recent Orders"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-orders.php:32
+msgid "Order"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-orders.php:33
+#: ../woocommerce/widgets/widget-product_list.php:42
+msgid "Date"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-orders.php:75
+msgid "Cancel"
+msgstr ""
+
+#: ../woocommerce/myaccount/my-orders.php:81
+msgid "View"
+msgstr ""
 
 #: ../woocommerce/myaccount/view-order.php:19
 #, php-format
@@ -2461,7 +2543,7 @@ msgstr ""
 msgid "Track"
 msgstr ""
 
-#: ../woocommerce/order/order-details.php:21
+#: ../woocommerce/order/order-details.php:19
 msgid "Order Details"
 msgstr ""
 
@@ -2504,22 +2586,22 @@ msgstr ""
 msgid "Related Products"
 msgstr ""
 
-#: ../woocommerce/single-product/review.php:30
+#: ../woocommerce/single-product/review.php:26
 #, php-format
 msgid "Rated %d out of 5"
 msgstr ""
 
-#: ../woocommerce/single-product/review.php:31
+#: ../woocommerce/single-product/review.php:27
 msgid "out of 5"
 msgstr ""
 
-#: ../woocommerce/single-product/review.php:49
+#: ../woocommerce/single-product/review.php:43
 msgid "verified owner"
 msgstr ""
 
 #: ../woocommerce/single-product/sale-flash.php:20
 msgid "Out of Stock! "
-msgstr "Solgt!"
+msgstr ""
 
 #: ../woocommerce/single-product/tabs/additional-information.php:14
 msgid "Additional Information"
@@ -2565,10 +2647,6 @@ msgstr ""
 msgid "Order by"
 msgstr ""
 
-#: ../woocommerce/widgets/widget-product_list.php:42
-msgid "Date"
-msgstr "Dato"
-
 #: ../woocommerce/widgets/widget-product_list.php:44
 msgid "Random"
 msgstr ""
@@ -2608,27 +2686,3 @@ msgstr ""
 #: ../woocommerce/widgets/widget-product_list.php:75
 msgid "Show hidden products"
 msgstr ""
-
-#~ msgid "Cart total: "
-#~ msgstr "Handlekurv total:"
-
-#~ msgid "Shipping"
-#~ msgstr "Forsendelse"
-
-#~ msgid "No products in the cart."
-#~ msgstr "Ingen varer i handlekurven."
-
-#~ msgid "Subtotal"
-#~ msgstr "Delsum"
-
-#~ msgid "Totals"
-#~ msgstr "Total"
-
-#~ msgid "Payment"
-#~ msgstr "Betaling"
-
-#~ msgid "Pay for order"
-#~ msgstr "Beltal for ordre"
-
-#~ msgid "Recent Orders"
-#~ msgstr "Siste bestillinger"

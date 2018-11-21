@@ -1489,6 +1489,9 @@ function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
         case 'items' :
             $translated_text = __( 'Бараа', 'woocommerce' );
             break;
+        case 'item' :
+            $translated_text = __( 'Бараа', 'woocommerce' );
+            break;
         case 'Add to cart' :
             $translated_text = __( 'Сагсанд нэмэх', 'woocommerce' );
             break;
@@ -1500,6 +1503,18 @@ function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
             break;
         case 'Cart' :
             $translated_text = __( 'Сагс', 'woocommerce' );
+            break;
+        case 'Update cart' :
+            $translated_text = __( 'Сагс шинэчлэх', 'woocommerce' );
+            break;
+        case 'Subtotal' :
+            $translated_text = __( 'Дүн', 'woocommerce' );
+            break;
+        case 'Total' :
+            $translated_text = __( 'Нийт дүн', 'woocommerce' );
+            break;
+        case 'Check on out' :
+            $translated_text = __( 'Тооцоо хийх', 'woocommerce' );
             break;
     }
     return $translated_text;

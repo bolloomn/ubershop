@@ -1383,6 +1383,7 @@ ul.products:after{
 .widget_archive,
 .widget_recent_entries{
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .widget-title,

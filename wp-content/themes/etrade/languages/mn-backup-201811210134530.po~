@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: UberShop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 09:21+0000\n"
-"PO-Revision-Date: 2018-11-21 00:50+0000\n"
+"PO-Revision-Date: 2018-11-21 01:30+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
-"Language-Team: \n"
+"Language-Team: Монгол\n"
 "Language: mn\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "MIME-Version: 1.0\n"
@@ -16,27 +16,27 @@ msgstr ""
 
 #: pukka/widgets/latest-posts-widget/latest_posts_widget.php:104
 msgid " Comments"
-msgstr ""
+msgstr "Сэтгэгдэлүүд"
 
 #. %s: title of menu item which is invalid
 #: pukka/include/edit_custom_walker.php:78
 #, php-format
 msgid "%s (Invalid)"
-msgstr ""
+msgstr "%s (Тохирсонгүй)"
 
 #. %s: title of menu item in draft status
 #: pukka/include/edit_custom_walker.php:82
 #, php-format
 msgid "%s (Pending)"
-msgstr ""
+msgstr "%s (Хүлээж байна)"
 
 #: comments.php:36
 msgid "&larr; Older Comments"
-msgstr ""
+msgstr "&larr; Өмнөх сэтгэгдэл"
 
 #: functions.php:847
 msgid "(This page is a placeholder for front page)"
-msgstr ""
+msgstr "(Энэ хуудас нь нүүр хуудасны байршил юм)"
 
 #: functions.php:675 functions.php:682
 msgid ", "
@@ -44,18 +44,18 @@ msgstr ""
 
 #: pukka/widgets/latest-posts-widget/latest_posts_widget.php:106
 msgid "1 Comment"
-msgstr ""
+msgstr "1 Сэтгэгдэл"
 
 #: functions.php:607
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
-msgstr ""
+msgstr "<span class=\"meta-nav\">&larr;</span> Өмнөх нийтлэл"
 
 #: functions.php:948
 #, php-format
 msgid "<span class=\"txt-dk\">%d</span> item"
 msgid_plural "<span class=\"txt-dk\">%d</span> items"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "<span class=\"txt-dk\">%d</span> бараа"
+msgstr[1] "<span class=\"txt-dk\">%d</span> бараа"
 
 #: pukka/widgets/ad-widget/ad_widget.php:185
 msgid "Ad alignment:"
@@ -119,11 +119,11 @@ msgstr ""
 
 #: page-templates/template-portfolio.php:34
 msgid "All"
-msgstr ""
+msgstr "Бүгд"
 
 #: pukka/framework/php/pukka.theme.class.php:247
 msgid "All setting saved!"
-msgstr ""
+msgstr "Бүх тохиргоог хадгалсан!"
 
 #: pukka/util/init-theme-options.php:67
 msgid "Analytics code"
@@ -153,11 +153,11 @@ msgstr ""
 
 #: woocommerce/woocommerce_configuration.php:283
 msgid "Apply Coupon"
-msgstr ""
+msgstr "Купон хэрэглэх"
 
 #: archive.php:27
 msgid "Archives"
-msgstr ""
+msgstr "Архив"
 
 #: pukka/widgets/banner-widget/banner_widget.php:339
 msgid "Banner height:"
@@ -210,15 +210,15 @@ msgstr ""
 
 #: pukka/include/edit_custom_walker.php:226
 msgid "Cancel"
-msgstr ""
+msgstr "Цуцлах"
 
 #: functions.php:1064
 msgid "Cancel Reply"
-msgstr ""
+msgstr "Хариултыг цуцлах"
 
 #: woocommerce/woocommerce_configuration.php:188
 msgid "Cart total: "
-msgstr ""
+msgstr "Сагсанд нийт:"
 
 #: pukka/widgets/ad-widget/ad_widget.php:190
 #: pukka/widgets/fa-widget/fa_widget.php:252
@@ -840,6 +840,8 @@ msgid ""
 "Logged in as <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Log out of "
 "this account\">Log out?</a>"
 msgstr ""
+"Нэвтэрсэн хэрэглэгч <a href=\"%1$s\">%2$s</a>. <a href=\"%3$s\" title=\"Энэ "
+"бүртгэлийг салгах\">Системээс гарах?</a>"
 
 #: functions.php:944
 msgid "Login"

@@ -5131,6 +5131,10 @@ table.shop_table_wrap dd {
  * 6.7 WooCommerce messages
  * ----------------------------------------------------------------------------
  */
+.woocommerce-terms-and-conditions{
+    margin-bottom: 20px;
+    border: 1px solid #f1f1f1;
+}
 .woocommerce-message,
 .woocommerce-info,
 .woocommerce-error {

@@ -67,12 +67,16 @@ if(isset($_POST['login_Sbumit'])) {
                             </p>
 
 
-                            <p class="login-submit">
+                            <p class="login-submit" style="margin-top: 20px;">
                                 <input type="hidden" name="login_Sbumit" >
                                 <input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Нэвтрэх">
                                 <input type="hidden" name="redirect_to" value="<?php echo home_url(); ?>">
                             </p>
-
+                            <p style="margin-top: 15px; margin-bottom: 0px" >
+                                <a href="<?php echo home_url('lost-password');?>" style="font-size:14px; float: left;"><i class="fa fa-key"></i> Нууц үг сэргээх</a>
+                                <a href="<?php echo home_url('register');?>" style="font-size:14px;  float: right;"><i class="fa fa-user-plus"></i> Бүртгүүлэх</a>
+                            </p>
+                            <div style="clear: both;"></div>
                         </form>
                     </div><!-- .entry-content -->
                 </div> <!-- .content-wrap -->

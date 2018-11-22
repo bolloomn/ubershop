@@ -130,5 +130,5 @@ if('top' == pukka_get_option('main_menu_position')) :
 	<?php endif; ?>
 
 	<div id="wrapper" class="clearfix">
-	<?php get_sidebar(); ?>
+	<?php  if($post->ID) get_sidebar(); ?>
 		<div id="main">

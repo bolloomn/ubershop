@@ -23,7 +23,7 @@ if ( is_user_logged_in() ) {
 
 	<?php /* BEGIN: Pukka edit: labels are used as placeholders */ ?>
 	<p class="form-row form-row-first">
-		<input type="text" class="input-text" name="username" id="username" placeholder="<?php _e( 'Username or email', 'woocommerce' ); ?>" />
+		<input type="text" class="input-text" name="username" id="username" placeholder="<?php _e( 'Username or email 111222', 'woocommerce' ); ?>" />
 	</p>
 	<p class="form-row form-row-last">
 		<input class="input-text" type="password" name="password" id="password" placeholder="<?php _e( 'Password', 'woocommerce' ); ?>" />

@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65d47ecd-7862-4be4-9f55-546a6c1b7dc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/etrade/page-my-account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/global/form-login.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/global/form-login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,21 +19,21 @@
     <session id="-1059234058">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.20" value="1" />
-          <entry key="project.open.time.21" value="1" />
+          <entry key="project.open.time.21" value="2" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.64" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="10" />
           <entry key="js" value="2" />
-          <entry key="php" value="38" />
+          <entry key="php" value="43" />
           <entry key="scss" value="3" />
         </counts>
       </usages-collector>
@@ -37,22 +41,22 @@
         <counts>
           <entry key="CSS" value="10" />
           <entry key="JavaScript" value="2" />
-          <entry key="PHP" value="35" />
+          <entry key="PHP" value="40" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="841" />
-          <entry key="php" value="3670" />
+          <entry key="css" value="893" />
+          <entry key="php" value="3827" />
           <entry key="scss" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="841" />
-          <entry key="PHP" value="3622" />
+          <entry key="CSS" value="893" />
+          <entry key="PHP" value="3779" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="SCSS" value="21" />
           <entry key="SQL" value="29" />
@@ -63,36 +67,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2195">
-              <caret line="208" column="4" selection-start-line="208" selection-start-column="4" selection-end-line="208" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="527">
-              <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+            <state relative-caret-position="281">
+              <caret line="4269" column="28" selection-start-line="4269" selection-start-column="28" selection-end-line="4269" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/global/form-login.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="296">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="50" />
+              <folding>
+                <element signature="e#6#110#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/myaccount/form-change-password.php">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="659">
+            <state relative-caret-position="-310">
               <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding>
                 <element signature="e#81#88#0" expanded="true" />
@@ -102,25 +123,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/page-my-account.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-              <folding>
-                <element signature="e#6#650#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/content.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="118" />
-              <folding>
-                <element signature="e#7#188#0#PHP" expanded="true" />
-              </folding>
+            <state>
+              <caret selection-end-line="67" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -128,12 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="519">
+            <state relative-caret-position="16031">
               <caret line="943" column="57" selection-start-line="943" selection-start-column="38" selection-end-line="943" selection-end-column="57" />
-              <folding>
-                <element signature="e#23#29#1" expanded="true" />
-                <element signature="e#35#41#1" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -159,14 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.basket</find>
-      <find>woocommerce_header_add_to_cart_fragment</find>
-      <find>get_cart_product_list</find>
-      <find>wc_get_template_part</find>
-      <find>comm</find>
-      <find>woocommerce-tabs wc-tabs-wrapper</find>
-      <find>woocommerce-Price-amount amount</find>
-      <find>$unformatted_price</find>
       <find>$regular_price</find>
       <find>wc_price</find>
       <find>wc_price(</find>
@@ -189,6 +192,14 @@
       <find>old-price</find>
       <find>product-content basic</find>
       <find>secondary-container clearfix</find>
+      <find>content</find>
+      <find>woocommerce-form woocommerce-form-login login</find>
+      <find>logged</find>
+      <find>article {</find>
+      <find>article{</find>
+      <find>#main {</find>
+      <find>woocommerce-MyAccount-navigation</find>
+      <find>color: #232323 !important;</find>
     </findStrings>
     <replaceStrings>
       <replace>#4267b2</replace>
@@ -220,12 +231,15 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-start.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/short-description.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/etrade/style.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/functions.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/etrade/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/global/form-login.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/page-my-account.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" />
       </list>
     </option>
   </component>
@@ -247,7 +261,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,6 +283,13 @@
               <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
               <item name="etrade" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -285,12 +305,22 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="etrade" type="462c0819:PsiDirectoryNode" />
-              <item name="page-templates" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="global" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,12 +331,13 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\etrade\wp-content\plugins\bollooMn\js" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\etrade\wp-content\themes\etrade" />
       <recent name="C:\xampp\htdocs\etrade\wp-content\plugins\Ankhbaatar\css" />
       <recent name="C:\xampp\htdocs\etrade\wp-admin\css\colors" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\etrade\wp-content\plugins\bollooMn\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -336,18 +367,19 @@
       <workItem from="1542251121097" duration="16281000" />
       <workItem from="1542331260675" duration="1729000" />
       <workItem from="1542335088302" duration="546000" />
-      <workItem from="1542779761734" duration="12416000" />
+      <workItem from="1542779761734" duration="12633000" />
+      <workItem from="1542846874185" duration="4626000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63866000" />
+    <option name="totallyTimeSpent" value="68709000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2489339" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25159913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -511,10 +543,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="784" lean-forward="true" selection-start-line="784" selection-end-line="784" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#1;n#span#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -537,62 +565,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2195">
-          <caret line="208" column="4" selection-start-line="208" selection-start-column="4" selection-end-line="208" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/short-description.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
           <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/single-product.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="97" selection-start-line="25" selection-start-column="97" selection-end-line="25" selection-end-column="97" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="943" column="57" selection-start-line="943" selection-start-column="38" selection-end-line="943" selection-end-column="57" />
-          <folding>
-            <element signature="e#23#29#1" expanded="true" />
-            <element signature="e#35#41#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="118" />
-          <folding>
-            <element signature="e#7#188#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="e#6#650#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -603,20 +579,102 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+          <folding>
+            <element signature="e#6#650#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1003">
+          <caret line="67" column="3" selection-start-line="67" selection-start-column="3" selection-end-line="67" selection-end-column="118" />
+          <folding>
+            <element signature="e#7#188#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16031">
+          <caret line="943" column="57" selection-start-line="943" selection-start-column="38" selection-end-line="943" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="97" selection-start-line="25" selection-start-column="97" selection-end-line="25" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="67" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/myaccount/form-change-password.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/global/form-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <element signature="e#6#110#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="67" column="69" selection-start-line="67" selection-start-column="69" selection-end-line="67" selection-end-column="69" />
+        <state relative-caret-position="281">
+          <caret line="60" column="54" lean-forward="true" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="659">
+        <state relative-caret-position="-310">
           <caret line="57" column="31" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
           <folding>
             <element signature="e#81#88#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/page-my-account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="4269" column="28" selection-start-line="4269" selection-start-column="28" selection-end-line="4269" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

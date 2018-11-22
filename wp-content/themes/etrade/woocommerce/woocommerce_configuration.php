@@ -109,7 +109,7 @@ function pukka_woocommerce_after_shop_loop_item_content(){
 	global $post;	?>
 	<div class="more-detail slide-detail">
 		<div class="additional-links">
-			<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Details', 'pukka'); ?></a><a class="product-share" href="#"><?php _e('Share', 'pukka'); ?></a>
+			<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Details', 'pukka'); ?></a>|<a class="product-share" href="#"><?php _e('Share', 'pukka'); ?></a>
 		</div>
 		<?php if( function_exists('pukka_social_share') ){ pukka_social_share(); } ?>
 	</div>
@@ -183,7 +183,7 @@ function get_cart_product_list(){
 
 	$out .= '<div class="cart-subtotal">' . __('Cart total: ', 'pukka') . $woocommerce->cart->get_cart_total() . '</div>';
 	$out .= '<div class="cart-buttons">';
-	$out .= '<a class="button view-cart wc-forward" href="' . wc_get_cart_url() . '">' . __('View Cart', 'woocommerce') . '</a>';
+	$out .= '<a class="button view-cart wc-forward" href="' . wc_get_cart_url() . '">' . __('View cart', 'woocommerce') . '</a>';
 	$out .= '<a class="button checkout wc-forward" href="' . wc_get_checkout_url() . '">' . __('Checkout', 'woocommerce') . '</a>';
 	$out .= '<script type="text/javascript">jQuery(document).trigger("basket-refresh");</script>';
 	$out .= '</div>';

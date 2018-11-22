@@ -945,7 +945,7 @@ function pukka_shop_menu(){
 <!--			</a>-->
 <!--		</li>-->
 
-		<li class="pukka-cart"><a href="<?php echo get_permalink(wc_get_page_id( 'cart' )); ?>"><?php echo sprintf(_n('<span class="txt-dk">%d</span> item', '<span class="txt-dk">%d</span> items', $woocommerce->cart->cart_contents_count, 'pukka'), $woocommerce->cart->cart_contents_count);?></a></li>
+		<li class="pukka-cart111"><a href="<?php echo get_permalink(wc_get_page_id( 'cart' )); ?>"><?php echo sprintf(_n('<span class="txt-dk">%d</span> item', '<span class="txt-dk">%d</span> items', $woocommerce->cart->cart_contents_count, 'pukka'), $woocommerce->cart->cart_contents_count);?></a></li>
 		<li class="pukka-cart-value txt-dk"><a href="<?php echo get_permalink(wc_get_page_id( 'cart' )); ?>"><?php echo $woocommerce->cart->get_cart_total(); ?></a></li>
 		<li class="pukka-cart-content">
 			<a href="<?php echo get_permalink(wc_get_page_id( 'cart' )); ?>">
@@ -1427,23 +1427,17 @@ function pukka_post_author(){
 		if( !empty($website) ){
 			$out .= '<div class="author-links"><a href="' . $website . '"><i class="fa fa-home"></i></a></div>';
 		}
-
 		$out .= '</div><!-- .author-links-wrap -->';
 		$out .= '</div><!-- .author-meta-avatar -->';
-
 		$out .= '<div class="author-description">';
 		$out .= '<div class="author-name"><a href="' . $author_url . '">' . $name . '</a></div>';
 		$out .= '<div class="description-text">' . $description . '</div>';
 		$out .= '</div><!-- .author-description -->';
-
 		$out .= '</div><!-- .author-meta -->';
 
 		return $out;
 	}
-
 endif;
-
-
 
 /* Add user contact info */
 function pukka_add_contact_methods($profile_fields) {
@@ -1456,46 +1450,3 @@ function pukka_add_contact_methods($profile_fields) {
 	return $profile_fields;
 }
 add_filter('user_contactmethods', 'pukka_add_contact_methods');
-
-
-remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
-add_action('woocommerce_proceed_to_checkout', 'sm_woo_custom_checkout_button_text',20);
-
-function sm_woo_custom_checkout_button_text() {
-    $checkout_url = WC()->cart->get_checkout_url();
-    ?>
-    <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward">Төлбөр төлөх</a>
-    <?php
-}
-
-
-/*Add to cart*/
-add_filter( 'woocommerce_product_single_add_to_cart_text', 'sm_woo_custom_cart_button_text' );
-add_filter( 'woocommerce_product_add_to_cart_text', 'sm_woo_custom_cart_button_text' );
-
-function sm_woo_custom_cart_button_text() {
-    return __( 'Add to cart', 'woocommerce' );
-}
-
-/*View Cart*/
-function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
-    switch ( $translated_text ) {
-        case 'View Cart' :
-            $translated_text = __( 'Сагсаа үзэх', 'woocommerce' );
-            break;
-        case 'Checkout' :
-            $translated_text = __( 'Төлбөр хийх', 'woocommerce' );
-            break;
-        case 'items' :
-            $translated_text = __( 'Бараа', 'woocommerce' );
-            break;
-        case 'item' :
-            $translated_text = __( 'Бараа', 'woocommerce' );
-            break;
-        case 'State / county' :
-            $translated_text = __( 'Хот, дүүрэг / Аймаг, сум', 'woocommerce' );
-            break;
-    }
-    return $translated_text;
-}
-add_filter( 'gettext', 'sm_text_view_cart_strings', 20, 3 );

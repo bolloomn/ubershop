@@ -25,6 +25,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 	// Needed so product block doesn't collapse when child is absolute.
+
 	/*$( '.product-block' ).hover(
 	  function() {
 	  	console.log( $( this ) );
@@ -38,6 +39,21 @@ jQuery( document ).ready(function( $ ) {
 	  	}, 350 );
 	  }
 	);*/
+
+	// $( '.product-block' ).hover(
+	//   function() {
+	//   	console.log( $( this ) );
+	//   	$( this ).css( 'height', $( this ).outerHeight() );
+	//     $( this ).addClass( 'product-block-hover' );
+	//   }, function() {
+	//   	var self = this;
+	//   	$( self ).removeClass( 'product-block-hover' );
+	//   	setTimeout( function() {
+	//   		$( self ).css( 'height', 'auto' );
+	//   	}, 350 );
+	//   }
+	// );
+
 	
 	/*
 	*	Drop down menu

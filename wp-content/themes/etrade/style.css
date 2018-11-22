@@ -455,8 +455,8 @@ ul.products:after{
     position: fixed;
     right: 50px;
     bottom: 50px;
-    width: 55px;
-    font-size: 32px;
+    width: 36px;
+    font-size: 20px;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -1907,7 +1907,7 @@ a.button.checkout {
 
 #main {
     margin: 15px 10px 10px;
-    min-height: 800px;
+    /*min-height: 800px;*/
 }
 
 .mobile #main {
@@ -2257,7 +2257,6 @@ a.button.checkout {
 /* =Blog layout / Single
 ----------------------------------------------- */
 article{
-    margin-bottom: 20px;
     background-color: #fff;
 }
 
@@ -4268,8 +4267,7 @@ li.product .social-share-buttons {
 .woo-single-product .quantity .input-text,
 .product-quantity .quantity .input-text {
     background-color: #f6c737;
-    color: #ffffff !important; /* .basic fix */
-
+    color: #FFFF !important;
     border: medium none;
     color: inherit;
     display: block;
@@ -4796,8 +4794,8 @@ table.shop_table_wrap dd {
 }
 
 .cart_totals table {
-    border-width: 1px;
-    border-style: solid;
+    /*border-width: 1px;*/
+    /*border-style: solid;*/
     width: 100%;
 }
 
@@ -6084,8 +6082,8 @@ a.buttons-lt:visited,
 
 /* BEGIN: Cart page */
 .woocommerce-cart .entry-content .woocommerce{
-    padding: 10px;
-    border: 1px solid #cbc9cc;
+    /*padding: 10px;*/
+    /*border: 1px solid #cbc9cc;*/
 }
 
 .woocommerce-cart .woocommerce:after{
@@ -6265,6 +6263,24 @@ a.buttons-lt:visited,
     width: 50%;
 }
 
+
+#loginform {
+    width: 380px;
+    margin: 60px auto;
+    background: #FFF;
+    padding: 30px;
+}
+
+#loginform label {
+    font-size: 12px;
+}
+
+#loginform input[type='text'], #loginform input[type='password'], #loginform input[type='submit'] {
+    width: 100%;
+}
+#loginform p {
+    margin-bottom: 10px;
+}
 .Ptable th {
     background: #232f3e;
     color: #FFF;
@@ -6274,4 +6290,12 @@ a.buttons-lt:visited,
     text-align: left;
     border-bottom: 1px solid #cccccc;
     padding: 5px 10px;
+}
+
+/*.page-id-63 {*/
+    /*max-width: 350px;*/
+/*}*/
+
+.woocommerce-shipping-calculator {
+    display: none;
 }

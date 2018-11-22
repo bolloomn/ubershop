@@ -56,7 +56,6 @@ add_action('woocommerce_before_shop_loop_item', 'pukka_woo_woocommerce_before_sh
 function pukka_woo_woocommerce_before_shop_loop_item_wrapper_open(){
 	?>
 	<div class="product-content">
-
 	<?php
 }
 

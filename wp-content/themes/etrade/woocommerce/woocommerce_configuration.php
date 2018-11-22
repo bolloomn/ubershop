@@ -56,7 +56,6 @@ add_action('woocommerce_before_shop_loop_item', 'pukka_woo_woocommerce_before_sh
 function pukka_woo_woocommerce_before_shop_loop_item_wrapper_open(){
 	?>
 	<div class="product-content">
-
 	<?php
 }
 
@@ -107,11 +106,8 @@ add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_
 
 add_action( 'woocommerce_after_shop_loop_item_title', 'pukka_woocommerce_after_shop_loop_item_content', 50);
 function pukka_woocommerce_after_shop_loop_item_content(){
-	global $post;
-	?>
-
+	global $post;	?>
 	<div class="more-detail slide-detail">
-		<div class="product-description text"><?php echo $post->post_excerpt; ?></div>
 		<div class="additional-links">
 			<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Details', 'pukka'); ?></a><a class="product-share" href="#"><?php _e('Share', 'pukka'); ?></a>
 		</div>

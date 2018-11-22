@@ -205,14 +205,14 @@ input[type='color'],
 textarea{
     padding: 10px 10px;
     background-color: #fff;
-    color: #666666;
+    color: #dadada;
     border-width: 1px;
     border-style: solid;
     border-color: inherit;
 
     /* iphone safari fix */
     -webkit-appearance: none;
-    border-radius: 0;
+    /*border-radius: 0;*/
 }
 
 ::-webkit-input-placeholder {
@@ -613,7 +613,7 @@ ul.products:after{
 .full #menu-primary #main-menu {
     float: left;
     line-height: 1;
-    margin-top: 30px;
+    margin-top: 12px;
 }
 
 .full #menu-primary #main-menu li {
@@ -6262,14 +6262,15 @@ a.buttons-lt:visited,
 
 
 #loginform {
-    width: 380px;
-    margin: 60px auto;
+    max-width: 380px;
+    margin: 0px auto 40px auto;
     background: #FFF;
     padding: 30px;
 }
 
 #loginform label {
-    font-size: 12px;
+    font-size: 13px;
+    color: #666666;
 }
 
 #loginform input[type='text'], #loginform input[type='password'], #loginform input[type='submit'] {
@@ -6295,4 +6296,13 @@ a.buttons-lt:visited,
 
 .woocommerce-shipping-calculator {
     display: none;
+}
+
+
+.heading-title {
+    margin-bottom: 30px;
+    font-size: 16px;
+    padding-bottom: 15px;
+    font-weight: normal;
+    border-bottom: 1px solid #f6c737;
 }

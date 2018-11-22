@@ -25,7 +25,7 @@ jQuery( document ).ready(function( $ ) {
 
 
 	// Needed so product block doesn't collapse when child is absolute.
-	$( '.product-block' ).hover(
+	/*$( '.product-block' ).hover(
 	  function() {
 	  	console.log( $( this ) );
 	  	$( this ).css( 'height', $( this ).outerHeight() );
@@ -37,7 +37,7 @@ jQuery( document ).ready(function( $ ) {
 	  		$( self ).css( 'height', 'auto' );
 	  	}, 350 );
 	  }
-	);
+	);*/
 	
 	/*
 	*	Drop down menu

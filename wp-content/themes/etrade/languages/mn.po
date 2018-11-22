@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UberShop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 09:21+0000\n"
-"PO-Revision-Date: 2018-11-21 10:15+0000\n"
+"PO-Revision-Date: 2018-11-22 02:18+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "Language: mn\n"
@@ -373,7 +373,7 @@ msgstr ""
 
 #: woocommerce/woocommerce_configuration.php:116
 msgid "Details"
-msgstr ""
+msgstr "Дэлгэрэнгүй"
 
 #: pukka/util/init-theme-options.php:77
 msgid "Disable page builder HTML editor"
@@ -1320,7 +1320,7 @@ msgstr ""
 
 #: woocommerce/woocommerce_configuration.php:116
 msgid "Share"
-msgstr ""
+msgstr "Хуваалцах"
 
 #: pukka/util/init-theme-options.php:145
 msgid "Shop"

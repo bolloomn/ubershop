@@ -1464,7 +1464,7 @@ add_action('woocommerce_proceed_to_checkout', 'sm_woo_custom_checkout_button_tex
 function sm_woo_custom_checkout_button_text() {
     $checkout_url = WC()->cart->get_checkout_url();
     ?>
-    <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward"><?php  _e( 'Check On Out', 'woocommerce' ); ?></a>
+    <a href="<?php echo $checkout_url; ?>" class="checkout-button button alt wc-forward">Төлбөр төлөх</a>
     <?php
 }
 
@@ -1491,6 +1491,9 @@ function sm_text_view_cart_strings( $translated_text, $text, $domain ) {
             break;
         case 'item' :
             $translated_text = __( 'Бараа', 'woocommerce' );
+            break;
+        case 'State / county' :
+            $translated_text = __( 'Хот, дүүрэг / Аймаг, сум', 'woocommerce' );
             break;
     }
     return $translated_text;

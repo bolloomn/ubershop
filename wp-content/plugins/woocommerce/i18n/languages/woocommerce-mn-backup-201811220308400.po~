@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-21 10:11+0000\n"
+"PO-Revision-Date: 2018-11-22 03:07+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -1077,7 +1077,7 @@ msgstr ""
 
 #: includes/class-wc-ajax.php:262 templates/cart/cart-empty.php:28
 msgid "Return to shop"
-msgstr ""
+msgstr "Буцах"
 
 #: includes/class-wc-ajax.php:805
 #: includes/admin/meta-boxes/class-wc-meta-box-order-downloads.php:57
@@ -1708,7 +1708,7 @@ msgstr ""
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:79
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:130
 msgid "State / County"
-msgstr ""
+msgstr "Хот, дүүрэг / Аймаг, сум"
 
 #: includes/class-wc-countries.php:690
 #: includes/admin/class-wc-admin-profile.php:69
@@ -1721,7 +1721,7 @@ msgstr ""
 #: includes/admin/settings/class-wc-settings-tax.php:195
 #: includes/admin/settings/views/html-settings-tax.php:28
 msgid "Postcode / ZIP"
-msgstr ""
+msgstr "Шуудангийн код"
 
 #: includes/class-wc-countries.php:761
 msgid "Suburb"
@@ -2192,7 +2192,7 @@ msgstr ""
 
 #: includes/class-wc-form-handler.php:636
 msgid "Cart updated."
-msgstr ""
+msgstr "Сагс шинэчлэгдсэн"
 
 #: includes/class-wc-form-handler.php:678
 msgid "Order cancelled by customer."
@@ -2394,12 +2394,12 @@ msgstr ""
 #: includes/class-wc-install.php:419
 msgctxt "Page slug"
 msgid "checkout"
-msgstr ""
+msgstr "төлбөр хийх"
 
 #: includes/class-wc-install.php:420
 msgctxt "Page title"
 msgid "Checkout"
-msgstr ""
+msgstr "Төлбөр хийх"
 
 #: includes/class-wc-install.php:424
 msgctxt "Page slug"
@@ -3898,7 +3898,7 @@ msgstr ""
 #: includes/admin/meta-boxes/views/html-order-items.php:33
 #: includes/admin/meta-boxes/views/html-order-items.php:192
 msgid "Total"
-msgstr ""
+msgstr "Нийт дүн"
 
 #: includes/wc-account-functions.php:194
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:120
@@ -11156,7 +11156,7 @@ msgstr ""
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:74
 #: includes/admin/helper/views/html-section-account.php:3
 msgid "Update"
-msgstr ""
+msgstr "Нэмэх"
 
 #: includes/admin/class-wc-admin-attributes.php:294
 #: includes/widgets/class-wc-widget-product-categories.php:49
@@ -11538,7 +11538,7 @@ msgstr ""
 #: includes/admin/class-wc-admin-log-table-list.php:204
 #: includes/widgets/class-wc-widget-price-filter.php:101
 msgid "Filter"
-msgstr ""
+msgstr "Шүүх"
 
 #: includes/admin/class-wc-admin-log-table-list.php:240
 msgid "Filter by source"
@@ -12188,7 +12188,7 @@ msgstr ""
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:76
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:127
 msgid "Select a country&hellip;"
-msgstr ""
+msgstr "Улс сонгох&hellip;"
 
 #: includes/admin/class-wc-admin-profile.php:81
 #: includes/admin/class-wc-admin-profile.php:141
@@ -15118,7 +15118,7 @@ msgstr ""
 
 #: includes/cli/class-wc-cli-rest-command.php:265
 msgid "Updated"
-msgstr ""
+msgstr "Шинэчлэгдсэн"
 
 #: includes/cli/class-wc-cli-rest-command.php:345
 msgid ""
@@ -15217,7 +15217,7 @@ msgstr ""
 #: includes/customizer/class-wc-shop-customizer.php:271
 #: includes/customizer/class-wc-shop-customizer.php:437
 msgid "Default sorting (custom ordering + name)"
-msgstr ""
+msgstr "Үндсэн эрэмбэ"
 
 #: includes/customizer/class-wc-shop-customizer.php:272
 #: includes/customizer/class-wc-shop-customizer.php:438
@@ -15410,7 +15410,7 @@ msgstr ""
 
 #: includes/customizer/class-wc-shop-customizer.php:668
 msgid "Checkout"
-msgstr ""
+msgstr "Төлбөр хийх"
 
 #: includes/customizer/class-wc-shop-customizer.php:671
 msgid ""
@@ -16940,7 +16940,7 @@ msgstr ""
 #: templates/cart/cart-totals.php:33 templates/cart/cart-totals.php:34
 #: templates/cart/mini-cart.php:71 templates/checkout/review-order.php:59
 msgid "Subtotal"
-msgstr ""
+msgstr "Дүн"
 
 #: templates/cart/cart-totals.php:71
 #, php-format
@@ -16972,7 +16972,7 @@ msgstr ""
 
 #: templates/cart/cart.php:141
 msgid "Update cart"
-msgstr ""
+msgstr "Сагс шинэчлэх"
 
 #: templates/cart/cross-sells.php:27
 msgid "You may be interested in&hellip;"
@@ -16988,7 +16988,7 @@ msgstr ""
 
 #: templates/cart/shipping-calculator.php:24
 msgid "Calculate shipping"
-msgstr ""
+msgstr "Хүргэлт тооцох"
 
 #: templates/cart/shipping-calculator.php:56
 msgid "Select a state&hellip;"
@@ -17054,7 +17054,7 @@ msgstr ""
 #: templates/checkout/form-pay.php:28
 #: includes/admin/meta-boxes/views/html-order-items.php:32
 msgid "Qty"
-msgstr ""
+msgstr "Ширхэг"
 
 #: templates/checkout/form-pay.php:29
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:245
@@ -17392,7 +17392,7 @@ msgstr ""
 #: templates/global/quantity-input.php:41
 msgctxt "Product quantity input tooltip"
 msgid "Qty"
-msgstr ""
+msgstr "Ширхэг"
 
 #: templates/loop/no-products-found.php:24
 msgid "No products were found matching your selection."
@@ -17412,8 +17412,8 @@ msgstr[1] ""
 msgctxt "with first and last result"
 msgid "Showing the single result"
 msgid_plural "Showing %1$d&ndash;%2$d of %3$d results"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Нэг үр дүнг харуулж байна"
+msgstr[1] "Үр дүн %1$d-%2$d нийт %3$d"
 
 #: templates/loop/sale-flash.php:28 templates/single-product/sale-flash.php:28
 msgid "Sale!"
@@ -21399,7 +21399,7 @@ msgstr ""
 #: includes/admin/views/html-bulk-edit-product.php:45
 #: includes/admin/views/html-quick-edit-product.php:39
 msgid "Sale"
-msgstr ""
+msgstr "Хямдрал"
 
 #: includes/admin/views/html-bulk-edit-product.php:52
 msgid "Increase existing sale price by (fixed amount or %):"

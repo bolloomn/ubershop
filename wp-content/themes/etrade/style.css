@@ -455,8 +455,8 @@ ul.products:after{
     position: fixed;
     right: 50px;
     bottom: 50px;
-    width: 55px;
-    font-size: 32px;
+    width: 36px;
+    font-size: 20px;
     color: #fff;
     text-align: center;
     text-decoration: none;
@@ -1906,7 +1906,7 @@ a.button.checkout {
  */
 
 #main {
-    margin: 30px;
+    margin: 15px 10px 10px;
     /*min-height: 800px;*/
 }
 
@@ -6263,6 +6263,24 @@ a.buttons-lt:visited,
     width: 50%;
 }
 
+
+#loginform {
+    width: 380px;
+    margin: 60px auto;
+    background: #FFF;
+    padding: 30px;
+}
+
+#loginform label {
+    font-size: 12px;
+}
+
+#loginform input[type='text'], #loginform input[type='password'], #loginform input[type='submit'] {
+    width: 100%;
+}
+#loginform p {
+    margin-bottom: 10px;
+}
 .Ptable th {
     background: #232f3e;
     color: #FFF;

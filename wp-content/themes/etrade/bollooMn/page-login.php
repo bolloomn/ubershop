@@ -1,5 +1,5 @@
 <?php /* Template Name: login */
-
+if(is_user_logged_in()) {wp_redirect(home_url()); }
 if(isset($_POST['login_Sbumit'])) {
     $creds                  = array();
     $creds['user_login']    = stripslashes( trim( $_POST['userName'] ) );
@@ -55,21 +55,29 @@ if(isset($_POST['login_Sbumit'])) {
 
                 <div class="content-wrap">
                     <div class="entry-content">
-                        <form name="loginform" id="loginform"  method="post">
-                            <?php if(!empty($errors)) { foreach($errors as $err ) echo '<p style="font-size:13px; color: #d12333;">'.$err.'</p>';} ?>
+                        <div class="col-md-4 offset-md-4">
+                        <?php if(isset($_GET['r'])){ echo '<div  class="alert alert-success mb-4" role="alert">Амжилттай бүртгэгдлээ. нэвтэрч орно уу</div>'; } ?>
+                        <?php if(!empty($errors)) { foreach($errors as $err ) echo '<div  class="alert alert-danger mb-4" role="alert">'.$err.'</div>';} ?>
+
+                        <div class="text-center mb-4">
+                            <h1 style="color:#232f3e; font-weight: 400;">Нэвтрэх хэсэг</h1>
+                        </div>
+
+                        <form class="bg-white p-4 mb-4"  method="post">
+
                             <p class="login-username">
                                 <label for="user_login">Нэвтрэх нэр</label>
-                                <input type="text" name="userName" id="user_login" class="input" value="" >
+                                <input type="text" name="userName" id="user_login" class="form-control" value="" >
                             </p>
                             <p class="login-password">
                                 <label for="user_pass">Нууц үг</label>
-                                <input type="password" name="passWord" id="user_pass" class="input" value="" >
+                                <input type="password" name="passWord" id="user_pass" class="form-control" value="" >
                             </p>
 
 
                             <p class="login-submit" style="margin-top: 20px;">
                                 <input type="hidden" name="login_Sbumit" >
-                                <input type="submit" name="wp-submit" id="wp-submit" class="button-primary" value="Нэвтрэх">
+                                <input type="submit" name="wp-submit" id="wp-submit" class="button-primary form-control" value="Нэвтрэх">
                                 <input type="hidden" name="redirect_to" value="<?php echo home_url(); ?>">
                             </p>
                             <p style="margin-top: 15px; margin-bottom: 0px" >
@@ -78,6 +86,7 @@ if(isset($_POST['login_Sbumit'])) {
                             </p>
                             <div style="clear: both;"></div>
                         </form>
+                        </div>
                     </div><!-- .entry-content -->
                 </div> <!-- .content-wrap -->
 

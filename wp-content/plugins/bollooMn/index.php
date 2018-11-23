@@ -43,6 +43,13 @@ function _product_tatalt(){
     baraa_footer();
 }
 
+function checkPost($key){
+    if(isset($_POST[$key])){
+        return $_POST[$key];
+    }
+    return;
+}
+
 function _product_uldegdel(){
     baraa_header();
     if(isset($_GET['pid'])) {

@@ -63,7 +63,7 @@ if('top' == pukka_get_option('main_menu_position')) :
                             $current_user = wp_get_current_user();
                             ?>
                             <li class="menu-item">
-                                <a href="<?=home_url('my-account');?>"><i class="fa fa-user"></i> <?php echo  $current_user->display_name; ?></a>
+                                <a href="<?=home_url('my-profile');?>"><i class="fa fa-user"></i> <?php echo  $current_user->display_name; ?></a>
                             </li>
                             <li class="menu-item">
                                 <a href="<?=wp_logout_url( home_url());?>"><i class="fa fa-sign-out"></i> гарах</a>

@@ -3,6 +3,7 @@
 
 
 <?php
+if(is_user_logged_in()) {wp_redirect(home_url()); }
         global $wpdb;
 
         $error = '';
@@ -63,6 +64,9 @@
 
             <div class="content-wrap">
                 <div class="entry-content">
+                    <div class="text-center mb-4">
+                        <h1 style="color:#232f3e; font-weight: 400;">Нууц үг сэргээх</h1>
+                    </div>
                     <form id="loginform" method="post">
                         <fieldset>
                             <?php

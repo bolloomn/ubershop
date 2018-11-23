@@ -4103,6 +4103,7 @@ li.product .social-share-buttons {
     float: right;
     font-size: 12px;
     font-weight: 300;
+    margin-right: 8px;
 }
 
 .catalog-options .woocommerce-result-count,
@@ -4759,6 +4760,14 @@ table.shop_table_wrap dd {
 }
 .shop_table .product-remove a{
     display: block;
+    width: 20px;
+    height: 20px;
+    background: #eee;
+    text-align: center;
+    line-height: 14px;
+    padding: 0 2px;
+    position: relative;
+    top: -10px;
 }
 .shop_table .product-subtotal {
     float: right;

@@ -15,7 +15,7 @@ if ( ! $messages ) {
 	return;
 }
 ?>
-<ul class="woocommerce-error" role="alert">
+<ul class="alert alert-danger" role="alert">
 	<?php foreach ( $messages as $message ) : ?>
 		<li>
 			<i class="fa fa-times"></i>

@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-22 08:37+0000\n"
+"PO-Revision-Date: 2018-11-23 05:54+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -1556,7 +1556,7 @@ msgstr ""
 #: includes/class-wc-checkout.php:763 includes/class-wc-form-handler.php:374
 msgid ""
 "Please read and accept the terms and conditions to proceed with your order."
-msgstr ""
+msgstr "Захиалгаа үргэлжлүүлэхийн тулд  нөхцлийг уншина уу."
 
 #: includes/class-wc-checkout.php:770
 msgid "Please enter an address to continue."
@@ -1580,7 +1580,7 @@ msgstr ""
 #: includes/class-wc-form-handler.php:489
 #: includes/class-wc-form-handler.php:514
 msgid "Invalid payment method."
-msgstr ""
+msgstr "Төлбөрийн арга олдсонгүй"
 
 #: includes/class-wc-checkout.php:1037
 msgid "We were unable to process your order, please try again."
@@ -15467,7 +15467,7 @@ msgstr ""
 #: includes/customizer/class-wc-shop-customizer.php:799
 #: includes/admin/settings/class-wc-settings-accounts.php:123
 msgid "Privacy policy"
-msgstr "Нууцлалын бодлого"
+msgstr "нууцлалын бодлого"
 
 #: includes/customizer/class-wc-shop-customizer.php:757
 #: includes/customizer/class-wc-shop-customizer.php:811

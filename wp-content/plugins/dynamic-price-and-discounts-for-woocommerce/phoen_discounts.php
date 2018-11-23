@@ -806,7 +806,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			$gen_settings = get_option('phoe_disc_value');
 			
 			$coupon_disc=isset($gen_settings['coupon_disc'])?$gen_settings['coupon_disc']:'';
-			
+			if(is_array($val)){
 			for($i=0;$i<count($val);$i++) 	{
 				$phoen_minval=isset($val[$i]['min_val'])?$val[$i]['min_val']:"";
 				$phoen_maxval=isset($val[$i]['max_val'])?$val[$i]['max_val']:"";
@@ -870,7 +870,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 				}
 						
 			}
-			
+            }
 			
 			$product_id_min=$values['product_id'];
 					
@@ -879,7 +879,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			$product_data=$gen_settings['data'];
 			
 			$product_user_role=$gen_settings['user_role'];
-			
+
+			if(is_array($product_data)){
 			
 			for($i=0;$i<count($product_data);$i++) 	{
 				
@@ -959,8 +960,8 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 					}
 					
 				}
-				
-				
+
+            }
 						
 			}
 				

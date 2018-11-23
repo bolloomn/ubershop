@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <table class="table table-hover table-bordered ">
+    <table class="bg-white table table-hover table-bordered ">
         <thead>
         <tr class="bg-secondary text-white">
             <th >ID</th>
@@ -116,7 +116,7 @@
             <th>Хорогдсон</th>
             <th>Эцсийн үлдэгдэл</th>
             <th>Зарлагдсан</th>
-            <th width="75"></th>
+            <th width="90"></th>
         </tr>
         </thead>
         <tbody>

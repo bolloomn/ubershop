@@ -46,7 +46,7 @@ $start_quantity=$start->quantity;
         </div>
     </div>
 
-    <table class="table table-hover table-bordered ">
+    <table class="bg-white table table-hover table-bordered ">
         <thead>
         <tr class="bg-secondary text-white">
             <th>Огноо</th>

@@ -85,7 +85,7 @@ global  $wpdb;
     </h1>
 
 
-    <table class="table table-hover table-bordered">
+    <table class="bg-white table table-hover table-bordered">
         <thead>
             <tr class="bg-secondary text-white">
                 <th width="200">Огноо</th>
@@ -93,7 +93,7 @@ global  $wpdb;
                 <th>Үнэ</th>
                 <th>Тоо</th>
                 <th>Нийт</th>
-                <th width="75"></th>
+                <th width="90"></th>
             </tr>
         </thead>
         <tbody>

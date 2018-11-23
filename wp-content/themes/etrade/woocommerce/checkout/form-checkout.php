@@ -37,22 +37,23 @@ $get_checkout_url = apply_filters( 'woocommerce_get_checkout_url', wc_get_checko
 		<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
 		<div class="col2-set catr-product-list" id="customer_details">
-
-			<div class="col-1">
+            <div class="row">
+			<div class="col-sm-12">
 
 				<?php do_action( 'woocommerce_checkout_billing' ); ?>
 
 			</div>
-
-			<div class="col-2">
+            </div>
+            <div class="row">
+			<div class="col-sm-12">
 
 				<?php do_action( 'woocommerce_checkout_shipping' ); ?>
 
 			</div>
-			
+            </div>
 			<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
 		</div>
-		<div class="cart-totals-side">	
+		<div class="cart-totals-side">
 			<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
 
 

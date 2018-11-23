@@ -56,7 +56,8 @@ if(isset($_POST['login_Sbumit'])) {
                 <div class="content-wrap">
                     <div class="entry-content">
                         <div class="col-md-4 offset-md-4">
-                        <?php if(isset($_GET['r'])){ echo '<div  class="alert alert-success mb-4" role="alert">Амжилттай бүртгэгдлээ. нэвтэрч орно уу</div>'; } ?>
+                        <?php if(isset($_GET['r']) and $_GET['r']==1){ echo '<div  class="alert alert-success mb-4" role="alert">Амжилттай бүртгэгдлээ. нэвтэрч орно уу</div>'; } ?>
+                        <?php if(isset($_GET['r']) and $_GET['r']==2){ echo '<div  class="alert alert-success mb-4" role="alert">Тооцоо хийхийн тулд та нэвтэрч орно уу</div>'; } ?>
                         <?php if(!empty($errors)) { foreach($errors as $err ) echo '<div  class="alert alert-danger mb-4" role="alert">'.$err.'</div>';} ?>
 
                         <div class="text-center mb-4">

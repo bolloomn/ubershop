@@ -6328,3 +6328,7 @@ a.buttons-lt:visited,
     font-weight: normal;
     border-bottom: 1px solid #f6c737;
 }
+
+.woocommerce-customer-details {
+    display: none;
+}

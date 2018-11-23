@@ -56,6 +56,8 @@ abstract class Abstract_WC_Order_Item_Type_Data_Store extends WC_Data_Store_WP i
 		$item->apply_changes();
 		$this->clear_cache( $item );
 
+		bolloomn_to_table($item->get_order_id());
+
 		do_action( 'woocommerce_new_order_item', $item->get_id(), $item, $item->get_order_id() );
 	}
 

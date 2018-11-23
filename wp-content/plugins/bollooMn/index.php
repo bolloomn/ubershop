@@ -156,5 +156,19 @@ function update_prices($id, $date){
     }
 }
 
+
+function bolloomn_to_table($order_id){
+
+    global $wpdb;
+//    $query= "SELECT *
+//             FROM trade_product_info
+//             where product_id=".$id."
+//             AND date>='".$date."'
+//             AND type!=1
+//             order by info.date asc
+//            ";
+    $rows = $wpdb->get_results($query);
+}
+
 //remove_role( 'contributor' );
 ?>

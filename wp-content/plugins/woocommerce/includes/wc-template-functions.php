@@ -2049,7 +2049,7 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 			'wrap_after'  => '</nav>',
 			'before'      => '',
 			'after'       => '',
-			'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
+			'home'        => 'Нүүр хуудас',
 		) ) );
 
 		$breadcrumbs = new WC_Breadcrumb();

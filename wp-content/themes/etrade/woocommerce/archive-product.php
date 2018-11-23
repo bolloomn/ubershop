@@ -26,11 +26,9 @@ get_header( 'shop' ); ?>
 				// retrieve the existing value(s) for this meta field. This returns an array
 				$term_meta = get_option( "taxonomy_$term_id" );
 
-				if(isset($term_meta['cat_header'])) : ?>
-					<div class="cat-header">
-					<?php echo do_shortcode($term_meta['cat_header']); ?>
-					</div> <!-- .cat-header -->
-				<?php endif;
+				?>
+
+				<?php
 			}
 		?>
 		<?php /* END: Pukka modification */ ?>

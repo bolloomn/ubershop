@@ -5134,6 +5134,7 @@ table.shop_table_wrap dd {
 .woocommerce-terms-and-conditions{
     margin-bottom: 20px;
     border: 1px solid #f1f1f1;
+    padding: 10px 13px;
 }
 .woocommerce-message,
 .woocommerce-info,

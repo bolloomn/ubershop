@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-23 07:23+0000\n"
+"PO-Revision-Date: 2018-11-23 09:03+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -1684,7 +1684,7 @@ msgstr "Компанийн нэр"
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:72
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:123
 msgid "Country"
-msgstr ""
+msgstr "Улс"
 
 #: includes/class-wc-countries.php:656
 msgid "Street address"
@@ -2312,7 +2312,7 @@ msgstr ""
 #: includes/admin/class-wc-admin-setup-wizard.php:166
 msgctxt "enhanced select"
 msgid "Please enter 1 or more characters"
-msgstr ""
+msgstr "Нэгээс илүү утга оруулна уу"
 
 #: includes/class-wc-frontend-scripts.php:570
 #: includes/admin/class-wc-admin-assets.php:118
@@ -2524,14 +2524,14 @@ msgstr ""
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:79
 #: includes/admin/settings/views/html-settings-tax.php:34
 msgid "Shipping"
-msgstr ""
+msgstr "Хүргэлт"
 
 #. translators: %s: Order date
 #: includes/class-wc-order-refund.php:67
 #: includes/data-stores/class-wc-order-refund-data-store-cpt.php:115
 #, php-format
 msgid "Refund &ndash; %s"
-msgstr ""
+msgstr "Буцааж өгөх &ndash; %s"
 
 #: includes/class-wc-order-refund.php:67
 #: includes/data-stores/abstract-wc-order-data-store-cpt.php:230
@@ -2609,7 +2609,7 @@ msgstr "Төлбөрийн төрөл:"
 #: includes/class-wc-order.php:1965
 #: includes/admin/meta-boxes/views/html-order-items.php:225
 msgid "Refund"
-msgstr ""
+msgstr "Буцааж өгөх"
 
 #: includes/class-wc-post-types.php:87
 #: includes/export/class-wc-product-csv-exporter.php:130
@@ -2980,7 +2980,7 @@ msgstr ""
 #: includes/class-wc-post-types.php:372
 msgctxt "shop_order post type singular name"
 msgid "Order"
-msgstr ""
+msgstr "Захиалга"
 
 #: includes/class-wc-post-types.php:373
 msgid "Add order"
@@ -3006,7 +3006,7 @@ msgstr ""
 
 #: includes/class-wc-post-types.php:379
 msgid "Search orders"
-msgstr ""
+msgstr "Захиалгаас хайх"
 
 #: includes/class-wc-post-types.php:380
 #: includes/admin/class-wc-admin-dashboard.php:357
@@ -3116,7 +3116,7 @@ msgstr ""
 #: includes/class-wc-post-types.php:483 includes/wc-order-functions.php:95
 msgctxt "Order status"
 msgid "Pending payment"
-msgstr ""
+msgstr "Төлбөр хүлээгдэж байна"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:489
@@ -3129,72 +3129,72 @@ msgstr[1] ""
 #: includes/class-wc-post-types.php:492 includes/wc-order-functions.php:96
 msgctxt "Order status"
 msgid "Processing"
-msgstr ""
+msgstr "Боловсруулж байна"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:498
 #, php-format
 msgid "Processing <span class=\"count\">(%s)</span>"
 msgid_plural "Processing <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Боловсруулж буй <span class=\"count\">(%s)</span>"
+msgstr[1] "Боловсруулж буй <span class=\"count\">(%s)</span>"
 
 #: includes/class-wc-post-types.php:501 includes/wc-order-functions.php:97
 msgctxt "Order status"
 msgid "On hold"
-msgstr ""
+msgstr "Хүлээгдэж байна"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:507
 #, php-format
 msgid "On hold <span class=\"count\">(%s)</span>"
 msgid_plural "On hold <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Хүлээгдэж буй <span class=\"count\">(%s)</span>"
+msgstr[1] "Хүлээгдэж буй <span class=\"count\">(%s)</span>"
 
 #: includes/class-wc-post-types.php:510 includes/wc-order-functions.php:98
 msgctxt "Order status"
 msgid "Completed"
-msgstr ""
+msgstr "Шийдвэрлэсэн"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:516
 #, php-format
 msgid "Completed <span class=\"count\">(%s)</span>"
 msgid_plural "Completed <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Шийдвэрлэсэн <span class=\"count\">(%s)</span>"
+msgstr[1] "Шийдвэрлэсэн <span class=\"count\">(%s)</span>"
 
 #: includes/class-wc-post-types.php:519 includes/wc-order-functions.php:99
 msgctxt "Order status"
 msgid "Cancelled"
-msgstr ""
+msgstr "Цуцлагдсан"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:525
 #, php-format
 msgid "Cancelled <span class=\"count\">(%s)</span>"
 msgid_plural "Cancelled <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Цуцлагдсан <span class=\"count\">(%s)</span>"
+msgstr[1] "Цуцлагдсан <span class=\"count\">(%s)</span>"
 
 #: includes/class-wc-post-types.php:528 includes/wc-order-functions.php:100
 msgctxt "Order status"
 msgid "Refunded"
-msgstr ""
+msgstr "Буцаагдсан"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:534
 #, php-format
 msgid "Refunded <span class=\"count\">(%s)</span>"
 msgid_plural "Refunded <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Буцаагдсан <span class=\"count\">(%s)</span>"
+msgstr[1] "Буцаагдсан <span class=\"count\">(%s)</span>"
 
 #: includes/class-wc-post-types.php:537 includes/wc-order-functions.php:101
 msgctxt "Order status"
 msgid "Failed"
-msgstr ""
+msgstr "Амжилтгүй"
 
 #. translators: %s: number of orders
 #: includes/class-wc-post-types.php:543
@@ -3334,7 +3334,7 @@ msgstr ""
 
 #: includes/class-wc-privacy-erasers.php:339
 msgid "Personal data removed."
-msgstr ""
+msgstr "Захиалгын мэдээлэл устсан"
 
 #. Translators: %s Prop name.
 #: includes/class-wc-privacy-erasers.php:384
@@ -3417,7 +3417,7 @@ msgstr ""
 #: includes/class-wc-privacy-exporters.php:292
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:417
 msgid "Transaction ID"
-msgstr ""
+msgstr "Гүйгээний дугаар"
 
 #: includes/class-wc-privacy-exporters.php:334
 #: templates/order/form-tracking.php:27
@@ -3729,7 +3729,7 @@ msgstr ""
 #: includes/gateways/simplify-commerce/class-wc-gateway-simplify-commerce.php:628
 #, php-format
 msgid "Order #%s"
-msgstr ""
+msgstr "#%s"
 
 #: includes/class-wc-query.php:118 includes/wc-account-functions.php:100
 #: templates/emails/email-downloads.php:22
@@ -3748,7 +3748,7 @@ msgstr ""
 #: includes/class-wc-query.php:124 includes/wc-account-functions.php:101
 #: includes/admin/settings/class-wc-settings-advanced.php:256
 msgid "Addresses"
-msgstr ""
+msgstr "Хаягууд"
 
 #: includes/class-wc-query.php:127 includes/wc-account-functions.php:102
 #: includes/admin/settings/class-wc-settings-advanced.php:265
@@ -3860,7 +3860,7 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-downloads.php:217
 #: includes/gateways/paypal/includes/class-wc-gateway-paypal-request.php:286
 msgid "Order"
-msgstr ""
+msgstr "Захиалга"
 
 #: includes/wc-account-functions.php:191
 #: includes/widgets/class-wc-widget-products.php:53
@@ -3873,7 +3873,7 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-sales-by-date.php:604
 #: includes/admin/reports/class-wc-report-sales-by-product.php:406
 msgid "Date"
-msgstr ""
+msgstr "Огноо"
 
 #: includes/wc-account-functions.php:192
 #: includes/admin/class-wc-admin-dashboard.php:347
@@ -3884,7 +3884,7 @@ msgstr ""
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:58
 #: includes/admin/settings/views/html-webhooks-edit.php:36
 msgid "Status"
-msgstr ""
+msgstr "Төлөв"
 
 #: includes/wc-account-functions.php:193
 #: includes/admin/class-wc-admin-dashboard.php:348
@@ -11628,7 +11628,7 @@ msgstr ""
 #: includes/admin/class-wc-admin-meta-boxes.php:131
 #, php-format
 msgid "%s actions"
-msgstr ""
+msgstr "%s -д хийх үйлдэл"
 
 #: includes/admin/class-wc-admin-meta-boxes.php:135
 msgid "Coupon data"
@@ -12153,7 +12153,7 @@ msgstr ""
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:1003
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:1066
 msgid "Address line 1"
-msgstr ""
+msgstr "Хаяг 1"
 
 #: includes/admin/class-wc-admin-profile.php:61
 #: includes/admin/class-wc-admin-profile.php:121
@@ -12169,7 +12169,7 @@ msgstr ""
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:1008
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:1071
 msgid "Address line 2"
-msgstr ""
+msgstr "Хаяг 2"
 
 #: includes/admin/class-wc-admin-profile.php:65
 #: includes/admin/class-wc-admin-profile.php:125
@@ -12181,7 +12181,7 @@ msgstr ""
 #: includes/admin/settings/class-wc-settings-tax.php:196
 #: includes/admin/settings/views/html-settings-tax.php:29
 msgid "City"
-msgstr ""
+msgstr "Хот"
 
 #: includes/admin/class-wc-admin-profile.php:77
 #: includes/admin/class-wc-admin-profile.php:137
@@ -12369,7 +12369,7 @@ msgstr ""
 
 #: includes/admin/class-wc-admin-setup-wizard.php:427
 msgid "Address"
-msgstr ""
+msgstr "Хаяг"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:442
 msgid "Choose a state&hellip;"
@@ -18126,7 +18126,7 @@ msgstr ""
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:117
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:312
 msgid "Billing"
-msgstr ""
+msgstr "Нэхэмжлэх"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:118
 msgid "Ship to"
@@ -18134,19 +18134,19 @@ msgstr ""
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:138
 msgid "Change status to processing"
-msgstr ""
+msgstr "Шинэ захиалга горимд"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:139
 msgid "Change status to on-hold"
-msgstr ""
+msgstr "Хүлээгдэж байна горимд"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:140
 msgid "Change status to completed"
-msgstr ""
+msgstr "Шийдвэрлэсэн горимд"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:141
 msgid "Remove personal data"
-msgstr ""
+msgstr "Захиалга устгах"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:179
 msgid "Preview"
@@ -18173,7 +18173,7 @@ msgstr[1] ""
 #, php-format
 msgctxt "%s = human-readable time difference"
 msgid "%s ago"
-msgstr ""
+msgstr "%s өмнө"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:240
 msgid "M j, Y"
@@ -18263,7 +18263,7 @@ msgstr[1] ""
 
 #: includes/admin/list-tables/class-wc-admin-list-table-orders.php:742
 msgid "Filter by registered customer"
-msgstr ""
+msgstr "Бүртгэлтэй хэрэглэгчээр шүүх"
 
 #: includes/admin/list-tables/class-wc-admin-list-table-products.php:50
 msgid "Ready to start selling something awesome?"
@@ -18336,7 +18336,7 @@ msgstr ""
 #: includes/admin/settings/class-wc-settings-general.php:24
 #: includes/admin/settings/class-wc-settings-products.php:39
 msgid "General"
-msgstr ""
+msgstr "Ерөнхий мэдээлэл"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:52
 msgid "Usage restriction"
@@ -18531,23 +18531,23 @@ msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:37
 msgid "Email invoice / order details to customer"
-msgstr ""
+msgstr "Худалдан авагч руу нэхэмжлэх имэйл хаягаар илгээх"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:38
 msgid "Resend new order notification"
-msgstr ""
+msgstr "Дахин шинэ нэхэмжлэх илгээх"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:39
 msgid "Regenerate download permissions"
-msgstr ""
+msgstr "Татаж авах зөвшөөрлийг дахин сэргээх"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:49
 msgid "Choose an action..."
-msgstr ""
+msgstr "Хийх үйлдэлээ сонго..."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:65
 msgid "Move to trash"
-msgstr ""
+msgstr "Хогийн саванд хийх"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-actions.php:74
 msgid "Create"
@@ -18561,13 +18561,13 @@ msgstr ""
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:177
 #, php-format
 msgid "%1$s #%2$s details"
-msgstr ""
+msgstr "#%2$s дугаартай захиалга"
 
 #. translators: %s: payment method
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:192
 #, php-format
 msgid "Payment via %s"
-msgstr ""
+msgstr "Төлбөр төлөх нөхцөл: %s"
 
 #. translators: 1: date 2: time
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:210
@@ -18579,11 +18579,11 @@ msgstr ""
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:219
 #, php-format
 msgid "Customer IP: %s"
-msgstr ""
+msgstr "Хэрэглэгчийн IP: %s"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:233
 msgid "Date created:"
-msgstr ""
+msgstr "Үүссэн огноо:"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:236
 msgid "h"
@@ -18596,7 +18596,7 @@ msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:244
 msgid "Status:"
-msgstr ""
+msgstr "Төлөв:"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:249
 msgid "Customer payment page &rarr;"
@@ -18604,15 +18604,15 @@ msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:268
 msgid "Customer:"
-msgstr ""
+msgstr "Хэрэглэгч:"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:278
 msgid "View other orders &rarr;"
-msgstr ""
+msgstr "Бусад захиалга харах &rarr;"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:283
 msgid "Profile &rarr;"
-msgstr ""
+msgstr "Хувийн мэдээлэл &rarr;"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:303
 #: includes/admin/reports/class-wc-report-downloads.php:194
@@ -18621,16 +18621,16 @@ msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:315
 msgid "Load billing address"
-msgstr ""
+msgstr "Нэхэмжлэх хаяг дуудах"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:325
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "Address:"
-msgstr ""
+msgstr "Хаяг:"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:325
 msgid "No billing address set."
-msgstr ""
+msgstr "Тооцоо хийх хаяг байхгүй байна."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:405
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:407
@@ -18641,27 +18641,27 @@ msgstr ""
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:431
 msgid "Load shipping address"
-msgstr ""
+msgstr "Хүргэх хаяг дуудах"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:432
 msgid "Copy billing address"
-msgstr ""
+msgstr "Нэхэмжлэхийн хаяг хуулах"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:442
 msgid "No shipping address set."
-msgstr ""
+msgstr "Хүргэлтийн хаяг байхгүй байна."
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:466
 msgid "Customer provided note:"
-msgstr ""
+msgstr "Хэрэглэгчийн тэмдэглэл:"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:505
 msgid "Customer provided note"
-msgstr ""
+msgstr "Хэрэглэгчийн тэмдэглэл"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-data.php:506
 msgid "Customer notes about the order"
-msgstr ""
+msgstr "Хэрэглэгчийн захиалгын тухай тэмдэглэлэ"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-order-downloads.php:70
 msgid "Search for a downloadable product&hellip;"
@@ -23969,7 +23969,7 @@ msgstr ""
 
 #: includes/gateways/cod/class-wc-gateway-cod.php:279
 msgid "Payment to be made upon delivery."
-msgstr ""
+msgstr "Төлбөрийг бэлнээр хүргэлт хийгээд авна."
 
 #: includes/gateways/paypal/class-wc-gateway-paypal.php:42
 msgid "Proceed to PayPal"
@@ -24887,7 +24887,7 @@ msgstr ""
 
 #: includes/admin/meta-boxes/views/html-order-items.php:203
 msgid "Refunded"
-msgstr ""
+msgstr "Буцаагдсан"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:217
 msgid "Add item(s)"
@@ -24895,11 +24895,11 @@ msgstr ""
 
 #: includes/admin/meta-boxes/views/html-order-items.php:222
 msgid "To edit this order change the status back to \"Pending\""
-msgstr ""
+msgstr "Энэ захиалгыг засахын тулд статусыг \"Хүлээгдэж буй\" руу шилжүүлнэ"
 
 #: includes/admin/meta-boxes/views/html-order-items.php:222
 msgid "This order is no longer editable."
-msgstr ""
+msgstr "Энэ захиалгыг засах боломжгүй болсон."
 
 #: includes/admin/meta-boxes/views/html-order-items.php:232
 msgid "Recalculate"
@@ -24984,7 +24984,7 @@ msgstr ""
 #: includes/admin/meta-boxes/views/html-order-refund.php:23
 #, php-format
 msgid "Refund #%1$s - %2$s by %3$s"
-msgstr ""
+msgstr "Буцааж өгөх #%1$s - %2$s-д өөрчилсөн %3$s"
 
 #. translators: 1: refund id 2: refund date
 #: includes/admin/meta-boxes/views/html-order-refund.php:36

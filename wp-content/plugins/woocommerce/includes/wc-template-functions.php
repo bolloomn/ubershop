@@ -2049,7 +2049,7 @@ if ( ! function_exists( 'woocommerce_breadcrumb' ) ) {
 			'wrap_after'  => '</nav>',
 			'before'      => '',
 			'after'       => '',
-			'home'        => 'Нүүр хуудас',
+			'home'        => esc_html__( 'Home', 'pukka' ),
 		) ) );
 
 		$breadcrumbs = new WC_Breadcrumb();

@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-23 06:42+0000\n"
+"PO-Revision-Date: 2018-11-23 07:23+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -17345,7 +17345,7 @@ msgstr ""
 #: templates/order/order-details-customer.php:32
 #: templates/emails/plain/email-addresses.php:22
 msgid "Billing address"
-msgstr ""
+msgstr "Нэхэмжлэх хаяг"
 
 #: templates/emails/email-addresses.php:42
 #: templates/myaccount/form-edit-address.php:20
@@ -22338,7 +22338,7 @@ msgstr ""
 #: includes/api/v1/class-wc-rest-orders-controller.php:1028
 #: includes/api/v2/class-wc-rest-orders-v2-controller.php:983
 msgid "Billing address."
-msgstr ""
+msgstr "Нэхэмжлэх хаяг."
 
 #: includes/api/v1/class-wc-rest-orders-controller.php:1073
 #: includes/api/v1/class-wc-rest-orders-controller.php:1136

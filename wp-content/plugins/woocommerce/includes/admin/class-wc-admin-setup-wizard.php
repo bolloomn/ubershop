@@ -1558,7 +1558,7 @@ class WC_Admin_Setup_Wizard {
 				'class'       => '',
 			),
 			'cod'    => array(
-				'name'        => __( 'Cash on delivery', 'woocommerce' ),
+				'name'        => esc_html__( 'Cash on delivery', 'woocommerce' ),
 				'description' => __( 'A simple offline gateway that lets you accept cash on delivery.', 'woocommerce' ),
 				'image'       => '',
 				'class'       => '',

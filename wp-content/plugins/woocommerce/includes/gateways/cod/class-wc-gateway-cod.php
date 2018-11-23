@@ -53,7 +53,7 @@ class WC_Gateway_COD extends WC_Payment_Gateway {
 	protected function setup_properties() {
 		$this->id                 = 'cod';
 		$this->icon               = apply_filters( 'woocommerce_cod_icon', '' );
-		$this->method_title       = __( 'Cash on delivery', 'woocommerce' );
+		$this->method_title       = esc_html__( 'Cash on delivery', 'woocommerce' );
 		$this->method_description = __( 'Have your customers pay with cash (or by other means) upon delivery.', 'woocommerce' );
 		$this->has_fields         = false;
 	}
@@ -115,7 +115,7 @@ class WC_Gateway_COD extends WC_Payment_Gateway {
 				'title'       => __( 'Title', 'woocommerce' ),
 				'type'        => 'text',
 				'description' => __( 'Payment method description that the customer will see on your checkout.', 'woocommerce' ),
-				'default'     => __( 'Cash on delivery', 'woocommerce' ),
+				'default'     => esc_html__( 'Cash on delivery', 'woocommerce' ),
 				'desc_tip'    => true,
 			),
 			'description'        => array(

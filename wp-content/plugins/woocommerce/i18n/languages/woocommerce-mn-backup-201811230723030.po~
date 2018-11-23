@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-23 06:40+0000\n"
+"PO-Revision-Date: 2018-11-23 06:42+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -12752,7 +12752,7 @@ msgstr ""
 #: includes/gateways/cod/class-wc-gateway-cod.php:56
 #: includes/gateways/cod/class-wc-gateway-cod.php:118
 msgid "Cash on delivery"
-msgstr ""
+msgstr "Бэлэн мөнгөөр"
 
 #: includes/admin/class-wc-admin-setup-wizard.php:1562
 msgid "A simple offline gateway that lets you accept cash on delivery."

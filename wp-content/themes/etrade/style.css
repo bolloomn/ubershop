@@ -3647,11 +3647,17 @@ ul.products{
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 10px 15px;
+    margin: 0;
+    background: #fff;
+    transform: translateY(0px);
+    transition: all 400ms cubic-bezier(.39,.575,.565,1);
+    transition-delay: 200ms;
 }
 
-.product-block.product-block-hover .product-content h3 {
-	height: auto;
-	white-space: normal;
+.product-block.product-block-hover .product-content .woocommerce-loop-product__title {
+    transform: translateY(-40px);
+    transition: all 250ms cubic-bezier(.39,.575,.565,1);
+    transition-delay: 100ms;
 }
 
 @-webkit-keyframes box-rotate {
@@ -3925,18 +3931,9 @@ ul.products{
 
 .product-block.product-block-hover .price {
     display: inline-block;
-    height: 38px;
-    line-height: 38px;
-    margin: 0 -3px;
-    padding: 0 13px;
     vertical-align: middle;
-    background-color: #f6c737;
-    color: #fff;
     font-size: 14px;
-    border-radius: 5px 0 0 5px;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.4);
 }
-
 .product-block.product-block-hover .price-range .price {
 	width: 100%;
 	padding: 0px;
@@ -3948,15 +3945,20 @@ ul.products{
 }
 
 .product-data.headings {
-    margin-top: 5px;
+    padding: 0 15px 5px;
+    transform: translateY(0px);
+    transition: all 400ms cubic-bezier(.92,.05,.545,.85);
+    transition-delay: 100ms;
 }
 
 .product-block.product-block-hover .product-data.headings {
-    height: auto;
+    transform: translateY(-40px);
+    transition: all 250ms cubic-bezier(.92,.05,.545,.85);
+    transition-delay: 200ms;
 }
 
 .product-data del {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .star-rating {
@@ -4083,9 +4085,12 @@ li.product .social-share-buttons {
 }
 
 .product ins{
-    background-color: transparent;
+    font-weight: 600;
+    color: #e82c2c;
+    font-size: 20px;
+    padding-right: 8px;
+    display: inline-grid;
 }
-
 /**
  * 6.2.1 Products archive header
  * ----------------------------------------------------------------------------
@@ -5445,10 +5450,14 @@ table.shop_table_wrap dd {
 }
 
 .offer del, .product del {
-    font-size: 80%;
+    font-size: 20px;
+    font-weight: 300;
     text-decoration: line-through;
+    display: inline-grid;
 }
-
+.woocommerce-Price-currencySymbol{
+    font-size: 18px;
+}
 .offer-normal .offer-content {
     width: 100%;
 }

@@ -107,9 +107,9 @@ add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_
 add_action( 'woocommerce_after_shop_loop_item_title', 'pukka_woocommerce_after_shop_loop_item_content', 50);
 function pukka_woocommerce_after_shop_loop_item_content(){
 	global $post;	?>
-	<div class="more-detail slide-detail">
+	<div class="more-detail">
 		<div class="additional-links">
-			<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Details', 'pukka'); ?></a>|<a class="product-share" href="#"><?php _e('Share', 'pukka'); ?></a>
+			<a class="read-more" href="<?php the_permalink(); ?>"><i class="fa fa-search"></i></a><a class="product-share" href="#"><i class="fa fa-share-alt"></i></a>
 		</div>
 		<?php if( function_exists('pukka_social_share') ){ pukka_social_share(); } ?>
 	</div>

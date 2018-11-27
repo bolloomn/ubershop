@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-27 03:39+0000\n"
+"PO-Revision-Date: 2018-11-27 07:22+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -3698,7 +3698,7 @@ msgstr ""
 
 #: includes/class-wc-product-variable.php:60
 msgid "Select options"
-msgstr ""
+msgstr " Сонголт хийх"
 
 #. translators: %s: Product title
 #: includes/class-wc-product-variable.php:71
@@ -17628,7 +17628,7 @@ msgstr ""
 
 #: templates/order/order-again.php:22
 msgid "Order again"
-msgstr ""
+msgstr "Дахин захиалах"
 
 #: templates/order/order-details.php:39
 msgid "Order details"
@@ -17717,7 +17717,7 @@ msgstr ""
 
 #: templates/single-product/up-sells.php:27
 msgid "You may also like&hellip;"
-msgstr ""
+msgstr "Танд таалагдаж магадгүй&hellip;"
 
 #: includes/admin/helper/class-wc-helper-compat.php:159
 #, php-format
@@ -23299,7 +23299,7 @@ msgstr ""
 #: includes/api/v2/class-wc-rest-system-status-tools-v2-controller.php:159
 #: templates/single-product/add-to-cart/variable.php:44
 msgid "Clear"
-msgstr ""
+msgstr "Арилгах"
 
 #: includes/api/v2/class-wc-rest-system-status-tools-v2-controller.php:163
 msgid ""

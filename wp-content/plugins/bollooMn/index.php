@@ -115,12 +115,17 @@ function unit_price($id, $date){
     global $wpdb;
     $where="";
     if(!is_null($date)):
-        $where=" AND date<'".$date."'";
+        $where=" AND info.date<'".$date."'";
     endif;
     return  $wpdb->get_var(
         "SELECT ifnull(round(sum(quantity*cost)/sum(quantity),4), 0) as price
-                FROM trade_product_info
-                where product_id=".$id.$where
+                FROM trade_product_info as info
+                left join trade_posts 
+                on trade_posts.ID=info.order_id
+                where  
+                info.product_id=".$id." 
+                AND (info.type!=0 or (info.type=0 and trade_posts.post_status='wc-completed' ))
+                ".$where
     );
 }
 
@@ -135,10 +140,11 @@ function itemtype($type){
 function update_prices($id, $date){
     global $wpdb;
     $query= "SELECT *
-             FROM trade_product_info
-             where product_id=".$id."
-             AND date>='".$date."'
-             AND type!=1
+             FROM trade_product_info as info
+                left join trade_posts 
+                on trade_posts.ID=info.order_id
+                where  product_id=".$id." and (info.type>1 or (info.type=0 and trade_posts.post_status='wc-completed'))
+                AND info.date>='".$date."'
              order by info.date asc
             ";
     $rows = $wpdb->get_results($query);
@@ -160,14 +166,33 @@ function update_prices($id, $date){
 function bolloomn_to_table($order_id){
 
     global $wpdb;
-//    $query= "SELECT *
-//             FROM trade_product_info
-//             where product_id=".$id."
-//             AND date>='".$date."'
-//             AND type!=1
-//             order by info.date asc
-//            ";
-    $rows = $wpdb->get_results($query);
+    $order=get_post($order_id);
+    $query= "SELECT order_item_id FROM trade_woocommerce_order_items where order_id=".$order_id;
+    $items = $wpdb->get_results($query);
+    foreach ($items as $item) {
+
+        $date = date('Y-m-d H:i:s');
+        $product_id = wc_get_order_item_meta($item->order_item_id, '_product_id', true);
+        $qty = wc_get_order_item_meta($item->order_item_id, '_qty', true);
+        $price = wc_get_order_item_meta($item->order_item_id, '_line_subtotal', true) / $qty;
+        $cost = unit_price($product_id, $date);
+        $amount = $cost * $qty;
+
+        $data = [
+            'type' => '0',
+            'user_id' => $order->post_author,
+            'product_id' => $product_id,
+            'date' => $date,
+            'price' => $price,
+            'cost' => $cost,
+            'quantity' => -1*$qty,
+            'amount' => -1*$amount,
+            'order_id' => $order_id,
+        ];
+
+        $wpdb->insert('trade_product_info', $data, ['%s', '%s', '%s', '%s', '%s', '%s', '%s']);
+    }
+
 }
 
 //remove_role( 'contributor' );

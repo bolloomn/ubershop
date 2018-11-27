@@ -10,19 +10,25 @@
 
 $query = "select sum(quantity) as quantity,  sum(amount) as amount
           from trade_product_info 
-          where date < '".$sdate."'
-          AND product_id=".$_GET['pid'];
+          left join trade_posts 
+          on trade_posts.ID=info.order_id
+          where info.type!=0 or (info.type=0 and trade_posts.post_status='wc-completed' )
+          where trade_product_info.date < '".$sdate."'
+          AND trade_product_info.product_id=".$_GET['pid'];
 
 $start = $wpdb->get_row($query);
 
-$query = "  SELECT info.type, info.cost, info.quantity, info.amount, info.content, info.date,  trade_users.user_login as username
-        FROM trade_product_info as info
-        join trade_users
-        on trade_users.ID=info.user_id
-        and date BETWEEN '".$sdate."' and '".$fdate."'
-        and info.product_id=".$_GET['pid']."
-        ORDER BY info.date ASC
-          ";
+ $query = "  SELECT info.type, info.cost, info.quantity, info.amount, info.content, info.date,  trade_users.user_login as username
+            FROM trade_product_info as info
+            join trade_users
+            on trade_users.ID=info.user_id
+            and date BETWEEN '".$sdate."' and '".$fdate."'
+            and info.product_id=".$_GET['pid']."
+            left join trade_posts 
+            on trade_posts.ID=info.order_id
+            where info.type!=0 or (info.type=0 and trade_posts.post_status='wc-completed' )
+            ORDER BY info.date ASC
+         ";
 $rows = $wpdb->get_results($query);
 $start_amount=$start->amount;
 $start_quantity=$start->quantity;

@@ -6329,6 +6329,6 @@ a.buttons-lt:visited,
     border-bottom: 1px solid #f6c737;
 }
 
-.woocommerce-customer-details {
+.woocommerce-customer-details, #cart-detail .old-price  {
     display: none;
 }

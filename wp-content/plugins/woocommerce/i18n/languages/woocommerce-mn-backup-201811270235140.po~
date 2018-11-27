@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-23 09:02+0000\n"
+"PO-Revision-Date: 2018-11-27 02:27+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -2178,11 +2178,11 @@ msgstr "Бараа"
 #: includes/class-wc-form-handler.php:562
 #, php-format
 msgid "%s removed."
-msgstr ""
+msgstr "%s устсан."
 
 #: includes/class-wc-form-handler.php:559
 msgid "Undo?"
-msgstr ""
+msgstr "Буцах уу?"
 
 #. Translators: %s Product title.
 #: includes/class-wc-form-handler.php:614
@@ -2319,7 +2319,7 @@ msgstr "Нэгээс илүү утга оруулна уу"
 #: includes/admin/class-wc-admin-setup-wizard.php:167
 msgctxt "enhanced select"
 msgid "Please enter %qty% or more characters"
-msgstr ""
+msgstr "3 ба түүнээс дээш утга оруулна уу"
 
 #: includes/class-wc-frontend-scripts.php:571
 #: includes/admin/class-wc-admin-assets.php:119
@@ -2642,7 +2642,7 @@ msgstr ""
 
 #: includes/class-wc-post-types.php:93
 msgid "All categories"
-msgstr ""
+msgstr "Бүх ангилалууд"
 
 #: includes/class-wc-post-types.php:94
 msgid "Parent category"
@@ -2807,7 +2807,7 @@ msgstr ""
 #: includes/class-wc-post-types.php:218
 #, php-format
 msgid "All %s"
-msgstr ""
+msgstr "Бүгд %s"
 
 #. translators: %s: attribute name
 #: includes/class-wc-post-types.php:220
@@ -2863,7 +2863,7 @@ msgstr ""
 
 #: includes/class-wc-post-types.php:305
 msgid "All Products"
-msgstr ""
+msgstr "Бүх бүтээгдэхүүнүүд"
 
 #: includes/class-wc-post-types.php:306
 msgctxt "Admin menu name"
@@ -3006,7 +3006,7 @@ msgstr ""
 
 #: includes/class-wc-post-types.php:379
 msgid "Search orders"
-msgstr ""
+msgstr "Захиалгаас хайх"
 
 #: includes/class-wc-post-types.php:380
 #: includes/admin/class-wc-admin-dashboard.php:357
@@ -5051,7 +5051,7 @@ msgstr ""
 #: includes/wc-term-functions.php:188
 #: includes/widgets/class-wc-widget-product-categories.php:260
 msgid "Select a category"
-msgstr ""
+msgstr "Ангилал сонгоно уу"
 
 #: includes/wc-user-functions.php:48
 msgid ""
@@ -12213,24 +12213,24 @@ msgstr ""
 
 #: includes/admin/class-wc-admin-reports.php:50
 msgid "Sales by date"
-msgstr ""
+msgstr "Борлуулалт огноогоор"
 
 #: includes/admin/class-wc-admin-reports.php:56
 msgid "Sales by product"
-msgstr ""
+msgstr "Борлуулалт бараагаар"
 
 #: includes/admin/class-wc-admin-reports.php:62
 msgid "Sales by category"
-msgstr ""
+msgstr "Борлуулалт ангилалаар"
 
 #: includes/admin/class-wc-admin-reports.php:68
 msgid "Coupons by date"
-msgstr ""
+msgstr "Купон огноогоор"
 
 #: includes/admin/class-wc-admin-reports.php:74
 #: includes/admin/reports/class-wc-report-downloads.php:79
 msgid "Customer downloads"
-msgstr ""
+msgstr "Хэрэглэгчийн татан авалт"
 
 #: includes/admin/class-wc-admin-reports.php:82
 msgid "Customers"
@@ -16761,7 +16761,7 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-sales-by-product.php:220
 #: includes/admin/reports/class-wc-report-sales-by-product.php:220
 msgid "Show"
-msgstr ""
+msgstr "харах"
 
 #: includes/widgets/class-wc-widget-products.php:43
 msgid "All products"
@@ -17807,7 +17807,7 @@ msgstr ""
 #: includes/admin/helper/class-wc-helper.php:339
 #: includes/admin/reports/class-wc-report-sales-by-category.php:232
 msgid "All"
-msgstr ""
+msgstr "Бүгд"
 
 #: includes/admin/helper/class-wc-helper.php:341
 #: includes/admin/helper/views/html-main.php:122
@@ -18428,7 +18428,7 @@ msgstr ""
 #: includes/admin/meta-boxes/views/html-product-data-linked-products.php:33
 #: includes/admin/meta-boxes/views/html-product-data-linked-products.php:49
 msgid "Search for a product&hellip;"
-msgstr ""
+msgstr "Хайх бүтээгдэхүүн"
 
 #: includes/admin/meta-boxes/class-wc-meta-box-coupon-data.php:200
 msgid ""
@@ -18821,7 +18821,7 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:50
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:50
 msgid "Year"
-msgstr ""
+msgstr "Жилээр"
 
 #: includes/admin/reports/class-wc-report-coupon-usage.php:136
 #: includes/admin/reports/class-wc-report-customers.php:171
@@ -18831,7 +18831,7 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:51
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:51
 msgid "Last month"
-msgstr ""
+msgstr "Сүүлийн сар"
 
 #: includes/admin/reports/class-wc-report-coupon-usage.php:137
 #: includes/admin/reports/class-wc-report-customers.php:172
@@ -18841,7 +18841,7 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-taxes-by-code.php:52
 #: includes/admin/reports/class-wc-report-taxes-by-date.php:52
 msgid "This month"
-msgstr ""
+msgstr "Энэ сар"
 
 #: includes/admin/reports/class-wc-report-coupon-usage.php:138
 #: includes/admin/reports/class-wc-report-customers.php:173
@@ -18849,7 +18849,7 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-sales-by-date.php:566
 #: includes/admin/reports/class-wc-report-sales-by-product.php:143
 msgid "Last 7 days"
-msgstr ""
+msgstr "Сүүлийн 7 хоног"
 
 #: includes/admin/reports/class-wc-report-coupon-usage.php:179
 msgid "Filter by coupon"
@@ -19049,25 +19049,25 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-sales-by-category.php:102
 #, php-format
 msgid "%1$s sales in %2$s"
-msgstr ""
+msgstr "%1$s %2$s ангилалын борлуулалт"
 
 #: includes/admin/reports/class-wc-report-sales-by-category.php:216
 msgid "Select categories&hellip;"
-msgstr ""
+msgstr "Ангилалууд сонгоно уу&hellip;"
 
 #: includes/admin/reports/class-wc-report-sales-by-category.php:231
 msgid "None"
-msgstr ""
+msgstr "Аль нь ч биш"
 
 #: includes/admin/reports/class-wc-report-sales-by-category.php:291
 msgid "Choose a category to view stats"
-msgstr ""
+msgstr "Үзүүлэлт харахын тулд ангилал сонгоно уу"
 
 #. translators: %s: average total sales
 #: includes/admin/reports/class-wc-report-sales-by-date.php:446
 #, php-format
 msgid "%s average gross daily sales"
-msgstr ""
+msgstr "%s дунджаар өдрийн борлуулалт"
 
 #. translators: %s: average sales
 #: includes/admin/reports/class-wc-report-sales-by-date.php:451
@@ -19091,19 +19091,21 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-sales-by-date.php:473
 #, php-format
 msgid "%s gross sales in this period"
-msgstr ""
+msgstr "%s энэ хугацаанд нийт борлуулалт"
 
 #: includes/admin/reports/class-wc-report-sales-by-date.php:476
 msgid ""
 "This is the sum of the order totals after any refunds and including shipping "
 "and taxes."
 msgstr ""
+"Энэ нь ямар нэгэн буцаалт, тээвэрлэлт, татварыг оруулсны дараах захиалгын "
+"нийлбэр дүн юм."
 
 #. translators: %s: net sales
 #: includes/admin/reports/class-wc-report-sales-by-date.php:491
 #, php-format
 msgid "%s net sales in this period"
-msgstr ""
+msgstr "%s цэвэр борлуулалт"
 
 #: includes/admin/reports/class-wc-report-sales-by-date.php:494
 msgid ""
@@ -19115,33 +19117,33 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-sales-by-date.php:509
 #, php-format
 msgid "%s orders placed"
-msgstr ""
+msgstr "%s байрлуулсан захиалга"
 
 #. translators: %s: total items
 #: includes/admin/reports/class-wc-report-sales-by-date.php:519
 #, php-format
 msgid "%s items purchased"
-msgstr ""
+msgstr "%s худалдан авсан зүйлс"
 
 #. translators: 1: total refunds 2: total refunded orders 3: refunded items
 #: includes/admin/reports/class-wc-report-sales-by-date.php:528
 #, php-format
 msgid "%1$s refunded %2$d order (%3$d item)"
 msgid_plural "%1$s refunded %2$d orders (%3$d items)"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s буцаагдсан %2$d захиалга (%3$d бараа)"
+msgstr[1] "%1$s буцаагдсан %2$d захиалга (%3$d бараа)"
 
 #. translators: %s: total shipping
 #: includes/admin/reports/class-wc-report-sales-by-date.php:539
 #, php-format
 msgid "%s charged for shipping"
-msgstr ""
+msgstr "%s хүргэлтийн төлбөр"
 
 #. translators: %s: total coupons
 #: includes/admin/reports/class-wc-report-sales-by-date.php:548
 #, php-format
 msgid "%s worth of coupons used"
-msgstr ""
+msgstr "%s ашигласан купоны дүн"
 
 #: includes/admin/reports/class-wc-report-sales-by-date.php:690
 #: includes/admin/reports/class-wc-report-sales-by-product.php:528
@@ -19183,48 +19185,48 @@ msgstr ""
 #: includes/admin/reports/class-wc-report-sales-by-product.php:119
 #, php-format
 msgid "%s sales for the selected items"
-msgstr ""
+msgstr "%s сонгосон барааны борлуулалт"
 
 #. translators: %s: total items purchased
 #: includes/admin/reports/class-wc-report-sales-by-product.php:126
 #, php-format
 msgid "%s purchases for the selected items"
-msgstr ""
+msgstr "%s сонгосон барааны худалдан авалт"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:174
 msgid "Showing reports for:"
-msgstr ""
+msgstr "Тайланг харуулж байна:"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:206
 #: includes/api/v2/class-wc-rest-system-status-tools-v2-controller.php:186
 msgid "Reset"
-msgstr ""
+msgstr "Арилгах"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:214
 msgid "Product search"
-msgstr ""
+msgstr "Бүтээгдэхүүн хайх"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:232
 msgid "Top sellers"
-msgstr ""
+msgstr "Шилдэг борлуулагч"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:271
 #: includes/admin/reports/class-wc-report-sales-by-product.php:323
 #: includes/admin/reports/class-wc-report-sales-by-product.php:367
 msgid "No products found in range"
-msgstr ""
+msgstr "Ямар ч бараа олдсонгүй"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:276
 msgid "Top freebies"
-msgstr ""
+msgstr "Шилднг үнэгүй бараа"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:328
 msgid "Top earners"
-msgstr ""
+msgstr "Шилдэг ажилчид"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:423
 msgid "Choose a product to view stats"
-msgstr ""
+msgstr "Үзүүлэлт харах бүтээгдэхүүнээ сонгоно уу"
 
 #: includes/admin/reports/class-wc-report-sales-by-product.php:536
 msgid "Sales amount"
@@ -21714,12 +21716,12 @@ msgstr ""
 
 #: includes/admin/views/html-report-by-date.php:41
 msgid "Custom:"
-msgstr ""
+msgstr "Огноо сонгох:"
 
 #: includes/admin/views/html-report-by-date.php:60
 #: includes/admin/meta-boxes/views/html-product-data-variations.php:91
 msgid "Go"
-msgstr ""
+msgstr "За"
 
 #: includes/api/legacy/class-wc-rest-legacy-coupons-controller.php:113
 #: includes/api/v1/class-wc-rest-coupons-controller.php:253
@@ -22713,7 +22715,7 @@ msgstr ""
 
 #: includes/api/v1/class-wc-rest-report-sales-controller.php:326
 msgid "Total charged for shipping."
-msgstr ""
+msgstr "Нийт хүргэлтийн төлбөр"
 
 #: includes/api/v1/class-wc-rest-report-sales-controller.php:332
 msgid "Total of refunded orders."

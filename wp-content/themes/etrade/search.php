@@ -12,7 +12,7 @@ get_header();
 	if( have_posts() ) : ?>
 
 		<header class="archive-header clearfix">
-			<h1><?php printf( __( 'Search Results for: %s', 'pukka' ),  get_search_query() ); ?></h1>
+			<h1><?php printf( __( 'Хайлтын үр дүн: %s', 'pukka' ),  get_search_query() ); ?></h1>
 		</header><!-- .archive-header -->
 
 	<?php
@@ -24,7 +24,7 @@ get_header();
 
 		/* Start the Loop */ 
 		while ( have_posts() ) : the_post();
-
+            var_dump(get_post_format());
 			if($grid_enabled){
 				get_template_part( 'content-grid', get_post_format() );
 			}

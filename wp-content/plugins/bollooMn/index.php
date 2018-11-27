@@ -162,11 +162,64 @@ function update_prices($id, $date){
     }
 }
 
+function calcCash($order_id, $user_id){
+    global $wpdb;
+
+    $user_data=get_userdata( $user_id );
+    $amount= get_post_meta($order_id, '_order_total', true);
+    $key =get_post_meta($order_id, '_order_key', true);
+    $link= home_url('checkout/order-received/'.$order_id.'/?key='.$key);
+    $cash=round($amount/20,  PHP_ROUND_HALF_DOWN);
+
+    //uuriin uramshuulal;
+    $data = [
+        'type' => '0',
+        'user_id' => $user_id,
+        'order_id' => $order_id,
+        'link' => $link,
+        'content' =>$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
+        'cash' => $cash,
+    ];
+    $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+
+
+    //naiziin uramshuulal
+    $naiziin_id=get_user_meta($user_id, 't_parent', true);
+    if($naiziin_id){
+
+        $data = [
+            'type' => '0',
+            'user_id' => $naiziin_id,
+            'order_id' => $order_id,
+            'link' => $link,
+            'content' =>'Таны найз '.$user_data->user_login.'-ийн  '.$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
+            'cash' => $cash,
+        ];
+        $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+
+        //naiziin  naiziin uramshuulal
+        $naiziin_naiziin_id=get_user_meta($naiziin_id, 't_parent', true);
+        if($naiziin_naiziin_id){
+            $naiziin_data=get_userdata( $naiziin_id );
+            $data = [
+                'type' => '0',
+                'user_id' => $naiziin_naiziin_id,
+                'order_id' => $order_id,
+                'link' => $link,
+                'content' =>'Таны найз '.$naiziin_data->user_login.'-ийн найз '.$user_data->user_login.'-ийн '.$amount.'₮-ны 2%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
+                'cash' => round($amount/50,PHP_ROUND_HALF_DOWN)
+            ];
+            $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+        }
+    }
+
+}
 
 function bolloomn_to_table($order_id){
 
     global $wpdb;
     $order=get_post($order_id);
+    $user_id= get_post_meta($order_id, '_customer_user', true);
     $query= "SELECT order_item_id FROM trade_woocommerce_order_items where order_id=".$order_id;
     $items = $wpdb->get_results($query);
     foreach ($items as $item) {
@@ -180,7 +233,7 @@ function bolloomn_to_table($order_id){
 
         $data = [
             'type' => '0',
-            'user_id' => $order->post_author,
+            'user_id' =>$user_id,
             'product_id' => $product_id,
             'date' => $date,
             'price' => $price,
@@ -193,7 +246,31 @@ function bolloomn_to_table($order_id){
         $wpdb->insert('trade_product_info', $data, ['%s', '%s', '%s', '%s', '%s', '%s', '%s']);
     }
 
+    //calc uramshuulal
+    calcCash($order_id,$user_id);
+
 }
 
+function userTree($user_id, $level=0){
+    global $wpdb;
+    $query= "SELECT trade_users.user_login, trade_users.ID  FROM trade_usermeta 
+                join trade_users
+                on trade_users.ID=trade_usermeta.user_id
+                and meta_key='t_parent'
+                and meta_value=".$user_id;
+    $users = $wpdb->get_results($query);
+    if(count($users)>0){
+        echo '<ul>';
+            $level++;
+            foreach ($users as $user){
+                echo '<li>'.$user->user_login;
+                        if($level<=4){
+                            userTree($user->ID, $level);
+                        }
+                echo '</li>';
+            }
+        echo '</ul>';
+    }
+}
 //remove_role( 'contributor' );
 ?>

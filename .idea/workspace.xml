@@ -2,7 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65d47ecd-7862-4be4-9f55-546a6c1b7dc0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/bordered-pulled.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/bordered-pulled.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/core.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/core.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/font-awesome.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/font-awesome.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/icons.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/icons.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/mixins.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/mixins.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/path.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/path.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/variables.less" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/less/variables.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_bordered-pulled.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_core.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_icons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_icons.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_mixins.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/font-awesome.scss" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/font-awesome/scss/font-awesome.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/header.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +55,7 @@
           <entry key="css" value="18" />
           <entry key="html" value="2" />
           <entry key="js" value="3" />
-          <entry key="php" value="85" />
+          <entry key="php" value="86" />
           <entry key="scss" value="3" />
         </counts>
       </usages-collector>
@@ -40,7 +64,7 @@
           <entry key="CSS" value="18" />
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="82" />
+          <entry key="PHP" value="83" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="3" />
         </counts>
@@ -49,7 +73,7 @@
         <counts>
           <entry key="css" value="1540" />
           <entry key="html" value="36" />
-          <entry key="php" value="9990" />
+          <entry key="php" value="10303" />
           <entry key="scss" value="21" />
         </counts>
       </usages-collector>
@@ -57,7 +81,7 @@
         <counts>
           <entry key="CSS" value="1540" />
           <entry key="HTML" value="37" />
-          <entry key="PHP" value="9937" />
+          <entry key="PHP" value="10250" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="SCSS" value="21" />
           <entry key="SQL" value="33" />
@@ -71,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -82,8 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="3789" column="4" lean-forward="true" selection-start-line="3789" selection-start-column="4" selection-end-line="3789" selection-end-column="4" />
+            <state relative-caret-position="243">
+              <caret line="3786" column="4" selection-start-line="3786" selection-start-column="4" selection-end-line="3786" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -91,8 +115,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="11" selection-end-column="99" />
+            <state relative-caret-position="491">
+              <caret line="71" column="150" selection-start-line="71" selection-start-column="150" selection-end-line="71" selection-end-column="150" />
             </state>
           </provider>
         </entry>
@@ -101,7 +125,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-users.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
@@ -110,11 +134,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
               <folding>
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -123,22 +147,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="613">
-              <caret line="208" column="90" selection-start-line="208" selection-start-column="90" selection-end-line="208" selection-end-column="90" />
-              <folding>
-                <element signature="e#7#188#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="630">
+              <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="1196" column="2" lean-forward="true" selection-start-line="1196" selection-start-column="2" selection-end-line="1196" selection-end-column="2" />
+            <state relative-caret-position="545">
+              <caret line="239" column="93" selection-start-line="239" selection-start-column="93" selection-end-line="239" selection-end-column="93" />
+              <folding>
+                <element signature="e#7#188#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -155,7 +179,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logged</find>
       <find>required</find>
       <find>Хэмжээ&lt;</find>
       <find>#main {</find>
@@ -179,12 +202,13 @@
       <find>.jOrgChart .node</find>
       <find>orgChart</find>
       <find>chart</find>
-      <find>menu-top</find>
       <find>menu-top.full a</find>
       <find>jOrgChart</find>
       <find>par</find>
       <find>woocommerce-Price-amount</find>
+      <find>&lt;del</find>
       <find>product-block-hover</find>
+      <find>menu-top</find>
     </findStrings>
     <replaceStrings>
       <replace>#4267b2</replace>
@@ -235,15 +259,15 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/style.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-tsalin.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/etrade/header.php" />
         <option value="$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/example.html" />
         <option value="$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/css/custom.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/js/jquery.jOrgChart.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-users.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" />
       </list>
     </option>
   </component>
@@ -367,12 +391,12 @@
       <workItem from="1542779761734" duration="12633000" />
       <workItem from="1542846874185" duration="27299000" />
       <workItem from="1542932871145" duration="22211000" />
-      <workItem from="1543279076791" duration="25447000" />
+      <workItem from="1543279076791" duration="28222000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="139040000" />
+    <option name="totallyTimeSpent" value="141815000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -679,24 +703,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="11" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/js/jquery.jOrgChart.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
           <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="3789" column="4" lean-forward="true" selection-start-line="3789" selection-start-column="4" selection-end-line="3789" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -707,27 +717,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        <state relative-caret-position="379">
+          <caret line="1196" column="2" selection-start-line="1196" selection-start-column="2" selection-end-line="1196" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="59" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
+        <state relative-caret-position="391">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="3786" column="4" selection-start-line="3786" selection-start-column="4" selection-end-line="3786" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-users.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding>
             <element signature="n#style#0;n#h1#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#!!top" expanded="true" />
@@ -735,30 +759,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="613">
-          <caret line="208" column="90" selection-start-line="208" selection-start-column="90" selection-end-line="208" selection-end-column="90" />
+        <state relative-caret-position="545">
+          <caret line="239" column="93" selection-start-line="239" selection-start-column="93" selection-end-line="239" selection-end-column="93" />
           <folding>
             <element signature="e#7#188#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="1196" column="2" lean-forward="true" selection-start-line="1196" selection-start-column="2" selection-end-line="1196" selection-end-column="2" />
+        <state relative-caret-position="491">
+          <caret line="71" column="150" selection-start-line="71" selection-start-column="150" selection-end-line="71" selection-end-column="150" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="89" selection-start-line="16" selection-start-column="89" selection-end-line="16" selection-end-column="89" />
+          <folding>
+            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

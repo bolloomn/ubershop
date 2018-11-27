@@ -14,7 +14,7 @@ if (!is_user_logged_in()) {
                     <div class="row">
                         <div class="col-lg-8 offset-lg-2 ">
                             <div class="text-center mb-4">
-                                <h1 style="color:#232f3e; font-weight: 400;">Миний урамшуулал</h1>
+                                <h1 style="color:#232f3e; font-weight: 400;">Миний хэтэвч</h1>
                             </div>
                         </div>
                     </div>

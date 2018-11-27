@@ -162,6 +162,13 @@ function update_prices($id, $date){
     }
 }
 
+function updateCash($user_id, $amount){
+    $cash=get_user_meta($user_id, 'cash', true);
+    if(!$cash) { $cash=0; }
+    $cash=$cash+$amount;
+    update_user_meta($user_id, 'cash',$cash);
+}
+
 function calcCash($order_id, $user_id){
     global $wpdb;
 
@@ -181,7 +188,7 @@ function calcCash($order_id, $user_id){
         'cash' => $cash,
     ];
     $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
-
+    updateCash($user_id, $cash);
 
     //naiziin uramshuulal
     $naiziin_id=get_user_meta($user_id, 't_parent', true);
@@ -196,10 +203,12 @@ function calcCash($order_id, $user_id){
             'cash' => $cash,
         ];
         $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+        updateCash($naiziin_id, $cash);
 
         //naiziin  naiziin uramshuulal
         $naiziin_naiziin_id=get_user_meta($naiziin_id, 't_parent', true);
         if($naiziin_naiziin_id){
+            $cash=round($amount/50,PHP_ROUND_HALF_DOWN);
             $naiziin_data=get_userdata( $naiziin_id );
             $data = [
                 'type' => '0',
@@ -207,9 +216,10 @@ function calcCash($order_id, $user_id){
                 'order_id' => $order_id,
                 'link' => $link,
                 'content' =>'Таны найз '.$naiziin_data->user_login.'-ийн найз '.$user_data->user_login.'-ийн '.$amount.'₮-ны 2%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
-                'cash' => round($amount/50,PHP_ROUND_HALF_DOWN)
+                'cash' =>$cash
             ];
             $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+            updateCash($naiziin_naiziin_id, $cash);
         }
     }
 

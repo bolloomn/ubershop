@@ -62,21 +62,15 @@ if('top' == pukka_get_option('main_menu_position')) :
 				<div class="secondary-container clearfix">
                     <ul class="menu stripe-menu">
                         <?php if(is_user_logged_in()){
-                            $current_user = wp_get_current_user();
-                            ?>
-                            <li>
-                                <div class="dropdown" id="profileMenu">
-                                    <a class="dropdown-toggle" id="profileButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        <i class="fa fa-user"></i> <?php echo  $current_user->display_name; ?>
-                                    </a>
-                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileButton">
-                                        <a class="dropdown-item" href="<?php echo home_url('my-profile'); ?>">Миний профайл</a>
-                                        <a class="dropdown-item" href="<?php echo home_url('my-cash'); ?>">Миний урамшуулал</a>
-                                        <a class="dropdown-item" href="<?php echo home_url('my-users'); ?>">Миний гишүүд</a>
-                                        <a class="dropdown-item" href="<?=wp_logout_url( home_url());?>">гарах</a>
-                                    </div>
-                                </div>
-                            </li>
+                                $user = wp_get_current_user();
+                                $wallet=get_user_meta($user->ID, 'cash', true);
+                                if(!$wallet) { $wallet=0; }
+                        ?>
+                            <li><a class="text-capitalize"><i class="fa fa-user-circle-o"></i> <?php echo  $user->user_login; ?></a></li>
+                            <li class="menu-item"><a href="<?php echo home_url('my-profile'); ?>"><i class="fa fa-cog"></i> Миний профайл</a></li>
+                            <li class="menu-item"><a href="<?php echo home_url('my-users'); ?>"><i class="fa fa-users"></i> Миний гишүүд</a></li>
+                            <li class="menu-item"><a href="<?php echo home_url('my-cash'); ?>"><i class="fa fa-diamond"></i> Миний хэтэвч (<?=$wallet;?>₮)</a></li>
+                            <li class="menu-item"><a href="<?=wp_logout_url( home_url());?>"><i class="fa fa-sign-out"></i> Гарах</a></li>
                         <?php } else { ?>
                             <li class="menu-item">
                                 <a href="<?=home_url('login');?>">Нэвтрэх</a>

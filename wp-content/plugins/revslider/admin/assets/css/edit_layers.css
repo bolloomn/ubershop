@@ -402,7 +402,7 @@ span.setting_text_3 { 	color:#232323!important;	line-height:30px;	font-size:12px
 
 .tp-present-caption						{	display: inline-block}
 .tp-present-caption .tp-caption			{	position: relative !important}
-.tp-present-wrapper						{ 	max-width:auto !important; background:url(../images/trans_tile.png) repeat !important; display:inline-block !important;border:0 !important; border-radius: 0 !important; -webkit-border-radius:0 !important; -moz-border-radius:0 !important; padding:15px 10px !important; }
+.tp-present-wrapper						{ 	max-width:auto; !important; background:url(../images/trans_tile.png) repeat !important; display:inline-block !important;border:0 !important; border-radius: 0 !important; -webkit-border-radius:0 !important; -moz-border-radius:0 !important; padding:15px 10px !important; }
 
 
 
@@ -1196,7 +1196,7 @@ li.selected .slidetitleinput,li:hover .slidetitleinput,
 .list_slide_links li:hover .slide-hero-unpublished.pubclickable        { 	display:block!important;}
 .slide-hero-unpublished.pubclickable:hover						{ background:url(../images/toolbar/icon-slide-published.png); }
 
-.slide-link-forward                                  { 	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);	filter:alpha(opacity=70);	-moz-opacity:.7;	-khtml-opacity:.7;	opacity:.7;	font-size:30px;	position:absolute;	top:50%;	left:50%;	margin-left:-22px;	margin-top:-15px;	z-index:4 color:#fff;	display:none;	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);}
+.slide-link-forward                                  { 	-ms-filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=70);	filter:alpha(opacity=70);	-moz-opacity:.7;	-khtml-opacity:.7;	opacity:.7;	font-size:30px;	position:absolute;	top:50%;	left:50%;	margin-left:-22px;	margin-top:-15px;	z-index:4; color:#fff;	display:none;	text-shadow: 0px 1px 1px rgba(0,0,0,0.3);}
 .slide-link-forward:before                           { 	color:#fff;}
 .list_slide_links li.selected .slide-link-forward	   { display:none !important}
 .list_slide_links li:hover .slidelint-edit-button,
@@ -1900,7 +1900,7 @@ span.show_more_style_txt {
 span.advanced-css-title                                             { 	background:#2980B9;	display:block;	padding:5px 30px;	color:#FFF;	font-size:12px;	font-weight:400;}
 #rs-save-as-css,
 #rs-rename-css                                                      { 	border:none!important;	outline:none!important;	width:260px;	box-shadow:none!important;		-moz-box-shadow:none!important;	line-height:25px;}
-.current-advance-edited-class                                       { 	font-weight:600px;	margin-left:5px;}
+.current-advance-edited-class                                       { 	font-weight:600;	margin-left:5px;}
 .advanced-container-wrapper                                         { 	float:left;	display:inline-block;	margin:0 20px 4px;}
 .advanced-label                                                     { 	position:relative;	line-height:27px;	vertical-align:middle;	display:inline-block;	margin-right:-4px;	border-bottom:1px solid #EEE;}
 .advanced-label.icon-styleidle                                      { 	margin-right:20px;}

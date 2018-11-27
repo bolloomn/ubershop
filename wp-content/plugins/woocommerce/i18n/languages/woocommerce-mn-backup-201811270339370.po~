@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-27 02:27+0000\n"
+"PO-Revision-Date: 2018-11-27 02:35+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -19098,8 +19098,8 @@ msgid ""
 "This is the sum of the order totals after any refunds and including shipping "
 "and taxes."
 msgstr ""
-"Энэ нь ямар нэгэн буцаалт, тээвэрлэлт, татварыг оруулсны дараах захиалгын "
-"нийлбэр дүн юм."
+"Энэ нь бараа буцаалт, тээвэрлэлт, татварыг оруулсны дараах захиалгын нийлбэр "
+"дүн юм."
 
 #. translators: %s: net sales
 #: includes/admin/reports/class-wc-report-sales-by-date.php:491
@@ -19112,6 +19112,8 @@ msgid ""
 "This is the sum of the order totals after any refunds and excluding shipping "
 "and taxes."
 msgstr ""
+"Энэ нь бараа буцаалт, тээврийн болон татвараас хассаны дараах захиалгын "
+"нийлбэр дүн юм."
 
 #. translators: %s: total orders
 #: includes/admin/reports/class-wc-report-sales-by-date.php:509

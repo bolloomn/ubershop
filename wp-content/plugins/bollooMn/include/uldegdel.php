@@ -58,8 +58,12 @@
                 ) p
                 LEFT JOIN (
                     select product_id, sum(quantity) as quantity,  sum(amount) as amount
-                    from trade_product_info 
-                    where date<= '".$fdate."'
+                    from trade_product_info as info
+                    left join trade_posts 
+                    on trade_posts.ID=info.order_id
+                    where  
+                    info.date<= '".$fdate."'
+                    AND (info.type!=0 or (info.type=0 and trade_posts.post_status='wc-completed' ))
                     GROUP BY product_id
                 ) end 
                 on `end`.product_id=p.ID
@@ -73,9 +77,12 @@
                 on `nemegdsen`.product_id=p.ID
                 LEFT JOIN (
                     select product_id, (-1)*sum(quantity) as quantity,  (-1)*sum(amount) as amount
-                    from trade_product_info 
-                    where date BETWEEN '".$sdate."' AND '".$fdate."'
-                    and type=0
+                    from trade_product_info  as info
+                    join trade_posts 
+                    on trade_posts.ID=info.order_id
+                    where trade_posts.post_status='wc-completed'
+                    and info.date BETWEEN '".$sdate."' AND '".$fdate."'
+                    and info.type=0
                     GROUP BY product_id
                 ) horogdson
                 on `horogdson`.product_id=p.ID

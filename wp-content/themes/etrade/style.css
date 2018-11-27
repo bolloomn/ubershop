@@ -6376,6 +6376,24 @@ a.buttons-lt:visited,
     border-bottom: 1px solid #f6c737;
 }
 
-.woocommerce-customer-details {
+.woocommerce-customer-details, #cart-detail .old-price  {
     display: none;
+}
+
+#profileMenu #profileButton {
+ cursor: pointer;
+}
+
+#profileMenu .dropdown-menu {
+    padding: 0px;
+    min-width: 150px;
+    border-radius: 0px;
+    border:none;
+    background: rgba(255,255,255,0.9) ;
+}
+
+#menu-top #profileMenu .dropdown-item {
+    color: #232323 !important;
+    text-align: right;
+    padding: 1px 15px;
 }

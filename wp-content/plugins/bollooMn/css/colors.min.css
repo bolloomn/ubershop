@@ -407,7 +407,15 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:a
     min-width: 250px;
 }
 
-#footer-left, #footer-upgrade, #wp-admin-bar-root-default, #contextual-help-link-wrap, .user-admin-color-wrap {
+#footer-left,
+#footer-upgrade,
+#wp-admin-bar-root-default,
+#contextual-help-link-wrap,
+.user-admin-color-wrap,
+body.post-type-shop_order .wc-order-data-row.wc-order-bulk-actions.wc-order-data-row-toggle,
+body.post-type-shop_order .order_actions.submitbox #actions,
+.woocommerce_page_wc-reports .nav-tab-wrapper.woo-nav-tab-wrapper
+{
     display: none;
 }
 #wp-content-editor-tools {
@@ -417,3 +425,4 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu>li.current>a.current:a
 .table td {
     vertical-align: middle !important;
 }
+

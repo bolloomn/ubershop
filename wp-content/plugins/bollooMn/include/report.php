@@ -8,17 +8,25 @@
     $link=home_url('wp-admin/admin.php?page=product_report&sdate='.$sdate.'&fdate='.$fdate);
 
 
-    $select="
-        SELECT info.cost, info.price, info.quantity, info.date,  trade_users.user_login as username, trade_posts.post_title as product_name
+     $select="
+        SELECT info.cost, info.price, -1*info.quantity as quantity, info.date,  trade_users.user_login as username,  product.product_name
         FROM trade_product_info as info
         join trade_users
         on trade_users.ID=info.user_id
         and date>='".$sdate."'
         and date<='".$fdate."'
         and info.type=0
-        join trade_posts
-        on trade_posts.ID=info.product_id
-        and trade_posts.post_type='product'
+        join (
+            select ID, post_title as product_name 
+            from trade_posts
+            where trade_posts.post_type='product'
+        ) product 
+        on product.ID=info.product_id
+        join ( 
+        select ID from trade_posts
+        where post_type='shop_order' and post_status='wc-completed'
+        ) aa 
+        on aa.ID=info.order_id
         ORDER BY info.date ASC
     ";
     $rows=$wpdb->get_results($select);

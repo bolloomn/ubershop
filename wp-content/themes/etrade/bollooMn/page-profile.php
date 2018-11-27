@@ -37,7 +37,9 @@ if (isset($_POST['register'])) {
         update_user_meta($user->ID, 't_bair', $_POST['t_bair']);
         update_user_meta($user->ID, 't_toot', $_POST['t_toot']);
         update_user_meta($user->ID, 't_address', $_POST['t_address']);
-        update_user_meta($user->ID, 't_parent', $_POST['t_parent']);
+        update_user_meta($user->ID, 't_bank_name', $_POST['t_bank_name']);
+        update_user_meta($user->ID, 't_bank_account', $_POST['t_bank_account']);
+        update_user_meta($user->ID, 't_bank_number', $_POST['t_bank_number']);
     }
 }
 
@@ -187,6 +189,29 @@ if (isset($_POST['register'])) {
                             </div>
 
                             <div class="col-md-12">
+                                <div class="heading-title mt-4">Дансны мэдээлэл</div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="t_bank_name">Банк</label>
+                                <input type="text"  name="t_bank_name" id="t_bank_name" class="form-control"
+                                       value="<?php echo get_user_meta($user->ID, 't_bank_name', true); ?>">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="t_bank_account">Данс эзэмшигч</label>
+                                <input type="text"  id="t_bank_account"  name="t_bank_account" class="form-control"
+                                       value="<?php echo get_user_meta($user->ID, 't_bank_account', true); ?>">
+                            </div>
+
+                            <div class="col-md-4">
+                                <label for="t_bank_number">Дансны дугаар</label>
+                                <input type="number"  id="t_bank_number"  name="t_bank_number" class="form-control"
+                                       value="<?php echo get_user_meta($user->ID, 't_bank_number', true); ?>">
+                            </div>
+
+
+                            <div class="col-md-12">
                                 <div class="heading-title mt-4">Нууц үг</div>
                             </div>
 
@@ -214,4 +239,3 @@ if (isset($_POST['register'])) {
 
 </div><!-- #content -->
 <?php get_footer(); ?>
-

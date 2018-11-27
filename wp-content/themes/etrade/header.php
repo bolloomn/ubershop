@@ -9,6 +9,8 @@
 <?php wp_head(); ?>
     <link rel="stylesheet" href="<?php echo home_url('wp-content/plugins/bollooMn/css/font-awesome/css/font-awesome.min.css'); ?>" >
     <link rel="stylesheet" href="<?php echo home_url('wp-content/plugins/bollooMn/css/bootstrap.min.css'); ?>" >
+    <script src="<?php echo home_url('wp-content/plugins/bollooMn/js/popper.min.js');?>" ></script>
+    <script src="<?php echo home_url('wp-content/plugins/bollooMn/js/bootstrap.min.js');?>" ></script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -62,11 +64,18 @@ if('top' == pukka_get_option('main_menu_position')) :
                         <?php if(is_user_logged_in()){
                             $current_user = wp_get_current_user();
                             ?>
-                            <li class="menu-item">
-                                <a href="<?=home_url('my-profile');?>"><i class="fa fa-user"></i> <?php echo  $current_user->display_name; ?></a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="<?=wp_logout_url( home_url());?>"><i class="fa fa-sign-out"></i> гарах</a>
+                            <li>
+                                <div class="dropdown" id="profileMenu">
+                                    <a class="dropdown-toggle" id="profileButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fa fa-user"></i> <?php echo  $current_user->display_name; ?>
+                                    </a>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="profileButton">
+                                        <a class="dropdown-item" href="<?php echo home_url('my-profile'); ?>">Миний профайл</a>
+                                        <a class="dropdown-item" href="<?php echo home_url('my-cash'); ?>">Миний урамшуулал</a>
+                                        <a class="dropdown-item" href="<?php echo home_url('my-users'); ?>">Миний гишүүд</a>
+                                        <a class="dropdown-item" href="<?=wp_logout_url( home_url());?>">гарах</a>
+                                    </div>
+                                </div>
                             </li>
                         <?php } else { ?>
                             <li class="menu-item">

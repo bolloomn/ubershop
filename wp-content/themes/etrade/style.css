@@ -3642,12 +3642,14 @@ ul.products{
 .product-content h3, /* old format */
 .product .woocommerce-loop-product__title{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 16px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 10px 15px;
+    font-weight: 400;
     margin: 0;
+    color: #666;
     background: #fff;
     transform: translateY(0px);
     transition: all 450ms cubic-bezier(.485,.075,.12,.855);

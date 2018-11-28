@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="65d47ecd-7862-4be4-9f55-546a6c1b7dc0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -66,86 +65,26 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1606944418">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="210" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="6443" column="17" selection-start-line="6443" selection-start-column="17" selection-end-line="6443" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-359">
-              <caret line="69" column="210" selection-start-line="69" selection-start-column="192" selection-end-line="69" selection-end-column="210" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/class-woo-wallet-wallet.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="56" column="185" lean-forward="true" selection-start-line="56" selection-start-column="120" selection-end-line="56" selection-end-column="185" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/helper/woo-wallet-util.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="331" column="9" selection-start-line="331" selection-start-column="9" selection-end-line="342" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="746">
-              <caret line="159" selection-start-line="159" selection-end-line="159" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="617">
-              <caret line="438" column="25" selection-start-line="438" selection-start-column="25" selection-end-line="438" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/author.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="2" lean-forward="true" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+            <state relative-caret-position="395">
+              <caret line="3655" column="28" selection-start-line="3655" selection-start-column="28" selection-end-line="3655" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -245,7 +184,6 @@
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/search.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/etrade/style.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/author.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/content-none.php" />
@@ -255,6 +193,7 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/helper/woo-wallet-util.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/style.css" />
       </list>
     </option>
   </component>
@@ -292,27 +231,6 @@
               <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
               <item name="etrade" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etrade" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etrade" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etrade" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -321,14 +239,6 @@
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="themes" type="462c0819:PsiDirectoryNode" />
               <item name="etrade" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
-              <item name="etrade" type="462c0819:PsiDirectoryNode" />
-              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
-              <item name="themes" type="462c0819:PsiDirectoryNode" />
-              <item name="etrade" type="462c0819:PsiDirectoryNode" />
-              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -392,13 +302,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161737000" />
+    <option name="totallyTimeSpent" value="161927000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="1912" y="105" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25906184" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24962178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -620,16 +530,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="879">
-          <caret line="54" column="43" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="54" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/css/custom.css" />
+    <entry file="file://$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/example.html" />
     <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/js/jquery.jOrgChart.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -672,13 +574,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="6443" column="17" selection-start-line="6443" selection-start-column="17" selection-end-line="6443" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -690,9 +585,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="9" column="79" lean-forward="true" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
-          <folding>
-            <element signature="e#3471#3490#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,9 +634,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-951">
           <caret line="166" column="3" selection-start-line="166" selection-start-column="3" selection-end-line="166" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#188#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -766,6 +655,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="607">
           <caret line="96" column="40" selection-start-line="96" selection-start-column="40" selection-end-line="96" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="3655" column="28" selection-start-line="3655" selection-start-column="28" selection-end-line="3655" selection-end-column="28" />
         </state>
       </provider>
     </entry>

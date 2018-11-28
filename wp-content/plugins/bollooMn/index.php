@@ -164,7 +164,7 @@ function update_prices($id, $date){
 
 function getWallet($user_id){
     global $wpdb;
-    $query= "SELECT balance FROM trade_woo_wallet_transactions order by transaction_id desc limit 1";
+     $query= "SELECT balance FROM trade_woo_wallet_transactions where user_id=".$user_id." and deleted=0 order by transaction_id desc limit 1";
     return  $wpdb->get_var($query);
 }
 

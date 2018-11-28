@@ -162,12 +162,7 @@ function update_prices($id, $date){
     }
 }
 
-function updateCash($user_id, $amount){
-    $cash=get_user_meta($user_id, 'cash', true);
-    if(!$cash) { $cash=0; }
-    $cash=$cash+$amount;
-    update_user_meta($user_id, 'cash',$cash);
-}
+
 
 function calcCash($order_id, $user_id){
     global $wpdb;
@@ -180,30 +175,28 @@ function calcCash($order_id, $user_id){
 
     //uuriin uramshuulal;
     $data = [
-        'type' => '0',
+        'type' => 'credit',
         'user_id' => $user_id,
-        'order_id' => $order_id,
         'link' => $link,
-        'content' =>$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
-        'cash' => $cash,
+        'details' =>$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
+        'amount' => $cash,
+        'balance' => str_replace('₮', '', woo_wallet()->wallet->get_wallet_balance($user_id))+$cash
     ];
     $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
-    updateCash($user_id, $cash);
 
     //naiziin uramshuulal
     $naiziin_id=get_user_meta($user_id, 't_parent', true);
     if($naiziin_id){
 
         $data = [
-            'type' => '0',
+            'type' => 'credit',
             'user_id' => $naiziin_id,
-            'order_id' => $order_id,
             'link' => $link,
-            'content' =>'Таны найз '.$user_data->user_login.'-ийн  '.$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
-            'cash' => $cash,
+            'details' =>'Таны найз '.$user_data->user_login.'-ийн  '.$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
+            'amount' => $cash,
+            'balance' => str_replace('₮', '', woo_wallet()->wallet->get_wallet_balance($naiziin_id))+$cash
         ];
         $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
-        updateCash($naiziin_id, $cash);
 
         //naiziin  naiziin uramshuulal
         $naiziin_naiziin_id=get_user_meta($naiziin_id, 't_parent', true);
@@ -211,15 +204,14 @@ function calcCash($order_id, $user_id){
             $cash=round($amount/50,PHP_ROUND_HALF_DOWN);
             $naiziin_data=get_userdata( $naiziin_id );
             $data = [
-                'type' => '0',
+                'type' => 'credit',
                 'user_id' => $naiziin_naiziin_id,
-                'order_id' => $order_id,
                 'link' => $link,
-                'content' =>'Таны найз '.$naiziin_data->user_login.'-ийн найз '.$user_data->user_login.'-ийн '.$amount.'₮-ны 2%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
-                'cash' =>$cash
+                'details' =>'Таны найз '.$naiziin_data->user_login.'-ийн найз '.$user_data->user_login.'-ийн '.$amount.'₮-ны 2%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
+                'amount' =>$cash,
+                'balance' => str_replace('₮', '', woo_wallet()->wallet->get_wallet_balance($naiziin_naiziin_id))+$cash
             ];
             $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
-            updateCash($naiziin_naiziin_id, $cash);
         }
     }
 

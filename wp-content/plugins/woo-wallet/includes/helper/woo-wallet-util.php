@@ -274,6 +274,7 @@ if ( ! function_exists( 'get_wallet_transactions' ) ) {
         );
         $args = apply_filters( 'woo_wallet_transactions_query_args', $args );
         $args = wp_parse_args( $args, $default_args );
+
         extract( $args );
         $query           = array();
         $query['select'] = "SELECT transactions.*";
@@ -327,19 +328,21 @@ if ( ! function_exists( 'get_wallet_transactions' ) ) {
 
         $query          = apply_filters( 'woo_wallet_transactions_query', $query );
         $query          = implode( ' ', $query );
-        $query_hash     = md5( $user_id . $query );
-        $cached_results = is_array( get_transient( 'woo_wallet_transaction_resualts' ) ) ? get_transient( 'woo_wallet_transaction_resualts' ) : array();
 
-        if ( $nocache || ! isset( $cached_results[$user_id][$query_hash] ) ) {
-            // Enable big selects for reports
-            $wpdb->query( 'SET SESSION SQL_BIG_SELECTS=1' );
-            $cached_results[$user_id][$query_hash] = $wpdb->get_results( $query );
-            set_transient( 'woo_wallet_transaction_resualts', $cached_results, DAY_IN_SECONDS );
-        }
+//        $query_hash     = md5( $user_id . $query );
+//        $cached_results = is_array( get_transient( 'woo_wallet_transaction_resualts' ) ) ? get_transient( 'woo_wallet_transaction_resualts' ) : array();
+//
+//        if ( $nocache || ! isset( $cached_results[$user_id][$query_hash] ) ) {
+//            // Enable big selects for reports
+//            $wpdb->query( 'SET SESSION SQL_BIG_SELECTS=1' );
+//
+//            $cached_results[$user_id][$query_hash] = $wpdb->get_results( $query );
+//            set_transient( 'woo_wallet_transaction_resualts', $cached_results, DAY_IN_SECONDS );
+//        }
+//
+//        $result = $cached_results[$user_id][$query_hash];
 
-        $result = $cached_results[$user_id][$query_hash];
-
-        return $result;
+        return $wpdb->get_results( $query );
     }
 
 }

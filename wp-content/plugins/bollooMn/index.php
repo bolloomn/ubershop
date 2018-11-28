@@ -162,7 +162,11 @@ function update_prices($id, $date){
     }
 }
 
-
+function getWallet($user_id){
+    global $wpdb;
+    $query= "SELECT balance FROM trade_woo_wallet_transactions order by transaction_id desc limit 1";
+    return  $wpdb->get_var($query);
+}
 
 function calcCash($order_id, $user_id){
     global $wpdb;
@@ -180,9 +184,10 @@ function calcCash($order_id, $user_id){
         'link' => $link,
         'details' =>$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
         'amount' => $cash,
-        'balance' => str_replace('₮', '', woo_wallet()->wallet->get_wallet_balance($user_id))+$cash
+        'balance' => getWallet($user_id)+$cash,
     ];
-    $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+    $wpdb->insert('trade_woo_wallet_transactions', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+    clear_woo_wallet_cache( $user_id );
 
     //naiziin uramshuulal
     $naiziin_id=get_user_meta($user_id, 't_parent', true);
@@ -194,9 +199,9 @@ function calcCash($order_id, $user_id){
             'link' => $link,
             'details' =>'Таны найз '.$user_data->user_login.'-ийн  '.$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
             'amount' => $cash,
-            'balance' => str_replace('₮', '', woo_wallet()->wallet->get_wallet_balance($naiziin_id))+$cash
+            'balance' => getWallet($naiziin_id)+$cash
         ];
-        $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+        $wpdb->insert('trade_woo_wallet_transactions', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
 
         //naiziin  naiziin uramshuulal
         $naiziin_naiziin_id=get_user_meta($naiziin_id, 't_parent', true);
@@ -209,9 +214,9 @@ function calcCash($order_id, $user_id){
                 'link' => $link,
                 'details' =>'Таны найз '.$naiziin_data->user_login.'-ийн найз '.$user_data->user_login.'-ийн '.$amount.'₮-ны 2%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
                 'amount' =>$cash,
-                'balance' => str_replace('₮', '', woo_wallet()->wallet->get_wallet_balance($naiziin_naiziin_id))+$cash
+                'balance' => getWallet($naiziin_naiziin_id)+$cash
             ];
-            $wpdb->insert('trade_cash', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+            $wpdb->insert('trade_woo_wallet_transactions', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
         }
     }
 

@@ -24,7 +24,7 @@ $cashes = $wpdb->get_results($query);
                             <div class="bg-white p-4">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="heading-title">МИНИЙ ХЭТЭВЧ <span class="pull-right"><?php echo woo_wallet()->wallet->get_wallet_balance( get_current_user_id() ); ?></span></div>
+                                        <div class="heading-title">МИНИЙ ХЭТЭВЧ <span class="pull-right"><?php echo $user->ID.' '; echo woo_wallet()->wallet->get_wallet_balance( get_current_user_id() ); ?></span></div>
                                     </div>
                                     <div class="col-lg-12">
                                         <table class="table table-hover">
@@ -34,7 +34,7 @@ $cashes = $wpdb->get_results($query);
                                                     <th class="text-white">Тайлбар</th>
 
                                                     <th class="text-white">Орлого</th>
-                                                    <th class="text-white">Зарлага</th>
+                                                    <th class="text-white">Зарлага </th>
                                                 </tr>
                                             </thead>
                                             <tbody>

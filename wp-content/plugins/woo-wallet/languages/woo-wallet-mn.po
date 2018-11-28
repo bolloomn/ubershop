@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-28 01:05+0000\n"
+"PO-Revision-Date: 2018-11-28 02:15+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -651,7 +651,7 @@ msgstr ""
 #: includes/class-woo-wallet-payment-method.php:165
 #: includes/class-woo-wallet-wallet.php:152
 msgid "For order payment #"
-msgstr "# дугаартай захиалгын төлбөр"
+msgstr "захиалгын төлбөр #"
 
 #: includes/class-woo-wallet-payment-method.php:169
 msgid "Insufficient funds in customer wallet"

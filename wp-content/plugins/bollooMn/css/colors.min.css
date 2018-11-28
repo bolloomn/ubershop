@@ -426,3 +426,20 @@ body.post-type-shop_order .order_actions.submitbox #actions,
     vertical-align: middle !important;
 }
 
+ #your-profile #fieldset-shipping,
+body.user-edit-php h2,
+ body.profile-php h2,
+ #your-profile #fieldset-billing,
+.user-rich-editing-wrap,
+.user-comment-shortcuts-wrap,
+.show-admin-bar.user-admin-bar-front-wrap,
+.user-language-wrap,
+ .user-syntax-highlighting-wrap,
+ .user-nickname-wrap,
+ .user-display-name-wrap,
+     .user-twitter-wrap,
+ .user-description-wrap,
+ .user-url-wrap
+{
+    display: none;
+}

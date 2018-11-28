@@ -200,7 +200,7 @@ msgstr "Орлого"
 #: includes/class-woo-wallet-admin.php:260
 #: templates/wc-endpoint-wallet-transactions.php:29
 msgid "Debit"
-msgstr "Цалин"
+msgstr "Зарлага"
 
 #: includes/api/class-wc-rest-woo-wallet-controller.php:44
 #: includes/api/class-wc-rest-woo-wallet-controller.php:84

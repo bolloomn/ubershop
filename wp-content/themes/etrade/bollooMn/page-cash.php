@@ -3,16 +3,21 @@ if (!is_user_logged_in()) {
     wp_redirect(home_url());
 }
 $user = wp_get_current_user();
-$wallet = get_user_meta($user->ID, 'cash', true);
-if (!$wallet) {
-    $wallet = 0;
-}
 
-$query = "SELECT order_item_id FROM trade_cash where user_id=" . $user->ID . " ";
-$cashes = $wpdb->get_results($query);
 $wallet = getWallet($user->ID);
-$max= round($wallet / 5 * 4);
-$min=5000;
+$query = "SELECT ifnull(sum(amount),0)  FROM `trade_woo_wallet_husel` where status=0 and user_id=" . $user->ID;
+$huselt = $wpdb->get_var($query);
+$max = round($wallet / 5 * 4) - $huselt;
+$min = 1000;
+
+
+//if(isset($_POST['send'])){
+//   $amount=$_POST['amount'];
+//   if($amount<=$)
+//}
+
+
+
 ?>
 
 <?php get_header(); ?>
@@ -28,8 +33,7 @@ $min=5000;
                     <div class="bg-white p-4">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="heading-title">МИНИЙ ХЭТЭВЧ <span class="pull-right"><?php echo $wallet; ?>
-                                        ₮</span></div>
+                                <div class="heading-title">МИНИЙ ХЭТЭВЧ <span class="pull-right"><?php echo $wallet; ?> ₮</span></div>
                             </div>
                             <div class="col-lg-12">
                                 <table class="table table-hover">
@@ -39,7 +43,6 @@ $min=5000;
                                         <th class="text-white">Тайлбар</th>
                                         <th class="text-white">Орлого</th>
                                         <th class="text-white">Зарлага</th>
-
                                     </tr>
                                     </thead>
                                     <tbody>
@@ -67,37 +70,47 @@ $min=5000;
                                 </table>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
                 <div class="col-lg-4 ">
                     <div class="bg-white p-4">
-                        <div class="heading-title">Мөнгө авах
-                            <span class="small pull-right">боломжит дүн: <?php echo round($wallet / 5 * 4); ?>₮</span>
+                        <?php if ($max >= $min) { ?>
+                            <div class="heading-title">Мөнгө авах
+                                <span class="small pull-right">боломжит дүн: <?php echo $max; ?> ₮</span>
+                            </div>
+                            <form class="bg-white mb-4" method="post">
+                                <p>
+                                    <label for="dun">Шилжүүлэх мөнгөн дүн</label>
+                                    <input type="number" max="<?php echo $max; ?>" min="<?php echo $min; ?>"
+                                           name="amount" id="amount" class="form-control" value="" required>
+                                </p>
+                                <p>
+                                    <label for="t_bank_name">Банк</label>
+                                    <input type="text" id="t_bank_name" name="t_bank_name" class="form-control"
+                                           value="<?php echo get_user_meta($user->ID, 't_bank_name', true); ?>">
+                                </p>
+                                <p>
+                                    <label for="t_bank_account">Данс эзэмшигч</label>
+                                    <input type="text" id="t_bank_account" name="t_bank_account" class="form-control"
+                                           value="<?php echo get_user_meta($user->ID, 't_bank_account', true); ?>">
+                                </p>
+                                <p>
+                                    <label for="t_bank_number">Дансны дугаар</label>
+                                    <input type="number" id="t_bank_number" name="t_bank_number" class="form-control"
+                                           value="<?php echo get_user_meta($user->ID, 't_bank_number', true); ?>">
+                                </p>
+                                <p>
+                                    <input type="submit" name="send" class="form-control" value="хүлэлт илгээх">
+                                </p>
+                            </form>
+                        <?php } ?>
+                        <div class="heading-title">Мөнгө шилжүүлэх хүсэлтүүд</div>
+                        <div>
+
                         </div>
-                        <form class="bg-white"  method="post">
-                            <p>
-                                <label for="dun">Шилжүүлэх мөнгөн дүн</label>
-                                <input type="number" max="<?php echo $max;?>" min="<?php echo $min;?>" name="dun" id="dun" class="form-control" value="" required>
-                            </p>
-                            <p>
-                                <label for="t_bank_name">Банк</label>
-                                <input type="text" readonly class="form-control" value="<?php echo get_user_meta($user->ID, 't_bank_name', true); ?>">
-                            </p>
-                            <p>
-                                <label for="t_bank_account">Данс эзэмшигч</label>
-                                <input type="text"  readonly class="form-control"  value="<?php echo get_user_meta($user->ID, 't_bank_account', true); ?>">
-                            </p>
-                            <p>
-                                <label for="t_bank_number">Дансны дугаар</label>
-                                <input type="number" readonly   class="form-control" value="<?php echo get_user_meta($user->ID, 't_bank_number', true); ?>">
-                            </p>
-                            <p>
-                                Таны мэд
-                            </p>
-                        </form>
                     </div>
+
+
                 </div>
 
             </div>

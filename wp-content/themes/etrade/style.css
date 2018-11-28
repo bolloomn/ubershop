@@ -3646,10 +3646,10 @@ ul.products{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 10px 15px;
+    padding: 11px 15px;
     font-weight: 400;
     margin: 0;
-    color: #666;
+    color: #5581b7;
     background: #fff;
     transform: translateY(0px);
     transition: all 450ms cubic-bezier(.485,.075,.12,.855);
@@ -3925,8 +3925,8 @@ ul.products{
 }
 
 .product-data .price > .woocommerce-Price-amount{
-    font-weight: 700;
-    color: #f33355;
+    font-weight: 400;
+    color: #2a3849;
     font-size: 21px;
     padding-right: 10px;
     display: inline-grid;
@@ -4109,8 +4109,8 @@ li.product .social-share-buttons {
 }
 
 .product ins{
-    font-weight: 700;
-    color: #f33355;
+    font-weight: 400;
+    color: #2a3849;
     font-size: 21px;
     padding-right: 10px;
     display: inline-grid;

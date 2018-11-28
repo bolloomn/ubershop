@@ -34,12 +34,20 @@ function register_menu_page() {
     add_menu_page('Бараа', 'Бараа таталт', 'add_users', 'product_tatalt', '_product_tatalt', plugin_dir_url( __FILE__ ).'images/baraa.png', 3);
     add_menu_page('Бараа', 'Барааны үлдэгдэл', 'add_users', 'product_uldegdel', '_product_uldegdel', plugin_dir_url( __FILE__ ).'images/uldegdel.png', 4);
     add_menu_page('Бараа', 'Борлуулалтын тайлан', 'add_users', 'product_report', '_product_report', plugin_dir_url( __FILE__ ).'images/report.png', 4);
+    add_menu_page('Мөнгө шилжүүлэх хүсэт', 'Мөнгө шилжүүлэх хүсэлт', 'add_users', 'wallet_huselt', '_wallet_send', plugin_dir_url( __FILE__ ).'images/report.png',5 );
 }
 add_action('admin_menu', 'register_menu_page');
 
 function _product_tatalt(){
     baraa_header();
    include 'include/baraa-tatalt.php';
+    baraa_footer();
+}
+
+
+function _wallet_send(){
+    baraa_header();
+    include 'include/baraa-tatalt.php';
     baraa_footer();
 }
 
@@ -256,6 +264,12 @@ function bolloomn_to_table($order_id){
     //calc uramshuulal
     calcCash($order_id,$user_id);
 
+}
+
+function getHuselt($user_id){
+    global $wpdb;
+    $query = "SELECT ifnull(sum(amount),0)  FROM `trade_woo_wallet_huselt` where status=0 and user_id=" . $user_id;
+    return $wpdb->get_var($query);
 }
 
 function userTree($user_id, $level=0){

@@ -5,17 +5,29 @@ if (!is_user_logged_in()) {
 $user = wp_get_current_user();
 
 $wallet = getWallet($user->ID);
-$query = "SELECT ifnull(sum(amount),0)  FROM `trade_woo_wallet_husel` where status=0 and user_id=" . $user->ID;
-$huselt = $wpdb->get_var($query);
-$max = round($wallet / 5 * 4) - $huselt;
+
+
+$max = round($wallet / 5 * 4) - getHuselt($user->ID);
 $min = 1000;
 
 
-//if(isset($_POST['send'])){
-//   $amount=$_POST['amount'];
-//   if($amount<=$)
-//}
+if(isset($_POST['send'])){
+    $amount=$_POST['amount'];
+    if($amount<=$max and $min<=$amount){
+        $data = [
+            'status' => '0',
+            'user_id' =>$user->ID,
+            'amount' => $amount,
+            't_bank_name' => $_POST['t_bank_name'],
+            't_bank_account' => $_POST['t_bank_account'],
+            't_bank_number' => $_POST['t_bank_number'],
+        ];
+        $wpdb->insert('trade_woo_wallet_huselt', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+        wp_redirect('wallet');
+        die();
+    }
 
+}
 
 
 ?>
@@ -74,7 +86,7 @@ $min = 1000;
                 </div>
                 <div class="col-lg-4 ">
                     <div class="bg-white p-4">
-                        <?php if ($max >= $min) { ?>
+                        <?php if ($max >= $min) {?>
                             <div class="heading-title">Мөнгө авах
                                 <span class="small pull-right">боломжит дүн: <?php echo $max; ?> ₮</span>
                             </div>
@@ -100,13 +112,43 @@ $min = 1000;
                                            value="<?php echo get_user_meta($user->ID, 't_bank_number', true); ?>">
                                 </p>
                                 <p>
-                                    <input type="submit" name="send" class="form-control" value="хүлэлт илгээх">
+                                    <input type="submit" name="send" class="form-control" value="хүcэлт илгээх">
                                 </p>
                             </form>
                         <?php } ?>
                         <div class="heading-title">Мөнгө шилжүүлэх хүсэлтүүд</div>
                         <div>
+                            <table class="table table-hover table-striped">
+                            <?php
+                                $query = "SELECT *  FROM trade_woo_wallet_huselt where  user_id=".$user->ID." order by id desc";
+                                $huseltuud=$wpdb->get_results($query);
 
+                                function status($status){
+                                    if($status==0){
+                                        return '<span class="badge text-white badge-warning">Хүлээгдэж буй</span>';
+                                    }
+                                    if($status==1){
+                                        return '<span class="badge text-white badge-success">Илгээгдсэн</span>';
+                                    }
+                                    if($status==2){
+                                        return '<span class="badge text-white badge-danger">Цуцлагдсан</span>';
+                                    }
+                                }
+
+                                foreach ($huseltuud as $h){
+
+                            ?>
+
+                                    <tr>
+                                        <td>
+                                            <?php echo  $h->created. '<br><small>'. $h->t_bank_name.', '.$h->t_bank_account.', '.$h->t_bank_number.'</small>'; ?>
+                                        </td>
+                                        <td class="text-center"><?=$h->amount;?>₮</td>
+                                        <td class="text-center"><?=status($h->status);?></td>
+                                    </tr>
+
+                            <?php } ?>
+                            </table>
                         </div>
                     </div>
 

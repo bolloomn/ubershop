@@ -3945,17 +3945,19 @@ ul.products{
 
 .product-data.headings {
     padding: 0 15px 5px;
-    transform: translateY(0px);
-    transition: all 400ms cubic-bezier(.92,.05,.545,.85);
-    transition-delay: 100ms;
 }
 
-.product-block.product-block-hover .product-data.headings {
+.product-block.product-block-hover .product-data.headings {}
+.product-block .product-data a.woocommerce-loop-product__link{
+    transform: translateY(0px);
+    transition: all 250ms cubic-bezier(.92,.05,.545,.85);
+    transition-delay: 200ms;
+}
+.product-block.product-block-hover .product-data a.woocommerce-loop-product__link{
     transform: translateY(-40px);
     transition: all 250ms cubic-bezier(.92,.05,.545,.85);
     transition-delay: 200ms;
 }
-
 .product-data del {
     opacity: 0.6;
 }

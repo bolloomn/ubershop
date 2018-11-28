@@ -95,40 +95,25 @@ function pukka_woocommerce_after_shop_loop_item_title(){
 
 	}
 	?>
-	<div class="product-data headings<?php echo $price_class; ?>">
-
-<?php
-}
-
+<div class="product-data headings<?php echo $price_class; ?>">
+<?php }
 remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
 add_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_add_to_cart', 49 );
 
-
-add_action( 'woocommerce_after_shop_loop_item_title', 'pukka_woocommerce_after_shop_loop_item_content', 50);
-function pukka_woocommerce_after_shop_loop_item_content(){
-	global $post;	?>
-	<div class="more-detail">
-		<div class="additional-links">
-			<a class="read-more" href="<?php the_permalink(); ?>"><i class="fa fa-search"></i></a><a class="product-share" href="#"><i class="fa fa-share-alt"></i></a>
-		</div>
-		<?php if( function_exists('pukka_social_share') ){ pukka_social_share(); } ?>
-	</div>
-
-<?php
-}
-
-
 add_action( 'woocommerce_after_shop_loop_item_title', 'pukka_woocommerce_after_shop_loop_item_close', 999);
-function pukka_woocommerce_after_shop_loop_item_close() {
-?>
-
-	</div>
+function pukka_woocommerce_after_shop_loop_item_close() { ?>
+</div>
+<?php } ?>
+<?php add_action( 'woocommerce_after_shop_loop_item_title', 'pukka_woocommerce_after_shop_loop_item_content', 50);
+function pukka_woocommerce_after_shop_loop_item_content(){ ?>
+    <div class="more-detail">
+        <div class="additional-links">
+            <a class="read-more" href="<?php the_permalink(); ?>"><i class="fa fa-search"></i></a><a class="product-share" href="#"><i class="fa fa-share-alt"></i></a>
+        </div>
+        <?php if( function_exists('pukka_social_share') ){ pukka_social_share(); } ?>
+    </div>
+<?php } ?>
 <?php
-
-}
-
-
-
 add_filter('woocommerce_loop_add_to_cart_link', 'pukka_woocommerce_loop_add_to_cart_link', 10);
 function pukka_woocommerce_loop_add_to_cart_link( $html ){
 

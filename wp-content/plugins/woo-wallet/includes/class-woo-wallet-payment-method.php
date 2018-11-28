@@ -114,7 +114,7 @@ class Woo_Gateway_Wallet_payment extends WC_Payment_Gateway {
             wc_add_notice( __( 'Payment error: ', 'woo-wallet' ) . sprintf( __( 'Your wallet balance is low. Please add %s to proceed with this transaction.', 'woo-wallet' ), wc_price( $order->get_total( 'edit' ) - woo_wallet()->wallet->get_wallet_balance( get_current_user_id(), 'edit' ) ) ), 'error' );
             return;
         }
-        $wallet_response = woo_wallet()->wallet->debit( get_current_user_id(), $order->get_total( '' ), __( 'For order payment #', 'woo-wallet' ) . $order->get_order_number() );
+        $wallet_response = woo_wallet()->wallet->debit( get_current_user_id(), $order->get_total( '' ), esc_html__( 'For order payment #', 'woo-wallet' ) . $order->get_order_number() );
 
         // Reduce stock levels
         wc_reduce_stock_levels( $order_id );
@@ -162,7 +162,7 @@ class Woo_Gateway_Wallet_payment extends WC_Payment_Gateway {
         if ( get_post_meta( $order->get_id(), '_wallet_scheduled_subscription_payment_processed', true ) ) {
             return;
         }
-        $wallet_response = woo_wallet()->wallet->debit( $order->get_customer_id(), $amount_to_charge, __( 'For order payment #', 'woo-wallet' ) . $order->get_order_number() );
+        $wallet_response = woo_wallet()->wallet->debit( $order->get_customer_id(), $amount_to_charge, esc_html__( 'For order payment #', 'woo-wallet' ) . $order->get_order_number() );
         if ( $wallet_response) {
             $order->payment_complete();
         } else {

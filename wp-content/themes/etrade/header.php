@@ -63,13 +63,11 @@ if('top' == pukka_get_option('main_menu_position')) :
                     <ul class="menu stripe-menu">
                         <?php if(is_user_logged_in()){
                                 $user = wp_get_current_user();
-                                $wallet=get_user_meta($user->ID, 'cash', true);
-                                if(!$wallet) { $wallet=0; }
                         ?>
                             <li><a class="text-capitalize"><i class="fa fa-user-circle-o"></i> <?php echo  $user->user_login; ?></a></li>
                             <li class="menu-item"><a href="<?php echo home_url('my-profile'); ?>"><i class="fa fa-cog"></i> Миний профайл</a></li>
                             <li class="menu-item"><a href="<?php echo home_url('my-users'); ?>"><i class="fa fa-users"></i> Миний гишүүд</a></li>
-                            <li class="menu-item"><a href="<?php echo home_url('my-cash'); ?>"><i class="fa fa-diamond"></i> Миний хэтэвч (<?=$wallet;?>₮)</a></li>
+                            <li class="menu-item"><a href="<?php echo home_url('wallet'); ?>"><i class="fa fa-diamond"></i> Миний хэтэвч (<?php echo woo_wallet()->wallet->get_wallet_balance( get_current_user_id() ); ?>)</a></li>
                             <li class="menu-item"><a href="<?=wp_logout_url( home_url());?>"><i class="fa fa-sign-out"></i> Гарах</a></li>
                         <?php } else { ?>
                             <li class="menu-item">

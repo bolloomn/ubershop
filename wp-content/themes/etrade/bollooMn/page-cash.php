@@ -24,29 +24,38 @@ $cashes = $wpdb->get_results($query);
                             <div class="bg-white p-4">
                                 <div class="row">
                                     <div class="col-lg-12">
-                                        <div class="heading-title">МИНИЙ ХЭТЭВЧ <span class="pull-right"><?php echo $wallet; ?>₮</span></div>
+                                        <div class="heading-title">МИНИЙ ХЭТЭВЧ <span class="pull-right"><?php echo woo_wallet()->wallet->get_wallet_balance( get_current_user_id() ); ?></span></div>
                                     </div>
                                     <div class="col-lg-12">
-                                        <table class="table table-striped">
+                                        <table class="table table-hover">
                                             <thead>
                                                 <tr class="bg-secondary">
                                                     <th class="text-white">Огноо</th>
-                                                    <th class="text-white">Төрөл</th>
-                                                    <th class="text-white">Төлөв</th>
-                                                    <th class="text-white">Мөнгөн дүн</th>
                                                     <th class="text-white">Тайлбар</th>
-                                                    <th class="text-white">Холбоос</th>
+
+                                                    <th class="text-white">Орлого</th>
+                                                    <th class="text-white">Зарлага</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
-                                                    <td></td>
+                                            <?php $transactions = get_wallet_transactions(); ?>
+                                            <?php if ( ! empty( $transactions ) ) { ?>
+                                                <?php foreach ( $transactions as $transaction ) :
+                                                    $credit='-'; $debit='-';
+                                                    $transaction->type == 'credit' ?  $credit= '+'.$transaction->amount.'₮' : $debit='-'.$transaction->amount.'₮';
+                                                    ?>
+                                                    <tr>
+                                                    <td><?php echo $transaction->date; ?></td>
+                                                    <td><?php echo $transaction->details; ?></td>
+                                                    <td><?=$credit;?></td>
+                                                    <td><?=$debit;?></td>
                                                 </tr>
+                                                <?php endforeach; ?>
+                                            <?php } else { ?>
+                                            <tr>
+                                                <td colspan="4">Хоосон байна</td>
+                                            </tr>
+                                            <?php } ?>
                                             </tbody>
                                         </table>
                                     </div>

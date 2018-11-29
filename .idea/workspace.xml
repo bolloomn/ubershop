@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65d47ecd-7862-4be4-9f55-546a6c1b7dc0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/report.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/report.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,7 +33,7 @@
           <entry key="css" value="22" />
           <entry key="html" value="2" />
           <entry key="js" value="3" />
-          <entry key="php" value="105" />
+          <entry key="php" value="107" />
           <entry key="scss" value="3" />
         </counts>
       </usages-collector>
@@ -48,7 +42,7 @@
           <entry key="CSS" value="22" />
           <entry key="HTML" value="2" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="102" />
+          <entry key="PHP" value="104" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="SCSS" value="3" />
         </counts>
@@ -57,7 +51,7 @@
         <counts>
           <entry key="css" value="1840" />
           <entry key="html" value="36" />
-          <entry key="php" value="13523" />
+          <entry key="php" value="13782" />
           <entry key="scss" value="21" />
         </counts>
       </usages-collector>
@@ -65,7 +59,7 @@
         <counts>
           <entry key="CSS" value="1840" />
           <entry key="HTML" value="37" />
-          <entry key="PHP" value="13469" />
+          <entry key="PHP" value="13728" />
           <entry key="PLAIN_TEXT" value="19" />
           <entry key="SCSS" value="21" />
           <entry key="SQL" value="34" />
@@ -99,7 +93,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3366">
+            <state relative-caret-position="695">
               <caret line="198" column="118" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="118" />
             </state>
           </provider>
@@ -108,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="187" column="25" lean-forward="true" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
+            <state relative-caret-position="248">
+              <caret line="182" column="87" selection-start-line="182" selection-start-column="87" selection-end-line="182" selection-end-column="87" />
               <folding>
                 <element signature="e#7#188#0#PHP" expanded="true" />
               </folding>
@@ -117,20 +111,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            <state relative-caret-position="415">
+              <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="75" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="356">
+              <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="83" />
+            <state relative-caret-position="391">
+              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="180" />
             </state>
           </provider>
         </entry>
@@ -231,15 +234,15 @@
         <option value="$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/class-woo-wallet-wallet.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/helper/woo-wallet-util.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/etrade/style.css" />
-        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" />
-        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/report.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" />
         <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" />
       </list>
     </option>
   </component>
@@ -291,16 +294,28 @@
               <item name="etrade" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
               <item name="etrade" type="462c0819:PsiDirectoryNode" />
               <item name="wp-content" type="462c0819:PsiDirectoryNode" />
               <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -361,16 +376,15 @@
       <workItem from="1542932871145" duration="22211000" />
       <workItem from="1543279076791" duration="30839000" />
       <workItem from="1543364593300" duration="17305000" />
-      <workItem from="1543450756182" duration="6970000" />
+      <workItem from="1543450756182" duration="10963000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="173114000" />
+    <option name="totallyTimeSpent" value="177107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -561,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="379">
@@ -645,24 +652,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2431">
-          <caret line="143" column="159" selection-start-line="143" selection-start-column="159" selection-end-line="143" selection-end-column="159" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/helper/woo-wallet-util.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5627">
           <caret line="331" column="9" selection-start-line="331" selection-start-column="9" selection-end-line="342" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3366">
-          <caret line="198" column="118" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="118" />
         </state>
       </provider>
     </entry>
@@ -718,27 +711,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="695">
+          <caret line="198" column="118" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="-629">
           <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="180" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="74" column="29" selection-start-line="74" selection-start-column="29" selection-end-line="75" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="187" column="25" lean-forward="true" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
+        <state relative-caret-position="248">
+          <caret line="182" column="87" selection-start-line="182" selection-start-column="87" selection-end-line="182" selection-end-column="87" />
           <folding>
             <element signature="e#7#188#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="356">
+          <caret line="116" column="35" selection-start-line="116" selection-start-column="35" selection-end-line="116" selection-end-column="35" />
         </state>
       </provider>
     </entry>

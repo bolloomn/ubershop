@@ -10,9 +10,12 @@ global  $wpdb;
     if(isset($_GET['id']) and isset($_GET['type'])){
 
         $huselt=$wpdb->get_row('select * from trade_woo_wallet_huselt where id='.$_GET['id']);
+        $error='';
         if($huselt->status==0){
+            $balance= getWallet($huselt->user_id)-$huselt->amount;
             //debit uurchluh
-            if($_GET['type']==1){
+
+            if($_GET['type']==1 and $balance>=0){
                 $data = [
                     'type' => 'debit',
                     'user_id' => $huselt->user_id,
@@ -21,11 +24,17 @@ global  $wpdb;
                     'balance' => getWallet($huselt->user_id)-$huselt->amount,
                 ];
                 $wpdb->insert('trade_woo_wallet_transactions', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
+                $wpdb->update('trade_woo_wallet_huselt', ['status' => 1], ['id'=> $_GET['id']], ['%s'], ['%d']);
+            } else {
+                $error='&r=1';
             }
             //status uurchluh
-            $wpdb->update('trade_woo_wallet_huselt', ['status' => $_GET['type']], ['id'=> $_GET['id']], ['%s'], ['%d']);
+            if($_GET['type']==2){
+                $wpdb->update('trade_woo_wallet_huselt', ['status' => 2], ['id'=> $_GET['id']], ['%s'], ['%d']);
+            }
+
         }
-        die('<meta http-equiv="refresh" content="0;URL=\''.$link.$pages.'\'" /> ');
+        die('<meta http-equiv="refresh" content="0;URL=\''.$link.$pages.$error.'\'" /> ');
     }
 
     /*huselt*/
@@ -55,6 +64,7 @@ global  $wpdb;
 <div class="wrap">
     <h1 class="wp-heading-inline mb-lg-3">Мөнгө шилжүүлэх хүсэлт</h1>
 
+    <?php if(isset($_GET['r']) and $_GET['r']==1){ echo '<div  class="alert alert-danger mb-4" role="alert">Хэтэвчний үлдэгдэл хүрэлцэхгүй байна</div>'; } ?>
 
     <table class="bg-white table table-hover ">
         <thead>
@@ -64,7 +74,7 @@ global  $wpdb;
                 <th>Мөнгөн дүн</th>
                 <th>Банк</th>
                 <th>Эзэмшигч</th>
-                <th>Дансны дугаар</th>
+                <th>Дансны мэдэээл</th>
                 <th width="100">Төлөв</th>
                 <th width="187"></th>
             </tr>
@@ -91,7 +101,7 @@ global  $wpdb;
                 </td>
                 <td>
 
-
+                    <?php  if($row->status==0){ ?>
                     <a  class="btn btn-sm btn-outline-success"
                         href="<?php echo $link.$pages.'&id='.$row->id.'&type=1'; ?>"
                         onclick="return confirm('Та зөвшөөрөхдөө итгэлтэй байна уу!')"
@@ -101,7 +111,7 @@ global  $wpdb;
                        onclick="return confirm('Та цуцлахдаа итгэлтэй байна уу!')">
                         <i class="fa fa-remove"></i> цуцлах
                     </a>
-
+                    <?php } ?>
                 </td>
             </tr>
         <?php endforeach; ?>

@@ -180,7 +180,12 @@ function calcCash($order_id, $user_id){
     global $wpdb;
 
     $user_data=get_userdata( $user_id );
-    $amount= get_post_meta($order_id, '_order_total', true);
+    $amount= $wpdb->get_var("SELECT sum(meta_value) FROM trade_woocommerce_order_itemmeta as meta
+                                    join trade_woocommerce_order_items as item
+                                    on meta.order_item_id=item.order_item_id
+                                    and item.order_item_type='line_item'
+                                    and meta.meta_key='_line_total'
+                                    and item.order_id=".$order_id);
     $key =get_post_meta($order_id, '_order_key', true);
     $link= home_url('checkout/order-received/'.$order_id.'/?key='.$key);
     $cash=round($amount/20,  PHP_ROUND_HALF_DOWN);

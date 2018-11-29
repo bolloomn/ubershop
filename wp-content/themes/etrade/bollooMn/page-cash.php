@@ -118,7 +118,7 @@ if(isset($_POST['send'])){
                         <?php } ?>
                         <div class="heading-title">Мөнгө шилжүүлэх хүсэлтүүд</div>
                         <div>
-                            <table class="table table-hover table-striped">
+                            <table class="table table-hover ">
                             <?php
                                 $query = "SELECT *  FROM trade_woo_wallet_huselt where  user_id=".$user->ID." order by id desc";
                                 $huseltuud=$wpdb->get_results($query);

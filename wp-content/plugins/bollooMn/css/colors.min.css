@@ -116,9 +116,6 @@ input[type=radio]:checked:before {
 #adminmenu, #adminmenuback, #adminmenuwrap {
     background: #FFF;
     margin: 0;
-    -webkit-box-shadow: inset -2px 0px 2px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: inset -2px 0px 2px 0px rgba(0,0,0,0.2);
-    box-shadow: inset -2px 0px 2px 0px rgba(0,0,0,0.2);
 }
 
 #adminmenu a {
@@ -193,7 +190,7 @@ ul#adminmenu a.wp-has-current-submenu:after, ul#adminmenu > li.current > a.curre
 
 #adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top {
     color: #282828;
-    background: #e9ebee;
+    background: #f2f2f2;
 }
 
 #adminmenu a.current:hover div.wp-menu-image:before, #adminmenu li a:focus div.wp-menu-image:before, #adminmenu li.opensub div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu a:focus div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu div.wp-menu-image:before, #adminmenu li.wp-has-current-submenu.opensub div.wp-menu-image:before, #adminmenu li:hover div.wp-menu-image:before, .ie8 #adminmenu li.opensub div.wp-menu-image:before {
@@ -442,4 +439,22 @@ body.user-edit-php h2,
  .user-url-wrap
 {
     display: none;
+}
+
+ body {
+     font-size: 13px !important;
+     font-family: Roboto;
+ }
+
+.table td, .table th {
+    padding: 8px !important;
+}
+.table th {
+    font-weight: normal !important;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 2px 6px !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
 }

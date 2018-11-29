@@ -85,15 +85,15 @@ global  $wpdb;
     </h1>
 
 
-    <table class="bg-white table table-hover table-bordered">
+    <table class="bg-white table table-hover ">
         <thead>
-            <tr class="bg-secondary text-white">
+            <tr class="bg-primary text-white">
                 <th width="200">Огноо</th>
                 <th>Бараа</th>
                 <th>Үнэ</th>
                 <th>Тоо</th>
                 <th>Нийт</th>
-                <th width="90"></th>
+                <th width="70"></th>
             </tr>
         </thead>
         <tbody>
@@ -107,7 +107,7 @@ global  $wpdb;
                 <td>
 
                     <?php  if(time()-60*60*24*30<=strtotime($row->date)){?>
-                    <a  class="btn btn-sm btn-secondary text-white"
+                    <a  href="" class="btn btn-sm btn-outline-primary"
                         data-toggle="modal"
                         data-target="#tataltModal"
                         data-id="<?=$row->id;?>"
@@ -116,7 +116,7 @@ global  $wpdb;
                         data-cost="<?php echo number_format($row->cost,2, '.', ''); ?>"
                         data-quantity="<?=$row->quantity;?>"
                     ><i class="fa fa-pencil"></i></a>
-                    <a class="btn btn-sm btn-secondary text-white"
+                    <a href="" class="btn btn-sm btn-outline-danger"
                        href="<?php echo $link.$pages.'&del='.$row->id; ?>"
                        onclick="return confirm('Та устгахдаа итгэлтэй байна уу!')">
                         <i class="fa fa-trash"></i>

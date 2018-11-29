@@ -47,9 +47,9 @@
             </form>
         </div>
     </div>
-    <table class="bg-white table table-hover table-bordered ">
+    <table class="bg-white table table-hover">
         <thead>
-        <tr class="bg-secondary text-white">
+        <tr class="bg-primary text-white">
             <th>Огноо</th>
             <th>Бараа</th>
             <th>Борлуулагч</th>

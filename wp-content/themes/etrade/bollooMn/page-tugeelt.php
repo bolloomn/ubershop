@@ -90,7 +90,7 @@ $orders = $wpdb->get_results($query);
                                     </thead>
                                     <tbody>
                                     <?php if (!empty($orders)) { ?>
-                                        <?php foreach ($orders as $order){?>
+                                        <?php foreach ($orders as $order){?> 
                                             <tr>
                                                 <td><?php echo $order->post_date; ?></td>
                                                 <td>#<?php echo $order->ID; ?></td>

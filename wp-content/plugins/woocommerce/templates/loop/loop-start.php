@@ -19,9 +19,5 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
-$col=3;
-if(is_front_page()){
-    $col=4;
-}
 ?>
-<ul class="products columns-<?php echo $col; ?>">
+<ul class="products columns-4">

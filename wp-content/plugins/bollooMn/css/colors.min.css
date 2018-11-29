@@ -436,7 +436,9 @@ body.user-edit-php h2,
  .user-display-name-wrap,
      .user-twitter-wrap,
  .user-description-wrap,
- .user-url-wrap
+ .user-url-wrap,
+ .woocommerce_page_wc-reports ul.subsubsub li:nth-child(4),
+ .woocommerce_page_wc-reports ul.subsubsub li:nth-child(5)
 {
     display: none;
 }

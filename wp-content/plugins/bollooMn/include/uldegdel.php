@@ -113,17 +113,17 @@
         </div>
     </div>
 
-    <table class="bg-white table table-hover table-bordered ">
+    <table class="bg-white table table-hover">
         <thead>
-        <tr class="bg-secondary text-white">
-            <th >ID</th>
+        <tr class="bg-primary text-white font-weight-normal">
+            <th >№</th>
             <th>Бараа</th>
             <th>Эхний үлдэгдэл</th>
             <th>Нэмэгдсэн</th>
             <th>Хорогдсон</th>
             <th>Эцсийн үлдэгдэл</th>
             <th>Зарлагдсан</th>
-            <th width="90"></th>
+            <th width="72"></th>
         </tr>
         </thead>
         <tbody>
@@ -153,13 +153,13 @@
                     </td>
                     <td><?php echo $row->zarlagdsan_quantity.' ши<br>'.number_format($row->zarlagdsan_amount, 2, '.', '').' ₮'; ?></td>
                     <td >
-                        <a  class="btn btn-sm btn-secondary text-white"
+                        <a href=""  class="btn btn-sm btn-outline-primary"
                             data-toggle="modal"
                             data-target="#tataltModal"
                             data-id="<?=$row->ID;?>"
                             data-end="<?=$row->end_quantity;?>"
                         ><i class="fa fa-pencil"></i></a>
-                        <a class="btn btn-sm btn-secondary text-white"
+                        <a  class="btn btn-sm btn-outline-primary "
                            href="<?php echo $link.'&pid='.$row->ID; ?>" >
                             <i class="fa fa-history"></i>
                         </a>

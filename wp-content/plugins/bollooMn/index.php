@@ -47,7 +47,7 @@ function _product_tatalt(){
 
 function _wallet_send(){
     baraa_header();
-    include 'include/baraa-tatalt.php';
+    include 'include/wallet_send.php';
     baraa_footer();
 }
 

@@ -527,7 +527,14 @@ ul.products:after{
 
     /*padding-bottom: 50px;*/
 }
-
+.mobile .stripe-menu .drop-down-mobile:after{
+    content: '\f0d7';
+    font-family: FontAwesome;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 14px;
+}
 .full #menu-primary {
     min-height: 80px;
     line-height: 80px;

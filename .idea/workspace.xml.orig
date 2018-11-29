@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="65d47ecd-7862-4be4-9f55-546a6c1b7dc0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-start.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-start.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/etrade/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/etrade/style.css" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/report.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/report.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" afterDir="false" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1059234058">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="2" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.25" value="2" />
+          <entry key="project.open.time.28" value="2" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.64" value="1" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="22" />
+          <entry key="html" value="2" />
+          <entry key="js" value="3" />
+          <entry key="php" value="105" />
+          <entry key="scss" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="22" />
+          <entry key="HTML" value="2" />
+          <entry key="JavaScript" value="3" />
+          <entry key="PHP" value="102" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="SCSS" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="1840" />
+          <entry key="html" value="36" />
+          <entry key="php" value="13523" />
+          <entry key="scss" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="1840" />
+          <entry key="HTML" value="37" />
+          <entry key="PHP" value="13469" />
+          <entry key="PLAIN_TEXT" value="19" />
+          <entry key="SCSS" value="21" />
+          <entry key="SQL" value="34" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1606944418">
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="php" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="PHP" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="php" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="PHP" value="2" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="247">
+              <caret line="1396" column="16" selection-start-line="1396" selection-start-column="16" selection-end-line="1396" selection-end-column="16" />
+=======
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/helper/woo-wallet-util.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5627">
+              <caret line="331" column="9" selection-start-line="331" selection-start-column="9" selection-end-line="342" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3366">
+              <caret line="198" column="118" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="118" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="187" column="25" lean-forward="true" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
+              <folding>
+                <element signature="e#7#188#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="83" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+<<<<<<< HEAD
+      <find>.jOrgChart .node</find>
+      <find>orgChart</find>
+=======
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+      <find>chart</find>
+      <find>menu-top.full a</find>
+      <find>jOrgChart</find>
+      <find>par</find>
+      <find>woocommerce-Price-amount</find>
+      <find>menu-top</find>
+      <find>product-block-hover</find>
+      <find>&lt;del</find>
+      <find>.woocommerce-Price-currencySymbol</find>
+      <find>view_transactions</find>
+      <find>woo-wallet-content-h3</find>
+      <find>woo-wallet-add</find>
+      <find>balance_amount</find>
+      <find>woo_wallet_user_currency</find>
+      <find>submit_button</find>
+      <find>woo_wallet_transactions</find>
+      <find>get_wallet_balance</find>
+      <find>woo_wallet_current_balance</find>
+      <find>ion wp_list_pluck</find>
+      <find>WP_List_Util</find>
+      <find>get_wallet_transactions</find>
+      <find>wc-wallet-transaction-details_wrapper</find>
+      <find>woo-wallet-admin-adjust-balance</find>
+      <find>woocommerce-Price-currencySymbol</find>
+      <find>wp_list_pluck</find>
+      <find>where</find>
+      <find>$amoun</find>
+<<<<<<< HEAD
+      <find>products columns-</find>
+=======
+      <find>#007bff</find>
+      <find>#adminmenu, #adminmenuback, #adminmenuwrap</find>
+      <find>#adminmenu li.current a.menu-top, #adminmenu li.wp-has-current-submenu .wp-submenu .wp-submenu-head, #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu, .folded #adminmenu li.current.menu-top</find>
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+    </findStrings>
+    <replaceStrings>
+      <replace>250</replace>
+      <replace>#4267b2</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/wp-content/plugins/Ankhbaatar/js/data.js" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/Ankhbaatar/index.php" />
+        <option value="$PROJECT_DIR$/wp-admin/css/colors/blue/colors.min.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/tatalt.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/login.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/ubershop-child/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/single-product-reviews.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/dynamic-price-and-discounts-for-woocommerce/includes/phoeniixx_discount_productplugin.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/short-description.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/content-product_cat.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/page-my-account.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/global/form-login.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/js/pukka.js" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-lost-password.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/dynamic-price-and-discounts-for-woocommerce/phoen_discounts.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-checkout.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-login.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/data-stores/abstract-wc-order-item-type-data-store.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-tsalin.php" />
+        <option value="$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/example.html" />
+        <option value="$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/css/custom.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/js/jquery.jOrgChart.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-users.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/search.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/author.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/content-none.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/header.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woo-wallet/templates/wc-endpoint-wallet.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/class-woo-wallet-wallet.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/helper/woo-wallet-util.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-start.php" />
+        <option value="$PROJECT_DIR$/wp-content/themes/etrade/style.css" />
+=======
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/report.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css" />
+        <option value="$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1912" />
+    <option name="y" value="105" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="woo-wallet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="woo-wallet" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="woo-wallet" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="helper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="woocommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="loop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="etrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+              <item name="wp-content" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="etrade" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+              <item name="bollooMn" type="462c0819:PsiDirectoryNode" />
+              <item name="include" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/wp-content/plugins/woocommerce" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn" />
+      <recent name="C:\xampp\htdocs\etrade\wp-content\plugins\bollooMn\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\etrade\wp-content\plugins\bollooMn\include" />
+      <recent name="C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn" />
+      <recent name="C:\xampp\htdocs\etrade\wp-content\themes\etrade" />
+      <recent name="C:\xampp\htdocs\etrade\wp-content\plugins\Ankhbaatar\css" />
+      <recent name="C:\xampp\htdocs\etrade\wp-admin\css\colors" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="65d47ecd-7862-4be4-9f55-546a6c1b7dc0" name="Default Changelist" comment="" />
+      <created>1542166645620</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542166645620</updated>
+      <workItem from="1542166647206" duration="5610000" />
+      <workItem from="1542184414390" duration="597000" />
+      <workItem from="1542251121097" duration="16281000" />
+      <workItem from="1542331260675" duration="1729000" />
+      <workItem from="1542335088302" duration="546000" />
+      <workItem from="1542779761734" duration="12633000" />
+      <workItem from="1542846874185" duration="27299000" />
+      <workItem from="1542932871145" duration="22211000" />
+      <workItem from="1543279076791" duration="30839000" />
+      <workItem from="1543364593300" duration="17305000" />
+<<<<<<< HEAD
+      <workItem from="1543451246155" duration="1431000" />
+=======
+      <workItem from="1543450756182" duration="6970000" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="167226000" />
+=======
+    <option name="totallyTimeSpent" value="173114000" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1912" y="105" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2632375" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26172706" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.013015185" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.018032787" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/tabs/tabs.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16031">
+          <caret line="943" column="57" selection-start-line="943" selection-start-column="38" selection-end-line="943" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="97" selection-start-line="25" selection-start-column="97" selection-end-line="25" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/myaccount/navigation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/global/form-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="25" column="118" selection-start-line="25" selection-start-column="118" selection-end-line="25" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-my-account.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="55" lean-forward="true" selection-end-line="41" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/js/pukka.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/myaccount/form-change-password.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/orderby.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/pagination.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-template-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="1099" column="140" selection-start-line="1099" selection-start-column="140" selection-end-line="1099" selection-end-column="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/woocommerce/woocommerce_configuration.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/content.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/single-product/short-description.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/dynamic-price-and-discounts-for-woocommerce/phoen_discounts.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="872" column="13" selection-start-line="872" selection-start-column="13" selection-end-line="872" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-lost-password.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="67" column="84" selection-start-line="67" selection-start-column="84" selection-end-line="67" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/checkout/form-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="708">
+          <caret line="63" column="49" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="555" column="19" selection-start-line="555" selection-start-column="19" selection-end-line="555" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/data-stores/abstract-wc-order-item-type-data-store.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-340">
+          <caret line="1" column="3" lean-forward="true" selection-start-line="1" selection-start-column="3" selection-end-line="1" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-form-handler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1216">
+          <caret line="333" column="46" selection-start-line="333" selection-start-column="30" selection-end-line="333" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/class-wc-checkout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="1074" column="90" lean-forward="true" selection-start-line="1074" selection-start-column="90" selection-end-line="1074" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/css/custom.css" />
+    <entry file="file://$USER_HOME$/Downloads/jOrgChart-master/jOrgChart-master/example/example.html" />
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/js/jquery.jOrgChart.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="35" column="32" lean-forward="true" selection-start-line="35" selection-start-column="32" selection-end-line="35" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="30" lean-forward="true" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/includes/wc-formatting-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="1196" column="2" selection-start-line="1196" selection-start-column="2" selection-end-line="1196" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/search.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" lean-forward="true" selection-start-column="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/content-none.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="88" lean-forward="true" selection-start-line="14" selection-start-column="88" selection-end-line="14" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-includes/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="3606" column="28" selection-start-line="3606" selection-start-column="16" selection-end-line="3606" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/templates/wc-endpoint-wallet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="79" lean-forward="true" selection-start-line="9" selection-start-column="79" selection-end-line="9" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/class-woo-wallet-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="223" column="35" lean-forward="true" selection-start-line="223" selection-start-column="35" selection-end-line="223" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="7008">
+          <caret line="438" column="25" selection-start-line="438" selection-start-column="25" selection-end-line="438" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/author.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+=======
+        <state relative-caret-position="3298">
+          <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="210" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109565">
+          <caret line="6445" column="17" selection-start-line="6445" selection-start-column="17" selection-end-line="6445" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1173">
+          <caret line="69" column="210" selection-start-line="69" selection-start-column="192" selection-end-line="69" selection-end-column="210" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="386">
+          <caret line="43" column="19" lean-forward="true" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+          <folding>
+            <element signature="e#7#188#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="198" column="118" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="118" />
+=======
+        <state relative-caret-position="952">
+          <caret line="56" column="185" selection-start-line="56" selection-start-column="120" selection-end-line="56" selection-end-column="185" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2431">
+          <caret line="143" column="159" selection-start-line="143" selection-start-column="159" selection-end-line="143" selection-end-column="159" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/helper/woo-wallet-util.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5627">
+          <caret line="331" column="9" selection-start-line="331" selection-start-column="9" selection-end-line="342" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-cash.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woo-wallet/includes/class-woo-wallet-wallet.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="56" column="185" selection-start-line="56" selection-start-column="120" selection-end-line="56" selection-end-column="185" />
+=======
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3366">
+          <caret line="198" column="118" selection-start-line="198" selection-start-column="34" selection-end-line="198" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/css/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="5" column="37452" lean-forward="true" selection-start-line="5" selection-start-column="37452" selection-end-line="5" selection-end-column="37452" />
+          <folding>
+            <element signature="e#57434#57634#2" expanded="true" />
+            <element signature="e#57842#57991#2" expanded="true" />
+            <element signature="e#58493#58639#2" expanded="true" />
+            <element signature="e#58940#59106#1" expanded="true" />
+            <element signature="e#70722#70965#2" expanded="true" />
+            <element signature="e#71832#72081#2" expanded="true" />
+            <element signature="e#99144#99334#2" expanded="true" />
+            <element signature="e#99380#99570#2" expanded="true" />
+          </folding>
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/author.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="16">
+          <caret line="69" column="210" selection-start-line="69" selection-start-column="192" selection-end-line="69" selection-end-column="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/bollooMn/page-profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="194" column="28" selection-start-line="194" selection-start-column="28" selection-end-line="210" selection-end-column="34" />
+=======
+        <state relative-caret-position="34">
+          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel_history.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="364">
+          <caret line="49" column="80" lean-forward="true" selection-start-line="49" selection-start-column="80" selection-end-line="49" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/css/colors.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="192" column="23" selection-start-line="192" selection-start-column="23" selection-end-line="192" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/report.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="51" column="29" selection-start-line="51" selection-start-column="29" selection-end-line="51" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/uldegdel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1615">
+          <caret line="161" column="27" selection-start-line="161" selection-start-column="27" selection-end-line="161" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/baraa-tatalt.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="83" />
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/woocommerce/templates/loop/loop-start.php">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="112">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="1396" column="16" selection-start-line="1396" selection-start-column="16" selection-end-line="1396" selection-end-column="16" />
+=======
+        <state relative-caret-position="629">
+          <caret line="187" column="25" lean-forward="true" selection-start-line="187" selection-start-column="25" selection-end-line="187" selection-end-column="25" />
+          <folding>
+            <element signature="e#7#188#0#PHP" expanded="true" />
+          </folding>
+>>>>>>> b9080572df130beaca74ec3d54bde6f9142fc641
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/plugins/bollooMn/include/wallet_send.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -1387,21 +1387,15 @@ ul.products:after{
 }
 
 .widget {
-    margin-top: 24px;
-    /*font-size: 16px;*/
     color: inherit;
-    margin-bottom: 24px;
 }
 
 .widget li {
-    border-top-width: 1px;
-    border-top-style: solid;
     float: left;
     padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;
     position: relative;
-    border-color: #c5c5c7;
 }
 
 /* nested lists */
@@ -1902,7 +1896,7 @@ a.button.checkout {
  */
 
 #main {
-    margin: 15px 10px 10px;
+    margin: 0;
     min-height: 500px;
 }
 

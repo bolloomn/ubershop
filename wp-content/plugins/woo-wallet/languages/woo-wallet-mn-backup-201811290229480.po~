@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-29 02:29+0000\n"
+"PO-Revision-Date: 2018-11-29 02:28+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -374,7 +374,7 @@ msgstr ""
 #: includes/class-woo-wallet-admin.php:453
 #: includes/class-woo-wallet-frontend.php:447
 msgid "Via wallet"
-msgstr "Хэтэвчнээс хасагдсан"
+msgstr ""
 
 #: includes/class-woo-wallet-admin.php:460
 msgid "Via %s"
@@ -571,7 +571,7 @@ msgstr ""
 
 #: includes/class-woo-wallet-frontend.php:503
 msgid "Via wallet:"
-msgstr "Хэтэвчнээс хасагдсан:"
+msgstr ""
 
 #: includes/class-woo-wallet-frontend.php:504
 msgid "Via %s:"

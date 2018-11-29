@@ -5,6 +5,7 @@ if (!is_user_logged_in()) {
 }
 
 
+
 $user = wp_get_current_user();
 
 
@@ -24,7 +25,7 @@ $user = wp_get_current_user();
     });
 </script>
 
-<div class="text-center mb-4">
+<div class="text-center mt-4 mb-4">
     <h1 style="color:#232f3e; font-weight: 400;">Миний гишүүд</h1>
 </div>
 

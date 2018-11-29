@@ -1,0 +1,56 @@
+2018-11-20T14:20:42+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\etrade\wp-includes\class-wp-http-curl.php on line 313
+
+2018-11-20T15:25:49+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\etrade\wp-includes\wp-db.php on line 1924
+
+2018-11-20T15:26:22+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\etrade\wp-includes\wp-db.php on line 1924
+
+2018-11-20T16:31:03+00:00 CRITICAL Uncaught Exception: fetch - <b>Table 'etrade.trade_revslider_css' doesn't exist</b><br>---<br> Query: select * from trade_revslider_css in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php:14
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(26): RevSliderFunctions::throwError('fetch - <b>Tabl...', -1)
+#1 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(41): RevSliderDB->throwError('fetch - <b>Tabl...')
+#2 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(145): RevSliderDB->checkForErrors('fetch')
+#3 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\admin\revslider-admin.class.php(718): RevSliderDB->fetch('trade_revslider...')
+#4 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(286): RevSliderAdmin::onAddScripts('toplevel_page_r...')
+#5 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdo in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php on line 14
+
+2018-11-20T16:31:06+00:00 CRITICAL Uncaught Exception: fetch - <b>Table 'etrade.trade_revslider_css' doesn't exist</b><br>---<br> Query: select * from trade_revslider_css in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php:14
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(26): RevSliderFunctions::throwError('fetch - <b>Tabl...', -1)
+#1 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(41): RevSliderDB->throwError('fetch - <b>Tabl...')
+#2 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(145): RevSliderDB->checkForErrors('fetch')
+#3 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\admin\revslider-admin.class.php(718): RevSliderDB->fetch('trade_revslider...')
+#4 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(286): RevSliderAdmin::onAddScripts('toplevel_page_r...')
+#5 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdo in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php on line 14
+
+2018-11-20T16:31:17+00:00 CRITICAL Uncaught Exception: fetch - <b>Table 'etrade.trade_revslider_css' doesn't exist</b><br>---<br> Query: select * from trade_revslider_css in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php:14
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(26): RevSliderFunctions::throwError('fetch - <b>Tabl...', -1)
+#1 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(41): RevSliderDB->throwError('fetch - <b>Tabl...')
+#2 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(145): RevSliderDB->checkForErrors('fetch')
+#3 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\admin\revslider-admin.class.php(718): RevSliderDB->fetch('trade_revslider...')
+#4 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(286): RevSliderAdmin::onAddScripts('toplevel_page_r...')
+#5 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdo in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php on line 14
+
+2018-11-20T16:31:34+00:00 CRITICAL Uncaught Exception: fetch - <b>Table 'etrade.trade_revslider_css' doesn't exist</b><br>---<br> Query: select * from trade_revslider_css in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php:14
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(26): RevSliderFunctions::throwError('fetch - <b>Tabl...', -1)
+#1 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(41): RevSliderDB->throwError('fetch - <b>Tabl...')
+#2 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(145): RevSliderDB->checkForErrors('fetch')
+#3 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\admin\revslider-admin.class.php(718): RevSliderDB->fetch('trade_revslider...')
+#4 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(286): RevSliderAdmin::onAddScripts('toplevel_page_r...')
+#5 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdo in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php on line 14
+
+2018-11-20T16:31:39+00:00 CRITICAL Uncaught Exception: fetch - <b>Table 'etrade.trade_revslider_css' doesn't exist</b><br>---<br> Query: select * from trade_revslider_css in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php:14
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(26): RevSliderFunctions::throwError('fetch - <b>Tabl...', -1)
+#1 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(41): RevSliderDB->throwError('fetch - <b>Tabl...')
+#2 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\db.class.php(145): RevSliderDB->checkForErrors('fetch')
+#3 C:\xampp\htdocs\etrade\wp-content\plugins\revslider\admin\revslider-admin.class.php(718): RevSliderDB->fetch('trade_revslider...')
+#4 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(286): RevSliderAdmin::onAddScripts('toplevel_page_r...')
+#5 C:\xampp\htdocs\etrade\wp-includes\class-wp-hook.php(310): WP_Hook->apply_filters(NULL, Array)
+#6 C:\xampp\htdo in C:\xampp\htdocs\etrade\wp-content\plugins\revslider\includes\framework\functions.class.php on line 14
+

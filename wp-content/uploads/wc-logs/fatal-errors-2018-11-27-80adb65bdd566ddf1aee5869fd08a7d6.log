@@ -1,0 +1,28 @@
+2018-11-27T12:39:40+00:00 CRITICAL Uncaught Error: Call to undefined function echohome_url() in C:\xampp\htdocs\etrade\wp-content\themes\etrade\header.php:13
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\etrade\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\etrade\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\etrade\wp-content\themes\etrade\page-templates\template-homepage.php(10): get_header()
+#4 C:\xampp\htdocs\etrade\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\etrade\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\etrade\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\etrade\wp-content\themes\etrade\header.php on line 13
+
+2018-11-27T12:39:44+00:00 CRITICAL Uncaught Error: Call to undefined function echohome_url() in C:\xampp\htdocs\etrade\wp-content\themes\etrade\header.php:13
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-includes\template.php(688): require_once()
+#1 C:\xampp\htdocs\etrade\wp-includes\template.php(647): load_template('C:\\xampp\\htdocs...', true)
+#2 C:\xampp\htdocs\etrade\wp-includes\general-template.php(41): locate_template(Array, true)
+#3 C:\xampp\htdocs\etrade\wp-content\themes\etrade\page-templates\template-homepage.php(10): get_header()
+#4 C:\xampp\htdocs\etrade\wp-includes\template-loader.php(74): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\etrade\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\etrade\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\etrade\wp-content\themes\etrade\header.php on line 13
+
+2018-11-27T14:58:18+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-profile.php on line 242
+
+2018-11-27T14:58:45+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-profile.php on line 240
+

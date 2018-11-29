@@ -105,7 +105,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
-              <caret line="1396" column="16" lean-forward="true" selection-start-line="1396" selection-start-column="16" selection-end-line="1396" selection-end-column="16" />
+              <caret line="1396" column="16" selection-start-line="1396" selection-start-column="16" selection-end-line="1396" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -397,12 +397,12 @@
       <workItem from="1542932871145" duration="22211000" />
       <workItem from="1543279076791" duration="30839000" />
       <workItem from="1543364593300" duration="17305000" />
-      <workItem from="1543451246155" duration="832000" />
+      <workItem from="1543451246155" duration="1431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166627000" />
+    <option name="totallyTimeSpent" value="167226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="105" width="1382" height="744" extended-state="6" />
@@ -764,7 +764,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/etrade/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
-          <caret line="1396" column="16" lean-forward="true" selection-start-line="1396" selection-start-column="16" selection-end-line="1396" selection-end-column="16" />
+          <caret line="1396" column="16" selection-start-line="1396" selection-start-column="16" selection-end-line="1396" selection-end-column="16" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,36 @@
+2018-11-29T11:57:21+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-login.php:38
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\etrade\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\etrade\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-login.php on line 38
+
+2018-11-29T11:57:32+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-login.php:38
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\etrade\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\etrade\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-login.php on line 38
+
+2018-11-29T11:57:53+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_User as array in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-login.php:38
+Stack trace:
+#0 C:\xampp\htdocs\etrade\wp-includes\template-loader.php(74): include()
+#1 C:\xampp\htdocs\etrade\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\etrade\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-login.php on line 38
+
+2018-11-29T16:26:00+00:00 CRITICAL syntax error, unexpected 'endforeach' (T_ENDFOREACH) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 117
+
+2018-11-29T16:26:24+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 118
+
+2018-11-29T16:27:45+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 118
+
+2018-11-29T16:28:33+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 118
+
+2018-11-29T16:28:54+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 118
+
+2018-11-29T16:29:19+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 118
+

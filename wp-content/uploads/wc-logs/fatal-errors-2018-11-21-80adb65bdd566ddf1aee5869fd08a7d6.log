@@ -1,0 +1,2 @@
+2018-11-21T12:06:57+00:00 CRITICAL Out of memory (allocated 406847488) (tried to allocate 805306376 bytes) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\functions.php on line 1494
+

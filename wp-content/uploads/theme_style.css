@@ -274,12 +274,12 @@
 
  /* Theme sidebars and stuff */
 
- .has-sidebar-left div#main { width: calc( 100% - 270px ); }
- #sidebar-left { width: 250px; }
+ .has-sidebar-left div#main { width: calc( 100% - 280px ); }
+ #sidebar-left { width: 280px; }
  @media all and (max-width: 1024px) {
 	.has-sidebar-left div#main { width: 100%; }
  }
- .has-sidebar-right div#main { width: calc( 100% - 270px ); }
+ .has-sidebar-right div#main { width: calc( 100% - 280px ); }
  #sidebar-right { width: 250px; }
  @media all and (max-width: 1024px) {
 	.has-sidebar-right div#main { width: 100%; }

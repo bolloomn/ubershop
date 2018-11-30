@@ -34,3 +34,5 @@ Stack trace:
 
 2018-11-29T16:29:19+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 118
 
+2018-11-29T17:06:13+00:00 CRITICAL syntax error, unexpected 'else' (T_ELSE) in C:\xampp\htdocs\etrade\wp-content\themes\etrade\bollooMn\page-tugeelt.php on line 126
+

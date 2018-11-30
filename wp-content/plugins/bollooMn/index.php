@@ -298,5 +298,17 @@ function userTree($user_id, $level=0){
         echo '</ul>';
     }
 }
+
+//add_filter( 'pre_get_posts', 'tgm_io_cpt_search' );
+//function tgm_io_cpt_search( $query ) {
+//
+//    if ( $query->is_search ) {
+//        $query->set( 'post_type', [ 'product'] );
+//    }
+//
+//    return $query;
+//
+//}
+
 //remove_role( 'contributor' );
 ?>

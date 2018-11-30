@@ -8,7 +8,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2018-11-27 06:54+0000\n"
+"PO-Revision-Date: 2018-11-30 03:25+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -1333,7 +1333,7 @@ msgstr ""
 #: includes/class-wc-breadcrumb.php:363
 #, php-format
 msgid "Search results for &ldquo;%s&rdquo;"
-msgstr ""
+msgstr "Хайлтын үр дүн \"%s\""
 
 #. translators: %d: page number
 #. translators: %d: Page number.
@@ -17628,7 +17628,7 @@ msgstr ""
 
 #: templates/order/order-again.php:22
 msgid "Order again"
-msgstr ""
+msgstr "Дахин захиалах"
 
 #: templates/order/order-details.php:39
 msgid "Order details"

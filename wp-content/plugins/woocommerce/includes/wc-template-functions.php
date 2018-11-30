@@ -1304,7 +1304,7 @@ if ( ! function_exists( 'woocommerce_catalog_ordering' ) ) {
 		$orderby         = isset( $_GET['orderby'] ) ? wc_clean( wp_unslash( $_GET['orderby'] ) ) : $default_orderby; // WPCS: sanitization ok, input var ok, CSRF ok.
 
 		if ( wc_get_loop_prop( 'is_search' ) ) {
-			$catalog_orderby_options = array_merge( array( 'relevance' => __( 'Relevance', 'woocommerce' ) ), $catalog_orderby_options );
+			$catalog_orderby_options = array_merge( array( 'relevance' => __( ' ', 'woocommerce' ) ), $catalog_orderby_options );
 
 			unset( $catalog_orderby_options['menu_order'] );
 		}

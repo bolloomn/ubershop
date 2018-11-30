@@ -65,8 +65,8 @@ if('top' == pukka_get_option('main_menu_position')) :
                                 $user = wp_get_current_user();
                         ?>
 
-                            <li class="drop-down-mobile"><a class="text-capitalize"><i class="fa fa-user-circle-o"></i> <?php echo  $user->user_login; ?></a></li>
-                        <ul class="list-menu">
+                            <li ><a class="text-capitalize"><i class="fa fa-user-circle-o"></i> <?php echo  $user->user_login; ?></a></li>
+
                             <?php if($user->roles[0]=='tugeegch'){ ?>
                                 <li class="menu-item"><a href="<?php echo home_url('tugeelt'); ?>"><i class="fa fa-street-view"></i> Түгээлт</a></li>
                             <?php } ?>
@@ -76,7 +76,7 @@ if('top' == pukka_get_option('main_menu_position')) :
                             <li class="menu-item"><a href="<?php echo home_url('my-users'); ?>"><i class="fa fa-users"></i> Миний гишүүд</a></li>
 
                             <li class="menu-item woocommerce-MyAccount-navigation-link--woo-wallet"><a href="<?php echo home_url('wallet'); ?>"> Миний хэтэвч (<?php echo woo_wallet()->wallet->get_wallet_balance( get_current_user_id() ); ?>)</a></li>
-                            <li class="menu-item"><a href="<?=wp_logout_url( home_url());?>"><i class="fa fa-sign-out"></i> Гарах</a></li></ul>
+                            <li class="menu-item"><a href="<?=wp_logout_url( home_url());?>"><i class="fa fa-sign-out"></i> Гарах</a></li>
                         <?php } else { ?>
                             <li class="menu-item">
                                 <a href="<?=home_url('login');?>">Нэвтрэх</a>
@@ -99,6 +99,7 @@ if('top' == pukka_get_option('main_menu_position')) :
 				<div id="search">
 					<form action="<?php echo home_url(); ?>" method="get" role="search">
 							<input type="text" placeholder="<?php _e('Search...', 'pukka'); ?>" autocomplete="off" id="s-main" name="s" value="">
+                            <input type="hidden" name="post_type" value="product">
 							<div id="searchsubmit-main" class="button"><span class="fa fa-search"></span></div>
 					</form>
 				</div> <!-- #search -->

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UberShop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 09:21+0000\n"
-"PO-Revision-Date: 2018-11-23 01:28+0000\n"
+"PO-Revision-Date: 2018-11-27 06:55+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "Language: mn\n"
@@ -267,7 +267,7 @@ msgstr ""
 #: pukka/util/init-theme-options.php:660 pukka/util/init-theme-options.php:714
 #: pukka/util/init-theme-options.php:767 pukka/util/init-theme-options.php:820
 msgid "Color"
-msgstr ""
+msgstr "Өнгө"
 
 #: pukka/util/init-theme-options.php:51
 msgid "Color of the text logo which is displayed if image logo is missing."

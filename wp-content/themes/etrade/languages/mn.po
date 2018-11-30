@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: UberShop\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-11-20 09:21+0000\n"
-"PO-Revision-Date: 2018-11-27 06:55+0000\n"
+"PO-Revision-Date: 2018-11-30 03:18+0000\n"
 "Last-Translator: etrade <bolloomn@gmail.com>\n"
 "Language-Team: Монгол\n"
 "Language: mn\n"
@@ -1236,7 +1236,7 @@ msgstr ""
 #: search.php:15 search.php:15
 #, php-format
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "Хайлтын үр дүн: %s"
 
 #: header.php:86
 msgid "Search..."

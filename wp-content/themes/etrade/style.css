@@ -4250,10 +4250,10 @@ li.product .social-share-buttons {
     float: none;
 }
 
-.woo-single-product {
-    padding: 50px;
-    position: relative;
-}
+/*.woo-single-product {*/
+    /*padding: 50px;*/
+    /*position: relative;*/
+/*}*/
 
 .woo-single-product .images {
     float: left;
@@ -6475,4 +6475,8 @@ a.buttons-lt:visited,
 }
 .page-template-page-cash   table {
     font-size: 14px;
+}
+
+.woocommerce-breadcrumb {
+    display: none;
 }

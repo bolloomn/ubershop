@@ -505,7 +505,7 @@ ul.products:after{
 #menu-top .stripe-menu .list-menu{
     display: none;
 }
-#menu-top .stripe-menu:hover .list-menu{
+#menu-top .stripe-menu:active .list-menu{
     display: block;
 }
 .admin-bar #menu-top.responsive {
@@ -5646,6 +5646,9 @@ a.buttons-lt:visited,
 }
 */
 @media all and (max-width: 1024px) {
+    #menu-top .stripe-menu .list-menu{
+        display: block;
+    }
     #responsive-check {
         display: block;
     }

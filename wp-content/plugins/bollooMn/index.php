@@ -176,6 +176,14 @@ function getWallet($user_id){
     return  $wpdb->get_var($query);
 }
 
+// define the woocommerce_order_status_completed callback
+function action_woocommerce_order_status_completed( $order_id ) {
+    calcCash($order_id, get_post_meta($order_id, '_customer_user', true));
+};
+
+// add the action
+add_action( 'woocommerce_order_status_completed', 'action_woocommerce_order_status_completed', 10, 1 );
+
 function calcCash($order_id, $user_id){
     global $wpdb;
 

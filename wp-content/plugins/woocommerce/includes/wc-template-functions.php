@@ -1292,12 +1292,12 @@ if ( ! function_exists( 'woocommerce_catalog_ordering' ) ) {
 		}
 		$show_default_orderby    = 'menu_order' === apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) );
 		$catalog_orderby_options = apply_filters( 'woocommerce_catalog_orderby', array(
+            'date'       => 'Шинээр нэмэгдсэн',
+            'price'      => 'Үнэ /багаас их/',
+            'price-desc' => 'Үнэ /ихээс бага/',
 			'menu_order' => 'Үндсэн эрэмбэ',
 			'popularity' => 'Эрэлттэй',
 			'rating'     => 'Үнэлгээний дунджаар',
-			'date'       => 'Шинээр нэмэгдсэн',
-			'price'      => 'Үнэ /багаас их/',
-			'price-desc' => 'Үнэ /ихээс бага/',
 		) );
 
 		$default_orderby = wc_get_loop_prop( 'is_search' ) ? 'relevance' : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby', '' ) );

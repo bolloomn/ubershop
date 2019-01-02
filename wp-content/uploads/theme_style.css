@@ -340,3 +340,7 @@ body, .author-name, .author-name a {
  font-weight: 500;
  color: #666666;
 }
+
+ .headings, h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited, h5 a:visited, h6 a:visited, .product_list_widget li > a, .product-categories li, .widget_archive li, .widget_recent_entries li,.widget-title, .widget-title a, .widget-title a:visited, .woocommerce-breadcrumb {
+ color: #666666;
+ }

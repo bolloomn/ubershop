@@ -14,31 +14,40 @@ $user = wp_get_current_user();
 
 <?php get_header(); ?>
 
-<link rel="stylesheet" href="<?php echo get_template_directory_uri().'/js/jquery.jOrgChart.css'; ?>" >
-<script src="<?php echo get_template_directory_uri().'/js/jquery.jOrgChart.js';?>" ></script>
-<script>
-    jQuery(document).ready(function() {
-        jQuery("#org").jOrgChart({
-            chartElement : '#chart',
-            dragAndDrop  : false
-        });
-    });
-</script>
 
-<div class="text-center mt-4 mb-4">
+<div class=" mt-4 mb-4">
     <h1 style="color:#232f3e; font-weight: 400;">Миний гишүүд</h1>
 </div>
 
-<ul id="org" style="display:none">
-    <li>
+<?php
+$query= "SELECT trade_users.user_login, trade_users.ID  FROM trade_usermeta 
+                join trade_users
+                on trade_users.ID=trade_usermeta.user_id
+                and meta_key='t_parent'
+                and meta_value=".$user->ID;
+$users = $wpdb->get_results($query);
+?>
+<table class="table table-bordered">
+    <?php foreach ($users as $user){?>
+    <tr>
+            <td><?php echo $user->user_login; ?></td>
+    </tr>
         <?php
-            echo $user->user_login;
-            userTree($user->ID);
-        ?>
-    </li>
-</ul>
-<div id="chart" class="orgChart"></div>
+            $query= "SELECT trade_users.user_login, trade_users.ID  FROM trade_usermeta 
+                    join trade_users
+                    on trade_users.ID=trade_usermeta.user_id
+                    and meta_key='t_parent'
+                    and meta_value=".$user->ID;
+            $subusers = $wpdb->get_results($query);
+            foreach ($subusers as $subuser){
+                ?>
+                <tr>
+                    <td> - <?php echo $subuser->user_login; ?></td>
+                </tr>
+         <?php  } ?>
 
+    <?php } ?>
+</table>
 
 <?php get_footer(); ?>
 

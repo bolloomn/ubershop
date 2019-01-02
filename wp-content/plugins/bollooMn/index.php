@@ -34,7 +34,7 @@ function register_menu_page() {
     add_menu_page('Бараа', 'Бараа таталт', 'add_users', 'product_tatalt', '_product_tatalt', plugin_dir_url( __FILE__ ).'images/baraa.png', 3);
     add_menu_page('Бараа', 'Барааны үлдэгдэл', 'add_users', 'product_uldegdel', '_product_uldegdel', plugin_dir_url( __FILE__ ).'images/uldegdel.png', 4);
     add_menu_page('Бараа', 'Борлуулалтын тайлан', 'add_users', 'product_report', '_product_report', plugin_dir_url( __FILE__ ).'images/report.png', 4);
-    add_menu_page('Мөнгө шилжүүлэх хүсэт', 'Мөнгө шилжүүлэх хүсэлт', 'add_users', 'wallet_huselt', '_wallet_send', plugin_dir_url( __FILE__ ).'images/report.png',5 );
+    add_menu_page('Мөнгө шилжүүлэх хүсэлт', 'Мөнгө шилжүүлэх хүсэлт', 'add_users', 'wallet_huselt', '_wallet_send', plugin_dir_url( __FILE__ ).'images/report.png',5 );
 }
 add_action('admin_menu', 'register_menu_page');
 
@@ -198,6 +198,7 @@ function calcCash($order_id, $user_id){
         'details' =>$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
         'amount' => $cash,
         'balance' => getWallet($user_id)+$cash,
+        'order_id' => $order_id,
     ];
     $wpdb->insert('trade_woo_wallet_transactions', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
     clear_woo_wallet_cache( $user_id );
@@ -212,7 +213,8 @@ function calcCash($order_id, $user_id){
             'link' => $link,
             'details' =>'Таны найз '.$user_data->user_login.'-ийн  '.$amount.'₮-ны 5%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
             'amount' => $cash,
-            'balance' => getWallet($naiziin_id)+$cash
+            'balance' => getWallet($naiziin_id)+$cash,
+            'order_id' => $order_id,
         ];
         $wpdb->insert('trade_woo_wallet_transactions', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
 
@@ -227,7 +229,8 @@ function calcCash($order_id, $user_id){
                 'link' => $link,
                 'details' =>'Таны найз '.$naiziin_data->user_login.'-ийн найз '.$user_data->user_login.'-ийн '.$amount.'₮-ны 2%  урамшуулал: '.$cash.'₮ (Захиалгын дугаар #'.$order_id.')',
                 'amount' =>$cash,
-                'balance' => getWallet($naiziin_naiziin_id)+$cash
+                'balance' => getWallet($naiziin_naiziin_id)+$cash,
+                'order_id' => $order_id,
             ];
             $wpdb->insert('trade_woo_wallet_transactions', $data, ['%s', '%s', '%s', '%s', '%s', '%s']);
         }
@@ -290,7 +293,7 @@ function userTree($user_id, $level=0){
             $level++;
             foreach ($users as $user){
                 echo '<li>'.$user->user_login;
-                        if($level<=4){
+                        if($level<=1){
                             userTree($user->ID, $level);
                         }
                 echo '</li>';

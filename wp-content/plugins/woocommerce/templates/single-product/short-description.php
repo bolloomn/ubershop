@@ -24,9 +24,7 @@ global $post;
 
 $short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 
-if ( ! $short_description ) {
-	return;
-}
+
 
 $price= get_post_meta($post->ID, '_price', true);
 $discounts=get_post_meta($post->ID, 'phoen_woocommerce_discount_mode', true);
@@ -55,6 +53,11 @@ if(is_array($discounts)){
     $table .='</tbody></table>';
 }
 
+?>
+<?php
+if ( ! $short_description ) {
+    return;
+}
 ?>
 <div class="woocommerce-product-details__short-description">
 	<?php echo $short_description; ?>

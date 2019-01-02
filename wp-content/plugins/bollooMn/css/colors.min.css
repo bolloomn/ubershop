@@ -460,3 +460,15 @@ body.user-edit-php h2,
     font-size: 13px !important;
     line-height: 1.5 !important;
 }
+
+.order_data_column {
+    width: 48.5% !important;
+}
+
+#order_data .order_data_column .form-field {
+    float: left;
+    clear: none !important;
+    width: 48%;
+    padding: 1%;
+    margin: 0% 1% !important;
+}

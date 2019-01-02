@@ -41,50 +41,48 @@ class WC_Meta_Box_Order_Data {
 		self::$billing_fields = apply_filters(
 			'woocommerce_admin_billing_fields', array(
 				'first_name' => array(
-					'label' => __( 'First name', 'woocommerce' ),
-					'show'  => false,
+					'label' => __( 'Нэр', 'woocommerce' ),
+					'show'  => true,
 				),
 				'last_name'  => array(
-					'label' => __( 'Last name', 'woocommerce' ),
-					'show'  => false,
+					'label' => __( 'Овог', 'woocommerce' ),
+					'show'  => true,
 				),
-				'company'    => array(
-					'label' => __( 'Company', 'woocommerce' ),
-					'show'  => false,
+				't_male'    => array(
+					'label' => __( 'Хүйс', 'woocommerce' ),
+					'show'  => true,
 				),
-				'address_1'  => array(
-					'label' => __( 'Address line 1', 'woocommerce' ),
-					'show'  => false,
+				't_hot'  => array(
+					'label' => __( 'Хот', 'woocommerce' ),
+					'show'  => true,
 				),
-				'address_2'  => array(
-					'label' => __( 'Address line 2', 'woocommerce' ),
-					'show'  => false,
+				't_sum'  => array(
+					'label' => __( 'Сум', 'woocommerce' ),
+					'show'  => true,
 				),
-				'city'       => array(
-					'label' => __( 'City', 'woocommerce' ),
-					'show'  => false,
+				't_gudamj'       => array(
+					'label' => __( 'Гудамж талбай', 'woocommerce' ),
+					'show'  => true,
 				),
-				'postcode'   => array(
-					'label' => __( 'Postcode / ZIP', 'woocommerce' ),
-					'show'  => false,
+				't_bair'   => array(
+					'label' => __( 'Байшин, байр', 'woocommerce' ),
+					'show'  => true,
 				),
-				'country'    => array(
-					'label'   => __( 'Country', 'woocommerce' ),
-					'show'    => false,
-					'class'   => 'js_field-country select short',
-					'type'    => 'select',
-					'options' => array( '' => __( 'Select a country&hellip;', 'woocommerce' ) ) + WC()->countries->get_allowed_countries(),
+				't_toot'      => array(
+					'label' => __( 'Тоот', 'woocommerce' ),
+					'show'  => true,
 				),
-				'state'      => array(
-					'label' => __( 'State / County', 'woocommerce' ),
-					'class' => 'js_field-state select short',
-					'show'  => false,
+                't_address'  => array(
+                    'label' => __( 'Дэлгэрэнгүй Хаяг', 'woocommerce' ),
+                    'show'  => true,
+                ),
+				'billing_email'      => array(
+					'label' => __( 'Цахим шуудан', 'woocommerce' ),
+                    'show'  => true,
 				),
-				'email'      => array(
-					'label' => __( 'Email address', 'woocommerce' ),
-				),
-				'phone'      => array(
+				't_phone'      => array(
 					'label' => __( 'Phone', 'woocommerce' ),
+                    'show'  => true,
 				),
 			)
 		);
@@ -310,7 +308,7 @@ class WC_Meta_Box_Order_Data {
 					<div class="order_data_column">
 						<h3>
 							<?php esc_html_e( 'Billing', 'woocommerce' ); ?>
-							<a href="#" class="edit_address"><?php esc_html_e( 'Edit', 'woocommerce' ); ?></a>
+<!--							<a href="#" class="edit_address">--><?php //esc_html_e( 'Edit', 'woocommerce' ); ?><!--</a>-->
 							<span>
 								<a href="#" class="load_customer_billing" style="display:none;"><?php esc_html_e( 'Load billing address', 'woocommerce' ); ?></a>
 							</span>
@@ -319,25 +317,26 @@ class WC_Meta_Box_Order_Data {
 							<?php
 
 							// Display values.
-							if ( $order->get_formatted_billing_address() ) {
-								echo '<p>' . wp_kses( $order->get_formatted_billing_address(), array( 'br' => array() ) ) . '</p>';
-							} else {
-								echo '<p class="none_set"><strong>' . __( 'Address:', 'woocommerce' ) . '</strong> ' . __( 'No billing address set.', 'woocommerce' ) . '</p>';
-							}
+//							if ( $order->get_formatted_billing_address() ) {
+//								echo '<p>' . wp_kses( $order->get_formatted_billing_address(), array( 'br' => array() ) ) . '</p>';
+//							} else {
+//								echo '<p class="none_set"><strong>' . __( 'Address:', 'woocommerce' ) . '</strong> ' . __( 'No billing address set.', 'woocommerce' ) . '</p>';
+//							}
 
 							foreach ( self::$billing_fields as $key => $field ) {
 								if ( isset( $field['show'] ) && false === $field['show'] ) {
 									continue;
 								}
 
-								$field_name = 'billing_' . $key;
+//                                $field_name = 'billing_' . $key;
+                                $field_name =  $key;
 
-								if ( isset( $field['value'] ) ) {
+                                if ( isset( $field['value'] ) ) {
 									$field_value = $field['value'];
 								} elseif ( is_callable( array( $order, 'get_' . $field_name ) ) ) {
 									$field_value = $order->{"get_$field_name"}( 'edit' );
 								} else {
-									$field_value = $order->get_meta( '_' . $field_name );
+									$field_value = $order->get_meta(  $key );
 								}
 
 								if ( 'billing_phone' === $field_name ) {
@@ -423,93 +422,93 @@ class WC_Meta_Box_Order_Data {
 						</div>
 						<?php do_action( 'woocommerce_admin_order_data_after_billing_address', $order ); ?>
 					</div>
-					<div class="order_data_column">
-						<h3>
-							<?php esc_html_e( 'Shipping', 'woocommerce' ); ?>
-							<a href="#" class="edit_address"><?php esc_html_e( 'Edit', 'woocommerce' ); ?></a>
-							<span>
-								<a href="#" class="load_customer_shipping" style="display:none;"><?php esc_html_e( 'Load shipping address', 'woocommerce' ); ?></a>
-								<a href="#" class="billing-same-as-shipping" style="display:none;"><?php esc_html_e( 'Copy billing address', 'woocommerce' ); ?></a>
-							</span>
-						</h3>
-						<div class="address">
-							<?php
-
-							// Display values.
-							if ( $order->get_formatted_shipping_address() ) {
-								echo '<p>' . wp_kses( $order->get_formatted_shipping_address(), array( 'br' => array() ) ) . '</p>';
-							} else {
-								echo '<p class="none_set"><strong>' . __( 'Address:', 'woocommerce' ) . '</strong> ' . __( 'No shipping address set.', 'woocommerce' ) . '</p>';
-							}
-
-							if ( ! empty( self::$shipping_fields ) ) {
-								foreach ( self::$shipping_fields as $key => $field ) {
-									if ( isset( $field['show'] ) && false === $field['show'] ) {
-										continue;
-									}
-
-									$field_name = 'shipping_' . $key;
-
-									if ( is_callable( array( $order, 'get_' . $field_name ) ) ) {
-										$field_value = $order->{"get_$field_name"}( 'edit' );
-									} else {
-										$field_value = $order->get_meta( '_' . $field_name );
-									}
-
-									if ( $field_value ) {
-										echo '<p><strong>' . esc_html( $field['label'] ) . ':</strong> ' . wp_kses_post( $field_value ) . '</p>';
-									}
-								}
-							}
-
-							if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' == get_option( 'woocommerce_enable_order_comments', 'yes' ) ) && $post->post_excerpt ) {
-								echo '<p class="order_note"><strong>' . __( 'Customer provided note:', 'woocommerce' ) . '</strong> ' . nl2br( esc_html( $post->post_excerpt ) ) . '</p>';
-							}
-							?>
-						</div>
-						<div class="edit_address">
-							<?php
-
-							// Display form.
-							if ( ! empty( self::$shipping_fields ) ) {
-								foreach ( self::$shipping_fields as $key => $field ) {
-									if ( ! isset( $field['type'] ) ) {
-										$field['type'] = 'text';
-									}
-									if ( ! isset( $field['id'] ) ) {
-										$field['id'] = '_shipping_' . $key;
-									}
-
-									$field_name = 'shipping_' . $key;
-
-									if ( is_callable( array( $order, 'get_' . $field_name ) ) ) {
-										$field['value'] = $order->{"get_$field_name"}( 'edit' );
-									} else {
-										$field['value'] = $order->get_meta( '_' . $field_name );
-									}
-
-									switch ( $field['type'] ) {
-										case 'select':
-											woocommerce_wp_select( $field );
-											break;
-										default:
-											woocommerce_wp_text_input( $field );
-											break;
-									}
-								}
-							}
-
-							if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' == get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) :
-								?>
-								<p class="form-field form-field-wide">
-									<label for="excerpt"><?php _e( 'Customer provided note', 'woocommerce' ); ?>:</label>
-									<textarea rows="1" cols="40" name="excerpt" tabindex="6" id="excerpt" placeholder="<?php esc_attr_e( 'Customer notes about the order', 'woocommerce' ); ?>"><?php echo wp_kses_post( $post->post_excerpt ); ?></textarea>
-								</p>
-							<?php endif; ?>
-						</div>
-
-						<?php do_action( 'woocommerce_admin_order_data_after_shipping_address', $order ); ?>
-					</div>
+<!--					<div class="order_data_column">-->
+<!--						<h3>-->
+<!--							--><?php //esc_html_e( 'Shipping', 'woocommerce' ); ?>
+<!--							<a href="#" class="edit_address">--><?php //esc_html_e( 'Edit', 'woocommerce' ); ?><!--</a>-->
+<!--							<span>-->
+<!--								<a href="#" class="load_customer_shipping" style="display:none;">--><?php //esc_html_e( 'Load shipping address', 'woocommerce' ); ?><!--</a>-->
+<!--								<a href="#" class="billing-same-as-shipping" style="display:none;">--><?php //esc_html_e( 'Copy billing address', 'woocommerce' ); ?><!--</a>-->
+<!--							</span>-->
+<!--						</h3>-->
+<!--						<div class="address">-->
+<!--							--><?php
+//
+//							// Display values.
+//							if ( $order->get_formatted_shipping_address() ) {
+//								echo '<p>' . wp_kses( $order->get_formatted_shipping_address(), array( 'br' => array() ) ) . '</p>';
+//							} else {
+//								echo '<p class="none_set"><strong>' . __( 'Address:', 'woocommerce' ) . '</strong> ' . __( 'No shipping address set.', 'woocommerce' ) . '</p>';
+//							}
+//
+//							if ( ! empty( self::$shipping_fields ) ) {
+//								foreach ( self::$shipping_fields as $key => $field ) {
+//									if ( isset( $field['show'] ) && false === $field['show'] ) {
+//										continue;
+//									}
+//
+//									$field_name = 'shipping_' . $key;
+//
+//									if ( is_callable( array( $order, 'get_' . $field_name ) ) ) {
+//										$field_value = $order->{"get_$field_name"}( 'edit' );
+//									} else {
+//										$field_value = $order->get_meta( '_' . $field_name );
+//									}
+//
+//									if ( $field_value ) {
+//										echo '<p><strong>' . esc_html( $field['label'] ) . ':</strong> ' . wp_kses_post( $field_value ) . '</p>';
+//									}
+//								}
+//							}
+//
+//							if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' == get_option( 'woocommerce_enable_order_comments', 'yes' ) ) && $post->post_excerpt ) {
+//								echo '<p class="order_note"><strong>' . __( 'Customer provided note:', 'woocommerce' ) . '</strong> ' . nl2br( esc_html( $post->post_excerpt ) ) . '</p>';
+//							}
+//							?>
+<!--						</div>-->
+<!--						<div class="edit_address">-->
+<!--							--><?php
+//
+//							// Display form.
+//							if ( ! empty( self::$shipping_fields ) ) {
+//								foreach ( self::$shipping_fields as $key => $field ) {
+//									if ( ! isset( $field['type'] ) ) {
+//										$field['type'] = 'text';
+//									}
+//									if ( ! isset( $field['id'] ) ) {
+//										$field['id'] = '_shipping_' . $key;
+//									}
+//
+//									$field_name = 'shipping_' . $key;
+//
+//									if ( is_callable( array( $order, 'get_' . $field_name ) ) ) {
+//										$field['value'] = $order->{"get_$field_name"}( 'edit' );
+//									} else {
+//										$field['value'] = $order->get_meta( '_' . $field_name );
+//									}
+//
+//									switch ( $field['type'] ) {
+//										case 'select':
+//											woocommerce_wp_select( $field );
+//											break;
+//										default:
+//											woocommerce_wp_text_input( $field );
+//											break;
+//									}
+//								}
+//							}
+//
+//							if ( apply_filters( 'woocommerce_enable_order_notes_field', 'yes' == get_option( 'woocommerce_enable_order_comments', 'yes' ) ) ) :
+//								?>
+<!--								<p class="form-field form-field-wide">-->
+<!--									<label for="excerpt">--><?php //_e( 'Customer provided note', 'woocommerce' ); ?><!--:</label>-->
+<!--									<textarea rows="1" cols="40" name="excerpt" tabindex="6" id="excerpt" placeholder="--><?php //esc_attr_e( 'Customer notes about the order', 'woocommerce' ); ?><!--">--><?php //echo wp_kses_post( $post->post_excerpt ); ?><!--</textarea>-->
+<!--								</p>-->
+<!--							--><?php //endif; ?>
+<!--						</div>-->
+<!---->
+<!--						--><?php //do_action( 'woocommerce_admin_order_data_after_shipping_address', $order ); ?>
+<!--					</div>-->
 				</div>
 				<div class="clear"></div>
 			</div>

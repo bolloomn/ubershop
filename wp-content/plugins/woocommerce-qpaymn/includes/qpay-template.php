@@ -4,7 +4,7 @@
 
     // zahailgiin medeelliig avah  bas shalgah
     $order = _qpay_getOrderDetailById($_GET['o']);
-
+    if($order['order']['status']=='completed'){ wp_redirect(home_url()); die(); }
 
     //төлбөр төлсөн эсэхийг шалгах
     if(isset($_GET['check']) and isset($_GET['o'])) {
@@ -113,7 +113,7 @@
         $('#finish').click(function () {
             $.get( "<?=get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o'].'&check=1'; ?>", function( data ) {
                if(data.result_code=='0'){
-                    window.location(<?=get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o'].'&payment=1'; ?>);
+                    window.location("<?=get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o'].'&payment=1'; ?>");
                } else {
                    alert(data.result_msg);
                }

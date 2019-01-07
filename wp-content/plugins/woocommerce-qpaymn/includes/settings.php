@@ -3,7 +3,7 @@
  if(isset($_POST['save'])){
     $check=_qpay_woo_Test();
     if(!is_null($check)){
-        if($check['result_code']==='0'){
+        if($check['result_code']=='0'){
             $message=['class'=>'updated', 'text'=>'Амжилттай хадгаллаа'];
             update_option('_qpay_woocommerce_settings', $_POST['qpay']);
         } else {

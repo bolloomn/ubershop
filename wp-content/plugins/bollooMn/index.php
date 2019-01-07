@@ -20,7 +20,6 @@ function load_admin_style() {
 add_action( 'admin_enqueue_scripts', 'load_admin_style' );
 
 
-
 /* change admin style */
 function my_admin_theme_style() {
     wp_enqueue_style('my-admin-theme', plugin_dir_url( __FILE__ ) .'css/login.css');
@@ -178,7 +177,10 @@ function getWallet($user_id){
 
 // define the woocommerce_order_status_completed callback
 function action_woocommerce_order_status_completed( $order_id ) {
-    calcCash($order_id, get_post_meta($order_id, '_customer_user', true));
+    $order=_qpay_getOrderDetailById($order_id);
+    if($order['order']['status']=='completed'){
+        calcCash($order_id, get_post_meta($order_id, '_customer_user', true));
+    }
 };
 
 // add the action
@@ -278,7 +280,7 @@ function bolloomn_to_table($order_id){
     }
 
     //calc uramshuulal
-    calcCash($order_id,$user_id);
+    //calcCash($order_id,$user_id);
 
 }
 

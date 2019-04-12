@@ -17,6 +17,7 @@ $user = wp_get_current_user();
 
 <div class=" mt-4 mb-4">
     <h1 style="color:#232f3e; font-weight: 400;">Миний гишүүд</h1>
+    <p>миний доор бүртгүүлсэн гишүүд</p>
 </div>
 
 <?php
@@ -30,7 +31,7 @@ $users = $wpdb->get_results($query);
 <table class="table table-bordered">
     <?php foreach ($users as $user){?>
     <tr>
-            <td><?php echo $user->user_login; ?></td>
+            <td class="text-white bg-success"><?php echo $user->user_login; ?></td>
     </tr>
         <?php
             $query= "SELECT trade_users.user_login, trade_users.ID  FROM trade_usermeta 
@@ -42,7 +43,7 @@ $users = $wpdb->get_results($query);
             foreach ($subusers as $subuser){
                 ?>
                 <tr>
-                    <td> - <?php echo $subuser->user_login; ?></td>
+                    <td class="text-white bg-info"> - <?php echo $subuser->user_login; ?></td>
                 </tr>
          <?php  } ?>
 

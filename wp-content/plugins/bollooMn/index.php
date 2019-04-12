@@ -30,8 +30,8 @@ add_action('login_enqueue_scripts', 'my_admin_theme_style');
 
 
 function register_menu_page() {
-    add_menu_page('Бараа', 'Бараа таталт', 'add_users', 'product_tatalt', '_product_tatalt', plugin_dir_url( __FILE__ ).'images/baraa.png', 3);
-    add_menu_page('Бараа', 'Барааны үлдэгдэл', 'add_users', 'product_uldegdel', '_product_uldegdel', plugin_dir_url( __FILE__ ).'images/uldegdel.png', 4);
+//    add_menu_page('Бараа', 'Бараа таталт', 'add_users', 'product_tatalt', '_product_tatalt', plugin_dir_url( __FILE__ ).'images/baraa.png', 3);
+//    add_menu_page('Бараа', 'Барааны үлдэгдэл', 'add_users', 'product_uldegdel', '_product_uldegdel', plugin_dir_url( __FILE__ ).'images/uldegdel.png', 4);
     add_menu_page('Бараа', 'Борлуулалтын тайлан', 'add_users', 'product_report', '_product_report', plugin_dir_url( __FILE__ ).'images/report.png', 4);
     add_menu_page('Мөнгө шилжүүлэх хүсэлт', 'Мөнгө шилжүүлэх хүсэлт', 'add_users', 'wallet_huselt', '_wallet_send', plugin_dir_url( __FILE__ ).'images/report.png',5 );
 }
@@ -39,7 +39,7 @@ add_action('admin_menu', 'register_menu_page');
 
 function _product_tatalt(){
     baraa_header();
-   include 'include/baraa-tatalt.php';
+    include 'include/baraa-tatalt.php';
     baraa_footer();
 }
 
@@ -253,13 +253,14 @@ function bolloomn_to_table($order_id){
     global $wpdb;
     $order=get_post($order_id);
     $user_id= get_post_meta($order_id, '_customer_user', true);
-    $query= "SELECT order_item_id FROM trade_woocommerce_order_items where order_id=".$order_id;
+    $query= "SELECT order_item_id, order_item_name FROM trade_woocommerce_order_items where order_id=".$order_id;
     $items = $wpdb->get_results($query);
     foreach ($items as $item) {
 
         $date = date('Y-m-d H:i:s');
         $product_id = wc_get_order_item_meta($item->order_item_id, '_product_id', true);
         $qty = wc_get_order_item_meta($item->order_item_id, '_qty', true);
+        $product_name=$item->order_item_name;
         $price = wc_get_order_item_meta($item->order_item_id, '_line_subtotal', true) / $qty;
         $cost = unit_price($product_id, $date);
         $amount = $cost * $qty;
@@ -270,13 +271,14 @@ function bolloomn_to_table($order_id){
             'product_id' => $product_id,
             'date' => $date,
             'price' => $price,
+            'product_name'=>$product_name,
             'cost' => $cost,
             'quantity' => -1*$qty,
             'amount' => -1*$amount,
             'order_id' => $order_id,
         ];
 
-        $wpdb->insert('trade_product_info', $data, ['%s', '%s', '%s', '%s', '%s', '%s', '%s']);
+        $wpdb->insert('trade_product_info', $data, ['%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s']);
     }
 
     //calc uramshuulal

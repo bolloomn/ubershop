@@ -406,7 +406,7 @@ jQuery( document ).ready(function( $ ) {
 	/*
 	*  Share
 	******************************************/
-	$("#content").on({
+	$("#main").on({
 		click: function(e){
 			e.preventDefault();
 
@@ -419,8 +419,9 @@ jQuery( document ).ready(function( $ ) {
 			var fn_name = "pukka"+ network.toUpperCase() +"Share";
 			// create function
 			var fn = window[fn_name];
-
+			console.log('1');
 			if( typeof fn === 'function' ){
+
 				fn(url, title, description, image);
 			}
 		}
@@ -434,12 +435,10 @@ jQuery( document ).ready(function( $ ) {
 
 	$("li.product").on({
 		click: function(e){
-			//console.log('share');
+			console.log('share');
 			e.preventDefault();
-
 			$(this).closest(".product").find(".social-share-buttons").toggle();
 		}
-
 	}, ".product-share");
 
 
@@ -514,7 +513,8 @@ var share_winTop = (screen.height / 2) - (share_winHeight / 2);
 var share_winLeft = (screen.width / 2) - (share_winWidth / 2);
 
 function pukkaFBShare(url, title, descr, image) {
-  window.open('http://www.facebook.com/sharer.php?m2w&s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + encodeURIComponent(url) + '&p[images][0]=' + image, 'sharer', 'top=' + share_winTop + ',left=' + share_winLeft + ',toolbar=0,status=0,width=' + share_winWidth + ',height=' + share_winHeight);
+    window.open('http://www.facebook.com/sharer.php?&u=' + encodeURIComponent(url));
+  // window.open('http://www.facebook.com/sharer.php?m2w&s=100&p[title]=' + title + '&p[summary]=' + descr + '&p[url]=' + encodeURIComponent(url) + '&p[images][0]=' + image, 'sharer', 'top=' + share_winTop + ',left=' + share_winLeft + ',toolbar=0,status=0,width=' + share_winWidth + ',height=' + share_winHeight);
 }
 
 
@@ -522,9 +522,9 @@ function pukkaTWShare(url, title, descr, image) {
   window.open('https://twitter.com/share?url=' + url +'&text='+ title, 'sharer', 'top=' + share_winTop + ',left=' + share_winLeft + ',toolbar=0,status=0,width=' + share_winWidth + ',height=' + share_winHeight);
 }
 
-function pukkaGPShare(url, title, descr, image) {
-  window.open('https://plus.google.com/share?url='+ encodeURIComponent(url), 'sharer', 'top=' + share_winTop + ',left=' + share_winLeft + ',toolbar=0,status=0,width=' + share_winWidth + ',height=' + share_winHeight);
-}
+// function pukkaGPShare(url, title, descr, image) {
+//   window.open('https://plus.google.com/share?url='+ encodeURIComponent(url), 'sharer', 'top=' + share_winTop + ',left=' + share_winLeft + ',toolbar=0,status=0,width=' + share_winWidth + ',height=' + share_winHeight);
+// }
 
 function pukkaINShare(url, title, descr, image) {
   window.open('http://www.linkedin.com/shareArticle?mini=true&url='+ encodeURIComponent(url) +"&title="+ title +"&sumary="+ descr, 'sharer', 'top=' + share_winTop + ',left=' + share_winLeft + ',toolbar=0,status=0,width=' + share_winWidth + ',height=' + share_winHeight);

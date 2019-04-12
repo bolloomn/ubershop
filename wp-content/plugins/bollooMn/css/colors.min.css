@@ -21,6 +21,8 @@ input[type=checkbox]:checked:before {
     color: #4267b2
 }
 
+
+
 input[type=radio]:checked:before {
     background: #4267b2
 }
@@ -471,4 +473,13 @@ body.user-edit-php h2,
     width: 48%;
     padding: 1%;
     margin: 0% 1% !important;
+}
+
+@media print {
+    #adminmenuwrap, #adminmenuback,  #wpadminbar, body.toplevel_page_product_report  .form-inline.pull-right.p-3 {
+        display: none;
+    }
+    #wpcontent {
+        padding-left: 0px;
+    }
 }

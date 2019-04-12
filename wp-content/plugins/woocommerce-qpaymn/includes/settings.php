@@ -2,6 +2,9 @@
  $message=false;
  if(isset($_POST['save'])){
     $check=_qpay_woo_Test();
+    ?>
+     <pre><?php var_dump($check); ?></pre>
+<?php
     if(!is_null($check)){
         if($check['result_code']=='0'){
             $message=['class'=>'updated', 'text'=>'Амжилттай хадгаллаа'];

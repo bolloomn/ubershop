@@ -102,7 +102,9 @@
 		if('left' == pukka_get_option('main_menu_position')) {
 			$classes[] = 'popup';
 		}
-		
+
+
+
 		if('left' == pukka_get_option('main_menu_position') || 'on' == pukka_get_option('sidebar_left_enable')){
 			$classes[] = 'has-sidebar-left'; 
 			$has_sidebar = true;
@@ -120,6 +122,8 @@
 		if($has_sidebar){
 			$classes[] = 'has-sidebar';
 		}
+
+
 				
 		
 		/*
@@ -143,6 +147,8 @@
 				$classes[] = 'width-' . $page_width;
 			}
 		}
+
+
 
 		return $classes;
 	}

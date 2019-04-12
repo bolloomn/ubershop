@@ -1256,9 +1256,11 @@ if ( ! function_exists( 'woocommerce_get_product_thumbnail' ) ) {
 	function woocommerce_get_product_thumbnail( $size = 'woocommerce_thumbnail', $deprecated1 = 0, $deprecated2 = 0 ) {
 		global $product;
 
-		$image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
+		//$image_size = apply_filters( 'single_product_archive_thumbnail_size', $size );
 
-		return $product ? $product->get_image( $image_size ) : '';
+
+		//return $product ? $product->get_image( $image_size ) : '';
+        echo '<div class="imageW" style="background-image:url('.get_the_post_thumbnail_url($product->ID,$size).')"></div>';
 	}
 }
 
@@ -2608,7 +2610,7 @@ if ( ! function_exists( 'woocommerce_form_field' ) ) {
 						if ( '' === $option_key ) {
 							// If we have a blank option, select2 needs a placeholder.
 							if ( empty( $args['placeholder'] ) ) {
-								$args['placeholder'] = $option_text ? $option_text : __( 'Choose an option', 'woocommerce' );
+								$args['placeholder'] = $option_text ? $option_text : __( 'Сонгох', 'woocommerce' );
 							}
 							$custom_attributes[] = 'data-allow_clear="true"';
 						}
@@ -2770,7 +2772,7 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 			'name'             => '',
 			'id'               => '',
 			'class'            => '',
-			'show_option_none' => __( 'Choose an option', 'woocommerce' ),
+			'show_option_none' => __( 'Сонгох', 'woocommerce' ),
 		) );
 
 		// Get selected value.
@@ -2786,7 +2788,7 @@ if ( ! function_exists( 'wc_dropdown_variation_attribute_options' ) ) {
 		$id                    = $args['id'] ? $args['id'] : sanitize_title( $attribute );
 		$class                 = $args['class'];
 		$show_option_none      = (bool) $args['show_option_none'];
-		$show_option_none_text = $args['show_option_none'] ? $args['show_option_none'] : __( 'Choose an option', 'woocommerce' ); // We'll do our best to hide the placeholder, but we'll need to show something when resetting options.
+		$show_option_none_text = $args['show_option_none'] ? $args['show_option_none'] : __( 'Сонгох', 'woocommerce' ); // We'll do our best to hide the placeholder, but we'll need to show something when resetting options.
 
 		if ( empty( $options ) && ! empty( $product ) && ! empty( $attribute ) ) {
 			$attributes = $product->get_variation_attributes();

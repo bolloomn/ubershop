@@ -12,8 +12,11 @@
     <script src="<?php echo home_url('wp-content/plugins/bollooMn/js/popper.min.js');?>" ></script>
     <script src="<?php echo home_url('wp-content/plugins/bollooMn/js/bootstrap.min.js');?>" ></script>
 </head>
-
-<body <?php body_class(); ?>>
+<?php
+$class='';
+if(is_front_page()){ $class='has-sidebar-left'; }
+?>
+<body <?php body_class($class); ?>>
 
 <?php pukka_after_body(); ?>
 <div id="responsive-check">
@@ -21,7 +24,7 @@
 	<a id="responsive-title" href="<?php echo home_url(); ?>">
 		<?php
 			if( pukka_get_option('responsive_logo_img_id') != '' ){
-				$responsive_logo = wp_get_attachment_image_src( pukka_get_option('responsive_logo_img_id'), 'full');
+				$responsive_logo = wp_get_attachment_image_src( pukka_get_option('responsive_logwidget-area-lefto_img_id'), 'full');
 				echo '<img src="'. $responsive_logo[0] .'" style="vertical-align:baseline;" />';
 			}
 			else{
@@ -93,6 +96,9 @@ if('top' == pukka_get_option('main_menu_position')) :
 			</div>
 		</div><!-- #menu-secondary -->
 		<?php endif; // if( $enable_secondary_menu ) ?>
+        <div id="mobilemenu">
+            <?php dynamic_sidebar( 'sidebar-shop-left-1' ); ?>
+        </div>
 
 		<div id="menu-primary" class="boxed clearfix">
 			<div id="search-outer">
@@ -141,5 +147,6 @@ if('top' == pukka_get_option('main_menu_position')) :
 	<?php endif; ?>
 
 	<div id="wrapper" class="clearfix">
-	<?php  if($post->ID) get_sidebar(); ?>
+    <?php if(is_front_page()){ echo do_shortcode('[rev_slider alias="slider"][/rev_slider]'); } ?>
+	<?php   get_sidebar(); ?>
 		<div id="main">

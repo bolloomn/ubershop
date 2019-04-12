@@ -40,6 +40,8 @@ if (isset($_POST['register'])) {
         update_user_meta($user->ID, 't_bank_name', $_POST['t_bank_name']);
         update_user_meta($user->ID, 't_bank_account', $_POST['t_bank_account']);
         update_user_meta($user->ID, 't_bank_number', $_POST['t_bank_number']);
+        update_user_meta($user->ID, 'instagram', $_POST['instagram']);
+        update_user_meta($user->ID, 'facebook', $_POST['facebook']);
     }
 }
 
@@ -107,7 +109,7 @@ if (isset($_POST['register'])) {
                                     <label for="last_name">Овог</label>
                                     <input type="text" name="last_name" id="last_name" class="form-control"
                                            value="<?php echo get_user_meta($user->ID, 'last_name', true); ?>"
-                                           required>
+                                        minlength="2"   required>
                                 </p>
                             </div>
                             <div class="col-md-6">
@@ -115,13 +117,13 @@ if (isset($_POST['register'])) {
                                     <label for="first_name">Нэр</label>
                                     <input type="text" name="first_name" id="first_name" class="form-control"
                                            value="<?php echo get_user_meta($user->ID, 'first_name', true); ?>"
-                                           required>
+                                           minlength="2" required>
                                 </p>
                             </div>
                             <div class="col-md-6">
                                 <p>
                                     <label for="t_phone">Утас</label>
-                                    <input type="text" name="t_phone" id="t_phone" class="form-control"
+                                    <input type="number" name="t_phone" id="t_phone" class="form-control"
                                            value="<?php echo get_user_meta($user->ID, 't_phone', true); ?>"
                                            required>
                                 </p>
@@ -209,7 +211,18 @@ if (isset($_POST['register'])) {
                                 <input type="number"  id="t_bank_number"  name="t_bank_number" class="form-control"
                                        value="<?php echo get_user_meta($user->ID, 't_bank_number', true); ?>">
                             </div>
+                            <div class="col-md-12">
+                                <div class="heading-title mt-4">Сошиал</div>
+                            </div>
 
+                            <div class="col-md-6">
+                                <label for="password">Facebook</label>
+                                <input type="url" name="facebook" id="facebook" class="form-control" value="<?php echo get_user_meta($user->ID, 'facebook', true); ?>">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="c_password">Instagram</label>
+                                <input type="url" name="instagram" id="instagram" class="form-control" value="<?php echo get_user_meta($user->ID, 'instagram', true); ?>">
+                            </div>
 
                             <div class="col-md-12">
                                 <div class="heading-title mt-4">Нууц үг</div>
@@ -217,12 +230,12 @@ if (isset($_POST['register'])) {
 
                             <div class="col-md-6">
                                 <label for="password">Шинэ нууц үг</label>
-                                <input type="password" name="password" id="password" class="form-control" value=""
+                                <input type="password" name="password" id="password" class="form-control" value="" minlength="6"
                                 >
                             </div>
                             <div class="col-md-6">
                                 <label for="c_password">Шинэ нууц үг баталгаажуулах</label>
-                                <input type="password" name="c_password" id="c_password" class="form-control" value=""
+                                <input type="password" name="c_password" id="c_password" class="form-control" value="" minlength="6"
                                 >
 
                             </div>

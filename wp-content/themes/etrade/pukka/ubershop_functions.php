@@ -188,7 +188,7 @@
 		$networks = array(
 						'fb' => 'facebook',
 						'tw' => 'twitter',
-						'gp' => 'google-plus',
+//						'gp' => 'google-plus',
 						// 'in' => 'linkedin',
 						'pt' => 'pinterest'
 					);

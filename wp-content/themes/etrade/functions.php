@@ -11,6 +11,17 @@ if( function_exists('is_woocommerce') ){
 	include_once locate_template('/woocommerce/woocommerce_configuration.php');
 }
 
+
+//API хаах
+add_filter( 'rest_authentication_errors', function( $result ) {
+    return new WP_Error('handuulahgui_shuu_novshoo','Хаалттай',['status'=>401]);
+});
+
+//rss disable hiih
+function itsme_disable_feed() {
+    wp_die( __( 'No feed available, please visit the <a href="'. esc_url( home_url( '/' ) ) .'">homepage</a>!' ) );
+}
+
 function pukka_page_menu( $args = array() ) {
 	$defaults = array('sort_column' => 'menu_order, post_title', 'menu_class' => 'menu', 'echo' => true, 'link_before' => '', 'link_after' => '');
 	$args = wp_parse_args( $args, $defaults );

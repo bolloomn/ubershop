@@ -20,6 +20,17 @@
 	$left_sidebar_enabled = apply_filters('pukka_left_sidebar', $left_sidebar_enabled);
 
 
+    if (is_front_page() ) {
+	?>
+    <div id="sidebar-left" class="sidebar basic headings">
+        <div id="widget-area-left">
+            <?php dynamic_sidebar( 'sidebar-shop-left-1' ); ?>
+        </div>
+    </div>
+    <?php  } ?>
+
+<?php
+
 
 	if('on' == $overwrite_sidebars){ ?>
 		<?php if(!empty($sidebar_left) || 'left' == pukka_get_option('main_menu_position')) { ?>

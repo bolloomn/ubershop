@@ -35,15 +35,28 @@ if(is_user_logged_in()) {wp_redirect(home_url()); }
                 if( $update_user ) {
                     $to = $email;
                     $subject = 'Шинэ нууц үг';
-                    $sender = get_option('name');
-                    $message = 'Your new password is: '.$random_password;
+                    $sender = 'monsale.mn';
+                    $message = '<b>Нууц үг:</b> '.$random_password;
                     $headers[] = 'MIME-Version: 1.0' . "\r\n";
-                    $headers[] = 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+                    $headers[] = 'Content-type: text/html; charset=utf-8' . "\r\n";
                     $headers[] = "X-Mailer: PHP \r\n";
                     $headers[] = 'From: '.$sender.' < '.$email.'>' . "\r\n";
+                    $message .='
+                         Цахим гэмт хэргээс урьдчилан сэргийлэхийн тулд та өөрийн нууц үг/ПИН кодыг бусдад бүү задруулаарай.
+                         <br>Бидэнтэй холбоо барих:
+                         <br>Вэб хуудас: www.monsale.mn 
+                            <br>Харилцагчийн мэдээллийн төв: 99898989<br>
+                        <p></p>
+                        <p> Үйлчлүүлсэн танд баярлалаа.</p>
+                        <p></p>
+                        <p>  Энэхүү цахим шууданг автоматаар илгээсэн тул хариу и-мэйл хүлээн авах боломжгүй.</p>
+
+                    ';
                     $mail = wp_mail( $to, $subject, $message, $headers );
                     if( $mail )
                         $success = 'Та шинэ нууц үгээ и-мэйл хаягаа шалгана уу.';
+
+
 
                 } else {
                     $error = 'Таны акаунтыг шинэчлэхэд алдаа гарлаа.';

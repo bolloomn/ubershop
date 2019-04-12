@@ -99,7 +99,7 @@ if (!class_exists('PukkaSocialMedia')) :
 				$og_type = "article";
 			}
 			elseif( is_singular('product') ){
-				$og_type = 'product';
+				$og_type = 'article';
 			}
 			else{
 				$og_type = "website";
@@ -145,7 +145,9 @@ if (!class_exists('PukkaSocialMedia')) :
 			$out .= '<meta property="og:type" content="'. esc_attr($og_type) .'" />' . "\n";
 
 			$out .= '<meta property="og:title" content="'. esc_attr($og_title) .'"/>'. "\n";
-			$out .= '<meta property="og:image" content="'. esc_attr($og_image) .'"/>'. "\n";
+            $out .= '<meta property="og:image" content="'. esc_attr($image[0]) .'"/>'. "\n";
+            $out .= '<meta property="og:image:width" content="'. esc_attr($image[1]) .'"/>'. "\n";
+            $out .= '<meta property="og:image:height" content="'. esc_attr($image[2]) .'"/>'. "\n";
 			$out .= '<meta property="og:description" content="'. esc_attr($og_description) .'" />'. "\n";
 
 			if( is_single() || is_page() || is_singular('product') ){
@@ -167,11 +169,11 @@ if (!class_exists('PukkaSocialMedia')) :
 
 				$currency = get_woocommerce_currency();
 
-				if( $price != '' ) {
-					$out .= '<meta property="og:price:amount" content="'. $price .'" />' . "\n";
-				}
+//				if( $price != '' ) {
+//					$out .= '<meta property="og:price:amount" content="'. $price .'" />' . "\n";
+//				}
 
-				$out .= '<meta property="og:price:currency" content="'. $currency .'" />' . "\n";
+//				$out .= '<meta property="og:price:currency" content="'. $currency .'" />' . "\n";
 			}
 
 			echo $out;

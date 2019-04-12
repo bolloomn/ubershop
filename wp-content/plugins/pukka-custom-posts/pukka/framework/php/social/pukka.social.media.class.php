@@ -140,7 +140,9 @@ if (!class_exists('PukkaSocialMedia')) :
 			$out .= '<meta property="og:type" content="'. esc_attr($og_type) .'" />' . "\n";
 
 			$out .= '<meta property="og:title" content="'. esc_attr($og_title) .'"/>'. "\n";
-			$out .= '<meta property="og:image" content="'. esc_attr($og_image) .'"/>'. "\n";
+			$out .= '<meta property="og:image" content="'. esc_attr($image[0]) .'"/>'. "\n";
+            $out .= '<meta property="og:image:width" content="'. esc_attr($image[1]) .'"/>'. "\n";
+            $out .= '<meta property="og:image:height" content="'. esc_attr($image[2]) .'"/>'. "\n";
 			$out .= '<meta property="og:description" content="'. esc_attr($og_description) .'" />'. "\n";
 
 			if( is_single() || is_page() ){

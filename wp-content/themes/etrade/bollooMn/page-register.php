@@ -49,6 +49,8 @@ if(!isset($_POST['register'])){
         update_user_meta($user_id, 't_toot', $_POST['t_toot']);
         update_user_meta($user_id, 't_address', $_POST['t_address']);
         update_user_meta($user_id, 't_parent', $_POST['t_parent']);
+        update_user_meta($user_id, 'instagram', $_POST['instagram']);
+        update_user_meta($user_id, 'facebook', $_POST['facebook']);
         wp_redirect('login?r=1');
     }
 }
@@ -91,7 +93,7 @@ if(!isset($_POST['register'])){
                                 <div class="col-md-6">
                                     <p>
                                         <label for="user_login">Нэвтрэх нэр</label>
-                                        <input type="text" name="user_login" id="user_login" class="form-control" value="<?php echo checkPost('user_login'); ?>"
+                                        <input type="text" name="user_login" id="user_login" minlength="6" class="form-control" value="<?php echo checkPost('user_login'); ?>"
                                                required>
                                     </p>
                                 </div>
@@ -105,21 +107,21 @@ if(!isset($_POST['register'])){
                                 <div class="col-md-6">
                                     <p>
                                         <label for="last_name">Овог</label>
-                                        <input type="text" name="last_name" id="last_name" class="form-control" value="<?php echo checkPost('last_name'); ?>"
+                                        <input type="text" name="last_name" minlength="2" id="last_name" class="form-control" value="<?php echo checkPost('last_name'); ?>"
                                                required>
                                     </p>
                                 </div>
                                 <div class="col-md-6">
                                     <p>
                                         <label for="first_name">Нэр</label>
-                                        <input type="text" name="first_name" id="first_name" class="form-control" value="<?php echo checkPost('first_name'); ?>"
+                                        <input type="text" name="first_name" minlength="2" id="first_name" class="form-control" value="<?php echo checkPost('first_name'); ?>"
                                                required>
                                     </p>
                                 </div>
                                 <div class="col-md-6">
                                     <p>
                                         <label for="t_phone">Утас</label>
-                                        <input type="text" name="t_phone" id="t_phone" class="form-control" value="<?php echo checkPost('t_phone'); ?>"
+                                        <input type="number" minlength="8" name="t_phone" id="t_phone" class="form-control" value="<?php echo checkPost('t_phone'); ?>"
                                                required>
                                     </p>
                                 </div>
@@ -174,19 +176,29 @@ if(!isset($_POST['register'])){
                                 </div>
 
                                 <div class="col-md-12">
+                                    <div class="heading-title mt-4">Сошиал</div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="password">Facebook</label>
+                                    <input type="url" name="facebook" id="facebook" class="form-control" value="">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="c_password">Instagram</label>
+                                    <input type="url" name="instagram" id="instagram" class="form-control" value="">
+                                </div>
+
+                                <div class="col-md-12">
                                     <div class="heading-title mt-4">Нууц үг</div>
                                 </div>
 
                                 <div class="col-md-6">
                                     <label for="password">Нууц үг</label>
-                                    <input type="password" name="password" id="password" class="form-control" value=""
-                                           required>
+                                    <input type="password" name="password" minlength="8" id="password" class="form-control" value="" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="c_password">Нууц үг баталгаажуулах</label>
-                                    <input type="password" name="c_password" id="c_password" class="form-control" value=""
-                                           required>
-
+                                    <input type="password" name="c_password" minlength="8" id="c_password" class="form-control" value="" required>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="heading-title mt-4">Баталгаажуулах хэсэг</div>

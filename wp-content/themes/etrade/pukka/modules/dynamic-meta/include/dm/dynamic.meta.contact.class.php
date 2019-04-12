@@ -198,10 +198,10 @@ if(!class_exists('DynamicMetaContact')) :
 			$out = "<div class='dm-contact-form-box' style='width:" . esc_attr($data['size']) ."%;background-color: " . $content->bg_color . "; color: " . $content->text_color . ";'>
 						<div class='dm-contact-form-title'>" . $text_title . "</div>
 						<form method='post' action='" . admin_url('admin-ajax.php') . "?action=send_contact_form' class='dm-contact-form'>
-							<input type='text' name='dm_msg_user_email' value='' placeholder='". __('Your Email', 'pukka') ."' />
-							<!--<input type='text' name='dm_msg_subject' value='' placeholder='". __('Subject', 'pukka') ."' />-->
-							<textarea name='dm_msg_text' placeholder='". __('Message', 'pukka') ."'></textarea>
-							<input type='submit' value='". __('Send', 'pukka') ."' class='dm-form-submit'/>
+							<input type='text' name='dm_msg_user_email' value='' placeholder='". __('Таны имэйл', 'pukka') ."' />
+							<!--<input type='text' name='dm_msg_subject' value='' placeholder='". __('Гарчиг', 'pukka') ."' />-->
+							<textarea name='dm_msg_text' placeholder='". __('Контент', 'pukka') ."'></textarea>
+							<input type='submit' value='". __('илгээх', 'pukka') ."' class='dm-form-submit'/>
 							<input type='hidden' name='dm_mgs_email_to' value='" . esc_attr($data['content']) . "' />
 							" . $spam_check . "
 						</form>

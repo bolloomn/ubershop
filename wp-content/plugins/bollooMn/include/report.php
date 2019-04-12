@@ -9,19 +9,13 @@
 
 
      $select="
-        SELECT info.cost, info.price, -1*info.quantity as quantity, info.date,  trade_users.user_login as username,  product.product_name
+        SELECT info.cost, info.price, -1*info.quantity as quantity, info.date,  trade_users.user_login as username,  info.product_name
         FROM trade_product_info as info
         join trade_users
         on trade_users.ID=info.user_id
         and date>='".$sdate."'
         and date<='".$fdate."'
         and info.type=0
-        join (
-            select ID, post_title as product_name 
-            from trade_posts
-            where trade_posts.post_type='product'
-        ) product 
-        on product.ID=info.product_id
         join ( 
         select ID from trade_posts
         where post_type='shop_order' and post_status='wc-completed'
@@ -43,7 +37,8 @@
                 <input name="page" value="product_report" type="hidden">
                 <input type="text" name="sdate" value="<?=$sdate;?>" class="form-control date mb-2 mr-sm-2">
                 <input type="text"  name="fdate" value="<?=$fdate;?>" class="form-control date mb-2 mr-sm-2">
-                <button type="submit" class="btn btn-primary mb-2">Хайх</button>
+                <button type="submit" class="btn btn-primary mb-2  mr-sm-2">Хайх</button>
+                <button type="button" onclick="window.print();" class="btn btn-success mb-2">Хэвлэх</button>
             </form>
         </div>
     </div>
@@ -54,11 +49,11 @@
             <th>Бараа</th>
             <th>Борлуулагч</th>
             <th>Үнэ</th>
-            <th>Өртөг</th>
+<!--            <th>Өртөг</th>-->
             <th>Тоо</th>
             <th>Орлого</th>
-            <th>Өртөг</th>
-            <th>Ашиг</th>
+<!--            <th>Өртөг</th>-->
+<!--            <th>Ашиг</th>-->
         </tr>
         </thead>
         <tbody>
@@ -73,8 +68,8 @@
                 $orlogo=$row->price*$row->quantity;
                 $niit_orlogo +=$orlogo;
 
-                $urtug=$row->cost*$row->quantity;
-                $niit_urtug +=$urtug;
+//                $urtug=$row->cost*$row->quantity;
+//                $niit_urtug +=$urtug;
 
                 $ashig=($row->price-$row->cost)*$row->quantity;
                 $niit_ashig += $ashig;
@@ -84,20 +79,20 @@
                 <td><?php echo $row->product_name;?></td>
                 <td><?php echo $row->username;?></td>
                 <td><?php echo $row->price;?></td>
-                <td><?php echo $row->cost;?></td>
+<!--                <td>--><?php //echo $row->cost;?><!--</td>-->
                 <td><?php echo $row->quantity;?></td>
                 <td><?php echo number_format($orlogo, 2, '.', '');?> ₮</td>
-                <td><?php echo number_format($urtug, 2, '.', '');?> ₮</td>
-                <td><?php echo number_format($orlogo, 2, '.', '');?> ₮</td>
+<!--                <td>--><?php //echo number_format($urtug, 2, '.', '');?><!-- ₮</td>-->
+<!--                <td>--><?php //echo number_format($orlogo, 2, '.', '');?><!-- ₮</td>-->
             </tr>
             <?php } ?>
         </tbody>
         <tfoot>
-            <th colspan="5" class="text-right">Нийт</th>
+            <th colspan="4" class="text-right">Нийт</th>
             <th><?php echo $niit_too;?></th>
             <th><?php echo number_format($niit_orlogo, 2, '.', '');?> ₮</th>
-            <th><?php echo number_format($niit_urtug, 2, '.', '');?> ₮</th>
-            <th><?php echo number_format($niit_ashig, 2, '.', '');?> ₮</th>
+<!--            <th>--><?php //echo number_format($niit_urtug, 2, '.', '');?><!-- ₮</th>-->
+<!--            <th>--><?php //echo number_format($niit_ashig, 2, '.', '');?><!-- ₮</th>-->
         </tfoot>
     </table>
 </div>

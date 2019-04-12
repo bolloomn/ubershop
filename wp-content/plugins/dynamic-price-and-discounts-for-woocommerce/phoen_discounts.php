@@ -387,9 +387,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
 			
 			$num_phoen="0";
 			$terms = get_the_terms( $values['product_id'], 'product_cat' );
+			if(!is_object($terms)){ return; }
 			foreach ($terms as $term) {
 				$product_cat_id[] = $term->term_id;
-				
 			}
 			
 			

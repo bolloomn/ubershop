@@ -5,17 +5,39 @@
     $fdate=date('Y-m-d 23:59');
     if(isset($_GET['sdate'])){   $sdate=$_GET['sdate'];}
     if(isset($_GET['fdate'])){   $fdate=$_GET['fdate'];}
+
+    $user_query="";
+    $sda_user=0;
+    if(isset($_GET['user']) and $_GET['user']!=0){
+        $user_query=" and info.user_id=".$_GET['user'];
+        $sda_user=$_GET['user'];
+    }
+
+    $sda_tugeegch=0;
+    $tugeegch_query="";
+    if(isset($_GET['tugeegch']) and $_GET['tugeegch']!=0){
+        $tugeegch_query=" and trade_users.ID=".$_GET['tugeegch'];
+        $sda_tugeegch=$_GET['tugeegch'];
+    }
+
     $link=home_url('wp-admin/admin.php?page=product_report&sdate='.$sdate.'&fdate='.$fdate);
 
 
      $select="
-        SELECT info.cost, info.price, -1*info.quantity as quantity, info.date,  trade_users.user_login as username,  info.product_name
+        SELECT info.cost, info.price, -1*info.quantity as quantity, info.date,  trade_users.user_login as username,  info.product_name, info.order_id, tugeelt.tugeelt_name as tugeegch
         FROM trade_product_info as info
         join trade_users
         on trade_users.ID=info.user_id
         and date>='".$sdate."'
         and date<='".$fdate."'
         and info.type=0
+        ".$user_query."
+        join (
+           select trade_postmeta.post_id as order_id, trade_users.user_login as tugeelt_name from  trade_users
+           join trade_postmeta on meta_key='tugeegch' and trade_postmeta.meta_value=trade_users.ID 
+           ".$tugeegch_query."
+        ) tugeelt
+        on info.order_id=tugeelt.order_id
         join ( 
         select ID from trade_posts
         where post_type='shop_order' and post_status='wc-completed'
@@ -29,27 +51,47 @@
 
 <div class="wrap">
     <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-3">
             <h1 class="wp-heading-inline mb-lg-3">Борлуулалтын тайлан</h1>
         </div>
-        <div class="col-lg-8 text-lg-right">
+        <div class="col-lg-9 text-lg-right">
+
             <form method="get"  class="form-inline pull-right p-3">
                 <input name="page" value="product_report" type="hidden">
-                <input type="text" name="sdate" value="<?=$sdate;?>" class="form-control date mb-2 mr-sm-2">
-                <input type="text"  name="fdate" value="<?=$fdate;?>" class="form-control date mb-2 mr-sm-2">
+
+                    <input type="text" name="sdate" value="<?=$sdate;?>" style="width: 155px;" class="form-control date mb-2 mr-sm-2">
+                    <input type="text"  name="fdate" value="<?=$fdate;?>" style="width: 155px;" class="form-control date mb-2 mr-sm-2">
+
+                    <select  class="form-control select2" name="user" id="user"  >
+                        <option value="0">Бүх хэрэглэгч</option>
+                        <?php foreach (get_users() as $user){ ?>
+                            <option value="<?php echo $user->ID; ?>" <?php if($sda_user==$user->ID){ echo 'selected';} ?>><?php echo $user->user_login; ?></option>
+                        <?php } ?>
+                    </select>
+
+                    <select  class="form-control select2" name="tugeegch" id="tugeegch" >
+                        <option value="0">Бүх түгээгч</option>
+                        <?php foreach (get_users(['role__in'=>['tugeegch']]) as $user){ ?>
+                            <option value="<?php echo $user->ID; ?>"  <?php if($sda_tugeegch==$user->ID){ echo 'selected';} ?>><?php echo $user->user_login; ?></option>
+                        <?php } ?>
+                    </select>
+
                 <button type="submit" class="btn btn-primary mb-2  mr-sm-2">Хайх</button>
                 <button type="button" onclick="window.print();" class="btn btn-success mb-2">Хэвлэх</button>
+
             </form>
+
         </div>
     </div>
     <table class="bg-white table table-hover">
         <thead>
         <tr class="bg-primary text-white">
+            <th>Захиалга</th>
             <th>Огноо</th>
             <th>Бараа</th>
-            <th>Борлуулагч</th>
+            <th>Хэрэглэгч</th>
+            <th>Хүргэсэн</th>
             <th>Үнэ</th>
-<!--            <th>Өртөг</th>-->
             <th>Тоо</th>
             <th>Орлого</th>
 <!--            <th>Өртөг</th>-->
@@ -75,10 +117,13 @@
                 $niit_ashig += $ashig;
             ?>
             <tr>
+                <td>#<?php echo $row->order_id;?></td>
                 <td><?php echo $row->date;?></td>
                 <td><?php echo $row->product_name;?></td>
                 <td><?php echo $row->username;?></td>
+                <td><?php echo $row->tugeegch;?></td>
                 <td><?php echo $row->price;?></td>
+
 <!--                <td>--><?php //echo $row->cost;?><!--</td>-->
                 <td><?php echo $row->quantity;?></td>
                 <td><?php echo number_format($orlogo, 2, '.', '');?> ₮</td>
@@ -88,7 +133,7 @@
             <?php } ?>
         </tbody>
         <tfoot>
-            <th colspan="4" class="text-right">Нийт</th>
+            <th colspan="6" class="text-right">Нийт</th>
             <th><?php echo $niit_too;?></th>
             <th><?php echo number_format($niit_orlogo, 2, '.', '');?> ₮</th>
 <!--            <th>--><?php //echo number_format($niit_urtug, 2, '.', '');?><!-- ₮</th>-->

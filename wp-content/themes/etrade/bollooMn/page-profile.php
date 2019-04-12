@@ -216,11 +216,11 @@ if (isset($_POST['register'])) {
                             </div>
 
                             <div class="col-md-6">
-                                <label for="password">Facebook</label>
+                                <label for="password">Facebook (вэб холбоос)</label>
                                 <input type="url" name="facebook" id="facebook" class="form-control" value="<?php echo get_user_meta($user->ID, 'facebook', true); ?>">
                             </div>
                             <div class="col-md-6">
-                                <label for="c_password">Instagram</label>
+                                <label for="c_password">Instagram (вэб холбоос)</label>
                                 <input type="url" name="instagram" id="instagram" class="form-control" value="<?php echo get_user_meta($user->ID, 'instagram', true); ?>">
                             </div>
 

@@ -76,9 +76,8 @@ function _product_report(){
 function baraa_header(){
 ?>
     <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/bootstrap.min.css" >
-    <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/select2.css" >
-    <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/select2-bootstrap.css" >
-    <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/select2-bootstrap.css" >
+    <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/select2.min.css" >
+    <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/select2-bootstrap4.min.css" >
     <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/font-awesome/css/font-awesome.min.css" >
     <link rel="stylesheet" href="<?php echo plugin_dir_url( __FILE__ ); ?>css/jquery.datetimepicker.css" rel="stylesheet">
     <script src="<?php echo plugin_dir_url( __FILE__ );?>js/jquery-2.1.1.js" ></script>
@@ -88,7 +87,7 @@ function baraa_header(){
     <script type="text/javascript">
         $(document).ready(function() {
             //select2
-            $('.select2').select2({ width: '100%' });
+            $('.select2').select2({   theme: 'bootstrap4' });
 
             $('select').on('select2:open', function(e){
                 $('.select2-dropdown').parent().css('z-index', 9999);

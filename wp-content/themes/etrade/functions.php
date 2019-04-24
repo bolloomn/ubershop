@@ -629,6 +629,17 @@ function pukka_paging_nav() {
 endif;
 
 
+add_filter('wp_mail_from','from_mail');
+function from_mail($content_type) {
+    return 'info@monsale.mn';
+}
+
+add_filter( 'wp_mail_from_name', 'my_mail_from_name' );
+function my_mail_from_name( $name ) {
+    return "MONSALE";
+}
+
+
 
 if( !function_exists('pukka_entry_meta') ) :
 /**

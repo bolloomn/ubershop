@@ -3,12 +3,13 @@
  *
  * A block for embedding a Ninja Forms form into a post/page.
  */
-( function( blocks, i18n, editor, element, components ) {
+( function( blocks, i18n, element, components ) {
 
 	var el = element.createElement, // function to create elements
 		TextControl = components.TextControl,// text input control
-        InspectorControls = editor.InspectorControls; // sidebar controls
-	
+        InspectorControls = wp.editor.InspectorControls, // sidebar controls
+        Sandbox = components.Sandbox; // needed to register the block
+
 	// register our block
 	blocks.registerBlockType( 'ninja-forms/form', {
 		title: 'Ninja Forms',
@@ -27,6 +28,8 @@
 		},
 
 		edit: function( props ) {
+
+	        var focus = props.focus;
 
 	        var formID = props.attributes.formID;
 
@@ -56,7 +59,7 @@
 			function selectForm( event ) {
 				//set the attributes from the selected for item
 				props.setAttributes( {
-					formID: parseInt( event.target.getAttribute( 'data-formid' ) ),
+					formID: event.target.getAttribute( 'data-formid' ),
 					formName: event.target.innerText
 				} );
 				/**
@@ -67,10 +70,7 @@
 				var idArray = elID.getAttribute( 'id' ).split( '-' );
 				var nfOptions = document.getElementById( 'nf-filter-container-' + idArray[ idArray.length -1 ] );
 				var inputEl = document.getElementById( 'nf-formFilter-sidebar' );
-				
-				if( inputEl ) {
-					inputEl.value = '';
-				}
+				inputEl.value = '';
 				nfOptions.style.display = 'none';
 			}
 
@@ -171,6 +171,7 @@
 	            // el( SelectControl, { label: 'Form ID', value: formID, options: ninjaFormsBlock.forms, onChange: onFormChange } )
 	        );
 
+
 			/**
 			 * Create the div container, add an overlay so the user can interact
 			 * with the form in Gutenberg, then render the iframe with form
@@ -178,6 +179,7 @@
 			if( '' === formID ) {
 				children.push( el( 'div', {style : {width: '100%'}},
 					el( 'img', { src: ninjaFormsBlock.block_logo}),
+					// el( SelectControl, { value: formID, options: ninjaFormsBlock.forms, onChange: onFormChange }),
 					el ( 'div', null, 'Type to Filter'),
 					inputFilterMain
 				) );
@@ -197,8 +199,9 @@
 		},
 
 		save: function( props ) {
+
             var formID = props.attributes.formID;
-			
+
             if( ! formID ) return '';
 			/**
 			 * we're essentially just adding a short code, here is where
@@ -208,7 +211,7 @@
 			 * going forward
 			 */
 			var returnHTML = '[ninja_forms id=' + parseInt( formID ) + ']';
-			return el( 'div', null, returnHTML );
+			return el( 'div', null, returnHTML);
 		}
 	} );
 
@@ -216,7 +219,6 @@
 } )(
 	window.wp.blocks,
 	window.wp.i18n,
-	window.wp.editor,
 	window.wp.element,
 	window.wp.components
 );

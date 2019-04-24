@@ -28,6 +28,7 @@ class Loco_data_Permissions {
     }
 
 
+
     /**
      * Set up default roles and capabilities
      * @return WP_Roles
@@ -39,7 +40,7 @@ class Loco_data_Permissions {
         if( $role = $roles->get_role('translator') ){
             $role->has_cap('read') || $role->add_cap('read');
         }
-        // else absence of translator role indicates first run
+        // else absense of translator role indicates first run
         // by default we'll initially allow full access to anyone that can manage_options
         else {
             $apply['translator'] = $roles->add_role( 'translator', 'Translator', array('read'=>true) );
@@ -67,21 +68,24 @@ class Loco_data_Permissions {
     }
 
 
+
     /**
-     * Construct instance, ensuring default roles and capabilities exist
+     * @internal
      */
     public function __construct(){
         self::init();
     }
 
 
+
     /**
-     * @return WP_Role[]
+     * @return array<WP_Role>
      */
     public function getRoles(){
         $roles = self::wp_roles();
         return $roles->role_objects;
     }
+
 
 
     /**
@@ -99,6 +103,7 @@ class Loco_data_Permissions {
         // note that there is no such thing as a network admin role, but network admins have all permissions
         return is_multisite() ? false : $role->has_cap('delete_users');
     }
+
 
 
     /**
@@ -123,9 +128,11 @@ class Loco_data_Permissions {
     }
 
 
+
     /**
      * Reset to default: roles include no Loco capabilities unless they have super admin privileges
-     * @return WP_Role[]
+     * @param bool whether to prevent current user from locking themselves out of the plugin.
+     * @return array<WP_Role>
      */
     public function reset(){
         $roles = $this->getRoles();
@@ -148,8 +155,6 @@ class Loco_data_Permissions {
 
     /**
      * Get translated WordPress role name
-     * @param string
-     * @return string
      */
     public function getRoleName( $id ){
         if( 'translator' === $id ){
@@ -161,12 +166,12 @@ class Loco_data_Permissions {
         }
         return $label;
     }
+    
 
 
     /**
      * Populate permission settings from posted checkboxes
-     * @param string[]
-     * @return self
+     * @return Loco_data_Permissions
      */
     public function populate( array $caps ){
         // drop all permissions before adding (cos checkboxes)
@@ -179,10 +184,10 @@ class Loco_data_Permissions {
                     if( ! empty($checked[$cap]) ){
                         $role->has_cap($cap) || $role->add_cap($cap);
                     }
-                }
+                } 
             }
         }
         return $this;
     }
-
-}
+    
+} 

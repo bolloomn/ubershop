@@ -1,6 +1,6 @@
 <?php
 /**
- * Initialize a new POT template file
+ * Intitialize a new POT template file
  */
 $this->extend('../layout');
 $help = apply_filters('loco_external','https://localise.biz/wordpress/plugin/manual/templates');

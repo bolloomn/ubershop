@@ -75,14 +75,24 @@ class WCM_Stock {
         if( isset( $_GET['product-title'] ) ){ 
             return $this->get_product_by_product_title( $_GET['product-title'] ); 
         }
-  
-    	$args = array();
+
+
+
+            $args = array();
     	$args['post_type'] = 'product';
+
+        if( isset( $_GET['seller']) and $_GET['seller']!=0  ){
+            $args['meta_query'][] = array(
+                'key'     => 'seller',
+                'value'   => $_GET['seller'],
+                'compare' => '=',
+            );
+        }
 
     	//Inicialize tax_query array
     	if( !empty( $_GET['product-type'] ) ||  !empty( $_GET['product-category'] ) ){
-    			$args['tax_query'] = array();	
-    	
+    			$args['tax_query'] = array();
+
 
     		if(isset($_GET['product-type'])){
       			if($_GET['product-type'] == 'variable'){

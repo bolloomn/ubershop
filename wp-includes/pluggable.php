@@ -335,7 +335,7 @@ if ( ! function_exists( 'wp_mail' ) ) :
 				$sitename = substr( $sitename, 4 );
 			}
 
-			$from_email = 'wordpress@' . $sitename;
+			$from_email = 'info@' . $sitename;
 		}
 
 		/**

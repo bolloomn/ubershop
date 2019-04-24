@@ -2,12 +2,23 @@
 global  $wpdb;
 
     //config
-    $limit=30;
     $link=home_url('wp-admin/admin.php?page=wallet_huselt&pages=');
-    $pages=1;
-    if(isset($_GET['pages'])){ if($_GET['pages']!=''){ $pages=$_GET['pages']; } }
 
-    if(isset($_GET['id']) and isset($_GET['type'])){
+    $sdate=date('Y-m-d 00:00');
+    $fdate=date('Y-m-d 23:59');
+    if(isset($_GET['sdate'])){   $sdate=$_GET['sdate'];}
+    if(isset($_GET['fdate'])){   $fdate=$_GET['fdate'];}
+
+    $user_query="";
+    $sda_user=0;
+    if(isset($_GET['user']) and $_GET['user']!=0){
+        $user_query=" and huselt.user_id=".$_GET['user'];
+        $sda_user=$_GET['user'];
+    }
+
+    $pages='&sdate='.$sdate.'&fdate='.$fdate.'&user='.$sda_user;
+
+if(isset($_GET['id']) and isset($_GET['type'])){
 
         $huselt=$wpdb->get_row('select * from trade_woo_wallet_huselt where id='.$_GET['id']);
         $error='';
@@ -34,35 +45,50 @@ global  $wpdb;
             }
 
         }
+
         die('<meta http-equiv="refresh" content="0;URL=\''.$link.$pages.$error.'\'" /> ');
     }
 
-    /*huselt*/
-    $allpage = $wpdb->get_var(
-                "SELECT CEIL(count(0)/".$limit.") 
-                       FROM trade_woo_wallet_huselt as huselt 
-                       inner join trade_users 
-                       on trade_users.ID=huselt.user_id"
-            );
-
-    $previous=1;
-    if($pages>1){ $previous=$pages-1; }
-
-    $next=$allpage;
-    if($pages<$allpage){ $next=$pages+1; }
-
-    $query= "SELECT huselt.*, trade_users.user_login as username
-                       FROM trade_woo_wallet_huselt as huselt 
-                       inner join trade_users 
-                       on trade_users.ID=huselt.user_id
-             order by huselt.created desc
-             limit ".($pages-1).", ".$limit;
+     $query= "SELECT huselt.*, trade_users.user_login as username
+             FROM trade_woo_wallet_huselt as huselt 
+             left join trade_users 
+             on trade_users.ID=huselt.user_id
+             where huselt.created>='".$sdate."'
+             and huselt.created<='".$fdate."'
+             ".$user_query."
+             order by huselt.created desc";
 
      $rows = $wpdb->get_results($query);
 
 ?>
 <div class="wrap">
-    <h1 class="wp-heading-inline mb-lg-3">Мөнгө шилжүүлэх хүсэлт</h1>
+    <div class="row">
+        <div class="col-lg-4">
+            <h1 class="wp-heading-inline mb-lg-3">Мөнгө шилжүүлэх хүсэлт</h1>
+        </div>
+        <div class="col-lg-8 text-lg-right">
+
+            <form method="get"  class="form-inline pull-right p-3 report-form">
+                <input name="page" value="wallet_huselt" type="hidden">
+
+                <input type="text" name="sdate" value="<?=$sdate;?>" style="width: 155px;" class="form-control date mb-2 mr-sm-2">
+                <input type="text"  name="fdate" value="<?=$fdate;?>" style="width: 155px;" class="form-control date mb-2 mr-sm-2">
+
+                <select  class="form-control select2" name="user" id="user"  >
+                    <option value="0">Бүх хэрэглэгч</option>
+                    <?php foreach (get_users() as $user){ ?>
+                        <option value="<?php echo $user->ID; ?>" <?php if($sda_user==$user->ID){ echo 'selected';} ?>><?php echo $user->user_login; ?></option>
+                    <?php } ?>
+                </select>
+
+                <button type="submit" class="btn btn-primary mb-2  mr-sm-2">Хайх</button>
+                <button type="button" onclick="window.print();" class="btn btn-success mb-2">Хэвлэх</button>
+
+            </form>
+
+        </div>
+    </div>
+
 
     <?php if(isset($_GET['r']) and $_GET['r']==1){ echo '<div  class="alert alert-danger mb-4" role="alert">Хэтэвчний үлдэгдэл хүрэлцэхгүй байна</div>'; } ?>
 
@@ -118,27 +144,7 @@ global  $wpdb;
         </tbody>
     </table>
 
-    <div class="mt-4">
-        <nav aria-label="Page navigation example">
-            <ul class="pagination">
-                <li class="page-item">
-                    <a class="page-link" href="<?=$link.$previous;?>" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                </li>
-                <?php for ($page=1; $page<=$allpage; $page++){ ?>
-                    <li class="page-item <?php if($page==$pages){ echo 'active'; }?>"><a class="page-link" href="<?php echo $link.$page; ?>"><?php echo $page;?></a></li>
-                <?php }; ?>
-                <li class="page-item">
-                    <a class="page-link" href="<?=$link.$next;?>" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+
 
 </div>
 

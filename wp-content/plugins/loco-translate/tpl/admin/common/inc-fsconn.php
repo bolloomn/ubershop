@@ -18,18 +18,8 @@
             <a href="<?php $this->route('config')->e('href')?>#loco--fs-protect"><?php esc_html_e('Settings','loco-translate')?></a>
         </nav>
     </div><?php
-
-
-    // else specific file may be protected from updates by the bundle config
-    elseif( $params->has('fsDenied') ):?>
-    <div class="has-nav notice inline notice-locked">
-    <p>
-        <strong class="has-icon"><?php esc_html_e('Read only','loco-translate')?>:</strong>
-        <span><?php esc_html_e('File is protected by the bundle configuration','loco-translate')?>.</span>
-    </p>
-    </div><?php
-
-
+ 
+ 
     // else render remote connection form
     else:
         
@@ -47,7 +37,7 @@
     </div><?php
     endif?> 
         
-    <form id="loco-fs" class="has-nav notice inline notice-locked jshide jsonly">
+    <form id="loco-fs" class="has-nav notice inline notice-locked jshide">
         <p>
             <strong class="has-icon"><?php
                 // Translators: When a file or folder cannot be modified due to filesystem permissions

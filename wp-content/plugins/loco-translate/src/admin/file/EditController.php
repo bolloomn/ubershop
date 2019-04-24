@@ -65,7 +65,6 @@ class Loco_admin_file_EditController extends Loco_admin_file_BaseController {
         }
         // Fine if not, this just means sync isn't possible.
         catch( Loco_error_Exception $e ){
-            Loco_error_AdminNotices::add( $e );
             Loco_error_AdminNotices::debug( sprintf("Sync is disabled because this file doesn't relate to a known set of translations", $bundle ) );
             $project = null;
         }
@@ -130,7 +129,7 @@ class Loco_admin_file_EditController extends Loco_admin_file_BaseController {
         
         // notify if template is locked (save and sync will be disabled)
         if( is_null($locale) && $project && $project->isPotLocked() ){
-            $this->set('fsDenied', true );
+            Loco_error_AdminNotices::warn('Template is protected from updates by the bundle configuration');
             $readonly = true;
         }
         
@@ -146,7 +145,7 @@ class Loco_admin_file_EditController extends Loco_admin_file_BaseController {
             'readonly' => $readonly,
             'project' => $project ? array (
                 'bundle' => $bundle->getId(),
-                'domain' => (string) $project->getId(),
+                'domain' => $project->getId(),
             ) : null,
             'nonces' => $readonly ? null : array (
                 'save' => wp_create_nonce('save'),

@@ -11,21 +11,9 @@ abstract class Loco_data_Serializable extends ArrayObject {
     private $v = 0;
 
     /**
-     * Time object was last persisted
-     * @var int
-     */
-    private $t = 0;
-
-    /**
      * @var bool
      */
     private $dirty;
-
-    /**
-     * Whether persisting on object destruction
-     * @var bool
-     */
-    private $lazy = false;
 
     /**
      * Commit serialized data to WordPress storage
@@ -45,16 +33,6 @@ abstract class Loco_data_Serializable extends ArrayObject {
 
 
     /**
-     * @internal 
-     */
-    final public function __destruct(){
-        if( $this->lazy ){
-            $this->persistIfDirty();
-        }
-    }
-
-
-    /**
      * Check if object's properties have change since last clean
      * @return bool
      */
@@ -65,7 +43,7 @@ abstract class Loco_data_Serializable extends ArrayObject {
 
     /**
      * Make not dirty
-     * @return self
+     * @return Loco_data_Serializable
      */
     protected function clean(){
         $this->dirty = false;
@@ -73,41 +51,23 @@ abstract class Loco_data_Serializable extends ArrayObject {
     }
 
 
-    /**
-     * Force dirtiness for next check
-     * @return static
-     */
-    protected function touch(){
-        $this->dirty = true;
-        return $this;
-    }
-
-
-    /**
-     * Enable lazy persistence on object destruction, if dirty
-     * @return static
-     */
-    public function persistLazily(){
-        $this->lazy = true;
-        return $this;
-    }
-
 
     /**
      * Call persist method only if has changed since last clean
-     * @return static
+     * @return Loco_data_Serializable
      */
     public function persistIfDirty(){
         if( $this->isDirty() ){
-            $this->persist();
+            $params = func_get_args();
+            call_user_func_array( array($this,'persist'), $params );
         }
         return $this;
     }
 
 
+
     /**
-     * {@inheritdoc}
-     * override so we can set dirty flag
+     * @override so we can set dirty flag
      */
     public function offsetSet( $prop, $value ){
         if( ! isset($this[$prop]) || $value !== $this[$prop] ){
@@ -118,8 +78,7 @@ abstract class Loco_data_Serializable extends ArrayObject {
 
 
     /**
-     * {@inheritdoc}
-     * override so we can set dirty flag
+     * @override so we can set dirty flag
      */
     public function offsetUnset( $prop ){
         if( isset($this[$prop]) ){
@@ -130,8 +89,7 @@ abstract class Loco_data_Serializable extends ArrayObject {
 
 
     /**
-     * @param string|int|float
-     * @return self
+     * @return Loco_data_Serializable
      */
     public function setVersion( $version ){
         if( $version !== $this->v ){
@@ -150,13 +108,6 @@ abstract class Loco_data_Serializable extends ArrayObject {
     }
 
 
-    /**
-     * @return int
-     */
-    public function getTimestamp(){
-        return $this->t;
-    }
-
 
     /**
      * Get serializable data for storage
@@ -167,15 +118,14 @@ abstract class Loco_data_Serializable extends ArrayObject {
             'c' => get_class($this),
             'v' => $this->getVersion(),
             'd' => $this->getArrayCopy(),
-            't' => time(),
         );
     }
 
 
+
     /**
      * Restore object state from array as returned from getSerializable
-     * @param array
-     * @return self
+     * @return Loco_data_Serializable
      */    
     protected function setUnserialized( $data ){
 
@@ -186,20 +136,17 @@ abstract class Loco_data_Serializable extends ArrayObject {
         if( get_class($this) !== $data['c'] ){
             throw new InvalidArgumentException('Unexpected class name');
         }
+        
+        $this->setVersion( $data['v'] );
 
         // ok to populate ArrayObject
         $this->exchangeArray( $data['d'] );
-
-        // setting version as it was in database
-        $this->setVersion( $data['v'] );
-
-        // timestamp may not be present in old objects
-        $this->t = isset($data['t']) ? $data['t'] : 0;
-
-        // object is being restored, probably from disk so start with clean state
-        $this->dirty = false;
         
+        // because object is being restored, probably from disk. this make it clean now
+        $this->dirty = false;
+
         return $this;
     }    
 
+    
 }

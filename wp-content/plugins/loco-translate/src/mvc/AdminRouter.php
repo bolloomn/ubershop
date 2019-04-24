@@ -244,7 +244,6 @@ class Loco_mvc_AdminRouter extends Loco_hooks_Hookable {
             }
             catch( Exception $_e ){
                 // avoid errors during error rendering
-                Loco_error_AdminNotices::debug( $_e->getMessage() );
             }
             echo $ctrl->renderError($e);
         }

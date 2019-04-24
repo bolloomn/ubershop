@@ -476,7 +476,7 @@ body.user-edit-php h2,
 }
 
 @media print {
-    #adminmenuwrap, #adminmenuback,  #wpadminbar, body.toplevel_page_product_report  .form-inline.pull-right.p-3 {
+    #adminmenuwrap, #adminmenuback,  #wpadminbar,   form.report-form {
         display: none;
     }
     #wpcontent {

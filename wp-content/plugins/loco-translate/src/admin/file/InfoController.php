@@ -34,6 +34,7 @@ class Loco_admin_file_InfoController extends Loco_admin_file_BaseController {
     public function render(){
         
         $file = $this->get('file');
+
         $name = $file->basename();
         $this->set('title', $name );
         
@@ -41,8 +42,10 @@ class Loco_admin_file_InfoController extends Loco_admin_file_BaseController {
             return $fail;
         }
         
-        // file info
         $ext = strtolower( $file->extension() );
+        $path = $file->getPath();
+        
+        // file info
         $finfo = Loco_mvc_FileParams::create( $file );
         $this->set('file', $finfo );
         $finfo['type'] = strtoupper($ext);

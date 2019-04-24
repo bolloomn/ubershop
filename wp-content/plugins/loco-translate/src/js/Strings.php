@@ -13,8 +13,7 @@ class Loco_js_Strings extends Loco_hooks_TranslateBuffer {
         // When text filtering reduces to an empty view
         __("Nothing matches the text filter",'loco-translate');
 
-        /* Where %s is the name of the POT template file. Message appears after sync
-         * xgettext: javascript-format */
+        // Where %s is the name of the POT template file. Message appears after sync
         __("Merged from %s",'loco-translate');
 
         // Message appears after sync operation
@@ -26,8 +25,7 @@ class Loco_js_Strings extends Loco_hooks_TranslateBuffer {
         // Summary of existing strings that no longer exist after running in-editor Sync
         _n("1 obsolete string removed","%s obsolete strings removed",0,'loco-translate');
 
-        /* Message appears after sync operation when nothing has changed. %s refers to a POT file.
-         * xgettext: javascript-format */
+        // Message appears after sync operation when nothing has changed. %s refers to a POT file.
         __("Already up to date with %s",'loco-translate');
 
         // Message appears after sync operation when nothing has changed
@@ -39,16 +37,13 @@ class Loco_js_Strings extends Loco_hooks_TranslateBuffer {
         // Shows total string count at top of editor
         _n("1 string","%s strings",0,'loco-translate');
 
-        /* Shows percentage translated at top of editor
-         * xgettext: javascript-format */
+        // Shows percentage translated at top of editor
         __("%s%% translated",'loco-translate');
 
-        /* Shows number of fuzzy strings at top of editor
-         * xgettext: javascript-format */
+        // Shows number of fuzzy strings at top of editor
         __("%s fuzzy",'loco-translate');
 
-        /* Shows number of untranslated strings at top of editor
-         * xgettext: javascript-format */
+        // Shows number of untranslated strings at top of editor
         __("%s untranslated",'loco-translate');
 
         // Generic error when external process broke an Ajax request
@@ -75,12 +70,11 @@ class Loco_js_Strings extends Loco_hooks_TranslateBuffer {
         //
         __("OK",'loco-translate');
 
-        /* Label for the window pane holding the original English text
+        /* Label for the window pane holding the original English text -and-
          * List heading showing preview of English text for each item */
         _x("Source text","Editor",'loco-translate');
 
-        /* Where %s is the name of the language, e.g. "French translation"
-         * xgettext: javascript-format */
+        // Where %s is the name of the language, e.g. "French translation"
         _x("%s translation","Editor",'loco-translate');
 
         // Label for the window pane holding message context

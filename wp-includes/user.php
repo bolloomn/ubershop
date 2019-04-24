@@ -1979,6 +1979,10 @@ All at ###SITENAME###
 				'headers' => '',
 			);
 
+
+            $sender = 'monsale.mn';
+
+
 			/**
 			 * Filters the contents of the email sent when the user's password is changed.
 			 *

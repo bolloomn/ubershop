@@ -7,7 +7,6 @@ class Loco_gettext_SearchPaths extends Loco_fs_FileFinder {
     
     /**
      * Look up a relative file reference against search paths
-     * @param string relative file path reference
      * @return Loco_fs_File
      */
     public function match( $ref ){
@@ -70,7 +69,7 @@ class Loco_gettext_SearchPaths extends Loco_fs_FileFinder {
                 }
                 // map excluded path to given base
                 $exclude = new Loco_fs_File( $head[$key] );
-                $exclude->normalize($base);
+                $tmp = $exclude->normalize( $base );
                 if( $exclude->exists() ){
                      $this->exclude( (string) $exclude );
                 }

@@ -4,7 +4,7 @@
 
     // zahailgiin medeelliig avah  bas shalgah
     $order = _qpay_getOrderDetailById($_GET['o']);
-    if($order['order']['status']=='completed'){ wp_redirect(home_url()); die(); }
+    if($order['order']['status']=='on-hold'){ wp_redirect(home_url()); die(); }
 
     //төлбөр төлсөн эсэхийг шалгах
     if(isset($_GET['check']) and isset($_GET['o'])) {
@@ -19,10 +19,10 @@
         $result=json_decode($result, true);
         if($result['result_code']=='0'){
             $order = wc_get_order( $_GET['o'] );
-            $order->update_status( 'wc-completed', __( 'payment completed', 'wc-gateway-offline' ) );
+            $order->update_status( 'wc-on-hold', __( 'payment on-hold', 'wc-gateway-offline' ) );
             $order->reduce_order_stock();
             WC()->cart->empty_cart();
-            wp_redirect($this->get_return_url( $order ));
+            wp_redirect( home_url('checkout/order-received/'.$_GET['o'].'/?key='.$order->order_key ));
         } else {
             wp_redirect(get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o']);
         }
@@ -108,20 +108,7 @@
     </div>
 </div>
 <script src="<?php echo plugin_dir_url( __FILE__ ) . '../style/js/jquery-2.1.1.js'; ?>"></script>
-<script>
-    $( document ).ready(function() {
-        $('#finish').click(function () {
-            $.get( "<?=get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o'].'&check=1'; ?>", function( data ) {
-               if(data.result_code=='0'){
-                    window.location("<?=get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o'].'&payment=1'; ?>");
-               } else {
-                   alert(data.result_msg);
-               }
-            });
-
-        });
-    });
-</script>
+<script>$( document ).ready(function() {$('#finish').click(function () {$.get( "<?=get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o'].'&check=1'; ?>", function( data ) {if(data.result_code=='0'){window.location.href = "<?=get_permalink( get_page_by_path( 'qpay-payment' ) ).'?o='.$_GET['o'].'&payment=1'; ?>";} else {alert(data.result_msg);}});});});</script>
 </body>
 
 

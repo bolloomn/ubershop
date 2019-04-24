@@ -7,8 +7,8 @@ $user = wp_get_current_user();
 $wallet = getWallet($user->ID);
 
 
-$max = round($wallet / 5 * 4) - getHuselt($user->ID);
-$min = 1000;
+$max = $wallet  - getHuselt($user->ID);
+$min = 20000;
 
 
 if(isset($_POST['send'])){
@@ -86,15 +86,16 @@ if(isset($_POST['send'])){
                 </div>
                 <div class="col-lg-4 ">
                     <div class="bg-white p-4">
-                        <?php if ($max >= $min) {?>
+
                             <div class="heading-title">Мөнгө авах
-                                <span class="small pull-right">боломжит дүн: <?php echo $max; ?> ₮</span>
+                                <span class="small pull-right">боломжит дүн: <?php if($max>=$min){ echo $max; } else { echo 0; } ?> ₮</span>
                             </div>
                             <form class="bg-white mb-4" method="post">
                                 <p>
                                     <label for="dun">Шилжүүлэх мөнгөн дүн</label>
                                     <input type="number" max="<?php echo $max; ?>" min="<?php echo $min; ?>"
                                            name="amount" id="amount" class="form-control" value="" required>
+                                    <span class="text-warning" style="font-size: 11px;">Заавал бөглө. хамгийн багадаа 20000 төг шилжүүлэх естой.</span>
                                 </p>
                                 <p>
                                     <label for="t_bank_name">Банк</label>
@@ -115,7 +116,7 @@ if(isset($_POST['send'])){
                                     <input type="submit" name="send" class="form-control" value="хүcэлт илгээх">
                                 </p>
                             </form>
-                        <?php } ?>
+
                         <div class="heading-title">Мөнгө шилжүүлэх хүсэлтүүд</div>
                         <div>
                             <table class="table table-hover ">

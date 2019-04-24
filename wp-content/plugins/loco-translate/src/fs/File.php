@@ -8,9 +8,9 @@ class Loco_fs_File {
      * @var Loco_fs_FileWriter
      */
     private $w;
-
+    
     /**
-     * Path to file
+     * Full original path to file
      * @var string
      */
     private $path;
@@ -36,7 +36,6 @@ class Loco_fs_File {
 
     /**
      * Check if a path is absolute and return fixed slashes for readability
-     * @param string
      * @return string fixed path, or "" if not absolute
      */
     public static function abs( $path ){
@@ -61,7 +60,6 @@ class Loco_fs_File {
 
     /**
      * Create file with initial, unvalidated path
-     * @param string
      */    
     public function __construct( $path ){
         $this->setPath( $path );
@@ -108,7 +106,6 @@ class Loco_fs_File {
 
     /**
      * Copy write context with our file reference
-     * @param Loco_fs_FileWriter 
      * @return Loco_fs_File
      */
     private function cloneWriteContext( Loco_fs_FileWriter $context = null ){
@@ -307,8 +304,6 @@ class Loco_fs_File {
 
     /**
      * Set file mode
-     * @param int file mode integer e.g 0664
-     * @param bool whether to set recursively (directories)
      * @return Loco_fs_File
      */
     public function chmod( $mode, $recursive = false ){
@@ -528,7 +523,6 @@ class Loco_fs_File {
 
     /**
      * Copy this file for real
-     * @param string new path
      * @throws Loco_error_WriteException
      * @return Loco_fs_File new file
      */
@@ -553,9 +547,9 @@ class Loco_fs_File {
     }
 
 
+
     /**
      * Copy this object with an alternative file extension
-     * @param string new extension
      * @return Loco_fs_File
      */
     public function cloneExtension( $ext ){
@@ -572,6 +566,7 @@ class Loco_fs_File {
     }
 
 
+
     /**
      * Ensure full parent directory tree exists
      * @return Loco_fs_Directory
@@ -586,15 +581,16 @@ class Loco_fs_File {
     }
 
 
+
     /**
-     * @param string file contents
-     * @return int number of bytes written to file
+     * @return int bytes written to file
      */
     public function putContents( $data ){
         $this->getWriteContext()->putContents($data);
         $this->clearStat();
         return $this->size();
     }
+
 
 
     /**

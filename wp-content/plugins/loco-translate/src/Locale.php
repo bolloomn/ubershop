@@ -1,10 +1,6 @@
 <?php
 /**
  * Represents a WordPress locale
- * 
- * @property string $lang
- * @property string $region
- * @property string $variant
  */
 class Loco_Locale implements JsonSerializable {
 

@@ -40,13 +40,13 @@ if(isset($_GET['id']) and isset($_GET['type'])){
 }
 
 $status=[
-    'wc-pending'=>['<div class="badge badge-primary text-white p-2">Төлбөр хүлээгдэж байна</div>', 0],
-    'wc-processing'=>['<div class="badge badge-warning text-white p-2">Боловсруулж байна</div>', 0],
-    'wc-on-hold'=>['<div class="badge badge-warning text-white p-2">Хүлээгдэж байна</div>', 0],
-    'wc-completed'=>['<div class="badge badge-success text-white p-2">Шийдвэрлэсэн</div>', 1],
-    'wc-cancelled'=>['<div class="badge badge-danger text-white p-2">Цуцлагдсан</div>', 2],
-    'wc-refunded'=>['<div class="badge badge-danger text-white p-2">Буцаагдсан</div>', 2],
-    'wc-failed'=>['<div class="badge badge-danger text-white p-2">Амжилтгүй</div>', 2],
+    'wc-pending'=>['<div class="badge badge-primary text-white p-2 mb-1">Төлбөр хүлээгдэж байна</div>', 0],
+    'wc-processing'=>['<div class="badge badge-warning text-white p-2 mb-1">Боловсруулж байна</div>', 0],
+    'wc-on-hold'=>['<div class="badge badge-warning text-white p-2 mb-1">Хүлээгдэж байна</div>', 0],
+    'wc-completed'=>['<div class="badge badge-success text-white p-2 mb-1">Шийдвэрлэсэн</div>', 1],
+    'wc-cancelled'=>['<div class="badge badge-danger text-white p-2 mb-1">Цуцлагдсан</div>', 2],
+    'wc-refunded'=>['<div class="badge badge-danger text-white p-2 mb-1">Буцаагдсан</div>', 2],
+    'wc-failed'=>['<div class="badge badge-danger text-white p-2 mb-1">Амжилтгүй</div>', 2],
 ];
 
 
@@ -81,15 +81,13 @@ $orders = $wpdb->get_results($query);
 <?php get_header(); ?>
 
 <style>
-    .table {
-        font-size: 13px;
-    }
+    .table { font-size: 13px; }
 </style>
 <div id="content" class="clearfix">
 
     <div class="content-wrap">
         <div class="entry-content">
-                <div class="bg-white">
+                <div class="bg-white p-4">
                     <div class="row">
                         <div class="col-lg-12">
                           <div class="heading-title">Миний хүргэлт <small class="pull-right">Хүргэлт тутмаас таны хэтэвчинд <?php echo  $amount; ?>₮ нэмэгдэх болно.</small></div>
@@ -101,12 +99,8 @@ $orders = $wpdb->get_results($query);
                                 <table class="table table-hover">
                                     <thead>
                                     <tr class="bg-secondary">
-                                        <th class="text-white">Огноо</th>
-                                        <th class="text-white">дугаар</th>
-                                        <th class="text-white">Мөнгөн дүн</th>
-                                        <th class="text-white">Утас</th>
-                                        <th class="text-white">Нэр</th>
-                                        <th class="text-white">Хаяг</th>
+                                        <th class="text-white">Захиалга</th>
+                                        <th class="text-white">Мэдээлэл</th>
                                         <th class="text-white">Төлөв</th>
                                         <th></th>
                                     </tr>
@@ -115,12 +109,16 @@ $orders = $wpdb->get_results($query);
                                     <?php if (!empty($orders)) { ?>
                                         <?php foreach ($orders as $order){?>
                                             <tr>
-                                                <td><?php echo $order->post_date; ?></td>
-                                                <td>#<?php echo $order->ID; ?></td>
-                                                <td ><?php echo get_post_meta($order->ID, '_order_total', true); ?>₮</td>
-                                                <td ><?php echo get_post_meta($order->ID, 't_phone', true); ?></td>
-                                                <td ><?php echo get_post_meta($order->ID, 'last_name', true).' '.get_post_meta($order->ID, 'first_name', true); ?></td>
-                                                <td ><?php
+                                                <td>
+                                                    Огноо: <?php echo $order->post_date; ?><br>
+                                                    Захиалга: #<?php echo $order->ID; ?><br>
+                                                    Төлбөрийн хэлбэр: <?php echo get_post_meta($order->ID, '_payment_method_title', true); ?><br>
+                                                    Мөнгөн дүн: <?php echo get_post_meta($order->ID, '_order_total', true); ?>₮
+                                                </td>
+                                                <td >
+                                                    Утас: <?php echo get_post_meta($order->ID, 't_phone', true); ?><br>
+                                                    Нэр: <?php echo get_post_meta($order->ID, 'last_name', true).' '.get_post_meta($order->ID, 'first_name', true); ?><br>
+                                                    Хаяг: <?php
                                                     echo get_post_meta($order->ID, 't_hot', true)
                                                         .', '.get_post_meta($order->ID, 't_sum', true)
                                                         .', '.get_post_meta($order->ID, 't_gudamj', true)
@@ -129,20 +127,23 @@ $orders = $wpdb->get_results($query);
                                                         .'<br>'.get_post_meta($order->ID, 't_address', true);
                                                 ?>
                                                 </td>
-                                                <td><?=$status[$order->post_status][0];?></td>
                                                 <td>
+                                                    <?=$status[$order->post_status][0];?><br>
                                                     <?php  if($status[$order->post_status][1]==0){ ?>
-                                                        <div class="dropdown">
+                                                        <div class="dropdown mb-1">
                                                             <button class="btn btn-secondary dropdown-toggle btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                               Засах
+                                                                Засах
                                                             </button>
                                                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                                 <a class="dropdown-item" href="<?php echo $link.$pages.'&id='.$order->ID.'&type=1';?>"  onclick="return confirm('Шийдвэрлэсэн төлөвт шилжүүлэх үү!')">Шийдвэрлэсэн</a>
                                                                 <a class="dropdown-item" href="<?php echo $link.$pages.'&id='.$order->ID.'&type=2';?>"  onclick="return confirm('Буцаагдсан төлөвт шилжүүлэх үүу!')">Буцаагдсан</a>
                                                             </div>
                                                         </div>
+                                                        <br>
                                                     <?php } ?>
+                                                    <a target="_blank" class="btn btn-info btn-sm text-white" href="<?php  echo home_url('checkout/order-received/'.$order->ID.'/?key='.get_post_meta($order->ID, '_order_key', true ));?>">Дэлгэрэнгүй</a>
                                                 </td>
+
 
                                             </tr>
                                         <?php } ?>
@@ -159,7 +160,7 @@ $orders = $wpdb->get_results($query);
                 </div>
 
 
-                <nav >
+                <nav class="mt-4" >
                     <ul class="pagination" style="list-style: none;">
                         <li class="page-item m-0">
                             <a class="page-link" href="<?=$link.$previous;?>" aria-label="Previous">

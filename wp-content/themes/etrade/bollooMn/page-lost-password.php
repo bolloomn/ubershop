@@ -15,9 +15,9 @@ if(is_user_logged_in()) {wp_redirect(home_url()); }
             $email = trim($_POST['user_login']);
 
             if( empty( $email ) ) {
-                $error = 'Нэвтрэх нэр эсвэл имэйл хаягаа оруулна уу.';
+                $error = 'имэйл хаягаа оруулна уу.';
             } else if( ! is_email( $email )) {
-                $error = 'Нэвтрэх нэр эсвэл имэйл хаяг буруу.';
+                $error = 'имэйл хаяг буруу.';
             } else if( ! email_exists( $email ) ) {
                 $error = 'Энэ имэйл хаягаар бүртгүүлсэн хэрэглэгч байхгүй байна.';
             } else {
@@ -34,18 +34,18 @@ if(is_user_logged_in()) {wp_redirect(home_url()); }
                 // if  update user return true then lets send user an email containing the new password
                 if( $update_user ) {
                     $to = $email;
-                    $subject = 'Шинэ нууц үг';
-                    $sender = 'monsale.mn';
-                    $message = '<b>Нууц үг:</b> '.$random_password;
+                    $subject = 'Шинэ нууц үг - monsale.mn';
+                    $sender = 'MONSALE';
+                    $message = '<b>Нууц үг:</b> '.$random_password.'<br>';
                     $headers[] = 'MIME-Version: 1.0' . "\r\n";
                     $headers[] = 'Content-type: text/html; charset=utf-8' . "\r\n";
                     $headers[] = "X-Mailer: PHP \r\n";
-                    $headers[] = 'From: '.$sender.' < '.$email.'>' . "\r\n";
+                    $headers[] = 'From: '.$sender.' <info@monsale.mn>' . "\r\n";
                     $message .='
                          Цахим гэмт хэргээс урьдчилан сэргийлэхийн тулд та өөрийн нууц үг/ПИН кодыг бусдад бүү задруулаарай.
                          <br>Бидэнтэй холбоо барих:
                          <br>Вэб хуудас: www.monsale.mn 
-                            <br>Харилцагчийн мэдээллийн төв: 99898989<br>
+                         
                         <p></p>
                         <p> Үйлчлүүлсэн танд баярлалаа.</p>
                         <p></p>
@@ -54,7 +54,7 @@ if(is_user_logged_in()) {wp_redirect(home_url()); }
                     ';
                     $mail = wp_mail( $to, $subject, $message, $headers );
                     if( $mail )
-                        $success = 'Та шинэ нууц үгээ и-мэйл хаягаа шалгана уу.';
+                        $success = 'Та шинэ нууц үгээ и-мэйл хаягаа шалгана уу. Хэрвээ Инбокс фолдерт ирээгүй бол спам фолдероо шалгана';
 
 
 
@@ -89,7 +89,7 @@ if(is_user_logged_in()) {wp_redirect(home_url()); }
                                 if( ! empty( $success ) )
                                     echo '<div class="error_login"><p class="success" style="font-size:13px; color: #28a745">'. $success .'</p></div>';
                             ?>
-                            <p><label for="user_login">Нэвтрэх нэр эсвэл Имэйл хаяг:</label>
+                            <p><label for="user_login">Имэйл хаяг:</label>
                                 <?php $user_login = isset( $_POST['user_login'] ) ? $_POST['user_login'] : ''; ?>
                                 <input type="text" name="user_login" id="user_login" value="<?php echo $user_login; ?>" /></p>
                             <p>

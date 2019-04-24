@@ -136,7 +136,7 @@ class Stock_Manager_Admin {
 	 */
 	public function add_plugin_admin_menu() {
 
-		$value = 'manage_woocommerce';
+		$value = 'add_users';
 
 		$manage = apply_filters( 'stock_manager_manage', $value );
 

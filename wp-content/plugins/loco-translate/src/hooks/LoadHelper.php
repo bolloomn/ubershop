@@ -28,12 +28,10 @@ class Loco_hooks_LoadHelper extends Loco_hooks_Hookable {
     }
 
 
+
     /**
      * `plugin_locale` filter callback.
      * Signals the beginning of a "load_plugin_textdomain" process
-     * @param string 
-     * @param string
-     * @return string
      */
     public function filter_plugin_locale( $locale, $domain = '' ){
         $this->context = array( 'plugins', $domain, $locale );
@@ -45,20 +43,17 @@ class Loco_hooks_LoadHelper extends Loco_hooks_Hookable {
     /**
      * `unload_textdomain` action callback.
      * Lets us release lock so that custom file may be loaded again (hopefully for another locale)
-     * @param string
-     * @return void
      */
     public function on_unload_textdomain( $domain ){
         unset( $this->lock[$domain] );
     }
 
 
+
     /**
      * `load_textdomain` action callback.
      * Lets us load our custom translations before WordPress loads what it was going to anyway.
      * We're deliberately not stopping WordPress loading $mopath, if it exists it will be merged on top of our custom strings.
-     * @param string
-     * @param string
      * @return void
      */
     public function on_load_textdomain( $domain, $mopath ){
@@ -109,10 +104,9 @@ class Loco_hooks_LoadHelper extends Loco_hooks_Hookable {
     }
 
 
+
     /**
      * `load_textdomain_mofile` filter callback
-     * @param string
-     * @param string
      * @return string
      */
     public function filter_load_textdomain_mofile( $mopath, $domain ){
@@ -123,5 +117,4 @@ class Loco_hooks_LoadHelper extends Loco_hooks_Hookable {
         }
         return $mopath;
     }
-
 }

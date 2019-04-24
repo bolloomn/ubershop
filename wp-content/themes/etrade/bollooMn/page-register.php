@@ -42,15 +42,15 @@ if(!isset($_POST['register'])){
         update_user_meta($user_id, 'last_name', $_POST['last_name']);
         update_user_meta($user_id, 't_phone', $_POST['t_phone']);
         update_user_meta($user_id, 't_male', $_POST['t_male']);
-        update_user_meta($user_id, 't_hot', $_POST['t_hot']);
-        update_user_meta($user_id, 't_sum', $_POST['t_sum']);
-        update_user_meta($user_id, 't_gudamj', $_POST['t_gudamj']);
-        update_user_meta($user_id, 't_bair', $_POST['t_bair']);
-        update_user_meta($user_id, 't_toot', $_POST['t_toot']);
-        update_user_meta($user_id, 't_address', $_POST['t_address']);
+//        update_user_meta($user_id, 't_hot', $_POST['t_hot']);
+//        update_user_meta($user_id, 't_sum', $_POST['t_sum']);
+//        update_user_meta($user_id, 't_gudamj', $_POST['t_gudamj']);
+//        update_user_meta($user_id, 't_bair', $_POST['t_bair']);
+//        update_user_meta($user_id, 't_toot', $_POST['t_toot']);
+//        update_user_meta($user_id, 't_address', $_POST['t_address']);
         update_user_meta($user_id, 't_parent', $_POST['t_parent']);
-        update_user_meta($user_id, 'instagram', $_POST['instagram']);
-        update_user_meta($user_id, 'facebook', $_POST['facebook']);
+        // update_user_meta($user_id, 'instagram', $_POST['instagram']);
+        // update_user_meta($user_id, 'facebook', $_POST['facebook']);
         wp_redirect('login?r=1');
     }
 }
@@ -92,9 +92,10 @@ if(!isset($_POST['register'])){
                                 </div>
                                 <div class="col-md-6">
                                     <p>
-                                        <label for="user_login">Нэвтрэх нэр</label>
+                                        <label for="user_login">Нэвтрэх нэр </label>
                                         <input type="text" name="user_login" id="user_login" minlength="6" class="form-control" value="<?php echo checkPost('user_login'); ?>"
                                                required>
+                                        <span class="text-warning" style="font-size: 11px;">заавал бөглө. хамгийн багадаа 6 тэмдэгт оруулна уу</span>
                                     </p>
                                 </div>
                                 <div class="col-md-6">
@@ -102,6 +103,7 @@ if(!isset($_POST['register'])){
                                         <label for="user_email">Имэйл</label>
                                         <input type="email" name="user_email" id="user_email" class="form-control" value="<?php echo checkPost('user_email'); ?>"
                                                required>
+                                        <span class="text-warning" style="font-size: 11px;">заавал бөглө.</span>
                                     </p>
                                 </div>
                                 <div class="col-md-6">
@@ -109,6 +111,8 @@ if(!isset($_POST['register'])){
                                         <label for="last_name">Овог</label>
                                         <input type="text" name="last_name" minlength="2" id="last_name" class="form-control" value="<?php echo checkPost('last_name'); ?>"
                                                required>
+                                        <span class="text-warning" style="font-size: 11px;">заавал бөглө.</span>
+                                    </p>
                                     </p>
                                 </div>
                                 <div class="col-md-6">
@@ -116,6 +120,8 @@ if(!isset($_POST['register'])){
                                         <label for="first_name">Нэр</label>
                                         <input type="text" name="first_name" minlength="2" id="first_name" class="form-control" value="<?php echo checkPost('first_name'); ?>"
                                                required>
+                                        <span class="text-warning" style="font-size: 11px;">заавал бөглө.</span>
+                                    </p>
                                     </p>
                                 </div>
                                 <div class="col-md-6">
@@ -123,6 +129,7 @@ if(!isset($_POST['register'])){
                                         <label for="t_phone">Утас</label>
                                         <input type="number" minlength="8" name="t_phone" id="t_phone" class="form-control" value="<?php echo checkPost('t_phone'); ?>"
                                                required>
+                                        <span class="text-warning" style="font-size: 11px;">заавал бөглө.</span>
                                     </p>
                                 </div>
 
@@ -136,57 +143,59 @@ if(!isset($_POST['register'])){
                                     </p>
                                 </div>
 
-                                <div class="col-md-12">
-                                    <div class="heading-title mt-4">Хаяг байршил</div>
-                                </div>
+<!--                                <div class="col-md-12">-->
+<!--                                    <div class="heading-title mt-4">Хаяг байршил</div>-->
+<!--                                </div>-->
+<!---->
+<!--                                <div class="col-md-6">-->
+<!--                                    <p>-->
+<!--                                        <label for="t_hot">Хот, Аймаг</label>-->
+<!--                                        <input type="text" name="t_hot" id="t_hot" class="form-control" value="--><?php //echo checkPost('t_hot'); ?><!--" required>-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        <label for="t_sum">Сум, Дүүрэг</label>-->
+<!--                                        <input type="text" name="t_sum" id="t_sum" class="form-control" value="--><?php //echo checkPost('t_sum'); ?><!--" required>-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        <label for="t_gudamj">Гудамж талбай</label>-->
+<!--                                        <input type="text" name="t_gudamj" id="t_gudamj" class="form-control" value="--><?php //echo checkPost('t_gudamj'); ?><!--"-->
+<!--                                               >-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        <label for="t_bair">Байшин, байр</label>-->
+<!--                                        <input type="text" name="t_bair" id="t_bair" class="form-control" value="--><?php //echo checkPost('t_bair'); ?><!--" required>-->
+<!--                                    </p>-->
+<!--                                </div>-->
+<!---->
+<!---->
+<!--                                <div class="col-md-6">-->
+<!---->
+<!--                                    <p>-->
+<!--                                        <label for="t_toot">Тоот</label>-->
+<!--                                        <input type="text" name="t_toot" id="t_toot" class="form-control" value="--><?php //echo checkPost('t_toot'); ?><!--" required>-->
+<!--                                    </p>-->
+<!--                                    <p>-->
+<!--                                        <label for="t_address">Дэлгэрэнгүй Хаяг</label><br>-->
+<!--                                        <textarea class="form-control" name="t_address" id="t_address"-->
+<!--                                                  style=" height: 193px;" required>--><?php //echo checkPost('t_address'); ?><!--</textarea>-->
+<!--                                    </p>-->
+<!---->
+<!--                                </div>-->
 
-                                <div class="col-md-6">
-                                    <p>
-                                        <label for="t_hot">Хот, Аймаг</label>
-                                        <input type="text" name="t_hot" id="t_hot" class="form-control" value="<?php echo checkPost('t_hot'); ?>" required>
-                                    </p>
-                                    <p>
-                                        <label for="t_sum">Сум, Дүүрэг</label>
-                                        <input type="text" name="t_sum" id="t_sum" class="form-control" value="<?php echo checkPost('t_sum'); ?>" required>
-                                    </p>
-                                    <p>
-                                        <label for="t_gudamj">Гудамж талбай</label>
-                                        <input type="text" name="t_gudamj" id="t_gudamj" class="form-control" value="<?php echo checkPost('t_gudamj'); ?>"
-                                               >
-                                    </p>
-                                    <p>
-                                        <label for="t_bair">Байшин, байр</label>
-                                        <input type="text" name="t_bair" id="t_bair" class="form-control" value="<?php echo checkPost('t_bair'); ?>" required>
-                                    </p>
-                                </div>
-
-
-                                <div class="col-md-6">
-
-                                    <p>
-                                        <label for="t_toot">Тоот</label>
-                                        <input type="text" name="t_toot" id="t_toot" class="form-control" value="<?php echo checkPost('t_toot'); ?>" required>
-                                    </p>
-                                    <p>
-                                        <label for="t_address">Дэлгэрэнгүй Хаяг</label><br>
-                                        <textarea class="form-control" name="t_address" id="t_address"
-                                                  style=" height: 193px;" required><?php echo checkPost('t_address'); ?></textarea>
-                                    </p>
-
-                                </div>
-
-                                <div class="col-md-12">
+                                <!-- <div class="col-md-12">
                                     <div class="heading-title mt-4">Сошиал</div>
                                 </div>
 
                                 <div class="col-md-6">
-                                    <label for="password">Facebook (вэб холбоос)</label>
+                                    <label for="password">Facebook</label>
                                     <input type="url" name="facebook" id="facebook" class="form-control" value="">
+                                    <span class="text-warning" style="font-size: 11px;">Жишээ нь: https://www.facebook.com/monsaleTrade</span>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="c_password">Instagram (вэб холбоос)</label>
+                                    <label for="c_password">Instagram</label>
                                     <input type="url" name="instagram" id="instagram" class="form-control" value="">
-                                </div>
+                                    <span class="text-warning" style="font-size: 11px;">Жишээ нь: https://www.instagram.com/monsaleTrade</span>
+                                </div> -->
 
                                 <div class="col-md-12">
                                     <div class="heading-title mt-4">Нууц үг</div>
@@ -194,11 +203,13 @@ if(!isset($_POST['register'])){
 
                                 <div class="col-md-6">
                                     <label for="password">Нууц үг</label>
-                                    <input type="password" name="password" minlength="8" id="password" class="form-control" value="" required>
+                                    <input type="password" name="password" minlength="6" id="password" class="form-control" value="" required>
+                                    <span class="text-warning" style="font-size: 11px;">Заавал бөглө. хамгийн багадаа 6 тэмдэгт оруулна уу</span>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="c_password">Нууц үг баталгаажуулах</label>
-                                    <input type="password" name="c_password" minlength="8" id="c_password" class="form-control" value="" required>
+                                    <input type="password" name="c_password" minlength="6" id="c_password" class="form-control" value="" required>
+                                    <span class="text-warning" style="font-size: 11px;">Заавал бөглө. нууц үгээ дахин оруулна уу.  </span>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="heading-title mt-4">Баталгаажуулах хэсэг</div>

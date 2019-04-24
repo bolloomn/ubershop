@@ -95,18 +95,17 @@ function _qpay_woo_restCall($fname, $request, $url=null, $username=null, $passwo
     }
     curl_close($curl);
 
-//    $curl_response = substr($curl_response, $info['header_size']);
-//    $decoded       = json_decode($curl_response, true);
-
-//    if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
-//        return $decoded->response->errormessage;
-//    }
-    return $curl_response;
+    $curl_response = substr($curl_response, $info['header_size']);
+    $decoded       = json_decode($curl_response, true);
+    if (isset($decoded->response->status) && $decoded->response->status == 'ERROR') {
+        return $decoded->response->errormessage;
+    }
+    return $decoded;
 }
 
 
 function _qpay_woo_Test(){
-     $data='
+    $data='
      {
           "type": "4",
           "merchant_code": "'.$_POST['qpay']['merchant_code'].'",

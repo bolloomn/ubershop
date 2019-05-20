@@ -1,46 +1,1 @@
-<?php  /* Template Name: faq */   get_header(); ?>
-
-<?php if ( have_posts() ) : ?>
-
-
-    <?php /* Start the Loop */ ?>
-    <?php while ( have_posts() ) : the_post(); ?>
-
-
-
-        <div id="content" class="clearfix">
-            <article >
-                <div class="content-wrap">
-                    <h1 class="entry-title"><?php the_title(); ?></h1>
-                    <div class="entry-content">
-                        <div class="accordion " id="accordionExample">
-                        <?php $i=1;  while(the_repeater_field('faq',get_the_ID())): ?>
-                            <div class="card">
-                                <div class="card-header" id="heading<?php echo $i;?>">
-                                    <h5 class="mb-0">
-                                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse<?php echo $i;?>" aria-expanded="true" aria-controls="collapse<?php echo $i;?>">
-                                            <?php the_sub_field('q'); ?>
-                                        </button>
-                                    </h5>
-                                </div>
-
-                                <div id="collapse<?php echo $i;?>" class="collapse " aria-labelledby="heading<?php echo $i;?>" data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <?php echo get_sub_field('a'); ?>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php $i++; endwhile; ?>
-                        </div>
-                    </div><!-- .entry-content -->
-
-                </div> <!-- .content-wrap -->
-            </article>
-
-        </div><!-- #content -->
-
-    <?php endwhile; ?>
-
-<?php endif; ?>
-
-<?php get_footer(); ?>
+<?php /* Template Name: faq */get_header(); ?><style>    .card-header {        padding: 5px;        background: none;        background: #FAFAFA;    }    .card-header .btn-link {        color: #000;    }</style><?php if (have_posts()) : ?>    <?php /* Start the Loop */ ?>    <?php while (have_posts()) : the_post(); ?>        <div id="content" class="clearfix">            <div class="content-wrap">                <div class="col-lg-8 offset-lg-2 ">                    <div class="text-center mt-4 mb-4">                        <h1 style="color:#232f3e; font-weight: 400;"><?php the_title(); ?></h1>                    </div>                    <div class="mb-4">                        <div class="entry-content">                            <div class="accordion " id="accordionExample">                                <?php $i = 1;                                while (the_repeater_field('faq', get_the_ID())): ?>                                    <div class="card">                                        <div class="card-header" id="heading<?php echo $i; ?>">                                            <h5 class="mb-0">                                                <button class="btn btn-link" type="button" data-toggle="collapse"                                                        data-target="#collapse<?php echo $i; ?>" aria-expanded="true"                                                        aria-controls="collapse<?php echo $i; ?>">                                                    <?php the_sub_field('q'); ?>                                                </button>                                            </h5>                                        </div>                                        <div id="collapse<?php echo $i; ?>" class="collapse <?php if($i==1){ ?>show<?php } ?>"                                             aria-labelledby="heading<?php echo $i; ?>" data-parent="#accordionExample">                                            <div class="card-body">                                                <?php echo get_sub_field('a'); ?>                                            </div>                                        </div>                                    </div>                                    <?php $i++; endwhile; ?>                            </div>                        </div><!-- .entry-content -->                    </div>                </div>            </div> <!-- .content-wrap -->        </div><!-- #content -->    <?php endwhile; ?><?php endif; ?><?php get_footer(); ?>

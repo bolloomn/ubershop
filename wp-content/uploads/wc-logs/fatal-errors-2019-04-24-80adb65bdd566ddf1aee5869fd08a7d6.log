@@ -1,0 +1,25 @@
+2019-04-24T11:04:50+00:00 CRITICAL Uncaught Error: Using $this when not in object context in /home/monsale/public_html/wp-content/plugins/woocommerce-qpaymn/includes/qpay-template.php:25
+Stack trace:
+#0 /home/monsale/public_html/wp-includes/template-loader.php(77): include()
+#1 /home/monsale/public_html/wp-blog-header.php(19): require_once('/home/monsale/p...')
+#2 /home/monsale/public_html/index.php(17): require('/home/monsale/p...')
+#3 {main}
+  thrown in /home/monsale/public_html/wp-content/plugins/woocommerce-qpaymn/includes/qpay-template.php on line 25
+
+2019-04-24T11:08:48+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Order::get_return_url() in /home/monsale/public_html/wp-content/plugins/woocommerce-qpaymn/includes/qpay-template.php:25
+Stack trace:
+#0 /home/monsale/public_html/wp-includes/template-loader.php(77): include()
+#1 /home/monsale/public_html/wp-blog-header.php(19): require_once('/home/monsale/p...')
+#2 /home/monsale/public_html/index.php(17): require('/home/monsale/p...')
+#3 {main}
+  thrown in /home/monsale/public_html/wp-content/plugins/woocommerce-qpaymn/includes/qpay-template.php on line 25
+
+2019-04-24T19:16:16+00:00 CRITICAL Uncaught Error: Cannot use object of type WP_Error as array in /home/monsale/public_html/wp-content/plugins/ninja-forms/ninja-forms.php:1016
+Stack trace:
+#0 /home/monsale/public_html/wp-includes/class-wp-hook.php(286): nf_update_marketing_feed()
+#1 /home/monsale/public_html/wp-includes/class-wp-hook.php(310): WP_Hook->apply_filters('', Array)
+#2 /home/monsale/public_html/wp-includes/plugin.php(531): WP_Hook->do_action(Array)
+#3 /home/monsale/public_html/wp-cron.php(133): do_action_ref_array('nf_marketing_fe...', Array)
+#4 {main}
+  thrown in /home/monsale/public_html/wp-content/plugins/ninja-forms/ninja-forms.php on line 1016
+

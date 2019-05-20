@@ -60,7 +60,7 @@ if (isset($_POST['register'])) {
                     </div>
                     <div class="bg-white p-4 mb-4">
                         <div class="heading-title">Найзаа урих холбоос</div>
-                        <p><input type="url" readonly class="form-control"value="<?php echo home_url('register?pid='.$user->user_login);?>"></p>
+                        <p><input type="url" readonly class="form-control"value="<?php echo home_url('register?pid='.str_replace (' ', '%20', $user->user_login));?>"></p>
                     </div>
                     <?php
                     foreach ($error as $e) {

@@ -1,9 +1,9 @@
-=== Wp Facebook Login for WordPress ===
+=== Login for WordPress ===
 Contributors: timersys
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=K4T6L69EV9G2Q
 Tags: facebook, facebook login, woocommerce, easy digital downloads, facebook ajax, facebook registration, buddypress, registration form, login form, login widget, registration widget, ajax login, facebook ajax login, popup, popups, facebook popup, facebook avatars, buddypress
 Requires at least: 3.6
-Tested up to: 5.0.2
+Tested up to: 5.1.1
 Stable tag: 1.2.3.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html

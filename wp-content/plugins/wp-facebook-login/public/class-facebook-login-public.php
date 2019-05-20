@@ -240,10 +240,7 @@ class Facebook_Login_Public {
 		if( is_wp_error( $fb_response ) )
 			$this->ajax_response( array( 'error' => $fb_response->get_error_message() ) );
 
-
-
 		$fb_user = apply_filters( 'fbl/auth_data',json_decode( wp_remote_retrieve_body( $fb_response ), true ) );
-
 
 		if( isset( $fb_user['error'] ) )
 			$this->ajax_response( array( 'error' => 'Error code: '. $fb_user['error']['code'] . ' - ' . $fb_user['error']['message'] ) );
@@ -253,7 +250,6 @@ class Facebook_Login_Public {
 			$this->ajax_response( array( 'error' => __('We need your email in order to continue. Please try loging again. ', 'fbl' ),'fb' => $fb_user) );
 
 		// Map our FB response fields to the correct user fields as found in wp_update_user
-
 		$user = apply_filters( 'fbl/user_data_login', array(
 			'fb_user_id' => $fb_user['id'],
 			'first_name' => $fb_user['first_name'],
@@ -281,10 +277,10 @@ class Facebook_Login_Public {
 				wp_update_user( array( 'ID' => $user_id, 'user_email' => $user['user_email'] ) );
 
 		} else {
-			if( ! get_option('users_can_register') || apply_filters( 'fbl/registration_disabled', false ) ) {
-				if( ! apply_filters( 'fbl/bypass_registration_disabled', false ) )
-					$this->ajax_response( array( 'error' => __( 'User registration is disabled', 'fbl' ) ) );
-			}
+//			if( ! get_option('users_can_register') || apply_filters( 'fbl/registration_disabled', false ) ) {
+//				if( ! apply_filters( 'fbl/bypass_registration_disabled', false ) )
+//					$this->ajax_response( array( 'error' => __( 'User registration is disabled', 'fbl' ) ) );
+//			}
 			// generate a new username
 			$user['user_login'] = apply_filters( 'fbl/generateUsername', $this->generateUsername( $fb_user ) );
 
@@ -313,7 +309,15 @@ class Facebook_Login_Public {
 	 */
 	private function register_user( $user ) {
 		do_action( 'fbl/register_user', $user );
-		return wp_insert_user( $user );
+		// return wp_insert_user( $user );
+		return $this->new_user($user);
+	}
+	public function new_user($user){
+		$user_id = wp_create_user( $user['user_login'], $user['password'], $user['user_email']);
+        update_user_meta($user_id, 'first_name', $user['first_name']);
+        update_user_meta($user_id, 'last_name', $user['last_name']);
+        update_user_meta($user_id, 'fb_user_id', $user['fb_user_id']);
+        return $user_id;
 	}
 
 	/**
